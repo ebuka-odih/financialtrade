@@ -8,17 +8,17 @@
     <meta name="csrf-param" content="_csrf-frontend">
     <meta name="csrf-token" content="MYfwU_-O_AiYLgCWs-dnF8OE0xtsPeNbXiRXqRZqSFV_6Zw5sLuNOulDV9Lc0SRhu8HhXTNphA1vYxPLfwgrFg==">
     <title>Tifia Forex broker. Online Forex trading with ECN broker</title>
-    <meta name="description" content="Official website of Tifia Forex broker. Earn online by trading on Forex and financial markets. With Tifia broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
+    <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
     <meta property="og:image" content="images/og/logo.png">
     <meta property="og:image:secure_url" content="images/og/logo.png">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Tifia Forex broker. Online Forex trading with ECN broker">
+    <meta property="og:title" content="Financialtrade Forex broker. Online Forex trading with ECN broker">
     <meta property="og:site_name" content="Tifia">
     <meta property="og:url" content="index.html">
     <meta property="og:description" content="Official website of Tifia Forex broker. Earn online by trading on Forex and financial markets. With Tifia broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <link href="index.blade.php" rel="canonical">
-    <link href="dist/app6597.css?v=1601635857" rel="stylesheet">
+    <link href="{{ asset('dist/app6597.css?v=1601635857') }}" rel="stylesheet">
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>        <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -417,18 +417,8 @@
                 <a class="btn-show-right" href="https://social.tifia.com/en/new-trading-account" rel="nofollow"><div class="circle"><span class="icon arrow"></span></div><p class="button-text">Open</p></a>            </div>
         </div>
         <div class="btn-block">
-            <a class="btn btn-red" href="https://social.tifia.com/en/new-trading-account" rel="nofollow">Open trading account</a>        </div>
-        <!--<div class="btn-down">
-            <ul>
-                <li class="circle"><span></span></li>
-                <li class="circle"><span></span></li>
-                <li class="circle"><span></span></li>
-                <li class="down">
-                    <span class="left-line"></span>
-                    <span class="right-line"></span>
-                </li>
-            </ul>
-        </div>-->
+            <a class="btn btn-green" href="https://social.tifia.com/en/new-trading-account" rel="nofollow">Open trading account</a>        </div>
+
         <a class="scroll-icon"></a>
     </div>
 </section>
@@ -562,7 +552,7 @@
             </div>
         </div>
         <div class="social-btn">
-            <a class="btn btn-red" href="https://social.tifia.com/en/login" rel="nofollow">Join TIFIA Social Trading</a>        </div>
+            <a  class="btn btn-red" href="https://social.tifia.com/en/login" rel="nofollow">Join TIFIA Social Trading</a>        </div>
     </div>
 </section>
 <section class="section trading-account">

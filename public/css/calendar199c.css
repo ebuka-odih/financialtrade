@@ -1,0 +1,1570 @@
+/**::-webkit-input-placeholder {*/
+/*	color: #666;*/
+/*	opacity: 1;*/
+/*}*/
+/**:-moz-placeholder {*/
+/*	color: #666;*/
+/*	opacity: 1;*/
+/*}*/
+/**::-moz-placeholder {*/
+/*	color: #666;*/
+/*	opacity: 1;*/
+/*}*/
+/**:-ms-input-placeholder {*/
+/*	color: #666;*/
+/*	opacity: 1;*/
+/*}*/
+
+.economic-calendar
+{
+	background: #242424;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 0;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.economic-calendar h4,
+.economic-calendar h5,
+.economic-calendar h6
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.economic-calendar ul
+{
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.economic-calendar .priotity-1 li,
+.economic-calendar .priotity-2 li,
+.economic-calendar .priotity-3 li
+{
+	margin-left: 4px;
+}
+
+.economic-calendar .priotity-1 li:first-child,
+.economic-calendar .priotity-2 li:first-child,
+.economic-calendar .priotity-3 li:first-child
+{
+	margin-left: 0;
+}
+
+.economic-calendar .navbar-left
+{
+	float: left;
+}
+
+.economic-calendar .new-submenu .navbar-right
+{
+	float: right;
+}
+
+.economic-calendar .content
+{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.economic-calendar .new-submenu .navbar-left li
+{
+	display: inline-block;
+}
+
+.economic-calendar .new-submenu .navbar-left li a,
+.economic-calendar .nav a
+{
+	line-height: 12px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #989898;
+	padding: 20px 10px 7px;
+	border-bottom: 1px solid transparent;
+}
+
+.economic-calendar .nav a
+{
+	display: inline-block;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.economic-calendar .new-submenu .navbar-left li.active a,
+.economic-calendar .nav a.active
+{
+	color: #ffffff;
+	border-color: #E52525;
+}
+
+.economic-calendar .new-submenu .nav > li > a:focus,
+.economic-calendar .new-submenu .nav > li > a:hover
+{
+	background: transparent;
+}
+
+input,
+.filter-country
+{
+	background: #333333;
+	padding: 12px 20px;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: #989898;
+	border: none;
+	webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+input:focus
+{
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+	color: #989898;
+}
+
+input::-moz-placeholder {
+	color: #989898;
+}
+
+.economic-calendar .new-submenu .select-date
+{
+	width: 160px;
+	height: 50px;
+	cursor: pointer;
+	background: #333333 url('../images/calendar/icon-open.svg') no-repeat scroll 90% 22px;
+	border: 1px solid #333333;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .select-date:hover,
+.economic-calendar .new-submenu .filter-country:hover
+{
+	border-color: #E52525;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .select-date.active
+{
+	background: #333333 url('../images/calendar/icon-open-select.svg') no-repeat scroll 90% 22px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .select-date.active
+{
+	border: 1px solid #E52525;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .filter-country
+{
+	width: 160px;
+	border: 1px solid #333333;
+	cursor: pointer;
+	color: #989898;
+	display: inline-block;
+	background: #333333 url('../images/calendar/filter-results.svg') no-repeat scroll 87% 18px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .filter-country.active
+{
+	background: #333333 url('../images/calendar/filter-results-white.svg') no-repeat scroll 87% 18px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .filter-country.active
+{
+	border: 1px solid #E52525;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .filter-country:hover
+{
+	color: #989898;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .new-submenu .navbar-right
+{
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.economic-calendar .new-submenu .navbar-right li:first-child
+{
+	margin-left: 0;
+}
+
+.economic-calendar .new-submenu .navbar-right li
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.economic-calendar h3
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: normal;
+	color: #989898;
+	margin-top: 25px;
+}
+
+.economic-calendar table.events-list
+{
+	width: 100%;
+}
+
+.economic-calendar table.events-list thead
+{
+
+}
+
+.economic-calendar table.events-list tr th
+{
+	padding: 10px 0;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #5E5E5E;
+	font-weight: 600;
+	border-top: 1px solid rgba(94,94,94,0.5);
+	border-bottom: 1px solid rgba(94,94,94,0.5);
+}
+
+.economic-calendar table.events-list tr th:first-child,
+.economic-calendar table.events-list tr th:last-child
+{
+	border: none;
+}
+.event-list-table tr th:first-child,
+.event-list-table tr th:last-child
+{
+	border-top: 1px solid rgba(94,94,94,0.5) !important;
+	border-bottom: 1px solid rgba(94,94,94,0.5) !important;
+}
+
+.economic-calendar table.events-list tbody tr
+{
+
+}
+
+.economic-calendar table.events-list tbody tr td
+{
+	color: #989898;
+	font-size: 13px;
+	position: relative;
+	z-index: 10;
+	vertical-align: middle;
+	padding: 9px 0;
+
+}
+
+.economic-calendar table.events-list tbody tr.event > td
+{
+	cursor: pointer;
+}
+
+.economic-calendar table.events-list tbody tr.event-info > td
+{
+	border-top: 1px solid rgba(94,94,94,0.5);
+}
+
+.economic-calendar table.events-list tbody tr.event-info > td:first-child,
+.economic-calendar table.events-list tbody tr.event-info > td:last-child
+{
+	border-top: none;
+}
+
+/*.economic-calendar table tbody tr:after
+{
+    background: transparent;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 60px;
+    transition: all 0.5s;
+    z-index: 0;
+}*/
+
+.economic-calendar table.events-list tbody tr.event:hover
+{
+	background: #333333;
+	transition: all 0.5s;
+}
+
+.economic-calendar table.events-list tbody tr.event.active
+{
+	background: #333333;
+}
+
+.economic-calendar table.events-list tbody tr.event .event-name
+{
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.economic-calendar table.events-list tbody tr.event.active .event-name
+{
+	color: #ffffff;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.economic-calendar [class^=priotity]>li
+{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: rgba(229, 37, 37, 0.2);
+	webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.economic-calendar .priotity-2>li
+{
+	background: rgba(229, 37, 37, 0.6);
+}
+
+.economic-calendar .priotity-3>li
+{
+	background: #E52525;
+}
+
+.economic-calendar .event-name
+{
+	font-family: Arial;
+	font-size: 13px;
+	line-height: normal;
+	color: #989898;
+	font-weight: normal;
+}
+
+.economic-calendar .flag
+{
+	width: 40px;
+	height: 40px;
+}
+
+.economic-calendar .flag img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.economic-calendar table.events-list thead tr th.color-grey,
+.economic-calendar table.events-list tbody tr td.event-name
+{
+	color: #989898;
+}
+
+.economic-calendar table.events-list tbody tr td.color-white
+{
+	color: #ffffff;
+}
+
+.economic-calendar table.events-list tbody tr td.color-grey
+{
+	color: #989898;
+}
+
+.economic-calendar .event-info
+{
+	display: none;
+	width: 100%;
+	background: #333333;
+}
+
+.economic-calendar .event-info-block
+{
+	display: none;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.economic-calendar .event-desc
+{
+	line-height: 23px;
+	color: #989898;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-family: 'Arial';
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.economic-calendar .event-info-block
+{
+	background: #333333;
+
+}
+.economic-calendar .event-info-block .hid {
+	height: 40px;
+	overflow-y: hidden;
+}
+.economic-calendar .event-info-mob .event-info-block .nav
+{
+	white-space: nowrap;
+	display: block;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.economic-calendar .event-info-block .nav li
+{
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+.economic-calendar .event-info-block .nav li a
+{
+	line-height: 12px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #989898;
+	padding: 20px 10px 7px;
+	border-bottom: 1px solid transparent;
+}
+
+.economic-calendar .event-info-block .nav li.active a
+{
+	color: #ffffff;
+	border-color: #E52525;
+}
+
+.economic-calendar .event-info-block .nav > li > a:focus,
+.economic-calendar .event-info-block .nav > li > a:hover
+{
+	background: transparent;
+}
+
+/*.economic-calendar .event-info:after
+{
+    width: 100%;
+    content: "";
+    background: #333333;
+    left: 0;
+    position: absolute;
+
+}*/
+
+.economic-calendar .event-info > td
+{
+	padding: 0;
+}
+
+.economic-calendar .event-info-block table
+{
+	margin-top: 5px;
+	font-size: 13px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #989898;
+	width: 100%;
+}
+
+.economic-calendar .event-info-block table thead th
+{
+	color: #5E5E5E;
+	font-size: 10px;
+	padding: 10px 0;
+}
+
+.economic-calendar .event-info-block table tbody td
+{
+	border: none;
+}
+
+.economic-calendar .event-info-block .tab-pane
+{
+	padding-bottom: 30px;
+}
+
+/*.c3
+{
+    position: absolute;
+    width:100%;
+    left:0;
+}*/
+
+.economic-calendar .select-date-block
+{
+	padding: 10px 0 30px;
+}
+
+.economic-calendar .select-date-block .nav
+{
+	display: block;
+}
+
+.economic-calendar .mob-only
+{
+	display: none;
+}
+
+.economic-calendar .select-date-block li
+{
+	display: inline-block;
+}
+
+.economic-calendar .select-date-block .nav
+{
+	text-align: center;
+}
+
+.economic-calendar .select-date-block .nav li a
+{
+	line-height: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #989898;
+	padding: 20px 10px 7px;
+	border-bottom: 1px solid transparent;
+}
+
+.economic-calendar .select-date-block .nav li.active a
+{
+	color: #ffffff;
+	border-color: #E52525;
+}
+
+.economic-calendar .select-date-block .nav > li > a:focus,
+.economic-calendar .select-date-block .nav > li > a:hover
+{
+	background: transparent;
+}
+
+.economic-calendar .select-date-block
+{
+	background: #333333;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	margin-top: 10px;
+}
+
+.economic-calendar .select-date-block .date-table
+{
+	font-style: normal;
+	font-size: 20px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: #989898;
+	max-width: 700px;
+	margin: 30px auto 0;
+}
+
+.economic-calendar .select-date-block .date-table thead tr th
+{
+	text-align: center;
+	font-size: 11px;
+	color: #5E5E5E;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(94,94,94,0.5);
+}
+
+.economic-calendar .select-date-block .date-table thead tr th.active
+{
+	color: #989898;
+}
+
+.economic-calendar .select-date-block .date-table tbody tr td
+{
+	font-size: 20px;
+	color: #989898;
+	width: 100px;
+	padding: 13px 0;
+	cursor: pointer;
+	webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .select-date-block .date-table tbody tr td:hover
+{
+	color: #ffffff !important;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.economic-calendar .select-date-block .date-table thead tr th .mob-only
+{
+	display: none;
+}
+
+.economic-calendar .select-date-block .date-table tbody tr td.last-month
+{
+	color: #5E5E5E;
+}
+
+.economic-calendar .select-date-block .date-table tbody tr td.active
+{
+	background: #242424;
+	color: #ffffff;
+}
+
+.economic-calendar .filter-block
+{
+	background: #333333;
+	padding: 20px 0 50px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	margin-top: 10px;
+}
+
+.economic-calendar .filter-block h4
+{
+	font-size: 14px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #989898;
+	border-bottom: 1px solid rgba(94, 94, 94, 0.5);
+	margin-bottom: 10px;
+}
+
+.economic-calendar .filter-block .select-point
+{
+	margin-bottom: 30px;
+}
+
+.economic-calendar .filter-block .select-point > li
+{
+	display: inline-block;
+	vertical-align: top;
+	padding: 7px 10px;
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 13px;
+	margin-right: 10px;
+	line-height: normal;
+	color: #989898;
+	border: 1px solid rgba(94, 94, 94, 0.5);
+	cursor: pointer;
+	webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.economic-calendar .filter-block .select-point li.active
+{
+	background: #242424;
+	border-color: #242424;
+	color: #ffffff;
+}
+
+.economic-calendar .filter-block .select-priority li > ul
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.economic-calendar .filter-block .select-continents .select-priority > ul > li
+{
+
+}
+
+.economic-calendar .new-submenu
+{
+	margin-bottom: 10px;
+}
+
+.economic-calendar .filter-block h5
+{
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: normal;
+	color: #989898;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.economic-calendar .filter-block .select-country > li
+{
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+
+.economic-calendar .filter-block .select-country > li .flag
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	vertical-align: middle;
+	display: inline-block;
+	opacity: 0.3;
+}
+
+.economic-calendar .filter-block .select-country > li img
+{
+	max-width: 100%;
+	height: auto;
+
+
+}
+
+.economic-calendar .filter-block .select-country > li.active .flag
+{
+	opacity: 1;
+}
+
+.economic-calendar .filter-block .select-country > li span
+{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.economic-calendar .filter-block .filter-btn
+{
+	text-align: center;
+}
+
+.economic-calendar .filter-block .filter-btn .btn
+{
+	text-align: center;
+	font-size: 15px;
+	margin: 0 10px;
+	line-height: 15px;
+	text-transform: uppercase;
+	padding: 17px 40px 16px;
+	webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+}
+
+.economic-calendar .filter-block .filter-btn .btn-red
+{
+	background: #E52525;
+	border: 1px solid #E52525;
+	color: #FFFFFF;
+
+}
+
+.economic-calendar .filter-block .filter-btn .btn-trans
+{
+	background: transparent;
+	border: 1px solid #5E5E5E;
+	color: #989898;
+}
+
+.economic-calendar .select-point + h5
+{
+	margin-top: 10px;
+}
+
+.economic-calendar .graph
+{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.economic-calendar select
+{
+	background: #333333;
+	width: 66px;
+	height: 22px;
+	font-size: 10px;
+	line-height: normal;
+	text-transform: uppercase;
+	border: none;
+	padding: 4px;
+	color: #FFFFFF;
+	webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+}
+
+.select2-container
+{
+	width: 65px !important;
+}
+
+.select2-container--default .select2-selection--single
+{
+	background: #333333 !important;
+	border: none !important;
+	height: 22px !important;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px !important;
+	font-family: Montserrat;
+	font-weight: 600;
+	line-height: 24px;
+	font-size: 10px;
+	color: #ffffff !important;
+	height: inherit;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.select2-container--default .select2-selection--single:hover
+{
+	background: #3f3f3f;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single
+{
+	background: #3f3f3f;
+}
+
+.select2-container--default .select2-selection--single:focus
+{
+	outline: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+{
+	line-height: 22px;
+	height: 20px;
+	color: #ffffff !important;
+	padding: 0 7px;
+	text-align: left;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+{
+	height: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+{
+	border-color: #ffffff transparent transparent transparent;
+	border-width: 3px 3px 0 3px;
+	margin-top: -2px;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+{
+	border-color: transparent transparent #ffffff transparent;
+	border-width: 0 3px 3px 3px;
+	margin-top: -2px;
+}
+
+.slimScrollBar
+{
+	background: #5E5E5E !important;
+	width: 5px !important;
+	opacity: 1 !important;
+	webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.nicescroll-cursors
+{
+	background: #5E5E5E !important;
+	width: 5px !important;
+	border: none !important;
+	opacity: 1 !important;
+	webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+.table-over
+{
+	overflow: hidden;
+}
+
+.table-over,
+.table-over .jspContainer
+{
+	height: 200px !important;
+}
+
+.table-over .jspPane
+{
+	width: 100% !important;
+}
+
+.table-over .jspVerticalBar
+{
+	z-index: 10;
+}
+
+.table-over .jspTrack
+{
+	width: 5px;
+	background: rgba(94, 94, 94, 0.2);
+}
+
+.table-over .jspVerticalBar
+{
+	background: rgba(94, 94, 94, 0.2);
+	width: 5px;
+}
+
+.table-over .jspDrag
+{
+	background: #5E5E5E;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.mobile-version-block
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1600px) {
+
+
+}
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1250px) {
+
+}
+
+@media only screen and (min-width : 1200px) {
+
+
+}
+
+@media only screen and (max-width : 1064px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.economic-calendar
+	{
+		padding: 0 25px;
+	}
+
+	.economic-calendar .priotity-1,
+	.economic-calendar .priotity-2,
+	.economic-calendar .priotity-3
+	{
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	input, .filter-country
+	{
+		font-size: 14px;
+	}
+
+	.economic-calendar .new-submenu .select-date
+	{
+		padding: 7px 20px;
+		height: 40px;
+		background: #333333 url('../images/calendar/icon-open.svg') no-repeat scroll 90% 16px;
+	}
+
+	.economic-calendar .new-submenu .select-date.active
+	{
+		background: #333333 url('../images/calendar/icon-open-select.svg') no-repeat scroll 90% 16px;
+	}
+
+	.economic-calendar .new-submenu .filter-country
+	{
+		padding: 7px 20px;
+		background: #333333 url('../images/calendar/filter-results.svg') no-repeat scroll 87% 12px;
+	}
+
+	.economic-calendar .new-submenu .filter-country.active
+	{
+		background: #333333 url('../images/calendar/filter-results-white.svg') no-repeat scroll 87% 12px;
+	}
+
+	.economic-calendar .new-submenu .navbar-left
+	{
+		float: none !important;
+		margin-bottom: 25px;
+		text-align: center;
+		display: block;
+	}
+
+	.economic-calendar .new-submenu .navbar-right
+	{
+		float: none !important;
+		text-align: center;
+	}
+
+	.economic-calendar .new-submenu .filter-country
+	{
+		text-align: left;
+	}
+
+	.economic-calendar .pk-version-block
+	{
+		display: none;
+	}
+
+	.mobile-version-block
+	{
+		display: block;
+	}
+
+	.economic-calendar h3
+	{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	.economic-calendar .time
+	{
+		display: inline-block;
+		color: #989898;
+	}
+
+	.economic-calendar .priotity
+	{
+		display: inline-block;
+		margin-left: 10px;
+		margin-bottom: 5px;
+
+	}
+
+	.economic-calendar .events-title-mob
+	{
+		font-family: Arial;
+		font-size: 13px;
+		line-height: normal;
+		color: #989898;
+	}
+
+	.economic-calendar .events-title-mob tr th
+	{
+		font-weight: normal;
+	}
+
+	.economic-calendar .event-info-mob .events-title-mob tr th
+	{
+		color: #ffffff;
+	}
+
+	.economic-calendar .events-title-mob .flag
+	{
+		padding-right: 5px;
+		width: 40px;
+	}
+
+	.economic-calendar .events-title-mob .flag img
+	{
+		max-width: 100%;
+		height: auto;
+	}
+
+	.economic-calendar .events-text-mob
+	{
+		width: 100%;
+	}
+
+	.economic-calendar .events-text-mob tr td
+	{
+		vertical-align: top;
+	}
+
+	.economic-calendar .events-text-mob tr td h4
+	{
+		font-style: normal;
+		font-size: 10px;
+		line-height: normal;
+		text-transform: uppercase;
+		color: #5E5E5E;
+		margin-bottom: 5px;
+	}
+
+	.economic-calendar .events-text-mob tr td h4 span
+	{
+		color: #989898;
+	}
+
+	.economic-calendar .events-text-mob tr td h5
+	{
+		font-size: 18px;
+		color: #5E5E5E;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.economic-calendar .events-text-mob tr td h5 span
+	{
+		font-size: 18px;
+		color: #989898;
+	}
+
+	.economic-calendar .events-text-mob tr td h5 b
+	{
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+	.economic-calendar .event-mob
+	{
+		border-top: 1px solid rgba(94,94,94,0.5);
+		padding: 15px 0 10px;
+	}
+
+	.economic-calendar .event-mob .event-short-mob ul
+	{
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.economic-calendar .web-only
+	{
+		display: none;
+	}
+
+	.economic-calendar .select-date-block .date-table thead tr th .mob-only
+	{
+		display: block;
+	}
+
+	.economic-calendar .select-date-block
+	{
+		padding: 25px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		margin-top: 0;
+		height: 100vh;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.economic-calendar .select-date-block .date-table tbody tr td
+	{
+		font-size: 20px;
+	}
+
+	.economic-calendar .select-date-block .nav li a
+	{
+		font-size: 12px;
+	}
+
+	.economic-calendar .title-block
+	{
+		position: relative;
+	}
+
+	.economic-calendar .title-block h6
+	{
+		font-family: Bitter;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		line-height: 36px;
+		color: #FFFFFF;
+		text-align: left;
+	}
+
+	.economic-calendar .close-mob
+	{
+		background: url('../images/calendar/close-mob-1.svg') no-repeat;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		right: 0;
+		top: 7px;
+	}
+
+	.economic-calendar .filter-block
+	{
+		user-select: none;
+		padding: 25px 10px;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		margin-top: 0;
+		height: 100vh;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.economic-calendar .btn-trans
+	{
+		display: none;
+	}
+
+	.economic-calendar .filter-block .filter-btn .btn
+	{
+		padding: 11px 40px 12px;
+		width: 100%;
+		margin: 0;
+	}
+
+	.economic-calendar .filter-block .filter-btn
+	{
+		max-width: 240px;
+		margin: 50px auto 30px;
+	}
+
+	.economic-calendar .filter-block .select-point > li
+	{
+		margin-bottom: 5px;
+		margin-right: 5px;
+	}
+
+	.economic-calendar .filter-block .select-country
+	{
+		margin-bottom: 0;
+	}
+
+	.economic-calendar .filter-block h5
+	{
+		margin-top: 10px;
+	}
+
+	.economic-calendar .filter-block .select-point
+	{
+		margin-bottom: 10px;
+	}
+
+	.economic-calendar .filter-block .title-block
+	{
+		padding: 0 15px;
+	}
+
+	.economic-calendar .filter-block .close-mob
+	{
+		right: 15px;
+	}
+
+	.economic-calendar .event-info-mob
+	{
+		position: fixed;
+		z-index: 1001;
+		width: 100%;
+		top: 0;
+		background: #333333;
+		left: 0;
+		padding: 25px 15px;
+		height: 100vh;
+		overflow-y: auto;
+		display: none;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.economic-calendar .event-info-mob .event-info-block
+	{
+		display: block;
+	}
+
+	.economic-calendar .event-info-mob .event-info-block .nav li a
+	{
+		padding: 20px 2px 7px;
+	}
+
+	.economic-calendar .event-info-block table thead th
+	{
+		font-size: 8px;
+		vertical-align: top;
+		padding: 10px 5px;
+		border-top: 1px solid rgba(94,94,94,0.5);
+		border-bottom: 1px solid rgba(94,94,94,0.5);
+	}
+
+	.economic-calendar .event-info-block table tbody td
+	{
+		font-size: 10px;
+		padding: 10px 5px;
+	}
+
+	.economic-calendar .graph
+	{
+		margin-top: 20px;
+	}
+
+	.economic-calendar .event-info-mob .events-text-mob
+	{
+		border-bottom: 1px solid #5E5E5E;
+		margin-bottom: 5px;
+	}
+
+	.economic-calendar .event-info-mob .event-desc
+	{
+		color: #ffffff;
+	}
+
+	.economic-calendar .event-info-mob .nav
+	{
+		text-align: center;
+	}
+
+	.economic-calendar .event-info-block table tbody td:first-child,
+	.economic-calendar .event-info-block table thead th:first-child
+	{
+		padding-left: 0;
+	}
+
+	.economic-calendar .event-info-block table tbody td:last-child,
+	.economic-calendar .event-info-block table thead th:last-child
+	{
+		padding-right: 0;
+	}
+
+	.economic-calendar .event-info-block table tbody td:last-child
+	{
+		color: #FFFFFF;
+	}
+
+	.economic-calendar .event-info-mob .priotity
+	{
+		margin-bottom: 20px;
+	}
+
+	.economic-calendar .event-info-mob .close-mob
+	{
+		right: 15px;
+		top: 22px;
+	}
+
+	.economic-calendar .mob-only
+	{
+		display: block;
+	}
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+
+@media only screen and (max-width : 720px) {
+
+}
+
+@media only screen and (max-width : 650px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.economic-calendar .new-submenu .navbar-left li a
+	{
+		padding: 20px 4px 7px;
+	}
+
+	.economic-calendar .new-submenu .navbar-right li
+	{
+		margin-left: 5px;
+	}
+
+	.economic-calendar .new-submenu .select-date
+	{
+		width: 130px;
+	}
+
+	.economic-calendar .new-submenu .filter-country
+	{
+		width: 130px;
+	}
+
+	.economic-calendar .new-submenu .navbar-left li a
+	{
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width : 340px) {
+	.economic-calendar .new-submenu .select-date
+	{
+		width: 125px;
+	}
+
+	.economic-calendar .new-submenu .filter-country
+	{
+		width: 125px;
+	}
+
+	.new-submenu
+	{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+.economic-calendar .new-submenu .select-date.active::-webkit-input-placeholder
+{
+	color: #ffffff;
+}
+
+.economic-calendar .new-submenu .select-date.active::-moz-placeholder
+{
+	color: #ffffff;
+}
+
+.economic-calendar .new-submenu .filter-country.active
+{
+	color: #ffffff !important;
+}
+.select2-results,
+.select2-search--dropdown
+{
+	background: #3F3F3F;
+	color: #5E5E5E;
+	font-size: 15px;
+}
+
+.select2-results__option
+{
+	padding: 0 5px;
+}
+
+.select2-results__option:hover
+{
+	color: #ffffff !important;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.select2-dropdown
+{
+	border-color: #3F3F3F;
+}
+
+.select2-search
+{
+	display: none;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true]
+{
+	background: #3F3F3F;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+{
+	background: #3F3F3F;
+	color: #5E5E5E;
+}
+
+.select2-search--dropdown .select2-search__field
+{
+	padding: 0 5px;
+}
+
+.select2-results__option
+{
+	font-family: Montserrat;
+	font-weight: 600;
+	line-height: 24px;
+	font-size: 10px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}

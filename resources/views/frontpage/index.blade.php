@@ -5,7 +5,7 @@
     <section class="section about-tifia">
         <div class="container-fluid">
             <h1>How about earning more by Forex trading?</h1>
-            <p>Welcome to TIFIA! Smart Forex trading on perfect conditions</p>
+            <p>Welcome to FTM! Smart Forex trading on perfect conditions</p>
             <div id="carousel-main" class="carousel slide conditions-block">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -39,7 +39,7 @@
             </div>
             <div class="group-success">
                 <div class="group">
-                    <p>Tifia trading account</p>
+                    <p>FTM trading account</p>
                     <a class="btn-show-right" href="https://social.tifia.com/en/new-trading-account" rel="nofollow">
                         <div class="circle"><span class="icon arrow"></span></div>
                         <p class="button-text">Open</p>
@@ -47,16 +47,16 @@
                 </div>
             </div>
             <div class="btn-block">
-                <a class="btn btn-green" href="https://social.tifia.com/en/new-trading-account" rel="nofollow">Open trading account</a>
+                <a class="btn btn-green" href="https://social.FTM.com/en/new-trading-account" rel="nofollow">Open trading account</a>
             </div>
             <a class="scroll-icon"></a>
         </div>
     </section>
-    <section class="section advantages-tifia">
+    <section class="section advantages-FTM">
         <div class="container-fluid">
             <h2>Online trading in forex market on best conditions</h2>
-            <p>Tifia online Forex broker provides trading services on financial markets: Forex, commodity markets, and stock indices.</p>
-            <h3 class="only-mob">Why Tifia?</h3>
+            <h3>FinancialTradeMarket online Forex broker provides trading services on financial markets: Forex, commodity markets, and stock indices.</h3>
+            <h3 class="only-mob">Why FTM?</h3>
             <div class="advantages-block">
                 <ul>
                     <li>
@@ -188,7 +188,7 @@
     </section>
     <section class="section trading-account">
         <div class="container-fluid">
-            <h2>Choose your way to trade with TIFIA</h2>
+            <h2>Choose your way to trade with FTM</h2>
             <p>Open a trading account with ECN broker and earn with the lowest spreads and highest execution speed!</p>
             <h3 class="only-mob">Open a trading account</h3>
             <ul class="nav variant-menu trading-account-menu" role="tablist">
@@ -200,7 +200,7 @@
                 <div class="start-micro tab-pane fadeIn animated" id="start">
                     <div class="account-type">
                         <h3>Start<br><span>Micro</span></h3>
-                        <p>Choose your way<br>to trade with Tifia</p>
+                        <p>Choose your way<br>to trade with FTM</p>
                     </div>
                     <ul class="account-info">
                         <li>
@@ -307,7 +307,7 @@
                         <span>$8</span>
                     </div>
                     <div class="btn-acc">
-                        <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.tifia.com/en/new-trading-account?type=ecn-pro" rel="nofollow">Open trading account</a>
+                        <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.FTM.com/en/new-trading-account?type=ecn-pro" rel="nofollow">Open trading account</a>
                     </div>
                 </div>
             </div>
@@ -316,8 +316,8 @@
     <section class="promotions-block-main">
                 <div class="container-fluid">
                     <div class="container-block">
-                        <h2>Forex contests and deposit bonuses from Tifia</h2>
-                        <p>Tifia provides Forex bonuses on deposits and contests for traders and partners. We would like to make your work on Forex incredibly interesting.</p>
+                        <h2>Forex contests and deposit bonuses from FTM</h2>
+                        <p>FTM provides Forex bonuses on deposits and contests for traders and partners. We would like to make your work on Forex incredibly interesting.</p>
                         <div class="btn-block">
                             <a class="btn btn-red" href="promotions.html">Learn more</a>
                         </div>

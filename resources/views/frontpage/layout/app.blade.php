@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="Tifia">
     <meta property="og:url" content="index.html">
     <meta property="og:description" content="Official website of Tifia Forex broker. Earn online by trading on Forex and financial markets. With Tifia broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
-    <link href="index.blade.php" rel="canonical">
+    <link href="index.blade.phpprasing" rel="canonical">
     <link href="{{ asset('dist/app6597.css?v=1601635857') }}" rel="stylesheet">
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>        <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -169,9 +169,11 @@
     <header class="  ">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
-                <div class="left-block">
+                <div class="left-block mb-5">
                     <div class="logo">
-                        <a href="index.blade.php"><img alt="Tifia Markets Limited" src="images/new-site/logo-white.svg"></a>
+                       <p>
+                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="images/new-site/logo2.png">FinancialTradeMarket</a>
+                       </p>
                     </div>
                 </div>
                 <div class="row">
@@ -471,8 +473,9 @@
             <ul class="copyright-text">
                 <li>
                     <div class="logo-footer">
-                        <a href="index.blade.php">
-                            <img alt="Tifia Markets Limited" src="images/new-site/logo-white.svg"></a>
+                        <p>
+                            <a style="margin-top: -30px; color: white; line-height: 1px; font-size: 16px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="images/new-site/logo2.png">FinancialTradeMarket</a>
+                        </p>
                     </div>
                     <p>Copyright © 2011 - 2020<br>
                         Tifia Markets Limited, All rights reserved<br>

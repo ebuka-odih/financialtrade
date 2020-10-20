@@ -321,8 +321,7 @@
                         <div class="btn-block">
                             <a class="btn btn-red" href="promotions.html">Learn more</a>
                         </div>
-                        <img class="promo-img lazy" data-src="images/new-site/promo-img.png">
-                        <img class="promo-img-mob lazy" data-src="images/new-site/promo-img-mob.png">
+
                     </div>
                 </div>
             </section>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-param" content="_csrf-frontend">
     <meta name="csrf-token" content="MYfwU_-O_AiYLgCWs-dnF8OE0xtsPeNbXiRXqRZqSFV_6Zw5sLuNOulDV9Lc0SRhu8HhXTNphA1vYxPLfwgrFg==">
-    <title>Tifia Forex broker. Online Forex trading with ECN broker</title>
+    <title>FTM broker. Online Forex trading</title>
     <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
     <meta property="og:image" content="images/og/logo.png">
@@ -91,7 +91,7 @@
                 <div class="left-block mb-5">
                     <div class="logo">
                        <p>
-                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="images/new-site/logo2.png">FinancialTradeMarket</a>
+                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="{{ asset('images/new-site/logo2.png') }}">FinancialTradeMarket</a>
                        </p>
                     </div>
                 </div>
@@ -100,10 +100,11 @@
                         <div class="main-menu">
                             <div id="navbarNav" class="collapse navbar-collapse">
                                 <ul class="">
-                                    <li class="mob-only no-bg open-acc"><a class="" href="https://social.tifia.com/en/registration" rel="nofollow">Registration</a>                                            </li>
-                                    <li class="mob-only no-bg"><a class="" href="https://social.tifia.com/en/login" rel="nofollow">Sign in</a>                                            </li>
+                                    <li class="mob-only no-bg open-acc"><a class="" href="{{ route('register') }}" rel="nofollow">Registration</a>                                            </li>
+                                    <li class="mob-only no-bg"><a class="" href="{{ route('login') }}" rel="nofollow">Sign in</a></li>
                                     <li>
-                                        <a class="mob-not">About us                                                    <span></span></a>
+                                        <a class="mob-not">About us
+                                            <span></span></a>
                                         <div class="dropdawn-menu-block">
                                             <div class="row">
                                                 <div class="col-md-6 col-12">
@@ -259,7 +260,8 @@
                 </div>
                 <div class="right-block">
                     <div class="reg-btn">
-                        <a class="" href="https://social.tifia.com/en/registration" rel="nofollow" target="blank">Open account</a>                                <a class="" href="https://social.tifia.com/en/login" rel="nofollow" target="blank">Sign in</a>
+                        <a class="" href="{{ route('register') }}" rel="nofollow">Open account</a>
+                        <a class="" href="{{ route('login') }}" rel="nofollow">Sign in</a>
                     </div>
                     <div class="lang-block">
                         <span class="separator"></span>

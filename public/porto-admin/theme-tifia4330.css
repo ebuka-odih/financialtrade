@@ -1,0 +1,2164 @@
+/* ----------------------------------------------------- OUTSIDE ----------------------------------------------------*/
+.outside-page .logo .logo-full  {
+    width: 142px;
+    height: 54px;
+}
+.outside-page .logo .logo-mini {
+    width: 44px;
+    height: 44px;
+    display: none;
+}
+
+.body-sign .panel-sign .panel-title-sign .title {
+    background-color: #50C878;
+
+}
+
+.body-sign .panel-sign .panel-body {
+    border-top-color: #50C878;
+}
+
+
+/* ----------------------------------------------------- HEADER ------------------------------------------------------*/
+.header .logo .logo-full {
+    width: 107px;
+}
+.header .logo .logo-mini {
+    width: 44px;
+    height: 44px;
+    display: none;
+}
+
+/* --------------------------------------------------- SIDEBAR  LEFT -------------------------------------------------*/
+.sidebar-left {
+    background: #3e3e3e !important;
+}
+
+.sidebar-left .nano {
+    background: url(../images/general/sidebar-bg.png) #3e3e3e !important;
+}
+
+body .sidebar-button .btn {
+    padding: 12px 12px !important;
+}
+body .sidebar-button .btnreal {
+    font-weight: bold;
+    color: #ffffff  !important;
+    background-color:  #50C878 !important;
+    border: none !important;
+}
+
+body .sidebar-button .btnreal:hover {
+    background-color: #cb2121 !important;
+}
+
+body .sidebar-button .btndemo {
+    color: #ffffff  !important;
+    font-weight: bold;
+    background-color:  #a0a0a0 !important;
+    border: none !important;
+}
+
+body .sidebar-button .btndemo:hover {
+    background-color: #6f6f6f !important;
+}
+
+.sidebar-left ul.nav-main li a {
+    color: #cacaca;
+}
+.sidebar-left ul.nav-main li a:hover,
+.sidebar-left ul.nav-main li a:focus,
+.sidebar-left ul.nav-main li a:active {
+    color: #cacaca;
+    background-color: #606060;
+}
+
+.sidebar-left ul.nav-main > li.nav-expanded > a {
+    background-color: #4c4c4c;
+}
+.sidebar-left ul.nav-main > li.nav-expanded > a:hover,
+.sidebar-left ul.nav-main > li.nav-expanded > a:focus,
+.sidebar-left ul.nav-main > li.nav-expanded > a:active {
+    color: #cacaca;
+    background-color: #4c4c4c;
+}
+
+.sidebar-left ul.nav-main > li.nav-active > a {
+    box-shadow: 2px 0 0 #50C878 inset;
+}
+.sidebar-left ul.nav-main > li.nav-active > a:hover,
+.sidebar-left ul.nav-main > li.nav-active > a:focus,
+.sidebar-left ul.nav-main > li.nav-active > a:active {
+    background-color: #4c4c4c;
+}
+
+.sidebar-left ul.nav-main > li.nav-parent > a:hover,
+.sidebar-left ul.nav-main > li.nav-parent > a:active,
+.sidebar-left ul.nav-main > li.nav-parent > a:focus {
+    background-color: #4c4c4c;
+}
+
+.sidebar-left ul.nav-main li .nav-children {
+    background-color: #424141;
+}
+.sidebar-left ul.nav-main li .nav-children li.nav-active > a {
+    color: #ffffff;
+    background-color: #424141;
+}
+.sidebar-left ul.nav-main li .nav-children li a:hover,
+.sidebar-left ul.nav-main li .nav-children li a:focus,
+.sidebar-left ul.nav-main li .nav-children li a:active {
+    background-color: #424141;
+}
+
+html.no-overflowscrolling .nano > .nano-pane > .nano-slider {
+    background-color: #50C878;
+}
+
+.sidebar-left .sidebar-button ~ .sidebar-button {
+    padding-top: 5px;
+}
+
+/* -------------------------------------------------- SIDEBAR  RIGHT -------------------------------------------------*/
+.sidebar-right-content .top-10-panel img {
+    padding-top: 10px;
+}
+.sidebar-right-content .top-10-panel h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.sidebar-right-content .top-10-panel .table th,
+.sidebar-right-content .top-10-panel .table td {
+    border: none;
+    padding: 0;
+}
+.sidebar-right-content .top-10-panel .table td {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar-right-content .top-10-panel .table td:first-child {
+    color: #248f0b;
+}
+.sidebar-right-content .top-10-panel .table td:last-child {
+    color: #1c1d1d;
+}
+
+/* ------------------------------------------------------- COMMON ----------------------------------------------------*/
+.panel-featured-primary {
+    border-color: #50C878;
+}
+
+body .btn-success {
+    background-color: #50C878 !important;
+    border-color: #50C878 !important;
+}
+body .btn-success:hover,
+body .btn-success:active,
+body .btn-success.active {
+    background-color: #fff !important;
+    border-color: #DD3D3D !important;
+    color: #DD3D3D !important;
+    text-shadow: none !important;
+}
+
+body .sidebar-button .btn-glassy {
+    font-weight: normal;
+    color: #fff !important;
+    text-shadow: none;
+    background-color: transparent !important;
+    border-color: #fff !important;
+}
+body .sidebar-button .btn-glassy:hover,
+body .sidebar-button .btn-glassy:active,
+body .sidebar-button .btn-glassy.active {
+    background-color: #343232 !important;
+    border-color: #7b7b7b !important;
+}
+
+body .sidebar-button .btn-glassy i {
+    margin-right: 0.5em;
+}
+
+#new-message-button {
+    background-color: #50C878;
+    border-color: #c22525;
+    opacity: 0.5;
+}
+
+#login-form-username-password p.panel-title {
+    padding-bottom: 27px;
+}
+
+/* ------------------------------------------------------- CONTESTS --------------------------------------------------*/
+#contest-best-invest h1 {color: transparent;}
+#contest-best-invest .conditions table tbody tr:nth-child(2n) {background: #f6f4f5;}
+
+#contest-best-invest .bg-best-invest-contest
+{
+    background: url(../images/contest/best-invest/bg-best-investc81e.html?2) no-repeat,
+    url(../images/contest/best-invest/bg-best-invest-linec81e.html?2) repeat-x 0 0;
+    background-color: #ffffff;
+    border-radius: 6px 6px 0 0;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan h2
+{
+    color: #ac0c1a;
+    font-size: 35px;
+    text-shadow: 0 1px 1px #f5f5f6;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan h3
+{
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan h4
+{
+    font-size: 23px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan table
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan table tr td
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    padding: 5px 5px;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-slogan table tr td:first-child
+{
+    text-align: right;
+}
+
+#contest-best-invest .bg-best-invest-contest .best-invest-prize img
+{
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+#contest-best-invest .best-invest-steps
+{
+    background: #ffffff;
+}
+
+#contest-best-invest .best-invest-steps .circle
+{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    line-height: 92px;
+    font-size: 36px;
+    webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#contest-best-invest .best-invest-steps .ic1
+{
+    background: #9E9E9E;
+}
+
+#contest-best-invest .best-invest-steps .ic2
+{
+    background: #969696; /* Old browsers */
+    background: -moz-linear-gradient(left,  #969696 0%, #8e8e8e 50%, #878787 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #969696 0%,#8e8e8e 50%,#878787 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #969696 0%,#8e8e8e 50%,#878787 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#contest-best-invest .best-invest-steps .ic2:after
+{
+    background-position: -42px 0;
+}
+
+#contest-best-invest .best-invest-steps .ic3
+{
+    background: #6f6f6f; /* Old browsers */
+    background: -moz-linear-gradient(left,  #6f6f6f 0%, #646464 50%, #5a5a5a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #6f6f6f 0%,#646464 50%,#5a5a5a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #6f6f6f 0%,#646464 50%,#5a5a5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#contest-best-invest .best-invest-steps .ic3:after
+{
+    background-position: -82px 0;
+}
+
+#contest-best-invest .best-invest-steps .ic4
+{
+    background: #494949; /* Old browsers */
+    background: -moz-linear-gradient(left,  #494949 0%, #393939 50%, #303030 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #494949 0%,#393939 50%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #494949 0%,#393939 50%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#contest-best-invest .best-invest-steps .ic4:after
+{
+    background-position: -124px 0;
+}
+
+#contest-best-invest .best-invest-steps .ic5
+{
+    background: #000000;
+}
+
+#contest-best-invest .best-invest-steps p
+{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contest-best-invest .best-invest-steps .ic1:after,
+#contest-best-invest .best-invest-steps .ic2:after,
+#contest-best-invest .best-invest-steps .ic3:after,
+#contest-best-invest .best-invest-steps .ic4:after
+{
+    background: url(../images/contest/best-invest/arrow-sprite.html) no-repeat 0 0;
+    width: 41px;
+    height: 21px;
+    position: absolute;
+    content: "";
+    right: -52px;
+    top: 37px;
+}
+
+#contest-best-invest .best-invest-steps .ic2:after
+{
+    background-position: -42px 0;
+}
+
+#contest-best-invest .best-invest-steps .ic3:after
+{
+    background-position: -82px 0;
+}
+
+#contest-best-invest .best-invest-steps .ic4:after
+{
+    background-position: -124px 0;
+}
+
+#contest-best-invest .best-invest-steps > div
+{
+    margin-bottom: 30px;
+}
+
+#contest-best-invest .line
+{
+    background: #ffffff;
+    text-align: center;
+}
+
+#contest-best-invest .line img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#contest-best-invest .best-invest-final
+{
+    padding-top: 15px;
+    position: relative;
+    padding-bottom: 50px;
+    background: #ffffff;
+}
+
+#contest-best-invest .best-invest-final h3
+{
+    text-align: center;
+    color: #cc0d1e;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1.0;
+    font-family: "Verdana", sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+#contest-best-invest .best-invest-final p
+{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+#contest-best-invest .registration
+{
+    background: #979797;
+    text-align: center;
+    padding: 20px 0 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contest-best-invest .registration form {margin-bottom: 5px;}
+#contest-best-invest .registration .error-summary {margin-bottom: 20px;}
+#contest-best-invest .registration .error-summary p {display: none;}
+#contest-best-invest .registration .error-summary ul {list-style: none;}
+
+#contest-best-invest .registration h3
+{
+    font-size: 25px;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#contest-best-invest .registration input
+{
+    width: 220px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    color: #272727;
+    font-size: 14px;
+    margin: 0 8px;
+    border: none;
+    border: 1px solid #7c7c7c;
+    border-radius: 0;
+    background: #ececec;
+    box-shadow: none;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+#contest-best-invest .registration .reg-btn
+{
+    background: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    min-width: 225px;
+    color: #ffffff;
+    margin: 0 8px;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    padding: 5px 5px;
+    webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#contest-best-invest .registration .open-btn-acc
+{
+    background: rgb(194,10,36); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(194,10,36,1) 0%, rgba(148,7,27,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(194,10,36,1) 0%,rgba(148,7,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(194,10,36,1) 0%,rgba(148,7,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    min-width: 250px;
+    border: 0;
+    color: #ffffff;
+    margin: 10px 8px 0;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    padding: 12px 5px;
+    webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#contest-best-invest .contest-info-block .nav li
+{
+    width: 50%;
+    background: #d2c7c7;
+    text-align: center;
+    border-top: 1px solid #d2c7c7;
+    border-left: 1px solid #d2c7c7;
+    border-right: 1px solid #d2c7c7;
+    webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+#contest-best-invest .contest-info-block .nav li a
+{
+    color: #ffffff;
+    font-size: 19px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    margin-right: 0;
+}
+
+#contest-best-invest .contest-info-block .nav li.active
+{
+    background: #ffffff;
+    border-top: 1px solid #e0d5d8;
+    border-left: 1px solid #e0d5d8;
+    border-right: 1px solid #e0d5d8;
+}
+
+#contest-best-invest .contest-info-block .nav li.active a
+{
+    color: #6a4d5c;
+    text-shadow: none;
+}
+
+#contest-best-invest .contest-info-block .tab-content
+{
+    background: #ffffff;
+    border: 2px solid #e0d5d8;
+    margin-bottom: 20px;
+    margin-top: -2px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table thead tr th
+{
+    text-align: center;
+    font-size: 15px;
+    color: #4f4449;
+    border-bottom: 2px solid #dedadc;
+    padding: 10px 0;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr td
+{
+    text-align: center;
+    color: #786f73;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr:nth-child(2n)
+{
+    background: #f6f4f5;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr.lider td
+{
+    color: #d52626;
+    font-weight: bold;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr.lider td:first-child
+{
+    position: relative;
+}
+
+#contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr.lider td:first-child:before
+{
+    background: url(../images/contest/lider.html) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions
+{
+    padding: 0 30px 30px 30px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions h3
+{
+    color: #d92626;
+    font-size: 18px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions ul
+{
+    padding-left: 20px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions ul li
+{
+    font-size: 14px;
+    color: #8f7878;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions ul li ul
+{
+    margin-top: 10px;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions ul li table
+{
+    margin: 10px 0;
+}
+
+#contest-best-invest .contest-info-block .tab-content .conditions ul li table tr td
+{
+    padding: 10px 20px;
+}
+
+#tifia-top-10-index .top10-slogan-block
+{
+
+    font-size: 0;
+    padding: 50px 0;
+    border-bottom: 1px solid #dadada;
+    background: #f6f6f6;
+    webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+#tifia-top-10-index .top10-slogan-block > div
+{
+
+}
+
+#tifia-top-10-index .top10-slogan-block .logo-top > img
+{
+    margin: 0 auto;
+}
+
+#tifia-top-10-index .top10-slogan-block .slogan-text
+{
+    border-left: 1px solid #c9c5c5;
+}
+
+#tifia-top-10-index .top10-slogan-block .slogan-text > p
+{
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#tifia-top-10-index .top10-slogan-block .btn-block-top10
+{
+    text-align: right;
+}
+
+#tifia-top-10-index .btn-block-top10 > a
+{
+    display: inline-block;
+    padding: 9px 25px 9px;
+    background: #5671a5;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+#tifia-top-10-index .vcenter
+{
+    display: inline-block;
+    float: none;
+    vertical-align: bottom;
+}
+
+#tifia-top-10-index .btn-block-top10 > a:hover,
+#tifia-top-10-index .btn-block-top10 > a:focus,
+#tifia-top-10-index .btn-block-top10 > a:active
+{
+    background: #fff;
+    text-decoration: none;
+    border: 1px solid #5671a5;
+    color: #5671a5;
+}
+
+#tifia-top-10-index .top10-advantages
+{
+    background: #fdfdfd;
+    text-align: center;
+    webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
+
+}
+
+    #tifia-top-10-index .top10-advantages ul
+    {
+        display: inline-block;
+        padding-left: 0;
+        width: 100%;
+    }
+
+        #tifia-top-10-index .top10-advantages ul li
+        {
+            list-style-type: none;
+            display: inline-block;
+            width: 17.5%;
+            border: 1px solid #d3d3d5;
+            vertical-align: top;
+            margin: 20px 1%;
+            webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+        }
+
+        #tifia-top-10-index .top10-advantages ul li h3
+        {
+            background: #4F4F4F;
+            border: 1px solid #4F4F4F;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 10px 10px 10px;
+            text-align: left;
+            margin-top: 0;
+            webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+        }
+
+        /*#tifia-top-10-index .top10-advantages ul li:first-child + li h3
+        {
+            background: #8c103d;
+        }
+
+        #tifia-top-10-index .top10-advantages ul li:first-child + li + li h3
+        {
+            background: #065280;
+        }
+
+        #tifia-top-10-index .top10-advantages ul li:first-child + li + li + li h3
+        {
+            background: #7396a4;
+        }
+
+        #tifia-top-10-index .top10-advantages ul li:first-child + li + li + li + li h3
+        {
+            background: #489f46;
+        }*/
+
+        #tifia-top-10-index .top10-advantages ul li p
+        {
+            padding: 5px 10px;
+            font-size: 14px;
+            color: #555555;
+            font-weight: 600;
+            text-align: left;
+        }
+
+#tifia-top-10-index .top10-main-part
+{
+    margin: 30px 0;
+    webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+
+#tifia-top-10-index .top10-main-part .tab-content
+{
+    border: 0;
+}
+
+    #tifia-top-10-index .top10-main-part .nav
+    {
+        background: #ffffff;
+        border-bottom: 0;
+        padding-top: 30px;
+        webkit-border-radius: 6px 6px 0 0;
+        -moz-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li
+    {
+        margin-bottom: 0;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li a, #tifia-top-10-index .top10-main-part .nav-tabs li a:hover
+    {
+        background: #ffffff;
+        border: 0;
+        font-size: 13px;
+        color: #247bb0;
+        text-decoration: underline;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li.active a
+    {
+        color: #1c1c1c;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability table thead tr th
+    {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #343434;
+        font-weight: 600;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability table tbody tr td:first-child
+    {
+        color: #117ab5;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability .minus
+    {
+        color: #cc1d1d;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability .plus
+    {
+        color: #4c9a39;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability table tbody tr td
+    {
+        font-size: 14px;
+        color: #1e1e1e;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure
+    {
+        border-bottom: 2px solid #ddd;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure .only-mobile
+    {
+        display: none !important;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.table-adaptive table
+    {
+        width: 100%;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure thead tr th
+    {
+        color: #1c1c1c;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td:first-child
+    {
+        color: #117ab5;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio h3
+    {
+        color: #1c1c1c;
+        font-size: 18px;
+    }
+
+    #tifia-top-10-index .top10-main-part .table-indicators
+    {
+        border: 1px solid #dddddd;
+        padding: 5px;
+        webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+                border-radius: 6px;
+    }
+
+        #tifia-top-10-index .top10-main-part .table-indicators table
+        {
+            border: 0;
+            margin-bottom: 0;
+
+        }
+
+            #tifia-top-10-index .top10-main-part .table-indicators .table-striped > tbody > tr:nth-of-type(odd)
+            {
+                background: #ffffff;
+            }
+
+            #tifia-top-10-index .top10-main-part .table-indicators .table-striped > tbody > tr td
+            {
+                border-top: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #1c1c1c;
+            }
+
+            #tifia-top-10-index .top10-main-part .table-indicators .table-striped > tbody > tr td:first-child + td
+            {
+                color: #2186bf;
+            }
+
+    #tifia-top-10-index .top10-main-part .discussion .panel-body
+    {
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+    }
+
+
+#tifia-top-10-index .begin-trader
+{
+    webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+            border-radius: 6px;
+}
+
+
+#tifia-top-10-index .begin-trader .slogan
+{
+    background: #f6f6f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadada;
+    webkit-border-radius: 6px 6px 0 0;
+        -moz-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+}
+
+    #tifia-top-10-index .begin-trader .slogan h3
+    {
+        font-size: 14px;
+        color: #222222;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+#tifia-top-10-index .begin-trader .block-steps
+{
+    background: #ffffff;
+    text-align: center;
+}
+
+#tifia-top-10-index .begin-trader .first-step
+{
+    border-top: 3px solid #e24956;
+    border-bottom: 3px solid #e24956;
+    border-left: 3px solid #e24956;
+    height: 103px;
+    position: relative;
+    webkit-border-radius: 6px 0 0 6px;
+        -moz-border-radius: 6px 0 0 6px;
+        border-radius: 6px 0 0 6px;
+}
+
+    #tifia-top-10-index .begin-trader .first-step:after
+    {
+        position: absolute;
+        width: 43px;
+        height: 103px;
+        content: "";
+        background: url(../images/top10/arrow-first.png) no-repeat 0 0;
+        right: -43px;
+        top: -3px;
+    }
+
+#tifia-top-10-index .begin-trader .second-step
+{
+    height: 103px;
+    border-top: 3px solid #5c8593;
+    border-bottom: 3px solid #5c8593;
+    border-left: 3px solid #5c8593;
+    position: relative;
+    webkit-border-radius: 6px 0 0 6px;
+        -moz-border-radius: 6px 0 0 6px;
+        border-radius: 6px 0 0 6px;
+}
+
+    #tifia-top-10-index .begin-trader .second-step:before
+    {
+        position: absolute;
+        width: 43px;
+        height: 103px;
+        content: "";
+        background: url(../images/top10/arrow-second.png) no-repeat 0 0;
+        right: -43px;
+        top: -3px;
+    }
+
+#tifia-top-10-index .begin-trader .third-step
+{
+    border: 3px solid #5671a5;
+    height: 103px;
+    webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+}
+
+    #tifia-top-10-index .begin-trader ul
+    {
+        padding-left: 0;
+        display: inline-block;
+        width: 100%;
+        margin: 30px 0 15px;
+    }
+
+        #tifia-top-10-index .begin-trader ul li
+        {
+            list-style-type: none;
+            width: 27%;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 50px;
+        }
+
+        #tifia-top-10-index .begin-trader .first-step
+        {
+            margin-left: 0;
+        }
+
+        #tifia-top-10-index .begin-trader .third-step
+        {
+            width: 33%;
+        }
+
+#tifia-top-10-index .begin-trader ul li div
+{
+    background: url(../images/top10/sprite.png) no-repeat 0 0;
+    width: 48px;
+    height: 58px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#tifia-top-10-index .begin-trader ul li.second-step div
+{
+    background-position: -48px 0px;
+    width: 47px;
+}
+
+#tifia-top-10-index .begin-trader ul li.second-step p
+{
+    color: #5c8593;
+}
+
+#tifia-top-10-index .begin-trader ul li.third-step div
+{
+    background-position: -95px 0px;
+    width: 56px;
+    height: 56px
+}
+
+#tifia-top-10-index .begin-trader ul li.third-step p
+{
+    color: #065280;
+}
+
+#tifia-top-10-index .begin-trader ul li p
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #e24956;
+}
+
+#tifia-top-10-index .begin-trader table
+{
+    width: 100%;
+    height: 100%;
+}
+
+    #tifia-top-10-index .begin-trader table tr td
+    {
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    #tifia-top-10-index .begin-trader .btn-block-top10
+    {
+        background: #ffffff;
+        text-align: right;
+        padding-bottom: 20px;
+        webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
+    }
+
+.top-10-portfolio
+{
+    padding: 0;
+}
+
+    .top-10-portfolio .top-part
+    {
+        padding: 15px 30px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f4f4f4+51,f4f4f4+60,ceced0+100 */
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 51%, #f4f4f4 60%, #ceced0 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 51%,#f4f4f4 60%,#ceced0 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 51%,#f4f4f4 60%,#ceced0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
+
+    .top-10-portfolio .top-part .left-part
+    {
+        float: left;
+    }
+
+    .top-10-portfolio .top-part .right-part
+    {
+        float: right;
+    }
+
+    .top-10-portfolio .top-part .right-part h3
+    {
+        margin-top: 12px;
+        font-size: 15px;
+        color: #1d1d1d;
+        font-weight: 600;
+    }
+
+    .top-10-portfolio .bottom-part
+    {
+        padding: 14px 30px;
+        background: #047243; /* Old browsers */
+        background: -moz-linear-gradient(top,  #047243 0%, #005a34 51%, #064729 60%, #00351e 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #047243 0%,#005a34 51%,#064729 60%,#00351e 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #047243 0%,#005a34 51%,#064729 60%,#00351e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .top-10-portfolio .bottom-part .left-part
+    {
+        float: left;
+        width: 350px;
+    }
+
+    .top-10-portfolio .highcharts-container
+    {
+        width: 100%;
+    }
+
+    .top-10-portfolio .bottom-part .right-part
+    {
+        margin-left: 360px;
+    }
+
+    .top-10-portfolio .bottom-part .right-part p
+    {
+        color: #44b180;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .top-10-portfolio .bottom-part .right-part p span
+    {
+        color: #ff3c3c;
+    }
+
+    .top-10-portfolio .bottom-part .right-part h4
+    {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .top-10-portfolio .bottom-part .right-part h5
+    {
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .top-10-portfolio .bottom-part .right-part a
+    {
+        background: #fdfdfd; /* Old browsers */
+        background: -moz-linear-gradient(top,  #fdfdfd 0%, #ccced1 68%, #adb0b5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #fdfdfd 0%,#ccced1 68%,#adb0b5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #fdfdfd 0%,#ccced1 68%,#adb0b5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+        padding: 10px 15px;
+        font-size: 16px;
+        color: #1e1e1e;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+            border-radius: 4px;
+
+    }
+
+    .top-10-portfolio .bottom-part .right-part a:hover
+    {
+        text-decoration: none;
+        background: #ffffff;
+    }
+
+    /*.top-10-portfolio .highcharts-background
+    {
+        fill: transparent !important;
+    }*/
+
+    .top-10-portfolio tspan
+    {
+        fill: #878787;
+    }
+
+    .top-10-portfolio text
+    {
+        fill: #878787 !important;
+    }
+
+    .width-less-600 .bottom-part
+    {
+        text-align: center;
+        padding: 7px 30px;
+    }
+
+    .width-less-600 .bottom-part .left-part
+    {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .width-less-600 .bottom-part .right-part
+    {
+        margin-left: 0;
+        padding: 5px 10px;
+        margin-top: -25px;
+    }
+
+    .width-less-600 .bottom-part .right-part p
+    {
+        font-size: 11px;
+        display: inline-block;
+    }
+
+    .width-less-600 .bottom-part .right-part h4
+    {
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    .width-less-600 .bottom-part .right-part h5
+    {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .width-less-600 .bottom-part .right-part a
+    {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2px 10px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .width-less-600 .top-part .left-part img
+    {
+        width: 70px;
+    }
+
+    .width-less-600 .top-part .right-part h3
+    {
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .width-less-600 #top-10-graph
+    {
+        height: 113px !important;
+    }
+
+    .width-less-600 .top-part
+    {
+        padding: 15px;
+    }
+
+span.rollover-sum, span.withdrawal-total-sum {
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 1800px) {
+    #tifia-top-10-index .btn-block-top10 > a
+    {
+        padding: 9px 15px;
+        font-size: 10px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1550px) {
+    #contest-best-invest .best-invest-steps .ic1:after,
+    #contest-best-invest .best-invest-steps .ic2:after,
+    #contest-best-invest .best-invest-steps .ic3:after,
+    #contest-best-invest .best-invest-steps .ic4:after
+    {
+        background: none;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .slogan-text > p
+    {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    #tifia-top-10-index .btn-block-top10 > a
+    {
+        font-size: 12px;
+        padding: 9px 15px 9px
+    }
+
+    #tifia-top-10-index .top10-advantages ul li
+    {
+        width: 16%;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li p
+    {
+        font-size: 12px;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li h3
+    {
+        font-size: 15px;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability table tbody tr td,
+    #tifia-top-10-index .top10-main-part .profitability table thead tr th,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td
+    {
+        font-size: 12px;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li
+    {
+        width: 100%;
+    }
+
+    #tifia-top-10-index .begin-trader .third-step
+    {
+        width: 26%;
+    }
+
+    #tifia-top-10-index .begin-trader ul li p
+    {
+        font-size: 12px;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .btn-block-top10
+    {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .btn-block-top10 a
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .slogan-text
+    {
+        width: 70%;
+    }
+
+
+}
+
+@media only screen and (max-width : 991px) {
+    #contest-best-invest .best-invest-steps .circle
+    {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 48px;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .btn-block-top10,
+    #tifia-top-10-index .top10-slogan-block > div
+    {
+        text-align: center;
+    }
+
+    #tifia-top-10-index .top10-slogan-block .slogan-text
+    {
+        margin: 20px 0;
+        border-left: 0;
+    }
+
+    #tifia-top-10-index .vcenter
+    {
+        display: block;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li
+    {
+        width: 30%;
+    }
+
+    #tifia-top-10-index .top10-main-part .profitability table tbody tr td,
+    #tifia-top-10-index .top10-main-part .profitability table thead tr th,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td
+
+    {
+        padding: 4px 2px;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li
+    {
+        display: block;
+        text-align: center;
+    }
+
+    #tifia-top-10-index .top10-main-part .nav-tabs li.active a
+    {
+        background: #dddddd;
+        font-size: 13px;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #tifia-top-10-index .begin-trader ul li,
+    #tifia-top-10-index .begin-trader .third-step
+    {
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 10px;
+        webkit-border-radius: 6px !important;
+        -moz-border-radius: 6px !important;
+        border-radius: 6px !important;
+    }
+
+    #tifia-top-10-index .begin-trader .first-step:after,
+    #tifia-top-10-index .begin-trader .second-step:before
+    {
+        position: relative;
+    }
+
+    #tifia-top-10-index .begin-trader .first-step
+    {
+        border-right: 3px solid #e24956;
+    }
+
+    #tifia-top-10-index .begin-trader .second-step
+    {
+        border-right: 3px solid #5c8593;
+    }
+
+    #tifia-top-10-index hr
+    {
+        display: none;
+    }
+
+    #tifia-top-10-index .begin-trader .btn-block-top10
+    {
+        text-align: center;
+    }
+
+    /*#tifia-top-10-index .top10-main-part .portfolio table.structure thead tr th,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td
+    {
+        font-size: 9px;
+        padding: 2px;
+    }*/
+
+    #tifia-top-10-index .top10-slogan-block .slogan-text
+    {
+        width: 100%;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.table-adaptive .footable-first-visible
+    {
+        text-align: left;
+        font-size: 14px;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #d0dce0 53%, #d0dce0 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#d0dce0 53%,#d0dce0 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ffffff 0%,#d0dce0 53%,#d0dce0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.table-adaptive table
+    {
+        font-size: 14px;
+    }
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure .footable-first-visible
+    {
+        display: table-cell !important;
+        text-align: left;
+    }
+
+
+    #tifia-top-10-index .table-year tr th.footable-first-visible:first-child,
+    #tifia-top-10-index .table-year tr td.footable-first-visible:first-child
+    {
+        text-align: center;
+    }
+
+    #tifia-top-10-index .table-year tr td,
+    #tifia-top-10-index .table-year tr th
+    {
+        padding: 4px 2px;
+    }
+
+    #tifia-top-10-index .footable-details td
+    {
+        text-align: right;
+    }
+
+    #tifia-top-10-index .fooicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings' !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+    #tifia-top-10-index .fooicon:before,
+    #tifia-top-10-index .fooicon:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #tifia-top-10-index .fooicon-plus:before {
+        content: "\2b";
+    }
+
+    #tifia-top-10-index .fooicon-minus:before {
+        content: "\2212";
+    }
+
+    form.with-campaigns-filter
+    {
+        display: block;
+    }
+
+    form.with-campaigns-filter > div
+    {
+        width: 100%;
+    }
+
+    form.with-campaigns-filter .ib-search-form__filter-btn
+    {
+        display: none;
+    }
+
+    form.with-campaigns-filter .ib-search-form__filter-btn-only-mob
+    {
+        display: block !important;
+    }
+
+
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    #contest-best-invest .registration input
+    {
+        margin: 0 auto 15px auto;
+    }
+
+    #contest-best-invest .bg-best-invest-contest .best-invest-slogan h2
+    {
+        font-size: 25px;
+    }
+
+    #contest-best-invest .bg-best-invest-contest .best-invest-slogan table tr td
+    {
+        font-size: 16px;
+    }
+
+    #contest-best-invest .bg-best-invest-contest .best-invest-slogan h3
+    {
+        font-size: 20px;
+    }
+
+    #contest-best-invest .bg-best-invest-contest .best-invest-slogan h4
+    {
+        font-size: 18px;
+    }
+
+    #contest-best-invest .contest-info-block .nav li
+    {
+        width: 100%;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li
+    {
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    #tifia-top-10-index .btn-block-top10 > a
+    {
+        font-size: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+
+    #tifia-top-10-index .top10-main-part .portfolio table.structure thead tr th,
+    #tifia-top-10-index .top10-main-part .portfolio table.structure tbody tr td
+    {
+        font-size: 14px;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li h3
+    {
+        display: inline-block;
+        margin: 0;
+        webkit-border-radius: 6px 0 0 6px;
+        -moz-border-radius: 6px 0 0 6px;
+        border-radius: 6px 0 0 6px;
+        font-size: 21px;
+        width: 115px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 11px;
+    }
+
+    #tifia-top-10-index .top10-advantages ul li p
+    {
+        display: inline-block;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        vertical-align: middle;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+    .top-10-portfolio .bottom-part
+    {
+        text-align: center;
+        padding: 13px 30px;
+    }
+
+    .top-10-portfolio .bottom-part .left-part
+    {
+        float: none;
+        display: inline-block;
+    }
+
+    .top-10-portfolio .bottom-part .right-part
+    {
+        margin-left: 0;
+        padding: 5px 10px;
+        margin-top: -25px;
+    }
+
+    .top-10-portfolio .bottom-part .right-part p
+    {
+        font-size: 11px;
+        display: inline-block;
+    }
+
+    .top-10-portfolio .bottom-part .right-part h4
+    {
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+
+    .top-10-portfolio .bottom-part .right-part h5
+    {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .top-10-portfolio .bottom-part .right-part a
+    {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .top-10-portfolio .top-part .left-part img
+    {
+        width: 70px;
+    }
+
+    .top-10-portfolio .top-part .right-part h3
+    {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .top-10-portfolio #top-10-graph
+    {
+        height: 145px !important;
+    }
+
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #contest-best-invest .best-invest-prize {display: none;}
+    #contest-best-invest .contest-info-block .nav li
+    {
+        width: 100%;
+    }
+
+    #tifia-top-10-index .begin-trader ul li,
+    #tifia-top-10-index .begin-trader .third-step
+    {
+        width: 90%;
+    }
+
+    #tifia-top-10-index .btn-block-top10 > a
+    {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width : 380px) {
+
+    .top-10-portfolio .bottom-part .left-part
+    {
+        width: 100%;
+    }
+
+    .top-10-portfolio .top-part
+    {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    #contest-best-invest .contest-info-block .tab-content .raiting-contest table thead tr th {font-size: 11px;}
+    #contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr td {font-size: 12px;}
+    #contest-best-invest .contest-info-block .tab-content .raiting-contest table tbody tr.lider td:first-child:before
+    {
+        background: none;
+    }
+}
+.ld-block {margin: 0 0 25px 0;padding: 10px;border: 1px solid #ddd;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.1);}.ld-block-head {color: #fff;margin: 0 0 0 0;padding-top: 1px;border-bottom: 3px solid #50C878;border-top-left-radius: 5px;border-top-right-radius: 5px;background: url(../images/general/sidebar-bg.png) #3e3e3e !important;background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );}.ld-block-head h3 {color: #fffIimportant;}.fl-ini {float: initial;}.b-red {background-color: #50C878;margin-right: 5px;}
+
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+td.bold {
+    font-weight: bold;
+}
+
+.header .toggle-sidebar-left {
+    cursor: pointer;
+    background: transparent;
+    color: #303030;
+    font-size: 22px;
+}
+
+.daterangepicker td.in-range:not(.active) {
+    background-color: #a4caea;
+}
+
+.iti {
+    display: block;
+}
+
+.ib-panel-header {
+    position: relative;
+}
+
+.ib-panel-header__left {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ib-panel-header__right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ib-search-form {
+    position: relative;
+}
+
+.ib-search-form__filter {
+    float: left;
+    width: 25%;
+    min-width: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ib-search-form__filter label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+form.with-campaigns-filter
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form.with-campaigns-filter .ib-search-form__space
+{
+    display: none;
+}
+
+form.with-campaigns-filter .ib-search-form__filter-btn-only-mob
+{
+    display: none;
+}
+
+form.with-campaigns-filter > div
+{
+    float: none !important;
+    position: static;
+}
+
+form.with-campaigns-filter > div.ib-search-form__date-range
+{
+    margin-left: auto;
+}
+
+form.with-campaigns-filter .select2-container
+{
+    width: 100% !important;
+}
+
+.ib-search-form__filter-btn {
+    float: left;
+    width: 16.666666667%;
+    min-width: 106px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ib-search-form__space {
+    width: 8.33333333%;
+    float: left;
+}
+
+.ib-search-form__date-range {
+    float: left;
+    width: 25%;
+    /*margin-left: 33.33333333%;*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media all and (max-width: 1669px) {
+    .ib-search-form__space {
+        /*width: 0;*/
+    }
+
+    .ib-search-form__date-range {
+        min-width: 246px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media all and (max-width: 1520px) {
+    form.with-campaigns-filter > div.ib-search-form__date-range
+    {
+        margin-left: 0;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1249px) {
+    .ib-search-form__space {
+        width: 0;
+    }
+    .ib-search-form__date-range {
+        margin: 0;
+        position: static;
+    }
+}
+
+@media all and (max-width: 944px) {
+    .ib-search-form__space {
+        width: 0;
+    }
+
+    .ib-search-form__date-range {
+        margin: 0;
+        position: static;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .ib-panel-header__right {
+        position: static;
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .ib-search-form__filter {
+        width: 100%;
+    }
+
+    .ib-search-form__filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ib-search-form__filter-btn label {
+        display: none;
+    }
+
+    .ib-search-form__date-range {
+        width: 100%;
+    }
+}
+
+.ref-table {
+    margin-bottom: 0 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.table.ref-table td,
+.table.ref-table th {
+    padding: 12px;
+}
+
+.ref-table,
+.ref-table thead:first-child,
+.ref-table thead:last-child,
+.ref-table > tfoot > tr > th:first-child,
+.ref-table > tfoot > tr > th:last-child,
+.ref-table tr,
+.ref-table td:last-child,
+.ref-table td:first-child {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.ref-table thead:first-child > tr:first-child > th {
+    border: none !important;
+}
+
+.rebate-account-type-block, .rebate-table-wrapper {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+    transform: translateZ(0);
+}
+
+.rebate-account-type-block--blocked, .rebate-table-wrapper.blocked {
+    opacity: 0.4;
+    pointer-events: none;
+    user-select: none;
+}
+
+.rebate-table-wrapper {
+    position: relative;
+}
+
+tr.blocked {
+    opacity: .6;
+    pointer-events: none;
+    user-select: none;
+}
+
+.checkbox-custom {
+    display: inline-block;
+}
+
+.rto-block {
+    padding: 15px;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    opacity: 1;
+    background-color: #ffffff;
+    transition: opacity .5s ease-in;
+}
+
+.rto-block--fixed {
+    position: fixed;
+    z-index: 3;
+    box-shadow: 0 0 12px hsla(0, 0%, 0%, .2);
+}
+
+.rto-block--skipped {
+    opacity: 0;
+}
+
+.rto-block__select-block {
+    display: inline-block;
+}
+
+.rto-block__select-label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.rto-block__checkbox-count {
+    padding: 3px 7px;
+    color: #ffffff;
+    background-color: #50C878;
+    transition: background-color .2s ease-in;
+}
+
+.rto-block__checkbox-count.zero {
+    background-color: #cccccc;
+}
+
+.rto-block__set-status-block {
+    position: relative;
+    display: inline-block;
+}
+
+.rto-block__set-status-block a {
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rto-status__dropdown {
+    transition: color .2s ease-in;
+    user-select: none;
+}
+
+.rto-status__dropdown--disabled {
+    pointer-events: none;
+    color: #cccccc;
+}
+
+.rto-status__action {
+    user-select: none;
+}
+
+.rto-status__action--disabled {
+    pointer-events: none;
+    color: #cccccc !important;
+}
+
+.panel-without-padding {
+    padding: 0;
+}
+
+.global-settings-panel .panel-body {
+    overflow: auto;
+}
+
+/* *************** AFFILIATE REGISTRATION PAGE ************* */
+.affiliate-registration {
+    padding: 40px;
+    background-color: #FDFDFD;
+    background-image: url(../images/affiliate/registration-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    max-width: 770px;
+}
+
+.affiliate-registration h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.affiliate-registration-text {
+    font-size: 13px;
+    color: #909090;
+    margin-bottom: 30px;
+    max-width: 60%;
+}
+
+.affiliate-registration-form-wrapper {
+    margin-bottom: 30px;
+}
+
+.affiliate-registration-form-wrapper form {
+    max-width: 60%;
+}
+
+.affiliate-registration-form-wrapper label {
+    font-size: 13px;
+    color: #909090;
+    margin-left: 5px;
+}
+
+@media all and (max-width: 1130px),(min-width: 1201px) and (max-width: 1400px) {
+    .affiliate-registration {
+        max-width: 375px;
+        min-height: 530px;
+        padding: 30px;
+        background-position: bottom center;
+    }
+
+    .affiliate-registration-text, .affiliate-registration-form-wrapper form {
+        max-width: 100%;
+    }
+
+    .affiliate-registration-button-wrapper .btn {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .affiliate-page {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+/* *************** /AFFILIATE REGISTRATION PAGE ************* */

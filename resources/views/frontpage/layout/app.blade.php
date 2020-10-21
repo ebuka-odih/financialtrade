@@ -24,14 +24,96 @@
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PBQR5C');</script>
+        })(window,document,'script','dataLayer','GTM-PBQR5C');
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta name="google-site-verification" content="SDlWYorMeLVq8zvHiYc9GTQ0vXU3ty16DtKPhN6yqjY" />
     <meta name="p:domain_verify" content="23e5dfafdbd40d54c7785637de34ae31"/>
 
     <!-- Chatra {literal} -->
+    <script>
 
+        ChatraGroupID = 'miQzbXCuwfbyCxha7';
+
+        (function(d, w, c) {
+            w.ChatraID = 'vJtm9z7cLt37w3Tf9';
+            var s = d.createElement('script');
+            w[c] = w[c] || function() {
+                (w[c].q = w[c].q || []).push(arguments);
+            };
+            s.async = true;
+            s.src = 'https://call.chatra.io/chatra.js';
+            if (d.head) d.head.appendChild(s);
+        })(document, window, 'Chatra');
+
+        window.ChatraSetup = {
+            language: "en"
+        }
+
+        Chatra('setColors', {
+            buttonBg: '#E52525', // chat button background color
+            clientBubbleBg: '#333333', // visitor’s message bubble color
+        });
+
+        function hasClass(elem,cls) {
+            return elem.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+        }
+
+        Tifia = {
+            cabinetUrl: 'https://social.tifia.com/en/',
+            apiUrl: 'https://api.tifia.com',
+            quotesUrl: 'https://tifia.com'
+        };
+
+        Lang = {
+            'day'               : 'day',
+            'days'              : 'days',
+            'View'              : 'View',
+            'Equity'            : 'Equity',
+            'Lifespan'          : 'Lifespan',
+            'Investors'         : 'Investors',
+            'Profitability'     : 'Profitability',
+            'InvestorsEquity'   : 'Investor&#039;s equity',
+            'TradersCommission' : 'Trader&#039;s commission',
+        };
+
+        App = {
+            loader: {
+                getObj: function(obj) {
+                    if (obj.closest('.loader-wrapper')) {
+                        return obj.closest('.loader-wrapper');
+                    } else if ( obj.closest('.dropdown-menu').length > 0 && obj.closest('.btn-group').length > 0 ) {
+                        return obj.closest('.btn-group');
+                    }
+
+                    return obj;
+                },
+                show: function (obj) {
+                    var obj = this.getObj(obj);
+
+                    if (!obj.hasClass('no-loader')) {
+                        obj.addClass('ajax-loading');
+
+                        if (obj.height() >= 50) {
+                            obj.append('<div class="loader"></div>');
+                        } else {
+                            obj.append('<div class="loader __mini"></div>');
+                        }
+
+                        obj.addClass('overlay');
+                    }
+                },
+                hide: function (obj) {
+                    var obj = this.getObj(obj);
+
+                    obj.removeClass('ajax-loading');
+                    obj.find('.loader').remove();
+                    obj.removeClass('overlay');
+                },
+            }
+        }
+    </script>
     <!-- /Chatra {/literal} -->
 
     <style>
@@ -63,20 +145,21 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     <script type="text/javascript"> _linkedin_partner_id = "1429585"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1429585&amp;fmt=gif" /> </noscript>
-    <script type="application/ld+json">{
-    "@context": {
-        "@vocab": "http://schema.org/"
-    },
-    "@type": "BreadcrumbList",
-    "itemListElement": {
-        "@type": "ListItem",
-        "item": {
-            "@id": "https://tifia.com/en",
-            "name": "Tifia Forex broker. Online Forex trading with ECN broker"
-        },
-        "position": 1
-    }
-}</script></head>
+{{--    <script type="application/ld+json">{--}}
+{{--    "@context": {--}}
+{{--        "@vocab": "http://schema.org/"--}}
+{{--    },--}}
+{{--    "@type": "BreadcrumbList",--}}
+{{--    "itemListElement": {--}}
+{{--        "@type": "ListItem",--}}
+{{--        "item": {--}}
+{{--            "@id": "https://tifia.com/en",--}}
+{{--            "name": "Tifia Forex broker. Online Forex trading with ECN broker"--}}
+{{--        },--}}
+{{--        "position": 1--}}
+{{--    }--}}
+{{--}</script>--}}
+</head>
 
 <body class="lang-en">
 <!-- Google Tag Manager (noscript) -->
@@ -91,7 +174,7 @@
                 <div class="left-block mb-5">
                     <div class="logo">
                        <p>
-                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="{{ asset('images/new-site/logo2.png') }}">FinancialTradeMarket</a>
+                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="{{ asset('images/new-site/logo-white.png') }}">FinancialTradeMarket</a>
                        </p>
                     </div>
                 </div>
@@ -111,8 +194,6 @@
                                                     <h4>Meet us</h4>
                                                     <ul class="dropdawn-menu">
                                                         <li><a href="en/company/why-tifia.html"><span>Why us?</span></a></li>
-                                                        <li><a href="en/company/company-news.html"><span>Our news</span></a></li>
-                                                        <li><a href="en/company/legal-information.html"><span>Legal information</span></a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-6 col-12">
@@ -128,87 +209,18 @@
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
-                                        <a class="mob-not">For Traders                                                    <span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Forex trading</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/trading-accounts.html"><span>Trading accounts</span></a></li>
-                                                        <li><a href="en/trading-instruments.html"><span>Trading instruments</span></a></li>
-                                                        <li><a href="en/ecn-system.html"><span>EСN system</span></a></li>
-                                                        <li><a href="en/trading-platforms/metatrader.html"><span>MT4 trading platform</span></a></li>
-                                                        <li><a href="en/trading-platforms/metatrader-5.html"><span>MT5 trading platform</span></a></li>
-                                                        <li><a href="en/payments.html"><span>Deposit/Withdrawal</span></a></li>
-                                                        <li><a href="https://social.tifia.com/en/new-account/demo"><span>Try on demo</span></a></li>
-                                                        <li><a href="en/faq.html"><span>FAQ</span></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Forex tools</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/market-research.html"><span>Financial markets analysis</span></a></li>
-                                                        <li><a href="en/analytics.html"><span>Analytics from Claws &amp; Horns</span></a></li>
-                                                        <li><a href="en/analytics/forex-calculator.html"><span>Trader&#039;s Calculator</span></a></li>
-                                                        <li><a href="en/analytics/economic-calendar.html"><span>Economic calendar</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
-                                        <a>Social Trading<span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <div class="row d-flex align-items-start">
-                                                <div class="col-12 d-flex align-items-start">
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/social-trading.html"><span>What is it?</span></a></li>
-                                                        <li><a href="en/social-trading/how-it-works.html"><span>How it works?</span></a></li>
-                                                        <li><a href="en/faq.html#social-trading"><span>FAQ Social Trading</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="#">Social Trading<span></span></a>
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
-                                        <a>Promotions<span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Forex contests and promo</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/promotions.html"><span>All Promotions</span></a></li>
-                                                        <li><a href="en/contests/rush-for-profits-2020.html"><span>Rush for profits</span></a></li>
-                                                        <li><a href="en/promotions/deposits-and-withdrawals-forex-cashback.html"><span>Forex Cashback</span></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Forex bonuses</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/bonus-100.html"><span>Bonus 100%</span></a></li>
-                                                        <li><a href="en/bonus-30.html"><span>Bonus 30%</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="#">Promotions</a>
+
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
-                                        <a>Partnership<span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <div class="row d-flex align-items-start">
-                                                <div class="col-12 d-flex align-items-start">
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/partners.html"><span>For Partners</span></a></li>
-                                                        <li><a href="en/partners/commissions.html"><span>Partners&#039; commissions</span></a></li>
-                                                        <li><a href="en/partners.html#partners-form"><span>Regional representative</span></a></li>
-                                                        <li><a href="en/partners/forex-rebate.html"><span>Forex Rebate service </span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li class="mob-only">
@@ -395,12 +407,14 @@
                 <li>
                     <div class="logo-footer">
                         <p>
-                            <a style="margin-top: -30px; color: white; line-height: 1px; font-size: 16px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="images/new-site/logo2.png">FinancialTradeMarket</a>
+                            <a style="margin-top: -30px; color: white; line-height: 1px; font-size: 16px" href="index.blade.php">
+                                <img  alt="FTM Markets Limited" height="70" src="{{ asset('images/new-site/logo-white.png') }}">
+                                <br>FinancialTradeMarket</a>
                         </p>
                     </div>
                     <p>Copyright © 2011 - 2020<br>
                         Tifia Markets Limited, All rights reserved<br>
-                        Email: <a href="mailto:support@tifia.com">support@tifia.com</a>
+                        Email: <a href="mailto:support@tifia.com">support@financialtrademarkets.com/</a>
                     </p>
                 </li>
                 <li class="docs-main">

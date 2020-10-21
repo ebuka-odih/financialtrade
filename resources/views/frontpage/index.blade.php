@@ -40,22 +40,19 @@
             <div class="group-success">
                 <div class="group">
                     <p>FTM trading account</p>
-                    <a class="btn-show-right" href="https://social.tifia.com/en/new-trading-account" rel="nofollow">
+                    <a class="btn-show-right" href="{{ route('register') }}" rel="nofollow">
                         <div class="circle"><span class="icon arrow"></span></div>
                         <p class="button-text">Open</p>
                     </a>
                 </div>
             </div>
-            <div class="btn-block">
-                <a class="btn btn-green" href="https://social.FTM.com/en/new-trading-account" rel="nofollow">Open trading account</a>
-            </div>
             <a class="scroll-icon"></a>
         </div>
     </section>
-    <section class="section advantages-FTM">
+    <section class="section advantages-tifia">
         <div class="container-fluid">
             <h2>Online trading in forex market on best conditions</h2>
-            <h3>FinancialTradeMarket online Forex broker provides trading services on financial markets: Forex, commodity markets, and stock indices.</h3>
+            <p>FinancialTradeMarket online Forex broker provides trading services on financial markets: Forex, commodity markets, and stock indices.</p>
             <h3 class="only-mob">Why FTM?</h3>
             <div class="advantages-block">
                 <ul>
@@ -99,12 +96,6 @@
                     </li>
                     <li>
                         <div class="trans-block">
-                            <div class="ic7 ic"></div>
-                        </div>
-                        <p>Best trading platforms MT4/MT5</p>
-                    </li>
-                    <li>
-                        <div class="trans-block">
                             <div class="ic8 ic"></div>
                         </div>
                         <p>Friendly customer support 24/5</p>
@@ -120,7 +111,7 @@
                 <h4>Social Trading</h4>
                 <h2>Forex Social Trading - Forex copy trading system</h2>
                 <h3 class="only-mob">Synchronize your trades with successful providers' ones!</h3>
-                <p>Copy profitable trades of Forex pros and level up your income!</p>
+                <p>Be among the lucky ones!</p>
             </div>
             <div class="social-block">
                 <div class="calculator-data">
@@ -152,10 +143,11 @@
                             <th width="18%">Lifespan</th>
                             <th>Profitability</th>
                             <th>Equity</th>
-                            <th width="20%"></th>
+                            <th width="15%"></th>
                         </tr>
                         </thead>
                         <tbody>
+
                         </tbody>
                     </table>
                     <div id="carousel-social" class="carousel slide only-mob carousel-social" data-ride="carousel">
@@ -182,7 +174,7 @@
                 </div>
             </div>
             <div class="social-btn">
-                <a  class="btn btn-red" href="https://social.tifia.com/en/login" rel="nofollow">Join TIFIA Social Trading</a>
+                <a  class="btn btn-red" href="{{ route('login') }}" rel="nofollow">Join FTM Trading</a>
             </div>
         </div>
     </section>

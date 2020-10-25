@@ -1,0 +1,73 @@
+@extends('admin.layouts.app')
+
+@section('content')
+    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/datatables-dark.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/dt-global_style-dark.css') }}">
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+
+                <div class="row layout-top-spacing" id="cancel-row">
+
+                    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                        <h4 class="mb-3"> Investment Plans</h4>
+                        <div class="col-6">
+                            <a href="{{ route('admin.investment-plans.create') }}" class="btn btn-primary mb-3">Add Plan</a>
+                        </div>
+                        <div class="widget-content widget-content-area br-6">
+                            <div class="table-responsive mb-4 mt-4">
+                                <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Min Amount</th>
+                                            <th>Max Amount</th>
+                                            <th>Daily Profit (%)</th>
+                                            <th>Term Days</th>
+                                            <th>Capital Return</th>
+                                            <th>Total Return (%)</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($investment_plans as $investment_plan)
+                                        <tr>
+                                            <td><strong>{{ $investment_plan->name }}</strong></td>
+                                            <td><strong>${{ $investment_plan->min_amount }}</strong></td>
+                                            <td><strong>${{ $investment_plan->max_amount }}</strong></td>
+                                            <td><strong>{{ $investment_plan->daily_interest}}%</strong></td>
+                                            <td><strong>{{ $investment_plan->term_days}} Day(s)</strong></td>
+                                            <td><strong>{{ $investment_plan->capital_return}}</strong></td>
+                                            <td><strong>{{ $investment_plan->total_return }}%</strong></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+
+
+        <!--  END CONTENT AREA  -->
+
+
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+@endsection

@@ -11,3 +11,5 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
 
 });
+
+include('admin.php');

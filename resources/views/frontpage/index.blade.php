@@ -189,119 +189,42 @@
                 <li><a href="#pro" aria-controls="pro" role="tab" data-toggle="tab">ECN Pro</a></li>
             </ul>
             <div class="trading-account-choose tab-content">
+                @foreach($invest_plans as $invest_plan)
                 <div class="start-micro tab-pane fadeIn animated" id="start">
                     <div class="account-type">
-                        <h3>Start<br><span>Micro</span></h3>
-                        <p>Choose your way<br>to trade with FTM</p>
+                        <h3>{{ $invest_plan->name }}</h3>
+                        <p>{{ $invest_plan->desc }}</p>
                     </div>
                     <ul class="account-info">
                         <li>
                             <p>Minimum deposit</p>
-                            <span>$10</span>
+                            <span>${{ $invest_plan->min_amount }}</span>
                         </li>
                         <li>
                             <p>Spread from</p>
-                            <span>2.2</span>
+                            <span>{{ $invest_plan->spread }}</span>
                         </li>
                     </ul>
                     <ul class="account-info-more">
                         <li>
                             <p>Leverage</p>
-                            <span>1:1000</span>
+                            <span>{{ $invest_plan->leverage }}</span>
                         </li>
                         <li>
                             <p>Account base currency</p>
-                            <span>USD, EUR, NGN</span>
+                            <span>{{ $invest_plan->acct_base_currency }}</span>
                         </li>
                     </ul>
                     <div class="account-info-line">
                         <p>Trading instruments</p>
                         <span>28 <i>Forex</i>, 2 <i>Metals</i></span>
                     </div>
-                    <div class="account-info-line">
-                        <p>Commission (per round turn lot)</p>
-                        <span>-</span>
-                    </div>
                     <div class="btn-acc">
                         <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey " href="https://social.tifia.com/en/new-trading-account?type=start" rel="nofollow">Open trading account</a>
                     </div>
                 </div>
-                <div class="tab-pane fadeIn animated active" id="classic">
-                    <div class="account-type">
-                        <h3 class="feather"><span>ECN Classic</span></h3>
-                        <p>Lowest spreads drive<br>you to success</p>
-                    </div>
-                    <ul class="account-info">
-                        <li>
-                            <p>Minimum deposit</p>
-                            <span>$100</span>
-                        </li>
-                        <li>
-                            <p>Spread from</p>
-                            <span>1.1</span>
-                        </li>
-                    </ul>
-                    <ul class="account-info-more">
-                        <li>
-                            <p>Leverage</p>
-                            <span>1:1000</span>
-                        </li>
-                        <li>
-                            <p>Account base currency</p>
-                            <span>USD, EUR, NGN, PLN, GBP</span>
-                        </li>
-                    </ul>
-                    <div class="account-info-line">
-                        <p>Trading instruments</p>
-                        <span>36 <i>Forex</i>, 2 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
-                    </div>
-                    <div class="account-info-line">
-                        <p>Commission (per round turn lot)</p>
-                        <span>-</span>
-                    </div>
-                    <div class="btn-acc">
-                        <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.tifia.com/en/new-trading-account?type=ecn-classic" rel="nofollow">Open trading account</a>
-                    </div>
-                </div>
-                <div class="best tab-pane fadeIn animated" id="pro">
-                    <div class="account-type">
-                        <h3 class="feather"><span>ECN PRO</span>
-                            <i><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"></i>
-                        </h3>
-                        <p>Unique terms for<br>unique clients</p>
-                    </div>
-                    <ul class="account-info">
-                        <li>
-                            <p>Minimum deposit</p>
-                            <span>$500</span>
-                        </li>
-                        <li>
-                            <p>Spread from</p>
-                            <span>0.0</span>
-                        </li>
-                    </ul>
-                    <ul class="account-info-more">
-                        <li>
-                            <p>Leverage</p>
-                            <span>1:500</span>
-                        </li>
-                        <li>
-                            <p>Account base currency</p>
-                            <span>USD, EUR, NGN, PLN, GBP</span>
-                        </li>
-                    </ul>
-                    <div class="account-info-line">
-                        <p>Trading instruments</p>
-                        <span>52 <i>Forex</i>, 6 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
-                    </div>
-                    <div class="account-info-line">
-                        <p>Commission (per round turn lot)</p>
-                        <span>$8</span>
-                    </div>
-                    <div class="btn-acc">
-                        <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.FTM.com/en/new-trading-account?type=ecn-pro" rel="nofollow">Open trading account</a>
-                    </div>
-                </div>
+
+                @endforeach
             </div>
         </div>
     </section>

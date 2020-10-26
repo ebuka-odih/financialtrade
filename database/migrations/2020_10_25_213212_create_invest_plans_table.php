@@ -16,6 +16,15 @@ class CreateInvestPlansTable extends Migration
         Schema::create('invest_plans', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name');
+            $table->string('desc')->nullable();
+            $table->string('leverage')->nullable();
+            $table->string('acct_base_currency')->nullable();
+            $table->decimal('min_amount', 11, 2);
+            $table->decimal('max_amount', 11, 2);
+            $table->integer('term_days');
+            $table->integer('daily_return');
+            $table->string('spread')->nullable();
         });
     }
 

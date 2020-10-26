@@ -162,10 +162,10 @@
                     </a>
                     <ul class="collapse submenu list-unstyled" id="forms" data-parent="#accordionExample">
                         <li>
-                            <a href="#"> Add </a>
+                            <a href="{{ route('admin.investment-plans.create') }}"> Add </a>
                         </li>
                         <li>
-                            <a href="#"> List </a>
+                            <a href="{{ route('admin.investment-plans.index') }}"> List </a>
                         </li>
                     </ul>
                 </li>
@@ -282,6 +282,7 @@
 <script src="{{ asset('plugins/table/datatable/button-ext/buttons.print.min.js') }}"></script>
 <script>
     $('#html5-extension').DataTable( {
+        "scrollX": true,
         dom: '<"row"<"col-md-12"<"row"<"col-md-6"B><"col-md-6"f> > ><"col-md-12"rt> <"col-md-12"<"row"<"col-md-5"i><"col-md-7"p>>> >',
         buttons: {
             buttons: [

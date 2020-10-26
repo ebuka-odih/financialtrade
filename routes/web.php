@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'frontpage.index')->name('homepage');
+Route::get('/', 'HomepageController@homeInvestPlan')->name('homepage');
 
 Auth::routes(['verify' => true]);
 

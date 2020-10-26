@@ -168,7 +168,7 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="main-wrapper">
-    <header class="  ">
+    <header class="" style="height: 95px;">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">
                 <div class="left-block mb-5">
@@ -345,10 +345,7 @@
             </ul>
         </div>
         <div class="container-content">
-            <p>Risk Warning. Trading on financial markets carries risks. Contracts for Difference (‘CFDs’) are complex financial products that are traded on margin. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, CFDs may not be suitable for all investors because you may lose all your invested capital. You should not risk more than you are prepared to lose. Before deciding to trade, you need to ensure that you understand the risks involved taking into account your investment objectives and level of experience. Click here for our full <a href="uploads/docs/risk-disclosure-en.pdf">Risk Disclosure</a>.</p>
-            <p>Our company’s service is not provided to the citizens (residents) of the United States of America, Canada, Israel, Belgium, Japan and the Republic of Vanuatu and citizens of any state or country where the service is not made available.</p>
-            <p>- Tifia Markets Limited is licensed as a "Dealer in Securities" (registration number 40209) by the "Ministry of Finance and Economic Management" and regulated in accordance with the "Dealers in Securities (Licensing) Act [CAP.70]" of the Republic of Vanuatu. The Company address: Govant Building, BP 1276 Port Vila, The Republic of Vanuatu.</p>
-            <ul class="footer-menu">
+             <ul class="footer-menu">
                 <li>
                     <ul>
                         <li>About us</li>
@@ -371,11 +368,6 @@
                         <li><a href="en/trading-accounts.html">Trading accounts</a></li>
                         <li><a href="https://social.tifia.com/en/new-account/demo">Try on demo</a></li>
                         <li><a href="en/trading-instruments.html">Trading instruments</a></li>
-                        <li><a href="en/ecn-system.html">ECN system</a></li>
-                        <li><a href="en/trading-platforms/metatrader.html">MT4 trading platform</a></li>
-                        <li><a href="en/trading-platforms/metatrader-5.html">MT5 trading platform</a></li>
-                        <li><a href="en/market-research.html">Financial markets analysis</a></li>
-                        <li><a href="en/analytics.html">Analytics from Claws &amp; Horns</a></li>
                     </ul>
                 </li>
                 <li>
@@ -447,33 +439,30 @@
 </div>
 
 
-
-
-
 <div class="support-btn ">
     <a class="livechat-btn" style="cursor:pointer" onclick="Chatra(&#039;openChat&#039;)"><span></span></a>
     <a class="callback-btn" href="en/callback.html"><span></span></a>
 </div>
 
-<script src="js/TweenMax.minde6a.js?v=1576248880" async="" defer=""></script>
-<script src="js/ScrollMagic.minde6a.js?v=1576248880" async="" defer=""></script>
-<script src="js/animation.gsap51c7.js?v=1600956792" async="" defer=""></script>
-<script src="js/scene-scrollde6a.js?v=1576248880" async="" defer=""></script>
-<script src="vue-apps/main-page/quotes/app51c7.js?v=1600956792"></script>
-<script src="vue-apps/main-page/quotes/vendor51c7.js?v=1600956792"></script>
-<script src="assets/b0720b71/yii3aa2.js?v=1601722409"></script>
-<script src="js/popper.minde6a.js?v=1576248880"></script>
-<script src="js/bootstrap.minde6a.js?v=1576248880"></script>
-<script src="assets/a7d5894c/lazyload.min3aa2.js?v=1601722409"></script>
-<script src="js/lazyload-css.1.0.5.minde6a.js?v=1576248880"></script>
-<script src="js/new-mainc14a.js?v=1579685345"></script>
-<script src="js/main-page5e1f.js?v=2"></script>
-<script src="js/select2.full.minde6a.js?v=1576248880"></script>
-<script src="js/jquery.inputmask.min03a8.js?v=1584449694"></script>
-<script src="js/flickity.pkgd.minde6a.js?v=1576248880"></script>
-<script src="js/jquery.jscrollpane.minde6a.js?v=1576248880"></script>
-<script src="js/jquery.mousewheelde6a.js?v=1576248880"></script>
-<script src="js/bodyScrollLock.minde6a.js?v=1576248880"></script></body>
+<script src="{{ asset('js/TweenMax.minde6a.js?v=1576248880') }}" async="" defer=""></script>
+<script src="{{ asset('js/ScrollMagic.minde6a.js?v=1576248880') }}" async="" defer=""></script>
+<script src="{{ asset('js/animation.gsap51c7.js?v=1600956792') }}" async="" defer=""></script>
+<script src="{{ asset('js/scene-scrollde6a.js?v=1576248880') }}" async="" defer=""></script>
+<script src="{{ asset('vue-apps/main-page/quotes/app51c7.js?v=1600956792') }}"></script>
+<script src="{{ asset('vue-apps/main-page/quotes/vendor51c7.js?v=1600956792') }}"></script>
+<script src="{{ asset('assets/b0720b71/yii3aa2.js?v=1601722409') }}"></script>
+<script src="{{ asset('js/popper.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/bootstrap.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('assets/a7d5894c/lazyload.min3aa2.js?v=1601722409') }}"></script>
+<script src="{{ asset('js/lazyload-css.1.0.5.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/new-mainc14a.js?v=1579685345') }}"></script>
+<script src="{{ asset('js/main-page5e1f.js?v=2') }}"></script>
+<script src="{{ asset('js/select2.full.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/jquery.inputmask.min03a8.js?v=1584449694') }}"></script>
+<script src="{{ asset('js/flickity.pkgd.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/jquery.jscrollpane.minde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/jquery.mousewheelde6a.js?v=1576248880') }}"></script>
+<script src="{{ asset('js/bodyScrollLock.minde6a.js?v=1576248880') }}"></script></body>
 
 <!-- Mirrored from tifia.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Oct 2020 14:02:31 GMT -->
 </html>

@@ -29,10 +29,31 @@
                                         @endif
                                     <form action="{{ route('admin.investment-plans.store') }}" method="POST">
                                         @csrf
-                                        <div class="form-group col-md-12">
+                                        <div class="form-row mb-4">
+                                        <div class="form-group col-md-6">
                                             <label for="inputName">Name</label>
                                             <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
                                         </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputDescription">Description</label>
+                                                <input type="text" name="desc" class="form-control" id="inputDescription" placeholder="Description">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mb-4">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputLeverage">Leverage</label>
+                                                <input type="text" name="leverage" class="form-control" id="inputLeverage" placeholder="Leverage">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputState">Account Base Currency</label>
+                                                <select name="acct_base_currency" id="inputState" class="form-control">
+                                                    <option selected value="USD,GPD, EUR">USD,GPD, EUR</option>
+{{--                                                    <option value="USD,GPD, EUR">USD,GPD, EUR</option>--}}
+                                                </select>
+                                            </div>
+                                        </div>
+
                                         <div class="form-row mb-4">
                                             <div class="form-group col-md-6">
                                                 <label for="inputAmount">Min Amount</label>
@@ -50,7 +71,7 @@
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputInterest"> Daily Interest</label>
-                                                <input type="number" name="daily_interest" class="form-control" id="inputInterest" placeholder=" Daily Interest">
+                                                <input type="number" name="daily_return" class="form-control" id="inputInterest" placeholder=" Daily Interest">
 
                                             </div>
                                         </div>
@@ -58,16 +79,13 @@
                                         <div class="form-row mb-4">
 
                                             <div class="form-group col-md-6">
-                                                <label for="inputState">Capital Return</label>
-                                                <select name="capital_return" id="inputState" class="form-control">
-                                                    <option selected value="yes">Yes</option>
-                                                    <option value="no">No</option>
-                                                </select>
-                                                <small class="text text-primary">Choose if capital deposit will be returned at the end of the plan</small>
+                                                <label for="inputSpread"> Spread</label>
+                                                <input type="number" step="any" name="spread" class="form-control" id="inputSpread" placeholder=" Spread">
+
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <button type="submit" class="btn btn-primary ">Sign in</button>
+                                            <button type="submit" class="btn btn-primary ">Submit</button>
                                         </div>
 
                                     </form>

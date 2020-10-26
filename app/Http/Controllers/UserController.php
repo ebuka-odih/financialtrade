@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\InvestPlans;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -10,4 +11,6 @@ class UserController extends Controller
     {
         return view('dashboard.dashboard');
     }
+
+
 }

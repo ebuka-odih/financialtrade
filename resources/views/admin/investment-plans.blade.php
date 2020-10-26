@@ -16,29 +16,35 @@
                         </div>
                         <div class="widget-content widget-content-area br-6">
                             <div class="table-responsive mb-4 mt-4">
-                                <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                                <table id="html5-extension" class="table table-hover non-hover " style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Min Amount</th>
-                                            <th>Max Amount</th>
+                                            <th>Desc</th>
+                                            <th>Leverage</th>
+                                            <th>Min Amt</th>
+                                            <th>Max Amt</th>
                                             <th>Daily Profit (%)</th>
-                                            <th>Term Days</th>
-                                            <th>Capital Return</th>
                                             <th>Total Return (%)</th>
+                                            <th>Term Days</th>
+                                            <th>Base CUR</th>
+                                            <th>Spread</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($investment_plans as $investment_plan)
+                                    @foreach($invest_plans as $invest_plan)
                                         <tr>
-                                            <td><strong>{{ $investment_plan->name }}</strong></td>
-                                            <td><strong>${{ $investment_plan->min_amount }}</strong></td>
-                                            <td><strong>${{ $investment_plan->max_amount }}</strong></td>
-                                            <td><strong>{{ $investment_plan->daily_interest}}%</strong></td>
-                                            <td><strong>{{ $investment_plan->term_days}} Day(s)</strong></td>
-                                            <td><strong>{{ $investment_plan->capital_return}}</strong></td>
-                                            <td><strong>{{ $investment_plan->total_return }}%</strong></td>
+                                            <td><strong>{{ $invest_plan->name }}</strong></td>
+                                            <td><strong>{{ $invest_plan->desc }}</strong></td>
+                                            <td><strong>{{ $invest_plan->leverage }}</strong></td>
+                                            <td><strong>${{ $invest_plan->min_amount }}</strong></td>
+                                            <td><strong>${{ $invest_plan->max_amount }}</strong></td>
+                                            <td><strong>{{ $invest_plan->daily_return}}%</strong></td>
+                                            <td><strong>{{ $invest_plan->total_return }}%</strong></td>
+                                            <td><strong>{{ $invest_plan->term_days}} Day(s)</strong></td>
+                                            <td><strong>{{ $invest_plan->acct_base_currency}}</strong></td>
+                                            <td><strong>{{ $invest_plan->spread}}</strong></td>
                                             <td>
                                                 <div class="btn-group">
                                                     <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">

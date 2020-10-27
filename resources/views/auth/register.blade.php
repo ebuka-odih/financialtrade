@@ -376,62 +376,17 @@
                         </div>
                     </div>
                 </form>
-                <p class="text-center">Already registered? <a href="login/index.html">Login</a></p>
+                <p class="text-center">Already registered? <a href="{{ route('login') }}">Login</a></p>
             </div>
         </div>
         <p class="text-center text-muted mt-md mb-md">
-            Risk warning: trading forex and CFD’s carries high risks of loosing money and not suitable for all investors. Read here our full <a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk Disclosure</a>.                <br><br>
+
             &copy; Copyright 2020. All Rights Reserved.
         </p>
     </div>
 </section>
 <!-- TODO: убрать после перевода панели -->
-<div class="language-menu"
->
-    <button data-toggle="dropdown" class="btn dropdown-toggle">
-        <span class="language-flag" style="background-image: url('../images/flags/shiny/16/US.png')"></span>
-        <span class="language-name">English</span>
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/ES.png')"></span> Español        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/FR.png')"></span> Français         </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/ID.png')"></span> Indonesian        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/MY.png')"></span> Malay        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/PL.png')"></span> Polski        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/PT.png')"></span> Português        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/TH.png')"></span> ภาษาไทย        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/VN.png')"></span> Tiếng Việt        </a>
-        </li>
-        <li>
-            <a href="../index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../images/flags/shiny/16/CN.png')"></span> 中文        </a>
-        </li>
-    </ul>
-</div>
+
 
 @include('dashboard.layouts.scripts')
 </body>

@@ -5,18 +5,14 @@
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
             <div id="profile-index" class="contents clearfix">
-                <div class="content-center ">
-                    <h1 class="no-print">GIB@Trade</h1>
+               <div style="margin-bottom: 20px; background-color: #d1646d; color: white;" class="container-fluid col-md-6">
+                   <h3 class="">Your account it's unverified <a href="#"> Click to Verify</a> </h3>
+               </div>
+                <div class="content-center">
+                    <h1 class="no-print">Dashboard</h1>
                     <div id="content-alert-message">
                     </div>
-                    <ul class="top-menu-content first no-print">
-                        <li class="active"><a href="https://social.tifia.com/en/home?username=GIB%40Trade">User&#039;s profile</a></li>
-                        <li><a href="https://social.tifia.com/en/feed/user?username=GIB%40Trade">User&#039;s posts</a></li>
-                        <li><a href="https://social.tifia.com/en/statistics-master/index?username=GIB%40Trade">Trader&#039;s statistics</a></li>
-                        <li><a href="https://social.tifia.com/en/followers?username=GIB%40Trade">Followers</a></li>
-                        <li><a href="https://social.tifia.com/en/follow?username=GIB%40Trade">Following</a></li>
-                        <li><a href="https://social.tifia.com/en/pm/dialog?username=GIB%40Trade">Messages</a></li>
-                    </ul>
+
                     <div class="row user-profile-wrapper">
                         <div class="col-md-6 col-xl-3">
                             <section class="panel panel-featured-left- panel-featured-primary">
@@ -51,9 +47,9 @@
                                 <div class="panel-body">
                                     <div class="widget-summary">
                                         <div class="summary">
-                                            <h4 class="title">Investors</h4>
+                                            <h4 class="title">Account</h4>
                                             <div class="info">
-                                                <strong class="amount">0</strong>
+                                                <strong class="amount">$ 0.00</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -65,24 +61,20 @@
                         <div class="col-md-6">
                             <div class="panel">
                                 <div class="panel-body">
-                                    <h3>General information</h3>
+                                    <h3>Statistics</h3>
                                     <table class="table table-condensed table-striped">
                                         <tbody>
                                         <tr>
-                                            <td>Registration date</td>
-                                            <td>2018-06-06</td>
+                                            <td>Last Withdraw</td>
+                                            <td>N/A</td>
                                         </tr>
                                         <tr>
-                                            <td>Country</td>
-                                            <td><img class="mr-xs" src="https://social.tifia.co/images/flags/shiny/16/MY.png" alt="" align="left">Malaysia</td>
+                                            <td>Active Withdraw</td>
+                                            <td>N/A</td>
                                         </tr>
                                         <tr>
-                                            <td>Language</td>
-                                            <td>Malay</td>
-                                        </tr>
-                                        <tr>
-                                            <td>About me</td>
-                                            <td>None</td>
+                                            <td>Total Withdraw</td>
+                                            <td>$0.00</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -100,65 +92,25 @@
                                     <h3>Statistics</h3>
                                     <table class="table table-condensed table-striped">
                                         <tr>
-                                            <td>Investors</td>
-                                            <td class="text-right label-follower text-weight-semibold"><a href="https://social.tifia.com/en/duplicators?username=GIB%40Trade">0</a></td>
+                                            <td>Total Deposit</td>
+                                            <td>$0.00</td>
                                         </tr>
                                         <tr>
-                                            <td>I duplicate</td>
-                                            <td class="text-right label-provider text-weight-semibold"><a href="https://social.tifia.com/en/duplicate?username=GIB%40Trade">0</a></td>
+                                            <td>Last Deposit</td>
+                                            <td>N/A</td>
                                         </tr>
                                         <tr>
-                                            <td>Followers</td>
-                                            <td class="text-right label-readers text-weight-semibold"><a href="https://social.tifia.com/en/followers?username=GIB%40Trade">2</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><span>I follow</td>
-                                            <td class="text-right label-readers text-weight-semibold"><a href="https://social.tifia.com/en/follow?username=GIB%40Trade">0</a></td>
+                                            <td>Active Deposit</td>
+                                            <td>$0.00</td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Live Rates widget by Forextime.com --> <script type="text/javascript" src="//www.forextime.com/widget.js?type=live-rates&theme=dark&p=&pt=no&l=&h=345&pairs=eurusdusdjpyeurgbpgbpusdeurchf&"></script> <!-- Live Rates widget by Forextime.com -->
                     </div>
-                    <h3>Trader's accounts</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <div class="widget-summary">
-                                        <div class="summary">
-                                            <h4 class="title">STR-6192423</h4>
-                                            <div class="info">
-                                                <table class="table table-condensed table-nobordered mb-xs mt-xs">
-                                                    <tr>
-                                                        <td>Profitability</td>
-                                                        <td class="text-right">
-                                                            <span class="label-profit">+554.31 %</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Trader's commission</td>
-                                                        <td class="text-right">9 %</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Investors</td>
-                                                        <td class="text-right">0</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Equity</td>
-                                                        <td class="text-right">154.70 USD</td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="summary-footer">
-                                            <a class="btn btn-xs btn-primary" href="https://social.tifia.com/en/statistics-master/index?username=GIB%40Trade&amp;login=6192423&amp;server=30">Statistics</a>                                <a class="btn btn-xs btn-success" href="https://social.tifia.com/en/sync-trading/investors-account?attach_user=GIB%40Trade&amp;attach_account=STR-6192423">Copy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="content-right">
                     <div class="sidebar-right-content">

@@ -162,7 +162,9 @@
                 </div>
                 <span class="separator"></span>
                 <div class="logout">
-                    <a href="https://social.tifia.com/en/logout/index"><img src="https://social.tifia.com/images/general/out.svg" alt="Exit" /></a>
+                    <a href="https://social.tifia.com/en/logout/index">
+                        <img src="https://social.tifia.com/images/general/out.svg" alt="Exit" />
+                    </a>
                 </div>
                 <div data-fire-event="sidebar-left-opened" data-target="html" data-toggle-class="sidebar-left-opened" class="visible-xs toggle-sidebar-left">
                     <i aria-label="Toggle sidebar" class="fa fa-bars"></i>
@@ -273,7 +275,14 @@
                 </div>
                 <span class="separator"></span>
                 <div class="logout">
-                    <a href="https://social.tifia.com/en/logout/index"><img src="https://social.tifia.com/images/general/out.svg" alt="Exit" /></a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        <img src="https://social.tifia.com/images/general/out.svg" alt="Exit" />
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </div>
                 <div data-fire-event="sidebar-left-opened" data-target="html" data-toggle-class="sidebar-left-opened" class="visible-xs toggle-sidebar-left">
                     <i aria-label="Toggle sidebar" class="fa fa-bars"></i>

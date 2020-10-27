@@ -42,7 +42,13 @@
                             </div>
                         </div>
                         <div class="form-group field-loginemailform-password required">
-                            <div><label class="control-label" for="loginemailform-password">Password</label><a class="pull-right" href="../reset-password/index.html" tabindex="7">Forgot password?</a></div>
+                            <div><label class="control-label" for="loginemailform-password">Password</label>
+                                @if (Route::has('password.request'))
+                                    <a class="pull-right" href="{{ route('password.request') }}" tabindex="7">
+                                        {{ __('Forgot Password?') }}
+                                    </a>
+                                @endif
+                            </div>
                             <div>
                                 <input type="password" id="loginemailform-password" class="form-control input-lg" name="password" tabindex="2" aria-required="true">
                                 <p class="help-block help-block-error"></p>
@@ -67,57 +73,12 @@
             </div>
         </div>
         <p class="text-center text-muted mt-md mb-md">
-            Risk warning: trading forex and CFD’s carries high risks of loosing money and not suitable for all investors. Read here our full <a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk Disclosure</a>.                <br><br>
             &copy; Copyright 2020. All Rights Reserved.
         </p>
     </div>
 </section>
 <!-- TODO: убрать после перевода панели -->
-<div class="language-menu">
-    <button data-toggle="dropdown" class="btn dropdown-toggle">
-        <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/US.png')"></span>
-        <span class="language-name">English</span>
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li>
-            <a href="../../es/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/ES.png')"></span> Español        </a>
-        </li>
-        <li>
-            <a href="../../fr/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/FR.png')"></span> Français         </a>
-        </li>
-        <li>
-            <a href="../../id/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/ID.png')"></span> Indonesian        </a>
-        </li>
-        <li>
-            <a href="../../ms/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/MY.png')"></span> Malay        </a>
-        </li>
-        <li>
-            <a href="../../pl/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/PL.png')"></span> Polski        </a>
-        </li>
-        <li>
-            <a href="../../pt/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/PT.png')"></span> Português        </a>
-        </li>
-        <li>
-            <a href="../../th/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/TH.png')"></span> ภาษาไทย        </a>
-        </li>
-        <li>
-            <a href="../../vi/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/VN.png')"></span> Tiếng Việt        </a>
-        </li>
-        <li>
-            <a href="../../zh/login/index.html?switch-lang=true">
-                <span class="language-flag" style="background-image: url('../../images/flags/shiny/16/CN.png')"></span> 中文        </a>
-        </li>
-    </ul>
-</div>
+
 @include('dashboard.layouts.scripts')
 </body>
 <!-- Mirrored from social.tifia.com/en/login/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Oct 2020 00:44:48 GMT -->

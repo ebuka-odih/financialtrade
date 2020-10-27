@@ -1,3 +1,4 @@
+
 <aside class="sidebar-left" id="sidebar-left">
     <div class="nano">
         <div class="nano-content">
@@ -12,7 +13,8 @@
                               </span>
                         <span class="username">{{ auth()->user()->email }}<span class="online-user-921 online-status online" title="Online"></span></span>
                         <span class="settings">
-                              <a href="https://social.tifia.com/en/settings/index">Settings</a>
+{{--                              <h4 class="text text-danger"></h4>--}}
+                            <span  class="btn btn-danger btn-sm">Unverifed</span>
                                 </span>
                     </div>
                 </div>
@@ -42,9 +44,7 @@
                             <li><a href="https://social.tifia.com/en/settings/edit" ><i class="fa fa-list-alt"></i> Personal information</a></li>
                             <li><a href="https://social.tifia.com/en/documents/index" ><i class="fa fa-file-text"></i> Verification</a></li>
                             <li><a href="https://social.tifia.com/en/settings/security" ><i class="fa fa-lock"></i> Security</a></li>
-                            <li><a href="https://social.tifia.com/en/settings/notifications" ><i class="fa fa-bell"></i> Notifications</a></li>
-                            <li><a href="https://social.tifia.com/en/settings/privacy" ><i class="fa fa-user-secret"></i> Privacy</a></li>
-                        </ul>
+                            </ul>
                     </li>
                     <li class="nav-parent">
                         <a href="#" ><i class="fa fa-info"></i> Help</a>

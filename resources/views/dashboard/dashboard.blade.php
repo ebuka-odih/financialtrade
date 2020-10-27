@@ -107,9 +107,34 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Live Rates widget by Forextime.com --> <script type="text/javascript" src="//www.forextime.com/widget.js?type=live-rates&theme=dark&p=&pt=no&l=&h=345&pairs=eurusdusdjpyeurgbpgbpusdeurchf&"></script> <!-- Live Rates widget by Forextime.com -->
                     </div>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                            {
+                                "width": 700,
+                                "height": 400,
+                                "currencies": [
+                                "EUR",
+                                "USD",
+                                "JPY",
+                                "GBP",
+                                "CHF",
+                                "AUD",
+                                "CAD",
+                                "NZD",
+                                "CNY"
+                            ],
+                                "isTransparent": false,
+                                "colorTheme": "light",
+                                "locale": "en"
+                            }
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+
 
                 </div>
                 <div class="content-right">

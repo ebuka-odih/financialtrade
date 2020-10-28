@@ -6,15 +6,19 @@
         <section class="content-body" role="main">
             <div id="profile-index" class="contents clearfix">
                 <div class="row">
-                    <div class="col-md-12 col-xl-12">
-                        <header class="panel-heading">
-                            <h2 class="panel-title">For full profile verification please complete following step:</h2>
-                            <p class="panel-subtitle">
-                                <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
-                            </p>
-                            <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
-                        </header>
-                    </div>
+                    @if(auth()->user()->status != 2)
+                        <div class="col-md-12 col-xl-12">
+                            <header class="panel-heading">
+                                <h2 class="panel-title">For full profile verification please complete following steps:</h2>
+                                <p class="panel-subtitle">
+                                    <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.personal_info') }}">Fill Person Info</a>  <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
+                                </p>
+                                <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
+                            </header>
+                        </div>
+                    @else
+
+                    @endif
                 </div>
                 <div class="content-center">
                     <h1 class="no-print">Dashboard</h1>
@@ -181,122 +185,58 @@
                                     <tbody>
                                     <tr>
                                         <td>
-                                            <a href="https://social.tifia.com/en/feed/instrument?instrument=XAUUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="XAUUSD">
-                                          <img src="https://social.tifia.com/images/instruments/XAU.png"><img src="https://social.tifia.com/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="https://social.tifia.com/en/feed/instrument?instrument=XAUUSDx"> <span>XAUUSDx</span></a>
+                                          <img src="{{ asset('/images/instruments/XAU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>XAUUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 4787; Sell: 4692">9479</td>
+                                        <td class="text-right" title="Buy: 7807; Sell: 8731">16538</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="https://social.tifia.com/en/feed/instrument?instrument=GBPUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="GBPUSD">
-                                          <img src="https://social.tifia.com/images/flags/flat/32/GB.png"><img src="https://social.tifia.com/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="https://social.tifia.com/en/feed/instrument?instrument=GBPUSDx"> <span>GBPUSDx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/GB.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>GBPUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 4500; Sell: 4377">8877</td>
+                                        <td class="text-right" title="Buy: 5084; Sell: 5349">10433</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="https://social.tifia.com/en/feed/instrument?instrument=EURUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURUSD">
-                                          <img src="https://social.tifia.com/images/flags/flat/32/EU.png"><img src="https://social.tifia.com/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="https://social.tifia.com/en/feed/instrument?instrument=EURUSDx"> <span>EURUSDx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 3584; Sell: 4138">7722</td>
+                                        <td class="text-right" title="Buy: 4764; Sell: 5350">10114</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="https://social.tifia.com/en/feed/instrument?instrument=EURUSD">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURUSD">
-                                          <img src="https://social.tifia.com/images/flags/flat/32/EU.png"><img src="https://social.tifia.com/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="https://social.tifia.com/en/feed/instrument?instrument=EURUSD"> <span>EURUSD</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSD</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 2151; Sell: 2427">4578</td>
+                                        <td class="text-right" title="Buy: 2330; Sell: 2468">4798</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="https://social.tifia.com/en/feed/instrument?instrument=EURJPYx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURJPY">
-                                          <img src="https://social.tifia.com/images/flags/flat/32/EU.png"><img src="https://social.tifia.com/images/flags/flat/32/JP.png">
-                                          </span></a>                        <a href="https://social.tifia.com/en/feed/instrument?instrument=EURJPYx"> <span>EURJPYx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/JP.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURJPYx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 1771; Sell: 1928">3699</td>
+                                        <td class="text-right" title="Buy: 1774; Sell: 2228">4002</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="text-center">
-                                    <a href="https://social.tifia.com/en/instruments/index">Full list</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="page-footer" style="border-top: 1px solid rgba(62, 62, 62, 0.35); padding-top: 20px;">
-                <div class="row">
-                    <div class="first col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">About Us</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://tifia.co/company/why-tifia" target="_blank">Why choose us</a></li>
-                            <li><a href="https://tifia.co/company/company-news" target="_blank">Our news</a></li>
-                            <li><a href="https://tifia.co/en/company/legal-information" target="_blank">Legal information</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Contact us</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://chat.chatra.io/?hostId=73iWprWuzbCNWwgFK" target="_blank">LiveChat</a></li>
-                            <li><a href="https://tifia.co/contacts" target="_blank">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Forex trading</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://tifia.co/trading-accounts" target="_blank">Trading accounts</a></li>
-                            <li><a href="https://tifia.co/trading-instruments" target="_blank">Trading instruments</a></li>
-                            <li><a href="https://tifia.co/ecn-system" target="_blank">ECN system</a></li>
-                            <li><a href="https://tifia.co/trading-platforms/metatrader" target="_blank">MT4 trading platform</a></li>
-                            <li><a href="https://tifia.co/analytics" target="_blank">Analytics</a></li>
-                            <li><a href="https://tifia.co/payments" target="_blank">Deposit/Withdrawal</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Forex tools</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://tifia.co/analytics/forex-calculator" target="_blank">Trader&#039;s Calculator</a></li>
-                            <li><a href="https://tifia.co/analytics/economic-calendar" target="_blank">Economic Calendar</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Partnership</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://tifia.co/partners" target="_blank">For Partners</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Regulatory documents</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://tifia.co/uploads/docs/terms-of-provision-and-use-of-information-en.pdf" target="_blank">Terms and Conditions</a></li>
-                            <li><a href="https://tifia.co/uploads/docs/privacy-policy-en.pdf" target="_blank">Privacy policy</a></li>
-                            <li><a href="https://tifia.co/uploads/docs/aml-policy-en.pdf" target="_blank">AML Policy</a></li>
-                            <li><a href="https://tifia.co/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk disclosure</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <p class="text-left">
-                            Risk warning: trading forex and CFD’s carries high risks of loosing money and not suitable for all investors. Read here our full <a href="https://tifia.co/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk Disclosure</a>.                                <br><br>
-                            Copyright © 2011 - 2020 Tifia Markets Limited, All rights reserved                                <br>
-                            Financial services provided by Tifia Markets Limited<br>
-                            <a href="#" class="rs-link" data-link-desktop="Switch to the desktop version" data-link-responsive="Switch to the mobile version"></a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
+          @include('dashboard.layouts.footer')
             <div id="notifications-mob" class="notifications-block notifications-mob">
                 <div class="notifications-mob__content">
                     <div class="notifications-title">

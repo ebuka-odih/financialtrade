@@ -7,15 +7,19 @@
                 <div class="content-center ">
                     <h1 class="no-print">Client's Profile</h1>
                     <div class="row">
-                        <div class="col-md-12 col-xl-12">
-                            <header class="panel-heading">
-                                <h2 class="panel-title">For full profile verification please complete following steps:</h2>
-                                <p class="panel-subtitle">
-                                    <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
-                                </p>
-                                <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
-                            </header>
-                        </div>
+                        @if(auth()->user()->status != 2)
+                            <div class="col-md-12 col-xl-12">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title">For full profile verification please complete following steps:</h2>
+                                    <p class="panel-subtitle">
+                                        <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.personal_info') }}">Fill Person Info</a>  <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
+                                    </p>
+                                    <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
+                                </header>
+                            </div>
+                        @else
+
+                        @endif
                     </div>
                     <br>
                     <div id="content-alert-message">
@@ -38,129 +42,91 @@
                                 <h2 class="panel-title">Identity (<span class="text-verified">verified</span>)</h2>
                             @endif
                         </header>
-                        <div class="panel-body">
-                            <div class="document-section">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="/images/general/passport-demo.png" class="upload-image">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="upload-content">
-                                            <p>In compliance with the requirements of regulation</p>
-                                            <p>upload a color copy of the document (passport, driving license or local identification card) with:</p>
-                                            <ul>
-                                                <li>Your photo,</li>
-                                                <li>Name and Surname,</li>
-                                                <li>Date of birth,</li>
-                                                <li>Expiry Date,</li>
-                                                <li>Number of the document.</li>
-                                                <li>Full-size color copy showing the document in full. Copies which show your documents with the edges cut off will not be accepted..</li>
-                                            </ul>
+                       @if( auth()->user()->status == 1)
+                            <div class="panel-body">
+                                <div class="document-section">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="/images/general/passport-demo.png" class="upload-image">
                                         </div>
-                                        <br>
-                                        <div style="display: table">
-                                            <div class="document-list __not-empty document-list-type-id">
-                                                <div class="document pull-left type-id">
-                                                    <div class="document-date">
-                                                        2020-10-27 21:14:34
+                                        <div class="col-md-8">
+                                            <div class="upload-content">
+                                                <p>In compliance with the requirements of regulation</p>
+                                                <p>upload a color copy of the document (passport, driving license or local identification card) with:</p>
+                                                <ul>
+                                                    <li>Your photo,</li>
+                                                    <li>Name and Surname,</li>
+                                                    <li>Date of birth,</li>
+                                                    <li>Expiry Date,</li>
+                                                    <li>Number of the document.</li>
+                                                    <li>Full-size color copy showing the document in full. Copies which show your documents with the edges cut off will not be accepted..</li>
+                                                </ul>
+                                            </div>
+
+                                            <br>
+                                            @if(session()->has('success'))
+                                                <div class="alert alert-success">
+                                                    {{ session()->get('success') }}
+                                                </div>
+                                            @endif
+                                            <form action="{{ route('user.kyc_store') }}" method="POST" enctype="multipart/form-data">
+                                                @csrf
+                                                <div style="display: table">
+                                                    <div class="form-group">
+                                                        <select name="id_type" class="form-control col-md-10" required>
+                                                            {{--                                                        <option>Choose ID Type</option>--}}
+                                                            <option value="Driver's License">Driver's License</option>
+                                                            <option value="passport">Passport</option>
+                                                            <option value="identification card">Identification Card</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="document-content">
-                                                        <a class="image-link" href="/en/documents/show?id=141963"><img src="/en/documents/show-preview?id=141963" alt=""></a>
-                                                    </div>
-                                                    <div class="document-status">
-                                                        <span class="text-unverified">Rejected</span>
+
+                                                </div>
+                                                <br>
+                                                <div class="document-upload">
+                                                    <input type="hidden" class="document-upload-type" name="type" value="id">
+                                                    <span class="">
+                                               <i class="fa fa-plus"></i>
+                                               <span>Add photo</span>
+                                               <input type="file" name="id_image_1" class="document-upload-button ">
+                                            </span>
+                                                    <div class="progress light" style="display: none">
+                                                        <div style="width: 0;" class="progress-bar progress-bar-success"></div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="document-upload">
-                                            <input type="hidden" class="document-upload-type" name="type" value="id">
-                                            <span class="fileinput-button">
-                                       <i class="fa fa-plus"></i>
-                                       <span>Add photo</span>
-                                       <input accept="image/jpeg, image/png, image/gif, application/pdf" type="file" name="document" data-type="name" data-status="0" class="document-upload-button demo-notice">
-                                       </span>
-                                            <div class="progress light" style="display: none">
-                                                <div style="width: 0;" class="progress-bar progress-bar-success"></div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <p class="post-upload-text">
-                                            * Supported file formats: PDF, JPG, JPEG, PNG. Maximum size 5 megabyte
-                                        </p>
-                                        <span style="display: inline-block">
+                                                <br>
+                                                <p class="post-upload-text">
+                                                    * Supported file formats: PDF, JPG, JPEG, PNG. Maximum size 5 megabyte
+                                                </p>
+                                                <button type="submit" class="btn btn-success">Upload</button>
+
+                                            </form>
+
+                                            <span style="display: inline-block">
                                        <div class="upload_text_warning" style="background-color: #dff0d8;border-color: #3c763d;margin-top: 15px;padding: 10px 15px; display: none;">
                                           <p class="upload_text_warning" style="margin-bottom: 0; font-size: 17px;">Thank you. File was uploaded successfully.</p>
                                        </div>
                                     </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        @else
+                            <div class="panel-body">
+                                <div class="document-section">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="alert alert-success" role="alert">
+                                               <h3 class="text text-center">Your Account Has Been Verified</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
 
                     </section>
-                    <script type="text/javascript">
-                        //<![CDATA[
-                        (function ($) {
-                            $(document).ready(function () {
-                                $(document).on('dragleave drop', '.document-upload', function (e) {
-                                    e.preventDefault();
-                                    $(this).removeClass('__drag');
-                                });
 
-                                $(document).on('dragover', '.document-upload', function (e) {
-                                    e.preventDefault();
-                                    $(this).addClass('__drag');
-                                });
-
-                                $('.document-upload-button').each(function () {
-                                    $(this).fileupload({
-                                        url: '/en/documents/upload',
-                                        dataType: 'json',
-                                        sequentialUploads: true,
-                                        formData: {},
-                                        dropZone: $(this).closest('.document-upload'),
-                                        send: function () {
-                                            $(this).closest('.document-upload').find('.progress > div').css('width', '0%');
-                                            $(this).closest('.document-upload').find('.progress').show();
-                                        },
-                                        fail: function(e, data) {
-                                            App.showMessage(data.jqXHR.responseJSON.message);
-                                        },
-                                        done: function (e, response) {
-                                            $(this).closest('.document-upload').find('.progress').hide();
-                                            $(this).closest('.document-upload').find('.progress > div').css('width', '0%');
-
-                                            if (response.result.status === 'success') {
-                                                $(this).closest('.document-section').find('.document-list').html(response.result.content);
-                                                $(this).closest('.document-section').find('.document-list').addClass('__not-empty');
-                                                $(this).closest('.document-section').find('.upload-verification').html(response.result.text);
-                                                $(this).closest('.document-section').find('.upload-verification').removeClass('success','warning','danger').addClass(response.result.class);
-                                                $(this).closest('.document-section').find('.upload_text_warning').show();
-                                                setTimeout(function() { $('.upload_text_warning').hide(555); }, 5000);
-                                                // App.initPopupImages();
-                                            } else {
-                                                App.showMessage(response.result.message, response.result.status);
-                                            }
-                                        },
-                                        progressall: function (e, data) {
-                                            var progress = parseInt(data.loaded / data.total * 100, 10);
-                                            $(this).closest('.document-upload').find('.progress > div').css('width', progress + '%');
-                                        }
-                                    })
-                                        .bind('fileuploadsubmit', function (e, data) {
-                                            data.formData = {
-                                                type: $(this).closest('.document-upload').find('.document-upload-type').val()
-                                            };
-                                        })
-                                        .prop('disabled', !$.support.fileInput)
-                                        .parent().addClass($.support.fileInput ? undefined : 'disabled');
-                                });
-                            });
-                        })(window.jQuery);
-                        //]]>
-                    </script>
                 </div>
                 <div class="content-right">
                     <div class="sidebar-right-content">

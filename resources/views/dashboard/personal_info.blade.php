@@ -7,16 +7,19 @@
                 <div class="content-center ">
                     <h1 class="no-print">Client's Profile</h1>
                     <div class="row">
-                        <div class="col-md-12 col-xl-12">
-                            <header class="panel-heading">
-                                <h2 class="panel-title">For full profile verification please complete following step:</h2>
-                                <p class="panel-subtitle">
-                                    <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
-                                </p>
-                                <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
+                        @if(auth()->user()->status != 2)
+                            <div class="col-md-12 col-xl-12">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title">For full profile verification please complete following steps:</h2>
+                                    <p class="panel-subtitle">
+                                        <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.personal_info') }}">Fill Person Info</a>  <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
+                                    </p>
+                                    <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
+                                </header>
+                            </div>
+                        @else
 
-                            </header>
-                        </div>
+                        @endif
                     </div>
                     <br>
                     <div id="content-alert-message">
@@ -49,6 +52,18 @@
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>
+                                <div class="form-group field-profilemainform-title">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-title">Gender</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <select id="profilemainform-title" class="form-control" name="gender">
+                                            <option value="mr" selected>Choose Gender</option>
+                                            <option value="male" {{ old('gender',$user->gender)=='male' ? 'selected' : ''  }}>Male</option>
+                                            <option value="female"  {{ old('gender',$user->gender)=='female' ? 'selected' : ''  }}>Female</option>
+                                            <option value="others" {{ old('gender',$user->gender)=='others' ? 'selected' : ''  }}>Others</option>
+                                        </select>
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
                                 <div class="form-group field-profilemainform-birth_date">
                                     <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-birth_date">Birth date</label></div>
                                     <div class="col-xs-8 col-md-6">
@@ -60,6 +75,7 @@
                                     <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-country">Country</label></div>
                                     <div class="col-xs-8 col-md-6">
                                         <select id="profilemainform-country" class="form-control" name="country">
+                                            <option value="{{ old('country',$user->country)=='country' ? 'selected' : ''  }}">{{ $user->country }}</option>
                                             <option value="AF">Afghanistan</option>
                                             <option value="AX">Åland Islands</option>
                                             <option value="AL">Albania</option>
@@ -218,7 +234,7 @@
                                             <option value="NZ">New Zealand</option>
                                             <option value="NI">Nicaragua</option>
                                             <option value="NE">Niger</option>
-                                            <option value="NG" selected>Nigeria</option>
+                                            <option value="NG">Nigeria</option>
                                             <option value="NU">Niue</option>
                                             <option value="NF">Norfolk Island</option>
                                             <option value="KP">North Korea</option>
@@ -355,6 +371,15 @@
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>
+
+                                <hr>
+                                <div class="form-group field-profilemainform-wallet required">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-phone">Bitcoin Address</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <input type="text" id="profilemainform-wallet" placeholder="Enter Your Bitcoin Address" class="form-control" name="btc_wallet" value="{{ $user->btc_wallet  }}" autocomplete="off" aria-required="true">
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-md-9 text-right mb-10">
                                         <button type="submit" class="btn btn-wide btn-success demo-notice">Save</button>
@@ -407,54 +432,52 @@
                                     <tbody>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=XAUUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="XAUUSD">
-                                          <img src="/images/instruments/XAU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=XAUUSDx"> <span>XAUUSDx</span></a>
+                                          <img src="{{ asset('/images/instruments/XAU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>XAUUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 8136; Sell: 9524">17660</td>
+                                        <td class="text-right" title="Buy: 7807; Sell: 8731">16538</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=GBPUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="GBPUSD">
-                                          <img src="/images/flags/flat/32/GB.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=GBPUSDx"> <span>GBPUSDx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/GB.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>GBPUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 5085; Sell: 5282">10367</td>
+                                        <td class="text-right" title="Buy: 5084; Sell: 5349">10433</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURUSD">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURUSDx"> <span>EURUSDx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 4760; Sell: 5171">9931</td>
+                                        <td class="text-right" title="Buy: 4764; Sell: 5350">10114</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURUSD">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURUSD">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURUSD"> <span>EURUSD</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSD</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 2327; Sell: 2382">4709</td>
+                                        <td class="text-right" title="Buy: 2330; Sell: 2468">4798</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURJPYx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURJPY">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/JP.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURJPYx"> <span>EURJPYx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/JP.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURJPYx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 1773; Sell: 2169">3942</td>
+                                        <td class="text-right" title="Buy: 1774; Sell: 2228">4002</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="text-center">
-                                    <a href="/en/instruments/index">Full list</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>

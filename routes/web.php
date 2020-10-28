@@ -12,6 +12,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('settings/edit', 'UserController@personal_info')->name('personal_info');
     Route::post('settings/edit/store', 'UserController@personal_info_store')->name('personal_info.store');
     Route::get('kyc-verification', 'UserController@kyc_verification')->name('kyc_verification');
+    Route::post('kyc_verification/store', 'UserController@kyc_store')->name('kyc_store');
 
 });
 

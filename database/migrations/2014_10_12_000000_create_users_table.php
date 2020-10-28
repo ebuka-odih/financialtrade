@@ -22,14 +22,16 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
+            $table->string('title')->nullable();
             $table->string('gender')->nullable();
             $table->string('phone')->nullable();
-            $table->string('address_1')->nullable();
-            $table->string('address_2')->nullable();
+            $table->string('postal_code')->nullable();
             $table->string('date_of_birth')->nullable();
+            $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('country')->nullable();
             $table->string('address')->nullable();
+            $table->text('bio')->nullable();
             $table->string('btc_wallet')->nullable();
             $table->decimal('acct_wallet', 7)->nullable()->default(0);
             $table->string('id_type')->nullable();

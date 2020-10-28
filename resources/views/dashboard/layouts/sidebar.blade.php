@@ -14,8 +14,13 @@
                         <span class="username">{{ auth()->user()->email }}<span class="online-user-921 online-status online" title="Online"></span></span>
                         <span class="settings">
 {{--                              <h4 class="text text-danger"></h4>--}}
-                            <span  class="btn btn-danger btn-sm">Unverifed</span>
-                                </span>
+{{--                            <span  class="btn btn-danger btn-sm">Unverifed</span>--}}
+                            @if(auth()->user()->status != 2)
+                            <a class="mb-xs mt-xs mr-xs btn btn-xs btn-danger" >Unverified</a>
+                            @else
+                                <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success">Verified</a>
+                            @endif
+                        </span>
                     </div>
                 </div>
                 <div class="sidebar-button">
@@ -25,7 +30,7 @@
             </div>
             <nav role="navigation" class="nav-main" id="menu">
                 <ul class="nav  nav-main">
-                    <li class=""><a href="https://social.tifia.com/en/home" ><i class="fa fa-home"></i> Home</a></li>
+                    <li class=""><a href="{{ route('user.dashboard') }}" ><i class="fa fa-home"></i> Home</a></li>
                     <li class="nav-parent">
                         <a href="#" ><i class="fa fa-bar-chart"></i> My Accounts</a>
                         <ul class='nav nav-children'>
@@ -41,8 +46,8 @@
                         <a href="#" ><i class="fa fa-gear"></i> Client's Profile</a>
                         <ul class='nav nav-children'>
                             <li><a href="https://social.tifia.com/en/settings/index" ><i class="fa fa-user"></i> Profile</a></li>
-                            <li><a href="https://social.tifia.com/en/settings/edit" ><i class="fa fa-list-alt"></i> Personal information</a></li>
-                            <li><a href="https://social.tifia.com/en/documents/index" ><i class="fa fa-file-text"></i> Verification</a></li>
+                            <li><a href="{{ route('user.personal_info') }}" ><i class="fa fa-list-alt"></i> Personal information</a></li>
+                            <li><a href="{{ route('user.kyc_verification') }}" ><i class="fa fa-file-text"></i> Verification</a></li>
                             <li><a href="https://social.tifia.com/en/settings/security" ><i class="fa fa-lock"></i> Security</a></li>
                             </ul>
                     </li>

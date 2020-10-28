@@ -5,9 +5,17 @@
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
             <div id="profile-index" class="contents clearfix">
-               <div style="margin-bottom: 20px; background-color: #d1646d; color: white;" class="container-fluid col-md-6">
-                   <h3 class="">Your account it's unverified <a href="#"> Click to Verify</a> </h3>
-               </div>
+                <div class="row">
+                    <div class="col-md-12 col-xl-12">
+                        <header class="panel-heading">
+                            <h2 class="panel-title">For full profile verification please complete following step:</h2>
+                            <p class="panel-subtitle">
+                                <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
+                            </p>
+                            <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
+                        </header>
+                    </div>
+                </div>
                 <div class="content-center">
                     <h1 class="no-print">Dashboard</h1>
                     <div id="content-alert-message">
@@ -141,12 +149,22 @@
                     <div class="sidebar-right-content">
                         <div class="panel">
                             <div class="panel-body top-10-panel" style="padding: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);">
-                                <a href="https://social.tifia.com/deposit/index?promo=promo30" target="_blank">
-                                    <img src="https://social.tifia.com/images/banners/en/huge_deposit.png"
-                                         class="animated slideInRight"
-                                         style="padding-top: 0; object-fit: contain; width: 100%;"
-                                         alt="Banner"/>
-                                </a>
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div class="tradingview-widget-container__widget"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                                        {
+                                            "colorTheme": "light",
+                                            "isTransparent": false,
+                                            "width": "100%",
+                                            "height": "300",
+                                            "locale": "en",
+                                            "importanceFilter": "-1,0,1"
+                                        }
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
                             </div>
                         </div>
 

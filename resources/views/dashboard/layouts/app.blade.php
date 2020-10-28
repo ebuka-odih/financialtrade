@@ -30,12 +30,11 @@
     <script src="{{ asset('admin_assets/c4fd7b45/js/bootstrap73a6.js?v=1574168826') }}"></script
 
     <link rel="shortcut icon" href="{{ asset('images/new-site/logo3.png') }}" type="image/x-icon" />
-    <meta property="og:title" content="Tifia / GIB@Trade">
+    <meta property="og:title" content="FTM / GIB@Trade">
     <meta property="og:description" content="">
     <meta property="og:image" content="{{ asset('images/new-site/logo3.png') }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://social.tifia.com/en/home?username=GIB%40Trade">
-    <meta property="og:site_name" content="Tifia">
+    <meta property="og:site_name" content="FTM">
     <meta name="robots" content="noindex">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -27,4 +27,11 @@ class AdminController extends Controller
         $user_details = User::findOrFail($id);
         return view('admin.users-details', compact('user_details'));
     }
+
+    public function verify_user($id)
+    {
+        $verify_user = User::findOrFail($id);
+        $verify_user->update(['user_status' => true]);
+        return redirect()->back();
+    }
 }

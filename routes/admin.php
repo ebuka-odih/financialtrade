@@ -10,6 +10,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('all-users', 'Admin\AdminController@users')->name('users');
     Route::resource('investment-plans', 'Admin\InvestPlansController');
     Route::get('user/details/{id}', 'Admin\AdminController@users_details')->name('users_details');
+    Route::get('user/verify_user/{id}', 'Admin\AdminController@verify_user')->name('verify_user');
 
 
 });

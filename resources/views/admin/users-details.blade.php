@@ -36,11 +36,24 @@
                             @if( $user_details->user_status == 0)
                                 <h5 class="text text-center mb-2">User Status: <span class="badge badge-danger">Unverified</span></h5>
                             @else
-                                <h5 class="text text-center mb-2 badge badge-success">User Status: Verified</h5>
+                                <h5 class="text text-center mb-2">User Status:  <span class="badge badge-success">Verified</span></h5>
                             @endif
                             <h5 class="text text-center">User Role: {{$user_details->user_role}}</h5>
+                            <hr>
+                            <h5 class="mb-4 text text-center">User's Action</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    @if( $user_details->user_status == 0)
+                                    <a class="btn btn-primary" href="{{ route('admin.verify_user', $user_details->id) }}" role="button">Verify</a>
+                                    @else
+                                        @endif
+                                    <a class="btn btn-primary" href="#" role="button">Deposits</a>
+                                    <a class="btn btn-primary" href="#" role="button">Withdrawals</a>
+                                </div>
+                            </div>
 
                         </div>
+
                     </div>
 
                 </div>

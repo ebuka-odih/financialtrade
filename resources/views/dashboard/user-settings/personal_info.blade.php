@@ -25,10 +25,10 @@
                     <div id="content-alert-message">
                     </div>
                     <ul class="top-menu-content first no-print">
-                        <li><a href="/en/settings/index">Profile</a></li>
+                        <li><a href="{{ route('user.profile_details') }}">Profile</a></li>
                         <li class="active"><a href="{{ route('user.personal_info') }}">Personal information</a></li>
                         <li><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
-                        <li><a href="/en/settings/security">Security</a></li>
+                        <li><a href="{{ route('user.change_password') }}">Security</a></li>
                         <li><a href="/en/login-history/index">Login history</a></li>
                     </ul>
                     <div class="panel">
@@ -38,7 +38,16 @@
                                     {{ session()->get('success') }}
                                 </div>
                             @endif
-                            <form id="form-settings-main" class="form-horizontal" action="{{ route('user.personal_info.store') }}" method="POST">
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                                <form id="form-settings-main" class="form-horizontal" action="{{ route('user.personal_info.store') }}" method="POST">
                                 @csrf
 
                                 <div class="form-group field-profilemainform-title">
@@ -52,6 +61,13 @@
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>
+                                    <div class="form-group field-profilemainform-postcode">
+                                        <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-postcode">Full Name</label></div>
+                                        <div class="col-xs-8 col-md-6">
+                                            <input type="text" id="profilemainform-postcode" class="form-control" name="name" value="{{ $user->name }}">
+                                            <p class="help-block help-block-error "></p>
+                                        </div>
+                                    </div>
                                 <div class="form-group field-profilemainform-title">
                                     <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-title">Gender</label></div>
                                     <div class="col-xs-8 col-md-6">
@@ -376,7 +392,7 @@
                                 <div class="form-group field-profilemainform-wallet required">
                                     <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-phone">Bitcoin Address</label></div>
                                     <div class="col-xs-8 col-md-6">
-                                        <input type="text" id="profilemainform-wallet" placeholder="Enter Your Bitcoin Address" class="form-control" name="btc_wallet" value="{{ $user->btc_wallet  }}" autocomplete="off" aria-required="true">
+                                        <input type="text" id="profilemainform-wallet" placeholder="Enter Your Bitcoin Address" class="form-control" name="btc_wallet" value="{{ $user->btc_wallet  }}" autocomplete="off" aria-required="true" required>
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>

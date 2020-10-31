@@ -36,9 +36,9 @@ class CreateUsersTable extends Migration
             $table->decimal('acct_wallet', 7)->nullable()->default(0);
             $table->string('id_type')->nullable();
             $table->string('id_image_1')->nullable();
-            $table->string('id_image_2')->nullable();
+            $table->string('profile_image')->nullable();
 
-            $table->string('status')->default('pending');
+            $table->boolean('user_status')->default(false);
             $table->string('user_role')->default('client');
         });
     }

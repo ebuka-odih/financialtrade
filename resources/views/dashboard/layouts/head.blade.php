@@ -24,6 +24,7 @@
     <link href="{{ asset('admin_assets/d3a342e5/animate.minb038.css?v=1574168827') }}" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light|Roboto" rel="stylesheet">
     <script src="https://use.fontawesome.com/3e5deb507b.js"></script>
+    <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
     <link href="{{ asset('porto-admin/assets/stylesheets/themeefb9.css?v=1592776270') }}" rel="stylesheet">
     <link href="{{ asset('porto-admin/assets/stylesheets/skins/default6da6.css?v=1576243949') }}" rel="stylesheet">
     <link href="{{ asset('porto-admin/theme-custom29be.css?v=1593983762') }}" rel="stylesheet">

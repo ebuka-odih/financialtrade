@@ -65,4 +65,36 @@
                     }
                 }}},{"id":"registerform-email","name":"email","container":".field-registerform-email","input":"#registerform-email","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});value = yii.validation.trim($form, attribute, [], value);yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Invalid email address specified. Please provide your valid email address in the format login@example.com","enableIDN":false,"skipOnEmpty":1});}},{"id":"registerform-password","name":"password","container":".field-registerform-password","input":"#registerform-password","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Set the new password"});yii.validation.string(value, messages, {"message":"Set your password: must be a string.","min":8,"tooShort":"Password should contain 8 or more characters, including capital and small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[a-z])(?=.*[A-Z]).*$/,"not":false,"message":"Password should contain 8 or more characters, including capital and small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[0-9!@#$%^&*]).*$/,"not":false,"message":"Password should contain 8 or more characters, including capital and small letters and numbers.","skipOnEmpty":1});}},{"id":"registerform-password_repeat","name":"password_repeat","container":".field-registerform-password_repeat","input":"#registerform-password_repeat","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Confirm your new password"});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"registerform-password","compareAttributeName":"RegisterForm[password]","skipOnEmpty":1,"message":"Repeat a password: must be equal to \"Set your password:\"."}, $form);}},{"id":"registerform-ref_uid","name":"ref_uid","container":".field-registerform-ref_uid","input":"#registerform-ref_uid","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Referral UID number must contain only digits.","skipOnEmpty":1});}},{"id":"registerform-agreement","name":"agreement","container":".field-registerform-agreement","input":"#registerform-agreement","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"You must accept the agreements to continue","requiredValue":1});}}], []);
     });
+
+
+</script>
+
+{{--Password Change JS--}}
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    if (typeof fbq !== 'undefined') {
+        fbq('init', '676329269549113');
+        fbq('trackCustom', 'PageView');
+    }
+</script>
+
+<script>jQuery(function ($) {
+        $(document).on('click', 'span.eye-password', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            let field = $(this).parent().find('input');
+            let type = field.attr('type');
+            if (type === 'password') {
+                field.attr('type', 'text');
+            } else {
+                field.attr('type', 'password');
+            }
+        });
+        jQuery('#form-settings-password').yiiActiveForm([{"id":"passwordchangeform-password","name":"password","container":".field-passwordchangeform-password","input":"#passwordchangeform-password","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Set a new password"});yii.validation.string(value, messages, {"message":"New password must be a string.","min":8,"tooShort":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[a-z])(?=.*[A-Z]).*$/,"not":false,"message":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[0-9!@#$%^&*]).*$/,"not":false,"message":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.string(value, messages, {"message":"New password must be a string.","min":8,"tooShort":"New password should contain at least 8 characters.","max":50,"tooLong":"New password should contain at most 50 characters.","skipOnEmpty":1});}},{"id":"passwordchangeform-password_repeat","name":"password_repeat","container":".field-passwordchangeform-password_repeat","input":"#passwordchangeform-password_repeat","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Confirm your new password"});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"passwordchangeform-password","compareAttributeName":"PasswordChangeForm[password]","skipOnEmpty":1,"message":"Repeat new password must be equal to \"New password\"."}, $form);}},{"id":"passwordchangeform-password_old","name":"password_old","container":".field-passwordchangeform-password_old","input":"#passwordchangeform-password_old","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Specify your current password"});}}], []);
+    });
 </script>

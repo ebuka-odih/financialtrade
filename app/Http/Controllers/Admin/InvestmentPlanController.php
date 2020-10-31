@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\InvestmentPlan;
+use App\InvestPlans;
 use Illuminate\Http\Request;
 
 class InvestmentPlanController extends Controller
 {
    public function index()
    {
-       $investment_plans = InvestmentPlan::all();
+       $investment_plans = InvestPlans::all();
        return view('admin.investment-plans', compact('investment_plans'));
    }
 
@@ -22,19 +22,19 @@ class InvestmentPlanController extends Controller
    public function store(Request $request)
    {
        $data = $this->getData($request);
-       InvestmentPlan::create($data);
+       InvestPlans::create($data);
        return redirect()->route('admin.investment-plans.index');
    }
 
    public function edit($id)
    {
-        $investment_plans = InvestmentPlan::findOrFail($id);
+        $investment_plans = InvestPlans::findOrFail($id);
 
    }
 
    public function delete($id)
    {
-     $investment_plans = InvestmentPlan::findOrFail($id);
+     $investment_plans = InvestPlans::findOrFail($id);
      $investment_plans->delete();
      return redirect()->back();
    }

@@ -18,7 +18,7 @@ class AdminSeeder extends Seeder
         if($admin === null){
             DB::table('users')->insert([
                 'name' => 'FTM',
-                'status' => 2,
+                'user_status' => true,
                 'user_role' => 'admin',
                 'email' => 'admin@financialtrademarkets.com',
                 'email_verified_at' => \Carbon\Carbon::now(),

@@ -21,4 +21,10 @@ class AdminController extends Controller
         $users = User::where('user_role', '=', 'client')->get();
         return view('admin.users', compact('users'));
     }
+
+    public function users_details($id)
+    {
+        $user_details = User::findOrFail($id);
+        return view('admin.users-details', compact('user_details'));
+    }
 }

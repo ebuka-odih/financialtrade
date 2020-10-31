@@ -18,9 +18,10 @@ class UserSeeder extends Seeder
         if($user === null){
             DB::table('users')->insert([
                 'name' => 'FTM',
-                'status' => 1,
+                'user_status' => false,
                 'user_role' => 'client',
                 'email' => 'user@financialtrademarkets.com',
+                'created_at' => \Carbon\Carbon::now(),
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'password' => Hash::make('Jc#NBrdy289YCq22'),
 

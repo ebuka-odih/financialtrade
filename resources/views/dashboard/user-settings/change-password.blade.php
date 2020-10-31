@@ -1,9 +1,22 @@
-@extends('dashboard.layouts.app')
-@section('content')
+<!DOCTYPE html>
+<html lang="en-US" class="fixed">
+@include('dashboard.layouts.head')
+<body class="layouts-main- lang-en">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBQR5C"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+    (function(a,e,f,g,b,c,d){a[b]||(a.FintezaCoreObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=!0,c.defer=!0,c.src=g,d&&d.parentNode&&d.parentNode.insertBefore(c,d))})
+    (window,document,"script","https://content.mql5.com/core.js","fz");
+    fz("register","website","crirkwwnonoaqlhjnwpackicintsxncayr");
+</script>
+<section class="body layout-wrapper">
+  @include('dashboard.layouts.header')
     <div class="inner-wrapper">
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
-            <div id="documents-index" class="contents clearfix">
+            <div id="settings-security" class="contents clearfix">
                 <div class="content-center ">
                     <h1 class="no-print">Client's Profile</h1>
                     <div class="row">
@@ -25,108 +38,68 @@
                     <div id="content-alert-message">
                     </div>
                     <ul class="top-menu-content first no-print">
-                        <li><a href="/en/settings/index">Profile</a></li>
+                        <li><a href="{{ route('user.profile_details') }}">Profile</a></li>
                         <li><a href="{{ route('user.personal_info') }}">Personal information</a></li>
-                        <li class="active"><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
-                        <li><a href="/en/settings/security">Security</a></li>
-                        <li><a href="/en/settings/notifications">Notifications</a></li>
-                        <li><a href="/en/settings/privacy">Privacy</a></li>
+                        <li><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
+                        <li class="active"><a href="{{ route('user.change_password') }}">Security</a></li>
                         <li><a href="/en/login-history/index">Login history</a></li>
                     </ul>
-                    <section class="panel">
-                        <a name="id"></a>
-                        <header class="panel-heading">
-                            @if(auth()->user()->status != 2)
-                                <h2 class="panel-title">Identity (<span class="text-unverified">unverified</span>)</h2>
-                            @else
-                                <h2 class="panel-title">Identity (<span class="text-verified">verified</span>)</h2>
+                    <div class="panel-body">
+                        <h3>FTM Client's profile password changing</h3>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 style="line-height: 1.5;background: #ecedf0;padding: 10px 10px;display: inline-block;width: 100%;">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    Please set a new password which contains at least 8 symbols, capital and small letters, numbers and special symbols (#, @,! and so on).
+                                </h5>
+                            </div>
+                        </div>
+                        <form id="form-settings-password" class="form-horizontal" method="POST" action="{{ route('user.change.password') }}" autocomplete="false">
+                            @csrf
+
+                            @if(session()->has('success'))
+                                <div class="alert alert-success">
+                                    {{ session()->get('success') }}
+                                </div>
                             @endif
-                        </header>
-                       @if( auth()->user()->status == 1)
-                            <div class="panel-body">
-                                <div class="document-section">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img src="/images/general/passport-demo.png" class="upload-image">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="upload-content">
-                                                <p>In compliance with the requirements of regulation</p>
-                                                <p>upload a color copy of the document (passport, driving license or local identification card) with:</p>
-                                                <ul>
-                                                    <li>Your photo,</li>
-                                                    <li>Name and Surname,</li>
-                                                    <li>Date of birth,</li>
-                                                    <li>Expiry Date,</li>
-                                                    <li>Number of the document.</li>
-                                                    <li>Full-size color copy showing the document in full. Copies which show your documents with the edges cut off will not be accepted..</li>
-                                                </ul>
-                                            </div>
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
 
-                                            <br>
-                                            @if(session()->has('success'))
-                                                <div class="alert alert-success">
-                                                    {{ session()->get('success') }}
-                                                </div>
-                                            @endif
-                                            <form action="{{ route('user.kyc_store') }}" method="POST" enctype="multipart/form-data">
-                                                @csrf
-                                                <div style="display: table">
-                                                    <div class="form-group">
-                                                        <select name="id_type" class="form-control col-md-10" required>
-                                                            {{--                                                        <option>Choose ID Type</option>--}}
-                                                            <option value="Driver's License">Driver's License</option>
-                                                            <option value="passport">Passport</option>
-                                                            <option value="identification card">Identification Card</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                                <br>
-                                                <div class="document-upload">
-                                                    <input type="hidden" class="document-upload-type" name="type" value="id">
-                                                    <span class="">
-                                               <i class="fa fa-plus"></i>
-                                               <span>Add photo</span>
-                                               <input type="file" name="id_image_1" class="document-upload-button ">
-                                            </span>
-                                                    <div class="progress light" style="display: none">
-                                                        <div style="width: 0;" class="progress-bar progress-bar-success"></div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <p class="post-upload-text">
-                                                    * Supported file formats: PDF, JPG, JPEG, PNG. Maximum size 5 megabyte
-                                                </p>
-                                                <button type="submit" class="btn btn-success">Upload</button>
-
-                                            </form>
-
-                                            <span style="display: inline-block">
-                                       <div class="upload_text_warning" style="background-color: #dff0d8;border-color: #3c763d;margin-top: 15px;padding: 10px 15px; display: none;">
-                                          <p class="upload_text_warning" style="margin-bottom: 0; font-size: 17px;">Thank you. File was uploaded successfully.</p>
-                                       </div>
-                                    </span>
-                                        </div>
-                                    </div>
+                            <div class="form-group field-passwordchangeform-password required">
+                                <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password">New password</label>
+                                <div class='col-xs-8 col-md-6'>
+                                    <input type="password" id="passwordchangeform-password" class="form-control" name="new_password" autocomplete="current-password"  aria-required="true"><span class='eye-password'></span>
+                                    <p class="help-block help-block-error "></p>
                                 </div>
                             </div>
-                        @else
-                            <div class="panel-body">
-                                <div class="document-section">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="alert alert-success" role="alert">
-                                               <h3 class="text text-center">Your Account Has Been Verified</h3>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="form-group field-passwordchangeform-password_repeat required">
+                                <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password_repeat">Confirm new password</label>
+                                <div class='col-xs-8 col-md-6'>
+                                    <input type="password" id="passwordchangeform-password_repeat" class="form-control" name="new_confirm_password" autocomplete="current-password" aria-required="true"><span class='eye-password'></span>
+                                    <p class="help-block help-block-error "></p>
                                 </div>
                             </div>
-                        @endif
-
-                    </section>
-
+                            <div class="form-group field-passwordchangeform-password_old required">
+                                <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password_old">Enter your current password</label>
+                                <div class='col-xs-8 col-md-6'>
+                                    <input type="password" id="passwordchangeform-password_old" class="form-control" name="current_password" autocomplete="current-password" aria-required="true"><span class='eye-password'></span>
+                                    <p class="help-block help-block-error "></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12 col-md-12 mb-10 text-center">
+                                    <button type="submit" class="btn btn-wide btn-success demo-notice">Set a new password</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="content-right">
                     <div class="sidebar-right-content">
@@ -286,8 +259,7 @@
                     </div>
                 </div>
             </div>
-
-            @include('dashboard.layouts.footer')
+         @include('dashboard.layouts.footer')
             <div id="notifications-mob" class="notifications-block notifications-mob">
                 <div class="notifications-mob__content">
                     <div class="notifications-title">
@@ -337,4 +309,65 @@
             </div>
         </section>
     </div>
-@endsection
+</section>
+
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    if (typeof fbq !== 'undefined') {
+        fbq('init', '676329269549113');
+        fbq('trackCustom', 'PageView');
+    }
+</script>
+<script src="{{ asset('admin_assets/c9bbf424/yii73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/c9bbf424/yii.validation73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/d4d1979f/build/js/utilsf907.js?v=1598456919') }}"></script>
+<script src="{{ asset('admin_assets/d4d1979f/build/js/intlTelInput-jqueryf907.js?v=1598456919') }}"></script>
+<script src="{{ asset('admin_assets/c9bbf424/yii.activeForm73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/3b209fd3/jquery.timeago73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/3d5c124f/bin/javascripts/jquery.nanoscroller.min73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/827fde0/jquery.browser.mobiled6f5.js?v=1576325284">') }}"></script>
+<script src="{{ asset('admin_assets/b130fe13/dist/jquery.maskedinput.min73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/f7300bcd/jquery.cookie73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/f61b5756/jquery-debounce/jquery.debounceb197.js?v=1586278041') }}"></script>
+<script src="{{ asset('admin_assets/3677ede4/jquery.query-object73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/fdedcbaf/dist/jquery.autocomplete.min73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/1ca0b49/ui/widget73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/ac24bae0/js/jquery.fileupload73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/e50f5fb0/jquery.magnific-popup.min73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/7e6d2e57/js/bootstrap-datetimepicker.mind6f5.js?v=1576325284') }}"></script>
+<script src="{{ asset('admin_assets/72c42241/dist/autosize.min73a6.js?v=1574168826') }}"></script>
+<script src="{{ asset('admin_assets/81c2fe86/pnotify.customd6f5.js?v=1576325284') }}"></script>
+<script src="{{ asset('admin_assets/6bb29040/dist/bootstrap3-editable/js/bootstrap-editable.minb038.js?v=1574168827') }}"></script>
+<script src="{{ asset('admin_assets/92444326/js/ion.rangeSlider.minb038.js?v=1574168827') }}"></script>
+<script src="{{ asset('admin_assets/91093691/js/select2.full.minf066.js?v=1574168852') }}"></script>
+<script src="{{ asset('admin_assets/a6ec9adb/clipboard.minb038.js?v=1574168827') }}"></script>
+<script src="{{ asset('porto-admin/main6da6.js?v=1576243949') }}"></script>
+<script src="{{ asset('porto-admin/assets/vendor/modernizr/modernizr6da6.js?v=1576243949') }}"></script>
+<script src="{{ asset('porto-admin/assets/javascripts/theme6da6.js?v=1576243949') }}"></script>
+<script src="{{ asset('porto-admin/assets/javascripts/theme.init6da6.js?v=1576243949') }}"></script>
+<script src="{{ asset('porto-admin/theme.custom4221.js?v=1601636118') }}"></script>
+<script src="{{ asset('porto-admin/jquery.inputmask.mind77d.js?v=1580462975') }}"></script>
+<script src="{{ asset('porto-admin/assets/javascripts/help/jcfilter.min6da6.js?v=1576243949') }}"></script>
+<script src="{{ asset('porto-admin/assets/javascripts/responsive-switch.mind77d.js?v=1580462975') }}"></script>
+<script>jQuery(function ($) {
+        $(document).on('click', 'span.eye-password', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            let field = $(this).parent().find('input');
+            let type = field.attr('type');
+            if (type === 'password') {
+                field.attr('type', 'text');
+            } else {
+                field.attr('type', 'password');
+            }
+        });
+        jQuery('#form-settings-password').yiiActiveForm([{"id":"passwordchangeform-password","name":"password","container":".field-passwordchangeform-password","input":"#passwordchangeform-password","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Set a new password"});yii.validation.string(value, messages, {"message":"New password must be a string.","min":8,"tooShort":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[a-z])(?=.*[A-Z]).*$/,"not":false,"message":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^(?=.*[0-9!@#$%^&*]).*$/,"not":false,"message":"Password shall contain 8 or more characters, including capital letters, small letters and numbers.","skipOnEmpty":1});yii.validation.string(value, messages, {"message":"New password must be a string.","min":8,"tooShort":"New password should contain at least 8 characters.","max":50,"tooLong":"New password should contain at most 50 characters.","skipOnEmpty":1});}},{"id":"passwordchangeform-password_repeat","name":"password_repeat","container":".field-passwordchangeform-password_repeat","input":"#passwordchangeform-password_repeat","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Confirm your new password"});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"passwordchangeform-password","compareAttributeName":"PasswordChangeForm[password]","skipOnEmpty":1,"message":"Repeat new password must be equal to \"New password\"."}, $form);}},{"id":"passwordchangeform-password_old","name":"password_old","container":".field-passwordchangeform-password_old","input":"#passwordchangeform-password_old","error":".help-block.help-block-error","encodeError":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Specify your current password"});}}], []);
+    });
+</script>
+</body>
+</html>

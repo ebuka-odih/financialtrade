@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
         $admin = User::where('email', '=', 'admin@financialtrademarkets.com')->first();
         if($admin === null){
             DB::table('users')->insert([
-                'name' => 'Coin Miner',
-                'status' => 'approved',
+                'name' => 'FTM',
+                'user_status' => true,
                 'user_role' => 'admin',
                 'email' => 'admin@financialtrademarkets.com',
                 'email_verified_at' => \Carbon\Carbon::now(),

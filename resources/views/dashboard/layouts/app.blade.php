@@ -27,7 +27,9 @@
     <link href="{{ asset('porto-admin/theme-custom29be.css?v=1593983762') }}" rel="stylesheet">
     <link href="{{ asset('porto-admin/theme-tifia4330.css?v=1599810430') }}" rel="stylesheet">
     <script src="{{ asset('admin_assets/5883f585/jquery73a6.js?v=1574168826') }}"></script>
-    <script src="{{ asset('admin_assets/c4fd7b45/js/bootstrap73a6.js?v=1574168826') }}"></script
+    <script src="{{ asset('admin_assets/c4fd7b45/js/bootstrap73a6.js?v=1574168826') }}"></script>
+    <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
+
 
     <link rel="shortcut icon" href="{{ asset('images/new-site/logo3.png') }}" type="image/x-icon" />
     <meta property="og:title" content="FTM / GIB@Trade">

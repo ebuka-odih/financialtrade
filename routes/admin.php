@@ -13,6 +13,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('user/details/{id}', 'Admin\AdminController@users_details')->name('users_details');
     Route::get('user/verify_user/{id}', 'Admin\AdminController@verify_user')->name('verify_user');
 
+    Route::get('accept/withdrawal/{withdraw}', 'Admin\AdminWithdrawal@accept_withdrawal')->name('accept_withdrawal');
     Route::get('all-withdrawal', 'Admin\AdminWithdrawal@all_withdrawal')->name('all_withdrawal');
 
 

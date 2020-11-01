@@ -31,13 +31,13 @@ class WithdrawMail extends Mailable
     {
         $data = $this->data['user'];
         $name =  $this->data['user']->name;
-        $walletid =  $this->data['user']->walletid;
+        $btc_wallet =  $this->data['user']->btc_wallet;
         $trans_hash =  $this->data['withdraw']->trans_hash;
         $amount     =  $this->data['withdraw']->amount;
-        return $this->from('admin@airlinetrades.com')
-            ->subject('Coinminer')
+        $payment_method    =  $this->data['withdraw']->payment_method;
+        return $this->subject('FTM')
             ->markdown('emails.approve_withdraw')
             ->with(['data' => $data, 'name' => $name,
-                'walletid' => $walletid, 'trans_hash' => $trans_hash,'amount' => $amount]);
+                'btc_wallet' => $btc_wallet, 'trans_hash' => $trans_hash,'amount' => $amount, 'payment_method' => $payment_method]);
     }
 }

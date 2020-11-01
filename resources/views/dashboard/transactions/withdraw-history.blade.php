@@ -37,16 +37,16 @@
                                         @forelse($withdrawals as $withdrawal)
 {{--                                            <div style="visibility: hidden">@for($i = 1; $i < 100; $i++)@endfor</div>--}}
                                         <tr>
-                                            <td>{{ date('d/m/y', strtotime($withdrawal->created_at)) }}</td>
+                                            <td>{{ date('d/m/y h:i A', strtotime($withdrawal->created_at)) }}</td>
                                             @if($withdrawal->status == 'pending' || $withdrawal->status == 'canceled')
                                                 <td>"--/--/--"</td>
                                             @else
-                                            <td>{{ date('d/m/y', strtotime($withdrawal->approved_date)) }}</td>
+                                            <td>{{ date('d/m/y h:i A', strtotime($withdrawal->approved_date)) }}</td>
                                             @endif
                                             <td>{{ $withdrawal->user->btc_wallet }}</td>
-                                            <td>${{ $withdrawal->amount }}</td>
+                                            <td>$@convert($withdrawal->amount)</td>
                                             <td>{{ $withdrawal->payment_method }}</td>
-                                            <td>{{ $withdrawal->payment_amount ? : '$0.00' }}</td>
+                                            <td>$@convert($withdrawal->payment_amt())</td>
                                             <td>{!! $withdrawal->status() !!}</td>
                                             @if($withdrawal->status == 'pending')
                                             <td><a href="{{ route('user.cancel_withdraw', $withdrawal->id) }}">Cancel</a></td>

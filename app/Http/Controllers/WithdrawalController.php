@@ -6,6 +6,7 @@ use App\Mail\AdminWithdrawAlert;
 use App\Mail\RequestWithdraw;
 use App\User;
 use App\Withdrawal;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
@@ -14,6 +15,7 @@ class WithdrawalController extends Controller
 {
    public function withdrawal_history()
    {
+//       return Carbon::now()->toDateString();
         $withdrawals = Withdrawal::whereUserId(auth()->id())->get();
         return view('dashboard.transactions.withdraw-history', compact('withdrawals'));
    }

@@ -33,4 +33,15 @@ class Withdrawal extends Model
             return "<a class='badge badge-danger'>Canceled</a>";
         }
     }
+     public function payment_amt()
+     {
+         if ($this->status == 'pending' || $this->status == 'canceled'){
+             return 0.00;
+         }else{
+//             return Withdrawal::select('amount')->where("amount", '=', 'approved');
+             return $this->amount;
+         }
+
+     }
+
 }

@@ -5,21 +5,7 @@
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
             <div id="profile-index" class="contents clearfix">
-                <div class="row">
-                    @if(auth()->user()->status != 2)
-                        <div class="col-md-12 col-xl-12">
-                            <header class="panel-heading">
-                                <h2 class="panel-title">For full profile verification please complete following steps:</h2>
-                                <p class="panel-subtitle">
-                                    <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.personal_info') }}">Fill Person Info</a>  <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
-                                </p>
-                                <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
-                            </header>
-                        </div>
-                    @else
-
-                    @endif
-                </div>
+                @include('dashboard.layouts.notice')
                 <div class="content-center">
                     <h1 class="no-print">Dashboard</h1>
                     <div id="content-alert-message">
@@ -61,7 +47,7 @@
                                         <div class="summary">
                                             <h4 class="title">Account</h4>
                                             <div class="info">
-                                                <strong class="amount">$ 0.00</strong>
+                                                <strong class="amount">$ {{ auth()->user()->acct_wallet }}</strong>
                                             </div>
                                         </div>
                                     </div>

@@ -1,126 +1,164 @@
 @extends('dashboard.layouts.app')
+
 @section('content')
     <div class="inner-wrapper">
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
-            <div id="documents-index" class="contents clearfix">
+            <div id="withdrawal-index" class="contents clearfix">
                 <div class="content-center ">
-                    <h1 class="no-print">Client's Profile</h1>
-                    @include('dashboard.layouts.notice')
+
+                    <h1 class="no-print">Finance</h1>
+
+                   @include('dashboard.layouts.notice')
                     <br>
+
                     <div id="content-alert-message">
                     </div>
-                    <ul class="top-menu-content first no-print">
-                        <li><a href="{{ route('user.profile_details') }}">Profile</a></li>
-                        <li><a href="{{ route('user.personal_info') }}">Personal information</a></li>
-                        <li class="active"><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
-                        <li><a href="{{ route('user.change_password') }}">Security</a></li>
-                        <li><a href="/en/login-history/index">Login history</a></li>
-                    </ul>
-                    <section class="panel">
-                        <a name="id"></a>
-                        <header class="panel-heading">
-                            @if(auth()->user()->user_status)
-                                <h2 class="panel-title">Identity (<span class="text-verified">verified</span>)</h2>
-                            @else
-                                <h2 class="panel-title">Identity (<span class="text-unverified">unverified</span>)</h2>
+
+
+                    <ul class="top-menu-content first no-print"><li><a href="/en/deposit/index">Deposit</a></li>
+                        <li class="active"><a href="/en/withdrawal/index">Withdrawal</a></li>
+                        <li><a href="{{ route('user.deposit_history') }}">Transactions history</a></li>
+                    <div class="withdrawal-page">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="block-payment-method unavailable" data-url="/en/withdrawal/form?method=btc" data-method="btc" style="border-left-color: #6C8EB6"
+                                             title=""  data-original-title="Please, use for the withdrawal only the same payment method (bank card, wallet, payment system and so on) which you have used for deposit your trading account.">
+                                            <div class="wrapper">
+                                                <div class="logo">
+                                                    <img src="https://social.tifia.com/images/payment-system/btc.png?v=1" alt="Bitcoin" />
+                                                </div>
+                                                <div class="descr">
+                                                    <p class="title">Bitcoin</p>
+                                                    <div class="info">
+                                                        <p>Min. amount: 2000.00 USD</p>
+                                                        <p>Fee: 0%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4">
+                                        <div class="block-payment-method unavailable" data-url="/en/withdrawal/form?method=mb" data-method="mb" style="border-left-color: #900d66"
+                                             title=""  data-original-title="Please, use for the withdrawal only the same payment method (bank card, wallet, payment system and so on) which you have used for deposit your trading account.">
+                                            <div class="wrapper">
+                                                <div class="descr col-md-8">
+                                                    <p class="title">Account Balance</p>
+                                                    <div class="info">
+                                                        <p>Balance: {{ auth()->user()->acct_wallet }} USD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div id="form-wrapper" class="ajax-form-wrapper panel-body loader-wrapper" style="" data-select2-id="form-wrapper">
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
                             @endif
-                        </header>
-                       @if( auth()->user()->user_status)
-                            <div class="panel-body">
-                                <div class="document-section">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="alert alert-success" role="alert">
-                                                <h3 class="text text-center">Your Account Has Been Verified</h3>
-                                            </div>
-                                        </div>
+                            @if(session()->has('declined'))
+                                <div class="alert alert-danger">
+                                    {{ session()->get('declined') }}
+                                </div>
+                            @endif
+                            @if(session()->has('success_message'))
+                                <div class="alert alert-success">
+                                    {{ session()->get('success_message') }}
+                                </div>
+                            @endif
+                            <h3>Withdrawal information</h3>
+                            <form id="form-withdrawal-local"  action="{{ route('user.make_withdrawal_store') }}" method="POST" data-select2-id="form-withdrawal-local">
+                                @csrf
+                                <div class="form-group ">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-amount">From</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <div class="input-group select2-bootstrap-prepend select2-bootstrap-append">
+                                            <span class="input-group-addon"><i class="fa fa-building"></i></span>
+                                            <input type="text"  class="form-control" value="Financial Trade Market" aria-required="true"></div>
                                     </div>
                                 </div>
-                            </div>
-                        @else
-                            <div class="panel-body">
-                                <div class="document-section">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img src="/images/general/passport-demo.png" class="upload-image">
+
+                                <div class="form-group form-target-currency field-withdrawallocalform-amount required">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-amount">Amount</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <div class="input-group select2-bootstrap-prepend select2-bootstrap-append">
+                                            <span class="input-group-addon">USD</span>
+                                            <input type="number" id="withdrawallocalform-amount" class="form-control" name="amount"  placeholder="0.00" aria-required="true" required>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="upload-content">
-                                                <p>In compliance with the requirements of regulation</p>
-                                                <p>upload a color copy of the document (passport, driving license or local identification card) with:</p>
-                                                <ul>
-                                                    <li>Your photo,</li>
-                                                    <li>Name and Surname,</li>
-                                                    <li>Date of birth,</li>
-                                                    <li>Expiry Date,</li>
-                                                    <li>Number of the document.</li>
-                                                    <li>Full-size color copy showing the document in full. Copies which show your documents with the edges cut off will not be accepted..</li>
-                                                </ul>
-                                            </div>
-
-                                            <br>
-                                            @if(session()->has('success'))
-                                                <div class="alert alert-success">
-                                                    {{ session()->get('success') }}
-                                                </div>
-                                            @endif
-                                            @if ($errors->any())
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                            @endif
-
-                                            <form action="{{ route('user.kyc_store') }}" method="POST" enctype="multipart/form-data">
-                                                @csrf
-                                                <div style="display: table">
-                                                    <div class="form-group">
-                                                        <select name="id_type" class="form-control col-md-10" required>
-                                                            {{--                                                        <option>Choose ID Type</option>--}}
-                                                            <option value="Driver's License">Driver's License</option>
-                                                            <option value="passport">Passport</option>
-                                                            <option value="identification card">Identification Card</option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                                <br>
-                                                <div class="document-upload">
-                                                    <input type="hidden" class="document-upload-type" name="type" value="id">
-                                                    <span class="">
-                                               <i class="fa fa-plus"></i>
-                                               <span>Add photo</span>
-                                               <input type="file" name="id_image_1" class="document-upload-button ">
-                                            </span>
-                                                    <div class="progress light" style="display: none">
-                                                        <div style="width: 0;" class="progress-bar progress-bar-success"></div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <p class="post-upload-text">
-                                                    * Supported file formats: PDF, JPG, JPEG, PNG. Maximum size 5 megabyte
-                                                </p>
-                                                <button type="submit" class="btn btn-success">Upload</button>
-
-                                            </form>
-
-                                            <span style="display: inline-block">
-                                       <div class="upload_text_warning" style="background-color: #dff0d8;border-color: #3c763d;margin-top: 15px;padding: 10px 15px; display: none;">
-                                          <p class="upload_text_warning" style="margin-bottom: 0; font-size: 17px;">Thank you. File was uploaded successfully.</p>
-                                       </div>
-                                    </span>
-                                        </div>
+                                        <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>
-                            </div>
-                        @endif
+                                <h3>Personal information</h3>
+                                <div class="form-group field-withdrawallocalform-name required">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-name">Name</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <input type="text" id="withdrawallocalform-name" class="form-control text text-uppercase" readonly value="{{ auth()->user()->name }}" aria-required="true">
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <!--    -->
+                                <div class="form-group field-withdrawallocalform-address required">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-address">Wallet Address</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <input type="text" id="withdrawallocalform-address" class="form-control" readonly value="{{ auth()->user()->btc_wallet }}" aria-required="true">
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <div class="form-group field-withdrawallocalform-email required">
+                                    <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-email">Email</label></div>
+                                    <div class="col-xs-8 col-md-6">
+                                        <input type="text" id="withdrawallocalform-email" class="form-control" readonly value="{{ auth()->user()->email }}" aria-required="true">
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-md-9 text-right mb-10">
+                                        <button type="submit" class="btn btn-success demo-notice">Continue</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                (function ($) {
+                                    $(document).ready(function () {
+                                        $('form .form-select-account select').trigger('change');
 
-                    </section>
+                                        var inputAmount = $("#withdrawallocalform-amount");
 
+                                        inputAmount.inputmask('numeric', {
+                                            'allowMinus': false,
+                                            'decimalProtect': false,
+                                            'autoGroup': true,
+                                            'groupSeparator': " ",
+                                            'groupSize': 3,
+                                            'digits': 2,
+                                            'digitsOptional': false,
+                                            'prefix': '',
+                                            'placeholder': '0',
+                                            'rightAlign': false,
+                                            'max': 999999999999
+                                        });
+                                    });
+                                })(window.jQuery);
+                                //]]>
+                            </script>
+                        </div>
                 </div>
                 <div class="content-right">
                     <div class="sidebar-right-content">
@@ -281,7 +319,7 @@
                 </div>
             </div>
 
-            @include('dashboard.layouts.footer')
+          @include('dashboard.layouts.footer')
             <div id="notifications-mob" class="notifications-block notifications-mob">
                 <div class="notifications-mob__content">
                     <div class="notifications-title">
@@ -292,11 +330,9 @@
                     <div class="view-more">
                         <div class="row">
                             <div class="col-xs-6">
-                                <a class="btn btn-blue btn-primary" href="/en/notifications/index">View all</a>
-                            </div>
+                                <a class="btn btn-blue btn-primary" href="/en/notifications/index">View all</a>                                </div>
                             <div class="col-xs-6">
-                                <a id="notifications-read-all" class="ajax-action btn btn-trans" href="/en/notifications/read-all">Mark as read</a>
-                            </div>
+                                <a id="notifications-read-all" class="ajax-action btn btn-trans" href="/en/notifications/read-all">Mark as read</a>                                </div>
                         </div>
                     </div>
                 </div>
@@ -304,28 +340,16 @@
             <div class="fixed-footer-menu">
                 <ul>
                     <li>
-                        <a href="/en/deposit/index">
-                            <div class="ic ic-depo"></div>
-                            Deposit
-                        </a>
+                        <a href="/en/deposit/index"><div class="ic ic-depo"></div>Deposit</a>                        </li>
+
+                    <li>
+                        <a href="/en/withdrawal/index"><div class="ic ic-with"></div>Withdrawal</a>                        </li>
+
+                    <li>
+                        <a class="btn-chat"><div class="ic ic-chat"></div>LiveChat</a>
                     </li>
                     <li>
-                        <a href="/en/withdrawal/index">
-                            <div class="ic ic-with"></div>
-                            Withdrawal
-                        </a>
-                    </li>
-                    <li>
-                        <a class="btn-chat">
-                            <div class="ic ic-chat"></div>
-                            LiveChat
-                        </a>
-                    </li>
-                    <li>
-                        <a id="btn-notifications" class="btn-notifications">
-                            <div class="ic ic-notif"></div>
-                            Notifications
-                        </a>
+                        <a id="btn-notifications" class="btn-notifications"><div class="ic ic-notif"></div>Notifications</a>
                     </li>
                 </ul>
             </div>

@@ -99,7 +99,7 @@
                             <a href="table_dt_basic.html"> Deposits </a>
                         </li>
                         <li>
-                            <a href="#"> Withdrawals </a>
+                            <a href="{{ route('admin.all_withdrawal') }}"> Withdrawals </a>
                         </li>
                     </ul>
                 </li>

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
@@ -11,6 +12,8 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::resource('investment-plans', 'Admin\InvestPlansController');
     Route::get('user/details/{id}', 'Admin\AdminController@users_details')->name('users_details');
     Route::get('user/verify_user/{id}', 'Admin\AdminController@verify_user')->name('verify_user');
+
+    Route::get('all-withdrawal', 'Admin\AdminWithdrawal@all_withdrawal')->name('all_withdrawal');
 
 
 });

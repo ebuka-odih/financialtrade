@@ -52,4 +52,9 @@ class User extends Authenticatable implements MustVerifyEmail
         }
         return '/storage/profile_images/' . $this->attributes['profile_image'];
     }
+
+    public function withdrawal()
+    {
+        return $this->hasMany(Withdrawal::class, 'users_id');
+    }
 }

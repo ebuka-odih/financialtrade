@@ -17,19 +17,21 @@
                                     <thead>
                                         <tr>
                                             <th>Date</th>
+                                            <th>Approved Date</th>
                                             <th>User</th>
-                                            <th>Email</th>
                                             <th>Amount</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-
+                                    @foreach($users_withdrawals as $users_withdrawal)
                                         <tr>
-                                            <td><strong>4/8/20</strong></td>
-                                            <td><strong>John Doe</strong></td>
-                                            <td><strong>John@gmail.com</strong></td>
-                                            <td><strong>$500</strong></td>
+                                            <td><strong>{{ date('d/m/y', strtotime($users_withdrawal->created_at)) }}</strong></td>
+                                            <td><strong>{{ date('d/m/y', strtotime($users_withdrawal->created_at)) }}</strong></td>
+                                            <td><strong>{{ $users_withdrawal->user->name }}</strong></td>
+                                            <td><strong>{{ $users_withdrawal->amount }}</strong></td>
+                                            <td><strong>{!! $users_withdrawal->admin_status() !!}</strong></td>
                                             <td>
                                                 <div class="btn-group">
                                                     <a href="#" class="btn btn-secondary btn-sm">View</a>
@@ -42,6 +44,7 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                    @endforeach
 
 
                                     </tbody>

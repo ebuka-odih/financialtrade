@@ -36,7 +36,9 @@
                                             @else
                                                 <td> <span class="badge badge-success">Verified</span></td>
                                             @endif
-                                            <td><strong>{{ date('d.M.y h:i A', strtotime($user->created_at ))}}</strong></td>
+                                            <td>
+                                                <strong>{{ date('d.M.y h:i A', strtotime($user->created_at ))}}</strong>
+                                            </td>
                                             <td>
                                                 <div class="btn-group">
                                                     <a href="{{ route('admin.users_details', $user->id) }}" class="btn btn-secondary btn-sm">Open</a>

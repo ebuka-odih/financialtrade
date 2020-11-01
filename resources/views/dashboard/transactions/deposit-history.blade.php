@@ -7,21 +7,7 @@
             <div id="deposit-history" class="contents clearfix">
                 <div class="content-center ">
                     <h1 class="no-print">Finance</h1>
-                    <div class="row">
-                        @if(auth()->user()->status != 2)
-                            <div class="col-md-12 col-xl-12">
-                                <header class="panel-heading">
-                                    <h2 class="panel-title">For full profile verification please complete following steps:</h2>
-                                    <p class="panel-subtitle">
-                                        <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.personal_info') }}">Fill Person Info</a>  <a class="mb-xs mt-xs mr-xs btn btn-xs btn-success" href="{{ route('user.kyc_verification') }}">Upload documents</a>
-                                    </p>
-                                    <h2 class="panel-title">After uploading your document it will take atlest 1hr before confirmation</h2>
-                                </header>
-                            </div>
-                        @else
-
-                        @endif
-                    </div>
+                   @include('dashboard.layouts.notice')
                     <br>
                     <div id="content-alert-message">
                     </div>
@@ -59,12 +45,27 @@
                     <div class="sidebar-right-content">
                         <div class="panel">
                             <div class="panel-body top-10-panel" style="padding: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);">
-                                <a href="/monitoring/index" target="_blank">
-                                    <img src="/images/banners/en/first_trade.png"
-                                         class="animated slideInRight"
-                                         style="padding-top: 0; object-fit: contain; width: 100%;"
-                                         alt="Banner"/>
-                                </a>
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div class="tradingview-widget-container__widget"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/?exchange=FX" rel="noopener" target="_blank"><span class="blue-text">EURUSD Rates</span></a></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                        {
+                                            "symbol": "FX:EURUSD",
+                                            "width": "100%",
+                                            "height": "100%",
+                                            "locale": "en",
+                                            "dateRange": "1M",
+                                            "colorTheme": "light",
+                                            "trendLineColor": "#37a6ef",
+                                            "underLineColor": "#E3F2FD",
+                                            "isTransparent": false,
+                                            "autosize": true,
+                                            "largeChartUrl": ""
+                                        }
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
                             </div>
                         </div>
                         <div class="panel">
@@ -75,78 +76,63 @@
                                     <tr>
                                         <td width="40">
                                             <div class="avatar-wrapper avatar-mini">
-                                                <a class="user-menu-link" href="/en/user/GIB_Trade" title="Menu" data-id="25890" data-username="@GIB_Trade"><img src="https://social.tifia.com/uploads/avatars/002/589/1bbccfc960a764135a840eeaa89474ae.jpg" alt=""></a>
+                                                <a class="user-menu-link" href="/en/user/GIB_Trade" title="Menu" data-id="25890" data-username="@GIB_Trade"><img src="{{ asset('uploads/avatars/1bbccfc960a764135a840eeaa89474ae.jpg') }}" alt=""></a>
                                             </div>
                                         </td>
                                         <td>
-                                            <span class="user-menu"><a class="user-menu-link" href="/en/user/GIB_Trade" data-id="25890">@GIB_Trade</a> <span class="online-user-25890 online-status" title="Offline"></span></span>                                <br/>
-                                            Profit: <span class="label-profit">+1711.68%</span>
-                                        </td>
-                                        <td class="text-right action">
-                                            <a class="btn btn-sm btn-success" href="/en/sync-trading/investors-account?attach_user=GIB_Trade&amp;attach_account=STR-6192423" title="Copy"><i class="fa fa-copy"></i></a>
+                                            <span class="user-menu"><a class="user-menu-link" href="#" data-id="25890">@GIB_Trade</a> <span class="online-user-25890 online-status online" title="Online"></span></span>                                <br/>
+                                            Profit: <span class="label-profit">+1690.39%</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td width="40">
                                             <div class="avatar-wrapper avatar-mini">
-                                                <a class="user-menu-link" href="/en/user/SQD_Trainer" title="Menu" data-id="85738" data-username="@SQD_Trainer"><span class="image male">S</span></a>
+                                                <a class="user-menu-link" href="#" title="Menu" data-id="30499" data-username="@hafizz"><img src="{{ asset('uploads/avatars/cb5100644e38f52f2547ca531c1e8a3c.jpg') }}" alt=""></a>
                                             </div>
                                         </td>
                                         <td>
-                                            <span class="user-menu"><a class="user-menu-link" href="/en/user/SQD_Trainer" data-id="85738">@SQD_Trainer</a> <span class="online-user-85738 online-status" title="Offline"></span></span>                                <br/>
-                                            Profit: <span class="label-profit">+818.53%</span>
+                                            <span class="user-menu"><a class="user-menu-link" href="#" data-id="30499">@hafizz</a> <span class="online-user-30499 online-status" title="Offline"></span></span>                                <br/>
+                                            Profit: <span class="label-profit">+768.55%</span>
                                         </td>
-                                        <td class="text-right action">
-                                            <a class="btn btn-sm btn-success" href="/en/sync-trading/investors-account?attach_user=SQD_Trainer&amp;attach_account=PRO-6199006" title="Copy"><i class="fa fa-copy"></i></a>
+
+                                    </tr>
+                                    <tr>
+                                        <td width="40">
+                                            <div class="avatar-wrapper avatar-mini">
+                                                <a class="user-menu-link" href="#" title="Menu" data-id="41440" data-username="@CareTaker"><img src="{{ asset('uploads/avatars/9dc078ea88021779f6dcb2638bc3756f.png') }}" alt=""></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="user-menu"><a class="user-menu-link" href="#" data-id="41440">@CareTaker</a> <span class="online-user-41440 online-status" title="Offline"></span></span>                                <br/>
+                                            Profit: <span class="label-profit">+713.27%</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td width="40">
                                             <div class="avatar-wrapper avatar-mini">
-                                                <a class="user-menu-link" href="/en/user/CareTaker" title="Menu" data-id="41440" data-username="@CareTaker"><img src="https://social.tifia.com/uploads/avatars/004/144/9dc078ea88021779f6dcb2638bc3756f.png" alt=""></a>
+                                                <a class="user-menu-link" href="#" title="Menu" data-id="64641" data-username="@maverick"><img src="{{ asset('uploads/avatars/deb4d62c072a26fe96f5e3a45a6b27b9.jpg') }}" alt=""></a>
                                             </div>
                                         </td>
                                         <td>
-                                            <span class="user-menu"><a class="user-menu-link" href="/en/user/CareTaker" data-id="41440">@CareTaker</a> <span class="online-user-41440 online-status" title="Offline"></span></span>                                <br/>
-                                            Profit: <span class="label-profit">+722.54%</span>
-                                        </td>
-                                        <td class="text-right action">
-                                            <a class="btn btn-sm btn-success" href="/en/sync-trading/investors-account?attach_user=CareTaker&amp;attach_account=STR-6104288" title="Copy"><i class="fa fa-copy"></i></a>
+                                            <span class="user-menu"><a class="user-menu-link" href="#" data-id="64641">@maverick</a> <span class="online-user-64641 online-status" title="Offline"></span></span>                                <br/>
+                                            Profit: <span class="label-profit">+679.44%</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td width="40">
                                             <div class="avatar-wrapper avatar-mini">
-                                                <a class="user-menu-link" href="/en/user/BlackCougarFX" title="Menu" data-id="59650" data-username="@BlackCougarFX"><img src="https://social.tifia.com/uploads/avatars/005/965/b314fbd09457388cd5a15718cb31fa6d.jpeg" alt=""></a>
+                                                <a class="user-menu-link" href="#" title="Menu" data-id="85738" data-username="@SQD_Trainer"><span class="image male">S</span></a>
                                             </div>
                                         </td>
                                         <td>
-                                            <span class="user-menu"><a class="user-menu-link" href="/en/user/BlackCougarFX" data-id="59650">@BlackCougarFX</a> <span class="online-user-59650 online-status" title="Offline"></span></span>                                <br/>
-                                            Profit: <span class="label-profit">+593.69%</span>
+                                            <span class="user-menu"><a class="user-menu-link" href="#" data-id="85738">@SQD_Trainer</a> <span class="online-user-85738 online-status" title="Offline"></span></span>                                <br/>
+                                            Profit: <span class="label-profit">+666.54%</span>
                                         </td>
-                                        <td class="text-right action">
-                                            <a class="btn btn-sm btn-success" href="/en/sync-trading/investors-account?attach_user=BlackCougarFX&amp;attach_account=CLS-6184715" title="Copy"><i class="fa fa-copy"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="40">
-                                            <div class="avatar-wrapper avatar-mini">
-                                                <a class="user-menu-link" href="/en/user/JaD_FX" title="Menu" data-id="78966" data-username="@JaD_FX"><span class="image male">J</span></a>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="user-menu"><a class="user-menu-link" href="/en/user/JaD_FX" data-id="78966">@JaD_FX</a> <span class="online-user-78966 online-status" title="Offline"></span></span>                                <br/>
-                                            Profit: <span class="label-profit">+574.03%</span>
-                                        </td>
-                                        <td class="text-right action">
-                                            <a class="btn btn-sm btn-success" href="/en/sync-trading/investors-account?attach_user=JaD_FX&amp;attach_account=STR-6188317" title="Copy"><i class="fa fa-copy"></i></a>
-                                        </td>
+
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="text-center mt-md">
-                                    <a href="/en/monitoring/index">Traders' rating</a>
-                                </div>
+
                             </div>
                         </div>
                         <div class="panel">
@@ -162,122 +148,58 @@
                                     <tbody>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=XAUUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="XAUUSD">
-                                          <img src="/images/instruments/XAU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=XAUUSDx"> <span>XAUUSDx</span></a>
+                                          <img src="{{ asset('/images/instruments/XAU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>XAUUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 6324; Sell: 6171">12495</td>
+                                        <td class="text-right" title="Buy: 7807; Sell: 8731">16538</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURUSDx">
-                                          <span class="symbol size-32" title="EURUSD">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURUSDx"> <span>EURUSDx</span></a>
-                                        </td>
-                                        <td class="text-right" title="Buy: 4913; Sell: 5778">10691</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="/en/feed/instrument?instrument=GBPUSDx">
+                                            <a href="#">
                                           <span class="symbol size-32" title="GBPUSD">
-                                          <img src="/images/flags/flat/32/GB.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=GBPUSDx"> <span>GBPUSDx</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/GB.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a><a href="#"> <span>GBPUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 5250; Sell: 5423">10673</td>
+                                        <td class="text-right" title="Buy: 5084; Sell: 5349">10433</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURUSD">
+                                            <a href="#">
                                           <span class="symbol size-32" title="EURUSD">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/US.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURUSD"> <span>EURUSD</span></a>
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSDx</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 2332; Sell: 2249">4581</td>
+                                        <td class="text-right" title="Buy: 4764; Sell: 5350">10114</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <a href="/en/feed/instrument?instrument=EURJPYx">
-                                          <span class="symbol size-32" title="EURJPY">
-                                          <img src="/images/flags/flat/32/EU.png"><img src="/images/flags/flat/32/JP.png">
-                                          </span></a>                        <a href="/en/feed/instrument?instrument=EURJPYx"> <span>EURJPYx</span></a>
+                                            <a href="#">
+                                          <span class="symbol size-32" title="EURUSD">
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/US.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURUSD</span></a>
                                         </td>
-                                        <td class="text-right" title="Buy: 1869; Sell: 2357">4226</td>
+                                        <td class="text-right" title="Buy: 2330; Sell: 2468">4798</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                          <span class="symbol size-32" title="EURJPY">
+                                          <img src="{{ asset('/images/flags/flat/32/EU.png') }}"><img src="{{ asset('/images/flags/flat/32/JP.png') }}">
+                                          </span></a>                        <a href="#"> <span>EURJPYx</span></a>
+                                        </td>
+                                        <td class="text-right" title="Buy: 1774; Sell: 2228">4002</td>
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div class="text-center">
-                                    <a href="/en/instruments/index">Full list</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="page-footer" style="border-top: 1px solid rgba(62, 62, 62, 0.35); padding-top: 20px;">
-                <div class="row">
-                    <div class="first col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">About Us</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://www.tifia.com/company/why-tifia" target="_blank">Why choose us</a></li>
-                            <li><a href="https://www.tifia.com/company/company-news" target="_blank">Our news</a></li>
-                            <li><a href="https://www.tifia.com/en/company/legal-information" target="_blank">Legal information</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Contact us</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://chat.chatra.io/?hostId=73iWprWuzbCNWwgFK" target="_blank">LiveChat</a></li>
-                            <li><a href="https://www.tifia.com/contacts" target="_blank">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Forex trading</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://www.tifia.com/trading-accounts" target="_blank">Trading accounts</a></li>
-                            <li><a href="https://www.tifia.com/trading-instruments" target="_blank">Trading instruments</a></li>
-                            <li><a href="https://www.tifia.com/ecn-system" target="_blank">ECN system</a></li>
-                            <li><a href="https://www.tifia.com/trading-platforms/metatrader" target="_blank">MT4 trading platform</a></li>
-                            <li><a href="https://www.tifia.com/analytics" target="_blank">Analytics</a></li>
-                            <li><a href="https://www.tifia.com/payments" target="_blank">Deposit/Withdrawal</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Forex tools</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://www.tifia.com/analytics/forex-calculator" target="_blank">Trader&#039;s Calculator</a></li>
-                            <li><a href="https://www.tifia.com/analytics/economic-calendar" target="_blank">Economic Calendar</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Partnership</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://www.tifia.com/partners" target="_blank">For Partners</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-md-2">
-                        <p class="text-left" style="margin: 10px 0 10px;">Regulatory documents</p>
-                        <ul class="menu-links text-left">
-                            <li><a href="https://www.tifia.com/uploads/docs/terms-of-provision-and-use-of-information-en.pdf" target="_blank">Terms and Conditions</a></li>
-                            <li><a href="https://www.tifia.com/uploads/docs/privacy-policy-en.pdf" target="_blank">Privacy policy</a></li>
-                            <li><a href="https://www.tifia.com/uploads/docs/aml-policy-en.pdf" target="_blank">AML Policy</a></li>
-                            <li><a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk disclosure</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <p class="text-left">
-                            Risk warning: trading forex and CFD’s carries high risks of loosing money and not suitable for all investors. Read here our full <a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk Disclosure</a>.                                <br><br>
-                            Copyright © 2011 - 2020 Tifia Markets Limited, All rights reserved                                <br>
-                            Financial services provided by Tifia Markets Limited<br>
-                            <a href="#" class="rs-link" data-link-desktop="Switch to the desktop version" data-link-responsive="Switch to the mobile version"></a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
+          @include('dashboard.layouts.footer')
             <div id="notifications-mob" class="notifications-block notifications-mob">
                 <div class="notifications-mob__content">
                     <div class="notifications-title">

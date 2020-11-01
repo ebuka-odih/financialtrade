@@ -50,7 +50,16 @@
                             <li><a href="https://social.tifia.com/en/help/contacts" ><i class="fa fa-phone"></i> Contacts</a></li>
                         </ul>
                     </li>
-                    <li class=""><a href="https://social.tifia.com/en/logout/index" ><i class="fa fa-power-off"></i> Logout</a></li>
+                    <li class="">
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            <i class="fa fa-power-off"></i> Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </div>

@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Mail;
 
 class AdminWithdrawal extends Controller
 {
-
     public function all_withdrawal()
     {
         $users_withdrawals = Withdrawal::all();
@@ -38,4 +37,5 @@ class AdminWithdrawal extends Controller
         }
 
     }
+
 }

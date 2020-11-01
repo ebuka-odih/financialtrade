@@ -3452,7 +3452,8 @@ table.table-symbols a:hover {
         display: block;
         position: fixed;
         bottom: 0;
-        background: #E52525;
+        background: #50C878
+    ;
         width: 100%;
         left: 0;
         right: 0;
@@ -3469,21 +3470,21 @@ table.table-symbols a:hover {
         width: 25%;
     }
     .fixed-footer-menu ul li a {
-        color: #820000;
+        color: #0a0a0a;
         font-size: 10px;
         line-height: 14px;
         font-weight: bold;
         display: block;
     }
     .fixed-footer-menu ul li a:hover {
-        color: #ffffff;
+        color: #eee7e7;
         text-decoration: none;
     }
     .fixed-footer-menu a.btn-chat, .fixed-footer-menu a.btn-notifications {
         cursor: pointer;
     }
     .fixed-footer-menu ul li a.btn-notifications:hover {
-        color: #820000;
+        color: #f1f0f0;
     }
     .fixed-footer-menu ul li a.btn-notifications.active
     {
@@ -3496,32 +3497,32 @@ table.table-symbols a:hover {
     }
 
     .fixed-footer-menu ul li .ic-depo {
-        background: url("../images/general/depo-ic-menu.svg") no-repeat scroll 0 0;
+        background: url("../images/general/deposit.svg") no-repeat scroll 0 0;
         width: 29px;
     }
     .fixed-footer-menu ul li a:hover .ic-depo {
-        background: url("../images/general/depo-ic-menu.svg") no-repeat scroll 100% 0;
+        background: url("../images/general/deposit.svg") no-repeat scroll 100% 0;
     }
     .fixed-footer-menu ul li .ic-notif {
-        background: url("../images/general/notif-ic-menu.svg") no-repeat scroll 0 0;
+        background: url("../images/general/home.svg") no-repeat scroll 0 0;
         width: 22px;
     }
     .fixed-footer-menu ul li a.btn-notifications.active .ic-notif{
-        background: url("../images/general/notif-ic-menu.svg") no-repeat scroll 100% 0;
+        background: url("../images/general/home.svg") no-repeat scroll 100% 0;
     }
-    .fixed-footer-menu ul li .ic-chat {
-        background: url("../images/general/chat-ic-menu.svg") no-repeat scroll 0 0;
+    .fixed-footer-menu ul li .ic-hist  {
+        background: url("../images/general/history.svg") no-repeat scroll 0 0;
         width: 29px;
     }
-    .fixed-footer-menu ul li a:hover .ic-chat {
-        background: url("../images/general/chat-ic-menu.svg") no-repeat scroll 100% 0;
+    .fixed-footer-menu ul li a:hover .ic-hist {
+        background: url("../images/general/history.svg") no-repeat scroll 100% 0;
     }
     .fixed-footer-menu ul li .ic-with {
-        background: url("../images/general/with-ic-menu.svg") no-repeat scroll 0 0;
+        background: url("../images/general/withdraw.svg") no-repeat scroll 0 0;
         width: 29px;
     }
     .fixed-footer-menu ul li a:hover .ic-with {
-        background: url("../images/general/with-ic-menu.svg") no-repeat scroll 100% 0;
+        background: url("../images/general/withdraw.svg") no-repeat scroll 100% 0;
     }
     /*.header .header-buttons {
         display:block;

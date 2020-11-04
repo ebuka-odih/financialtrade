@@ -19,11 +19,15 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('change-password', 'UserController@change_password_store')->name('change.password');
 
 //    Transactions RouteTransactionController
-    Route::get('deposit/history', 'TransactionController@deposit_history')->name('deposit_history');
     Route::get('withdrawal/history', 'WithdrawalController@withdrawal_history')->name('withdrawal_history');
     Route::get('withdrawal', 'WithdrawalController@make_withdrawal')->name('make_withdrawal');
     Route::post('withdrawal/send', 'WithdrawalController@make_withdrawal_store')->name('make_withdrawal_store');
     Route::get('withdrawal/cancel/{id}', 'WithdrawalController@cancel_withdraw')->name('cancel_withdraw');
+
+    Route::get('deposit/', 'DepositsController@pick_plan')->name('pick_plan');
+    Route::post('process_deposit/', 'DepositsController@process_deposit')->name('process_deposit');
+    Route::get('deposit/{id}', 'DepositsController@make_deposit')->name('make_deposit');
+    Route::get('deposits/history/', 'DepositsController@deposit_history')->name('deposit_history');
 
 });
 

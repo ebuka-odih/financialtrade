@@ -30,7 +30,7 @@
 {{--                            <li><a href="https://social.tifia.com/en/terminal/index" ><i class="fa fa-download"></i> Trading terminal</a></li>--}}
 {{--                        </ul>--}}
 {{--                    </li>--}}
-                    <li class=""><a href="https://social.tifia.com/en/home" ><i class="fa fa-long-arrow-right"></i> Deposit</a></li>
+                    <li class=""><a href="{{ route('user.pick_plan') }}" ><i class="fa fa-long-arrow-right"></i> Deposit</a></li>
                     <li class=""><a href="{{ route('user.make_withdrawal') }}" ><i class="fa fa-long-arrow-left"></i> Withdrawal</a></li>
                     <li class=""><a href="{{ route('user.deposit_history') }}" ><i class="fa fa-history"></i> Transaction history</a></li>
 

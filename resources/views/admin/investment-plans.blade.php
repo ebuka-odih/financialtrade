@@ -52,7 +52,7 @@
                                                     </a>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
                                                         <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                        <a class="dropdown-item" href="{{ route('admin.investment-plans', $invest_plan->id) }}">Delete</a>
                                                     </div>
                                                 </div>
                                             </td>

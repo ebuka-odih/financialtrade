@@ -2,6 +2,16 @@
 
     <!---->
    @section('content')
+       <style>
+           td a{
+               display: none;
+               pointer-events: none;
+           }
+
+           .social-table table tr td .view{
+               display: none;
+           }
+       </style>
     <section class="section about-tifia">
         <div class="container-fluid">
             <h1>How about earning more by Forex trading?</h1>
@@ -104,10 +114,10 @@
             </div>
         </div>
     </section>
-    <section class="section social-trading" id="five">
+    <section style="margin-top: -150px" class="section social-trading" id="five">
         <div class="container-fluid">
             <div class="social-info">
-                <img class="lazy" alt="Social Trading" data-src="images/new-site/social-logo.svg">
+                <img class="lazy" alt="Social Trading" data-src="{{ asset('images/new-site/social-logo.svg') }}">
                 <h4>Social Trading</h4>
                 <h2>Forex Social Trading - Forex copy trading system</h2>
                 <h3 class="only-mob">Synchronize your trades with successful providers' ones!</h3>

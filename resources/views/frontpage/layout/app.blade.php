@@ -14,9 +14,10 @@
     <meta property="og:image:secure_url" content="images/og/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Financialtrade Forex broker. Online Forex trading with ECN broker">
-    <meta property="og:site_name" content="Tifia">
+    <meta property="og:site_name" content="FTM">
     <meta property="og:url" content="index.html">
-    <meta property="og:description" content="Official website of Tifia Forex broker. Earn online by trading on Forex and financial markets. With Tifia broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
+    <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
+    <meta property="og:description" content="Official website of FTM Forex broker. Earn online by trading on Forex and financial markets. With FTM broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <link href="index.blade.phpprasing" rel="canonical">
     <link href="{{ asset('dist/app6597.css?v=1601635857') }}" rel="stylesheet">
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>        <!-- Google Tag Manager -->
@@ -33,28 +34,6 @@
 
     <!-- Chatra {literal} -->
     <script>
-
-        ChatraGroupID = 'miQzbXCuwfbyCxha7';
-
-        (function(d, w, c) {
-            w.ChatraID = 'vJtm9z7cLt37w3Tf9';
-            var s = d.createElement('script');
-            w[c] = w[c] || function() {
-                (w[c].q = w[c].q || []).push(arguments);
-            };
-            s.async = true;
-            s.src = 'https://call.chatra.io/chatra.js';
-            if (d.head) d.head.appendChild(s);
-        })(document, window, 'Chatra');
-
-        window.ChatraSetup = {
-            language: "en"
-        }
-
-        Chatra('setColors', {
-            buttonBg: '#E52525', // chat button background color
-            clientBubbleBg: '#333333', // visitor’s message bubble color
-        });
 
         function hasClass(elem,cls) {
             return elem.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
@@ -174,7 +153,7 @@
                 <div class="left-block mb-5">
                     <div class="logo">
                        <p>
-                           <a style="margin-top: -30px; color: white; line-height: 1px" href="index.blade.php"><img alt="Tifia Markets Limited" height="70" src="{{ asset('images/new-site/logo-white.png') }}">FinancialTradeMarket</a>
+                           <a style="margin-top: -30px; color: white; line-height: 1px" href="{{ route('homepage') }}"><img alt="Financial Trade Markets Limited" height="70" src="{{ asset('images/new-site/logo-white.png') }}">FinancialTradeMarket</a>
                        </p>
                     </div>
                 </div>
@@ -405,8 +384,8 @@
                         </p>
                     </div>
                     <p>Copyright © 2011 - 2020<br>
-                        Tifia Markets Limited, All rights reserved<br>
-                        Email: <a href="mailto:support@tifia.com">support@financialtrademarkets.com/</a>
+                        Financial Trade Markets Limited, All rights reserved<br>
+                        Email: <a href="mailto:support@financialtrademarkets.com">support@financialtrademarkets.com/</a>
                     </p>
                 </li>
                 <li class="docs-main">
@@ -415,15 +394,6 @@
                         <li><a href="uploads/docs/privacy-policy-en.pdf">Privacy policy</a></li>
                         <li><a href="uploads/docs/aml-policy-en.pdf">AML policy</a></li>
                         <li><a href="uploads/docs/risk-disclosure-en.pdf">Risk Disclosure</a></li>
-                    </ul>
-                </li>
-                <li class="social-links">
-                    <ul>
-                        <li class="in"><a href="https://www.instagram.com/tifiaforex/"></a></li>
-                        <li class="linked"><a href="https://www.linkedin.com/company/11003341/"></a></li>
-                        <li class="fb"><a href="https://www.facebook.com/tifia/"></a></li>
-                        <li class="tw"><a href="https://twitter.com/TifiaECNBroker"></a></li>
-                        <li class="telegram"><a href="https://t.me/tifiaanalytics"></a></li>
                     </ul>
                 </li>
             </ul>
@@ -439,10 +409,10 @@
 </div>
 
 
-<div class="support-btn ">
-    <a class="livechat-btn" style="cursor:pointer" onclick="Chatra(&#039;openChat&#039;)"><span></span></a>
-    <a class="callback-btn" href="en/callback.html"><span></span></a>
-</div>
+{{--<div class="support-btn ">--}}
+{{--    <a class="livechat-btn" style="cursor:pointer" onclick="Chatra(&#039;openChat&#039;)"><span></span></a>--}}
+{{--    <a class="callback-btn" href="en/callback.html"><span></span></a>--}}
+{{--</div>--}}
 
 <script src="{{ asset('js/TweenMax.minde6a.js?v=1576248880') }}" async="" defer=""></script>
 <script src="{{ asset('js/ScrollMagic.minde6a.js?v=1576248880') }}" async="" defer=""></script>
@@ -465,4 +435,5 @@
 <script src="{{ asset('js/bodyScrollLock.minde6a.js?v=1576248880') }}"></script></body>
 
 <!-- Mirrored from tifia.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Oct 2020 14:02:31 GMT -->
+<script src="//code.tidio.co/bdqn75mlu16hdlh7abpgxyck65rgwrpr.js" async></script>
 </html>

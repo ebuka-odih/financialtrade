@@ -5,54 +5,17 @@
             <img src="{{ asset('images/new-site/logo3.png') }}" class="logo-mini" alt="FTM" />
         </a>
         <div class="header-buttons">
-            <a class="btn btn-success btn-mini button-deposit" href="https://social.tifia.com/en/deposit/index">Deposit</a>                                            <a class="btn btn-default btn-mini ml-sm button-withdrawal" href="https://social.tifia.com/en/withdrawal/index">Withdrawal</a>
+            <a class="btn btn-success btn-mini button-deposit" href="{{ route('user.pick_plan') }}">Deposit</a>
+            <a class="btn btn-default btn-mini ml-sm button-withdrawal" href="{{ route('user.make_withdrawal') }}">Withdrawal</a>
         </div>
     </div>
     <div class="header-right">
         <div class="header-buttons">
-            <a class="btn btn-success btn-mini button-deposit" href="https://social.tifia.com/en/deposit/index">Deposit</a>                                            <a class="btn btn-default btn-mini ml-sm button-withdrawal demo-notice" href="https://social.tifia.com/en/withdrawal/index">Withdrawal</a>
+            <a class="btn btn-success btn-mini button-deposit" href="{{ route('user.pick_plan') }}">Deposit</a>
+            <a class="btn btn-default btn-mini ml-sm button-withdrawal demo-notice" href="{{ route('user.make_withdrawal') }}">Withdrawal</a>
         </div>
         <span class="separator"></span>
-        <div class="search dropdown">
-            <form id="form-header-search" method="GET" class="search nav-form dropdown-toggle" action="https://social.tifia.com/en/search/index">
-                <div class="input-group input-search">
-                    <input type="text" class="form-control" name="search" value="" placeholder="Search..." autocomplete="off">            <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                        </span>
-                </div>
-            </form>
-            <div class="dropdown-menu"></div>
-        </div>
-        <span class="separator"></span>
-        <a class="btn-chat" style="cursor: pointer" class="chat-header"><img src="https://social.tifia.com/images/general/livechat.svg" alt="LiveChat" /></a>
-        <span class="separator"></span>
-        <ul class="notifications">
-            <li>
-                <a class="notification-icon">
-                    <img src="https://social.tifia.com/images/general/bell.svg" alt="Notifications" />
-                    <span class="badge ">0</span>
-                </a>
-                <div class="dropdown-menu notification-menu large notifications-block">
-                    <div class="notification-title">
-                        Notifications
-                    </div>
-                    <div class="content">
-                        <div class="notifications-content loader-wrapper"></div>
-                        <hr/>
-                        <div class="view-more">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <a class="btn btn-blue btn-primary" href="https://social.tifia.com/en/notifications/index">View all</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <a id="notifications-read-all" class="ajax-action btn btn-trans notifications-read-all" href="https://social.tifia.com/en/notifications/read-all">Mark as read</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+
         <span class="separator"></span>
         <div class="language-menu navbar-btn btn-group">
             <button data-toggle="dropdown" class="btn dropdown-toggle">

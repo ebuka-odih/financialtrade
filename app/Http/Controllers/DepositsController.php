@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\InvestPlans;
 use Illuminate\Http\Request;
 use Hexters\CoinPayment\Helpers\CoinPaymentFacade as CoinPayment;
+use Kevupton\LaravelCoinpayments\Exceptions\IpnIncompleteException;
+
 class DepositsController extends Controller
 {
 
@@ -51,6 +53,32 @@ class DepositsController extends Controller
         $link =CoinPayment::generatelink($transaction);
 
         return redirect($link);
+    }
+
+    public function validateIpn (Request $request)
+    {
+        try {
+
+            $ipn = \Coinpayments::validateIPNRequest($request);
+
+            // if the ipn came from the API side of coinpayments merchant
+            if ($ipn->isApi()) {
+
+                /*
+                 * If it makes it into here then the payment is complete.
+                 * So do whatever you want once the completed
+                 */
+
+                // do something here
+                // Payment::find($ipn->txn_id);
+            }
+        }
+        catch (IpnIncompleteException $e) {
+            $ipn = $e->getIpn();
+            /*
+             * Can do something here with the IPN model if desired.
+             */
+        }
     }
 
 

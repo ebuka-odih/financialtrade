@@ -48,9 +48,11 @@ class InvestPlansController extends Controller
     }
 
 
-    public function destroy(InvestPlans $investPlans)
+    public function destroy($id)
     {
-        //
+        $invest_plan = InvestPlans::findOrFail($id);
+        $invest_plan->delete();
+        return redirect()->back()->with('deleted', 'Investment plan deleted');
     }
 
     protected function getData(Request  $request)

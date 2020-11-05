@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/make-deposit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransactionController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/InvestPlansController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/InvestPlansController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/investment-plans.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/investment-plans.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,8 @@
       <workItem from="1604215835970" duration="30772000" />
       <workItem from="1604267799972" duration="5885000" />
       <workItem from="1604309851418" duration="454000" />
-      <workItem from="1604502030110" duration="8918000" />
+      <workItem from="1604502030110" duration="17027000" />
+      <workItem from="1604556440463" duration="6765000" />
     </task>
     <servers />
   </component>
@@ -232,13 +232,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontpage/index.blade.php</url>
-          <line>180</line>
+          <line>190</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/dashboard/layouts/app.blade.php</url>
-          <line>231</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/dashboard/user-settings/personal_info.blade.php</url>

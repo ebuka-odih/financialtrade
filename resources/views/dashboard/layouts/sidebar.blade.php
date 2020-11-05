@@ -46,7 +46,8 @@
                     <li class="nav-parent">
                         <a href="#" ><i class="fa fa-info"></i> Help</a>
                         <ul class='nav nav-children'>
-                            <li><a href="https://social.tifia.com/en/help/faq" ><i class="fa fa-question-circle-o"></i> FAQ</a></li>
+                            <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr" target="_blank"><i class="fa fa-comments"></i> LiveChat</a></li>
+                            <li><a href="/en/help/faq" ><i class="fa fa-question"></i> FAQ</a></li>
                             <li><a href="https://social.tifia.com/en/help/contacts" ><i class="fa fa-phone"></i> Contacts</a></li>
                         </ul>
                     </li>

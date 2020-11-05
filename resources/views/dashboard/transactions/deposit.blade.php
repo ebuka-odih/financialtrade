@@ -42,7 +42,7 @@
                                                <p>Base Currency: {{ $invest_plan->acct_base_currency }}</p>
                                            </div><br>
                                            <div class="info">
-                                               <a href="{{ route('user.make_deposit', $invest_plan->id) }}" class="btn btn-success">Choose</a>
+                                               <a href="{{ route('user.make_deposit', $invest_plan->id) }}" class="btn btn-success">Choose Plan</a>
                                            </div><br>
                                        </div>
                                    </div>

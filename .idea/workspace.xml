@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontpage/contact-us.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontpage/why-ftm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/app6597.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/app6597.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/user-settings/profile_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/user-settings/profile_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,7 +189,7 @@
       <workItem from="1604556440463" duration="8143000" />
       <workItem from="1604643449803" duration="103000" />
       <workItem from="1604678182517" duration="4136000" />
-      <workItem from="1604685263778" duration="4937000" />
+      <workItem from="1604685263778" duration="5246000" />
     </task>
     <servers />
   </component>

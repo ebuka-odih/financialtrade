@@ -13,4 +13,13 @@ class HomepageController extends Controller
         $invest_plans = InvestPlans::all();
         return view('frontpage.index', compact('invest_plans'));
     }
+    public function why_ftm()
+    {
+        return view('frontpage.why-ftm');
+    }
+
+    public function contact_us()
+    {
+        return view('frontpage.contact-us');
+    }
 }

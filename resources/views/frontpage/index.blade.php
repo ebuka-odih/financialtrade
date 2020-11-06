@@ -1,6 +1,4 @@
 @extends('frontpage.layout.app')
-
-    <!---->
    @section('content')
        <style>
            td a{
@@ -349,7 +347,7 @@
             </div>
         </div>
     </section>
-    <section class="promotions-block-main">
+        <section class="promotions-block-main">
                 <div class="container-fluid">
                     <div class="container-block">
                         <h2>Forex contests and deposit bonuses from FTM</h2>

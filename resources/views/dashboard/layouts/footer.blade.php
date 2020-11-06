@@ -12,7 +12,7 @@
             <p class="text-left" style="margin: 10px 0 10px;">Contact us</p>
             <ul class="menu-links text-left">
                 <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr" target="_blank">LiveChat</a></li>
-                <li><a href="https://www.tifia.com/contacts" target="_blank">Contacts</a></li>
+                <li><a href="{{ route('contact_us') }}" target="_blank">Contacts</a></li>
             </ul>
         </div>
 

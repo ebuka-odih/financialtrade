@@ -60,6 +60,8 @@ class UserController extends Controller
         return view('dashboard.user-settings.profile_details', compact('users_details'));
     }
 
+
+
     public function profile_picture_store(Request $request)
     {
 
@@ -80,6 +82,8 @@ class UserController extends Controller
         }
         return redirect()->back()->with('success', 'Profile Image Changed Successfully');
     }
+
+
 
     public function change_password()
     {

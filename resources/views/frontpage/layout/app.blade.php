@@ -165,38 +165,36 @@
                                     <li class="mob-only no-bg open-acc"><a class="" href="{{ route('register') }}" rel="nofollow">Registration</a>                                            </li>
                                     <li class="mob-only no-bg"><a class="" href="{{ route('login') }}" rel="nofollow">Sign in</a></li>
                                     <li>
-                                        <a class="mob-not">About us
-                                            <span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <div class="row">
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Meet us</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/company/why-tifia.html"><span>Why us?</span></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 col-12">
-                                                    <h4>Contact us</h4>
-                                                    <ul class="dropdawn-menu">
-                                                        <li><a href="en/feedback.html"><span>Feedback</span></a></li>
-                                                        <li><a href="en/callback.html"><span>Request a callback</span></a></li>
-                                                        <li><a href="en/contacts.html"><span>Contacts</span></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a style="cursor: pointer" href="{{ route('homepage') }}">Home<span></span></a>
+                                        <div class="bg-menu"></div>
+                                    </li>
+{{--                                    <li>--}}
+{{--                                        <a class="mob-not">About us--}}
+{{--                                            <span></span></a>--}}
+{{--                                        <div class="dropdawn-menu-block">--}}
+{{--                                            <div class="row">--}}
+{{--                                                <div class="col-md-6 col-12">--}}
+{{--                                                    <h4>Meet us</h4>--}}
+{{--                                                    <ul class="dropdawn-menu">--}}
+{{--                                                        <li><a href="en/company/why-tifia.html"><span>Why us?</span></a></li>--}}
+{{--                                                    </ul>--}}
+{{--                                                </div>--}}
+{{--                                                <div class="col-md-6 col-12">--}}
+{{--                                                    <h4>Contact us</h4>--}}
+{{--                                                    <ul class="dropdawn-menu">--}}
+{{--                                                        <li><a href="en/contacts.html"><span>Contacts</span></a></li>--}}
+{{--                                                    </ul>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="bg-menu"></div>--}}
+{{--                                    </li>--}}
+                                    <li>
+                                        <a style="cursor: pointer" href="{{ route('why_ftm') }}" rel="nofollow">About us</a>
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
-                                        <div class="bg-menu"></div>
-                                    </li>
-                                    <li>
-                                        <a href="#">Social Trading<span></span></a>
-                                        <div class="bg-menu"></div>
-                                    </li>
-                                    <li>
-                                        <a href="#">Promotions</a>
-
+                                        <a style="cursor: pointer" href="{{ route('contact_us') }}" rel="nofollow">Contact us</a>
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li>
@@ -312,73 +310,46 @@
         <footer class="">
         <div class="container-fluid">
             <ul class="payments">
-                <li><img alt="Mastercard logo" data-src="https://tifia.com/images/new-site/footer-payments/mastercard.svg" class="lazy"></li>
-                <li><img alt="Visa logo" data-src="https://tifia.com/images/new-site/footer-payments/visa.svg" class="lazy"></li>
-                <li><img alt="Bank Wire logo" data-src="https://tifia.com/images/new-site/footer-payments/bankwire.svg" class="lazy"></li>
-                <li><img alt="Skrill logo" data-src="https://tifia.com/images/new-site/footer-payments/skrill.svg" class="lazy"></li>
-                <li><img alt="Perfect Money logo" data-src="https://tifia.com/images/new-site/footer-payments/pm.svg" class="lazy"></li>
-                <li><img alt="Neteller logo" data-src="https://tifia.com/images/new-site/footer-payments/neteller.svg" class="lazy"></li>
-                <li><img alt="Local Deposit" data-src="https://tifia.com/images/new-site/footer-payments/localdepo.svg" class="lazy"></li>
-                <li><img alt="Fasapay logo" data-src="https://tifia.com/images/new-site/footer-payments/fasapay.svg" class="lazy"></li>
-                <li><img alt="Bitcoin logo" data-src="https://tifia.com/images/new-site/footer-payments/bitcoin.svg" class="lazy"></li>
+                <li><img alt="Mastercard logo" data-src="{{ asset('images/new-site/footer-payments/mastercard.svg') }}" class="lazy"></li>
+                <li><img alt="Visa logo" data-src="{{ asset('images/new-site/footer-payments/visa.svg') }}" class="lazy"></li>
+                <li><img alt="Bank Wire logo" data-src="{{ asset('images/new-site/footer-payments/bankwire.svg') }}" class="lazy"></li>
+                <li><img alt="Skrill logo" data-src="{{ asset('images/new-site/footer-payments/skrill.svg') }}" class="lazy"></li>
+                <li><img alt="Perfect Money logo" data-src="{{ asset('images/new-site/footer-payments/pm.svg') }}" class="lazy"></li>
+                <li><img alt="Neteller logo" data-src="{{ asset('images/new-site/footer-payments/neteller.svg') }}" class="lazy"></li>
+{{--                <li><img alt="Local Deposit" data-src="https://tifia.com/images/new-site/footer-payments/localdepo.svg" class="lazy"></li>--}}
+                <li><img alt="Fasapay logo" data-src="{{ asset('images/new-site/footer-payments/fasapay.svg') }}" class="lazy"></li>
+                <li><img alt="Bitcoin logo" data-src="{{ asset('images/new-site/footer-payments/bitcoin.svg') }}" class="lazy"></li>
             </ul>
         </div>
         <div class="container-content">
-             <ul class="footer-menu">
-                <li>
-                    <ul>
-                        <li>About us</li>
-                        <li><a href="en/company/why-tifia.html">Why us?</a></li>
-                        <li><a href="en/company/company-news.html">Our news</a></li>
-                        <li><a href="en/company/legal-information.html">Legal information</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Contact us</li>
-                        <li><a href="en/feedback.html">Feedback</a></li>
-                        <li><a href="en/callback.html">Request a callback</a></li>
-                        <li><a href="en/contacts.html">Contacts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Forex trading</li>
-                        <li><a href="en/trading-accounts.html">Trading accounts</a></li>
-                        <li><a href="https://social.tifia.com/en/new-account/demo">Try on demo</a></li>
-                        <li><a href="en/trading-instruments.html">Trading instruments</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Promotions</li>
-                        <li><a href="en/promotions.html">All Promotions</a></li>
-                        <li><a href="en/contests/rush-for-profits-2020.html">Rush for profits</a></li>
-                        <li><a href="en/promotions/deposits-and-withdrawals-forex-cashback.html">Forex Cashback</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Forex tools</li>
-                        <li><a href="en/analytics/forex-calculator.html">Trader&#039;s Calculator</a></li>
-                        <li><a href="en/analytics/economic-calendar.html">Economic calendar</a></li>
-                        <li><a href="en/payments.html">Deposit/Withdrawal</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li>Partnership</li>
-                        <li><a href="en/partners.html">For Partners</a></li>
-                        <li><a href="en/partners/commissions.html">Partners&#039; commissions</a></li>
-                        <li><a href="en/partners.html#partners-form">Regional representative</a></li>
-                    </ul>
-                </li>
-            </ul>
+           <div class="container">
+               <ul class="footer-menu">
+                   <li class="col-md-4">
+                       <ul>
+                           <li>About us</li>
+                           <li><a href="{{ route('why_ftm') }}">Why us?</a></li>
+                       </ul>
+                   </li>
+                   <li class="col-md-4">
+                       <ul>
+                           <li>Contact us</li>
+                           <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr">Chat Us</a></li>
+                           <li><a href="{{ route('contact_us') }}">Contacts</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <ul>
+                           <li>Partnership</li>
+                           <li><a href="#">Partners&#039; commissions</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
             <ul class="copyright-text">
                 <li>
                     <div class="logo-footer">
                         <p>
-                            <a style="margin-top: -30px; color: white; line-height: 1px; font-size: 16px" href="index.blade.php">
+                            <a style="margin-top: -30px; color: white; line-height: 1px; font-size: 16px" href="{{ route('homepage') }}">
                                 <img  alt="FTM Markets Limited" height="70" src="{{ asset('images/new-site/logo-white.png') }}">
                                 <br>FinancialTradeMarket</a>
                         </p>
@@ -390,10 +361,9 @@
                 </li>
                 <li class="docs-main">
                     <ul>
-                        <li><a href="uploads/docs/terms-of-provision-and-use-of-information-en.pdf">Terms of use</a></li>
-                        <li><a href="uploads/docs/privacy-policy-en.pdf">Privacy policy</a></li>
-                        <li><a href="uploads/docs/aml-policy-en.pdf">AML policy</a></li>
-                        <li><a href="uploads/docs/risk-disclosure-en.pdf">Risk Disclosure</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>>
+                        <li><a href="#">Risk Disclosure</a></li>
                     </ul>
                 </li>
             </ul>

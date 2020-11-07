@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-param" content="_csrf-frontend">
-    <meta name="csrf-token" content="MYfwU_-O_AiYLgCWs-dnF8OE0xtsPeNbXiRXqRZqSFV_6Zw5sLuNOulDV9Lc0SRhu8HhXTNphA1vYxPLfwgrFg==">
     <title>FTM broker. Online Forex trading</title>
     <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
@@ -21,8 +19,7 @@
 
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>
 
-{{--    <meta name="google-site-verification" content="SDlWYorMeLVq8zvHiYc9GTQ0vXU3ty16DtKPhN6yqjY" />--}}
-
+    <meta name="google-site-verification" content="Nk0Zfp6b7sl_oollD1LENmV4BCf14GNnWeJ03n5QP9I" />
     <style>
         .translated-ltr{margin-top:-30px;}
         .translated-ltr{margin-top:-30px;}

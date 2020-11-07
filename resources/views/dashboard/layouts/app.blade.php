@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-param" content="_csrf">
-    <meta name="csrf-token" content="uNXaMKKJzcctKlLWBiI_wYUbxnBdnbJq2qZVGn5aIYzomoVZ2PiDkG5PPoNFYUu49FmFRwz11g64yGZjCT1l6g==">
     <title>FTM/Trade</title>
     <link href="{{ asset('admin_assets/d4d1979f/build/css/intlTelInputf907.css?v=1598456919') }}" rel="stylesheet">
     <link href="{{ asset('admin_assets/c4fd7b45/css/bootstrap73a6.css?v=1574168826') }}" rel="stylesheet">
@@ -38,14 +37,8 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="FTM">
     <meta name="robots" content="noindex">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PBQR5C');
-    </script>
-    <!-- End Google Tag Manager -->
+
+    <meta name="google-site-verification" content="Nk0Zfp6b7sl_oollD1LENmV4BCf14GNnWeJ03n5QP9I" />
 
 {{--    Google Translator--}}
     <style>
@@ -75,10 +68,7 @@
     </style>
 </head>
 <body class="layouts-main- lang-en">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBQR5C"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <script type="text/javascript">
     (function(a,e,f,g,b,c,d){a[b]||(a.FintezaCoreObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=!0,c.defer=!0,c.src=g,d&&d.parentNode&&d.parentNode.insertBefore(c,d))})
     (window,document,"script","https://content.mql5.com/core.js","fz");

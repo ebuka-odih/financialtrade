@@ -32,10 +32,16 @@
                     </div>
                 @endif
                 <form id="form-reset-password" action="{{ route('password.email') }}" method="post">
+                    @csrf
                         Type in your email address below (login from your FTM profile) and we'll send you an email with a link to reset your password.    </p>
                     <div class="form-group field-requestform-email required">
                         <label class="control-label" for="requestform-email">Email address</label>
-                        <input type="text" id="requestform-email" class="form-control" name="RequestForm[email]" aria-required="true">
+                        <input type="text" id="requestform-email" class="form-control @error('email') is-invalid @enderror" name="email" aria-required="true">
+                        @error('email')
+                        <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
 
                         <p class="help-block help-block-error"></p>
                     </div>

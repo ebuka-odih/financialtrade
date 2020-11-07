@@ -25,7 +25,7 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="block-payment-method unavailable" data-url="/en/withdrawal/form?method=btc" data-method="btc" style="border-left-color: #6C8EB6"
-                                             title=""  data-original-title="Please, use for the withdrawal only the same payment method (bank card, wallet, payment system and so on) which you have used for deposit your trading account.">
+                                             title="">
                                             <div class="wrapper">
                                                 <div class="logo">
                                                     <img src="https://social.tifia.com/images/payment-system/btc.png?v=1" alt="Bitcoin" />
@@ -44,7 +44,7 @@
 
                                     <div class="col-md-4">
                                         <div class="block-payment-method unavailable" data-url="/en/withdrawal/form?method=mb" data-method="mb" style="border-left-color: #900d66"
-                                             title=""  data-original-title="Please, use for the withdrawal only the same payment method (bank card, wallet, payment system and so on) which you have used for deposit your trading account.">
+                                             title="" >
                                             <div class="wrapper">
                                                 <div class="descr col-md-8">
                                                     <p class="title">Account Balance</p>

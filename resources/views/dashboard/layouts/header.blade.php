@@ -1,6 +1,6 @@
 <header class="header">
     <div class="logo-container">
-        <a href="https://social.tifia.com/en" class="logo">
+        <a href="{{ route('homepage') }}" class="logo">
             <img src="{{ asset('images/new-site/logo3.svg') }}" class="logo-full" alt="FTM" />
             <img src="{{ asset('images/new-site/logo3.png') }}" class="logo-mini" alt="FTM" />
         </a>
@@ -14,53 +14,9 @@
             <a class="btn btn-success btn-mini button-deposit" href="{{ route('user.pick_plan') }}">Deposit</a>
             <a class="btn btn-default btn-mini ml-sm button-withdrawal demo-notice" href="{{ route('user.make_withdrawal') }}">Withdrawal</a>
         </div>
-        <span class="separator"></span>
 
         <span class="separator"></span>
-        <div class="language-menu navbar-btn btn-group">
-            <button data-toggle="dropdown" class="btn dropdown-toggle">
-                <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/US.png')"></span>
-                <span class="language-name">English</span>
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="https://social.tifia.com/es/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/ES.png')"></span> Español        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/fr/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/FR.png')"></span> Français         </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/id/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/ID.png')"></span> Indonesian        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/ms/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/MY.png')"></span> Malay        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/pl/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/PL.png')"></span> Polski        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/pt/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/PT.png')"></span> Português        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/th/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/TH.png')"></span> ภาษาไทย        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/vi/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/VN.png')"></span> Tiếng Việt        </a>
-                </li>
-                <li>
-                    <a href="https://social.tifia.com/zh/home?username=GIB%40Trade&amp;switch-lang=true">
-                        <span class="language-flag" style="background-image: url('https://social.tifia.com/images/flags/shiny/16/CN.png')"></span> 中文        </a>
-                </li>
-            </ul>
+        <div style="height: 20px; margin-top: -30px;" class="language-menu navbar-btn btn-group" id="google_translate_element">
         </div>
         <span class="separator"></span>
         <div class="logout">

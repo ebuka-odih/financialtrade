@@ -47,6 +47,32 @@
     </script>
     <!-- End Google Tag Manager -->
 
+{{--    Google Translator--}}
+    <style>
+        .translated-ltr{margin-top:-30px;}
+        .translated-ltr{margin-top:-30px;}
+        .goog-te-banner-frame {display: none;margin-top:-20px;}
+
+        .goog-logo-link {
+            display:none !important;
+        }
+
+        .goog-te-gadget select{
+            /*color: transparent !important;*/
+            height: inherit;
+        }
+
+        @media (max-width: 400px) {
+            .goog-te-gadget {
+                margin-top: 30px
+            }
+        }
+        @media (max-width: 400px) {
+            .goog-te-gadget select{
+              height: inherit;
+            }
+        }
+    </style>
 </head>
 <body class="layouts-main- lang-en">
 <!-- Google Tag Manager (noscript) -->
@@ -68,20 +94,18 @@
    @yield('content')
 </section>
 
-<script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-        document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    if (typeof fbq !== 'undefined') {
-        fbq('init', '676329269549113');
-        fbq('trackCustom', 'PageView');
+@include('dashboard.layouts.scripts')
+
+{{--Google Translator--}}
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
     }
 </script>
 
-@include('dashboard.layouts.scripts')
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 </body>
 <!-- Mirrored from social.tifia.com/en/home?username=GIB%40Trade by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Oct 2020 06:53:59 GMT -->

@@ -30,6 +30,8 @@
 <script src="{{ asset('porto-admin/assets/javascripts/help/jcfilter.min6da6.js?v=1576243949') }}"></script>
 <script src="{{ asset('porto-admin/assets/javascripts/responsive-switch.mind77d.js?v=1580462975') }}"></script>
 
+
+
 <script>jQuery(function ($) {
         $(document).on('click', 'span.eye-password', function(e) {
             e.preventDefault();

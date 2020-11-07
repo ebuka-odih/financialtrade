@@ -20,18 +20,37 @@
     <meta property="og:description" content="Official website of FTM Forex broker. Earn online by trading on Forex and financial markets. With FTM broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <link href="index.blade.phpprasing" rel="canonical">
     <link href="{{ asset('dist/app6597.css?v=1601635857') }}" rel="stylesheet">
-    <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PBQR5C');
-    </script>
-    <!-- End Google Tag Manager -->
 
-    <meta name="google-site-verification" content="SDlWYorMeLVq8zvHiYc9GTQ0vXU3ty16DtKPhN6yqjY" />
+    <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>
+
+{{--    <meta name="google-site-verification" content="SDlWYorMeLVq8zvHiYc9GTQ0vXU3ty16DtKPhN6yqjY" />--}}
     <meta name="p:domain_verify" content="23e5dfafdbd40d54c7785637de34ae31"/>
 
+    <style>
+        .translated-ltr{margin-top:-30px;}
+        .translated-ltr{margin-top:-30px;}
+        .goog-te-banner-frame {display: none;margin-top:-20px;}
+
+        .goog-logo-link {
+            display:none !important;
+        }
+
+        .goog-te-gadget select{
+            /*color: transparent !important;*/
+            height: inherit;
+        }
+
+        @media (max-width: 400px) {
+            .goog-te-gadget {
+                margin-top: 30px
+            }
+        }
+        @media (max-width: 400px) {
+            .goog-te-gadget select{
+                height: inherit;
+            }
+        }
+    </style>
     <!-- Chatra {literal} -->
     <script>
 
@@ -94,50 +113,6 @@
         }
     </script>
     <!-- /Chatra {/literal} -->
-
-    <style>
-        #chatra__iframe .chat-shaft {
-            background: #ccc !important;
-        }
-
-        #chatra:not(.chatra--expanded) {
-            visibility: hidden !important;
-            opacity: 0 !important;
-            pointer-events: none;
-        }
-    </style>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window,document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '676329269549113');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=676329269549113&amp;ev=PageView&amp;noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
-    <script type="text/javascript"> _linkedin_partner_id = "1429585"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1429585&amp;fmt=gif" /> </noscript>
-{{--    <script type="application/ld+json">{--}}
-{{--    "@context": {--}}
-{{--        "@vocab": "http://schema.org/"--}}
-{{--    },--}}
-{{--    "@type": "BreadcrumbList",--}}
-{{--    "itemListElement": {--}}
-{{--        "@type": "ListItem",--}}
-{{--        "item": {--}}
-{{--            "@id": "https://tifia.com/en",--}}
-{{--            "name": "Tifia Forex broker. Online Forex trading with ECN broker"--}}
-{{--        },--}}
-{{--        "position": 1--}}
-{{--    }--}}
-{{--}</script>--}}
 </head>
 
 <body class="lang-en">
@@ -201,46 +176,8 @@
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li class="mob-only">
-                                        <a class="lang-href">Language - en <span></span></a>
-                                        <div class="dropdawn-menu-block">
-                                            <ul class="dropdawn-menu">
-                                                <li class="lang-es">
-                                                    <a href="es/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/ES.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        Español        </a>
-                                                </li>
-                                                <li class="lang-fr">
-                                                    <a href="fr/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/FR.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        Français (France)        </a>
-                                                </li>
-                                                <li class="lang-ms">
-                                                    <a href="ms/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/MY.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        Malaysia        </a>
-                                                </li>
-                                                <li class="lang-pt">
-                                                    <a href="pt/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/PT.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        Português        </a>
-                                                </li>
-                                                <li class="lang-th">
-                                                    <a href="th/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/TH.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        ภาษาไทย        </a>
-                                                </li>
-                                                <li class="lang-vi">
-                                                    <a href="vi/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/VN.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        Tiếng Việt        </a>
-                                                </li>
-                                                <li class="lang-zh">
-                                                    <a href="zh/index.html">
-                                                        <span class="language-flag" style="background-image: url('images/flags/shiny/16/CN.png');display: inline-block;vertical-align: middle;width: 16px;height: 16px;"></span>
-                                                        中文(简体)        </a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <div style="height: 20px; margin-top: -30px;" class="language-menu navbar-btn btn-group" id="google_translate_element">
+
                                     </li>
                                 </ul>
                             </div>
@@ -254,43 +191,8 @@
                     </div>
                     <div class="lang-block">
                         <span class="separator"></span>
-                        <div class="language-menu navbar-btn btn-group">
-                            <button data-toggle="dropdown" class="btn dropdown-toggle">
-                                <span class="language-name">en</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu lang-list">
-                                <li class="lang-es">
-                                    <a href="es/index.html">
-                                        es            </a>
-                                </li>
-                                <li class="lang-fr">
-                                    <a href="fr/index.html">
-                                        fr            </a>
-                                </li>
-                                <li class="lang-ms">
-                                    <a href="ms/index.html">
-                                        ms            </a>
-                                </li>
-                                <li class="lang-pt">
-                                    <a href="pt/index.html">
-                                        pt            </a>
-                                </li>
-                                <li class="lang-th">
-                                    <a href="th/index.html">
-                                        th            </a>
-                                </li>
-                                <li class="lang-vi">
-                                    <a href="vi/index.html">
-                                        vi            </a>
-                                </li>
-                                <li class="lang-zh">
-                                    <a href="zh/index.html">
-                                        zh            </a>
-                                </li>
-                            </ul>
+                        <div style="height: 20px; margin-top: -30px;" class="language-menu navbar-btn btn-group" id="google_translate_element">
                         </div>
-                    </div>
                 </div>
                 <button class="navbar-toggler navbar-btn-menu" type="button" data-toggle="collapse"
                         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -406,4 +308,15 @@
 
 <!-- Mirrored from tifia.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Oct 2020 14:02:31 GMT -->
 <script src="//code.tidio.co/bdqn75mlu16hdlh7abpgxyck65rgwrpr.js" async></script>
+{{--Google Translator--}}
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
 </html>

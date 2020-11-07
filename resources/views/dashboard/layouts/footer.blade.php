@@ -3,9 +3,9 @@
         <div class="first col-xs-6 col-md-4">
             <p class="text-left" style="margin: 10px 0 10px;">About Us</p>
             <ul class="menu-links text-left">
-                <li><a href="https://www.tifia.com/company/why-tifia" target="_blank">Why choose us</a></li>
-                <li><a href="https://www.tifia.com/company/company-news" target="_blank">Our news</a></li>
-                <li><a href="https://www.tifia.com/en/company/legal-information" target="_blank">Legal information</a></li>
+                <li><a href="{{ route('why_ftm') }}" target="_blank">Why choose us</a></li>
+{{--                <li><a href="https://www.tifia.com/company/company-news" target="_blank">Our news</a></li>--}}
+{{--                <li><a href="https://www.tifia.com/en/company/legal-information" target="_blank">Legal information</a></li>--}}
             </ul>
         </div>
         <div class="col-xs-6 col-md-4">
@@ -19,10 +19,10 @@
         <div class="col-xs-12 col-md-4">
             <p class="text-left" style="margin: 10px 0 10px;">Regulatory documents</p>
             <ul class="menu-links text-left">
-                <li><a href="https://www.tifia.com/uploads/docs/terms-of-provision-and-use-of-information-en.pdf" target="_blank">Terms and Conditions</a></li>
-                <li><a href="https://www.tifia.com/uploads/docs/privacy-policy-en.pdf" target="_blank">Privacy policy</a></li>
-                <li><a href="https://www.tifia.com/uploads/docs/aml-policy-en.pdf" target="_blank">AML Policy</a></li>
-                <li><a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk disclosure</a></li>
+                <li><a href="#" target="_blank">Terms and Conditions</a></li>
+                <li><a href="#" target="_blank">Privacy policy</a></li>
+{{--                <li><a href="https://www.tifia.com/uploads/docs/aml-policy-en.pdf" target="_blank">AML Policy</a></li>--}}
+{{--                <li><a href="https://www.tifia.com/uploads/docs/risk-disclosure-en.pdf" target="_blank">Risk disclosure</a></li>--}}
             </ul>
         </div>
     </div>

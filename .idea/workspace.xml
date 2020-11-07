@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="" />
+    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/demo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/email-demo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/footer.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,7 +198,7 @@
       <workItem from="1604556440463" duration="8143000" />
       <workItem from="1604643449803" duration="103000" />
       <workItem from="1604678182517" duration="4136000" />
-      <workItem from="1604685263778" duration="5246000" />
+      <workItem from="1604685263778" duration="9022000" />
     </task>
     <servers />
   </component>
@@ -197,6 +206,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="336" y="190" width="685" height="414" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604707313062">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="336" y="190" width="685" height="414" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1604707313062" />
     <state x="416" y="147" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604513302801">
       <screen x="0" y="28" width="1366" height="740" />
     </state>

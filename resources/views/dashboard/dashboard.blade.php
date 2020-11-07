@@ -18,21 +18,14 @@
                                     <div class="widget-summary">
                                         <div class="user-profile">
                                             <div class="avatar-wrapper avatar-small avatar-my dropdown">
-                                                <a class="user-menu-link" href="https://social.tifia.com/en/home?username=GIB%40Trade" title="Menu" data-id="25890" data-username="@GIB@Trade"><img src="https://social.tifia.co/uploads/avatars/002/589/1bbccfc960a764135a840eeaa89474ae.jpg" alt=""></a>
+                                                <a class="user-menu-link" href="#" title="Menu" data-id="25890" data-username="@GIB@Trade"><img src="https://social.tifia.co/uploads/avatars/002/589/1bbccfc960a764135a840eeaa89474ae.jpg" alt=""></a>
                                             </div>
                                             <div class="name">
                                                 <div class="username">
-                                                    <span class="user-menu"><a class="user-menu-link" href="https://social.tifia.com/en/home?username=GIB%40Trade" data-id="25890">@GIB@Trade</a> <span class="online-user-25890 online-status online" title="Online"></span></span>
+                                                    <span class="user-menu"><a class="user-menu-link" href="#" data-id="25890">@GIB@Trade</a> <span class="online-user-25890 online-status online" title="Online"></span></span>
                                                 </div>
                                                 <div>
-                                             <span>
-                                             <a class="btn btn-default btn-xs" href="https://social.tifia.com/en/pm/dialog?username=GIB%40Trade" title="New message"><i class="fa fa-envelope"></i></a>                                </span>
-                                                    <span class="user-subscription ml-xs" data-id="25890">
-                                             <a href="https://social.tifia.com/en/help/demo" class="unfollow btn btn-xs btn-stop ajax-action demo-notice no-loader hide" title="Unfollow"><i class="fa fa-minus"></i></a>
-                                             <a href="https://social.tifia.com/en/help/demo" class="follow btn btn-xs btn-primary ajax-action  demo-notice no-loader " title="Follow"><i class="fa fa-plus"></i></a>
-                                             </span>
-                                                    <span class="ml-xs">
-                                             <a class="btn btn-xs btn-success" href="https://social.tifia.com/en/sync-trading/investors-account?attach_user=GIB%40Trade" title="Copy"><i class="fa fa-copy"></i></a>                                                                </span>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -64,11 +57,11 @@
                                         <tbody>
                                         <tr>
                                             <td>Last Withdraw</td>
-                                            <td>N/A</td>
+                                            <td>$0.00</td>
                                         </tr>
                                         <tr>
                                             <td>Active Withdraw</td>
-                                            <td>N/A</td>
+                                            <td>$0.00</td>
                                         </tr>
                                         <tr>
                                             <td>Total Withdraw</td>

@@ -10,21 +10,18 @@
     <title>FTM broker. Online Forex trading</title>
     <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
-    <meta property="og:image" content="images/og/logo.png">
-    <meta property="og:image:secure_url" content="images/og/logo.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Financialtrade Forex broker. Online Forex trading with ECN broker">
     <meta property="og:site_name" content="FTM">
     <meta property="og:url" content="index.html">
     <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
     <meta property="og:description" content="Official website of FTM Forex broker. Earn online by trading on Forex and financial markets. With FTM broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
-    <link href="index.blade.phpprasing" rel="canonical">
+{{--    <link href="index.blade.phpprasing" rel="canonical">--}}
     <link href="{{ asset('dist/app6597.css?v=1601635857') }}" rel="stylesheet">
 
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>
 
 {{--    <meta name="google-site-verification" content="SDlWYorMeLVq8zvHiYc9GTQ0vXU3ty16DtKPhN6yqjY" />--}}
-    <meta name="p:domain_verify" content="23e5dfafdbd40d54c7785637de34ae31"/>
 
     <style>
         .translated-ltr{margin-top:-30px;}
@@ -143,27 +140,7 @@
                                         <a style="cursor: pointer" href="{{ route('homepage') }}">Home<span></span></a>
                                         <div class="bg-menu"></div>
                                     </li>
-{{--                                    <li>--}}
-{{--                                        <a class="mob-not">About us--}}
-{{--                                            <span></span></a>--}}
-{{--                                        <div class="dropdawn-menu-block">--}}
-{{--                                            <div class="row">--}}
-{{--                                                <div class="col-md-6 col-12">--}}
-{{--                                                    <h4>Meet us</h4>--}}
-{{--                                                    <ul class="dropdawn-menu">--}}
-{{--                                                        <li><a href="en/company/why-tifia.html"><span>Why us?</span></a></li>--}}
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="col-md-6 col-12">--}}
-{{--                                                    <h4>Contact us</h4>--}}
-{{--                                                    <ul class="dropdawn-menu">--}}
-{{--                                                        <li><a href="en/contacts.html"><span>Contacts</span></a></li>--}}
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="bg-menu"></div>--}}
-{{--                                    </li>--}}
+
                                     <li>
                                         <a style="cursor: pointer" href="{{ route('why_ftm') }}" rel="nofollow">About us</a>
                                         <div class="bg-menu"></div>

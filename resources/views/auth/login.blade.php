@@ -13,7 +13,7 @@
 </script>
 <section class="body-sign">
     <div class="center-sign">
-        <a href="../../index.html" class="logo pull-left">
+        <a href="{{ route('homepage') }}" class="logo pull-left">
             <img src="{{ asset('images/new-site/logo3.svg') }}" class="logo-full" alt="FTM" />
             <img src="{{ asset('images/new-site/logo3.svg') }}" class="logo-mini" alt="FTM" />
         </a>

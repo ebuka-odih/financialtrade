@@ -9,7 +9,7 @@
     <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Financialtrade Forex broker. Online Forex trading with ECN broker">
+    <meta property="og:title" content="Financialtrademarktets Forex broker. Online Forex trading with ECN broker">
     <meta property="og:site_name" content="FTM">
     <meta property="og:url" content="index.html">
     <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
@@ -151,7 +151,7 @@
                                         <div class="bg-menu"></div>
                                     </li>
                                     <li class="mob-only">
-                                        <div style="height: 20px; margin-top: -30px;" class="language-menu navbar-btn btn-group" id="google_translate_element">
+                                        <div style="height: 20px; margin-top: -30px; margin-left: 20px" id="google_translate_element"></div>
 
                                     </li>
                                 </ul>
@@ -166,8 +166,9 @@
                     </div>
                     <div class="lang-block">
                         <span class="separator"></span>
-                        <div style="height: 20px; margin-top: -30px;" class="language-menu navbar-btn btn-group" id="google_translate_element">
+                        <div style="height: 20px; margin-top: 30px;"  id="google_translate_element">
                         </div>
+                </div>
                 </div>
                 <button class="navbar-toggler navbar-btn-menu" type="button" data-toggle="collapse"
                         data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"

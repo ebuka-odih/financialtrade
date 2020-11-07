@@ -48,7 +48,7 @@
             <div class="group-success">
                 <div class="group">
                     <p>FTM trading account</p>
-                    <a class="btn-show-right" href="{{ route('register') }}" rel="nofollow">
+                    <a class="btn-show-right" href="{{ route('login') }}" rel="nofollow">
                         <div class="circle"><span class="icon arrow"></span></div>
                         <p class="button-text">Open</p>
                     </a>
@@ -353,7 +353,7 @@
                         <h2>Forex contests and deposit bonuses from FTM</h2>
                         <p>FTM provides Forex bonuses on deposits and contests for traders and partners. We would like to make your work on Forex incredibly interesting.</p>
                         <div class="btn-block">
-                            <a class="btn btn-red" href="promotions.html">Learn more</a>
+                            <a class="btn btn-red" href="{{ route('user.pick_plan') }}">Learn more</a>
                         </div>
 
                     </div>

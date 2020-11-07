@@ -19,7 +19,8 @@
 
     <script src="{{ asset('assets/3f891744/jquery.min3aa2.js?v=1601722409') }}"></script>
 
-    <meta name="google-site-verification" content="Nk0Zfp6b7sl_oollD1LENmV4BCf14GNnWeJ03n5QP9I" />
+    <meta name="google-site-verification" content="frd60SSriaELs4qIMHsqWlH3yAXBTMsGzABa2rq9yAY" />
+
     <style>
         .translated-ltr{margin-top:-30px;}
         .translated-ltr{margin-top:-30px;}

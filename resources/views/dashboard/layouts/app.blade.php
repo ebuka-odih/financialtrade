@@ -38,8 +38,7 @@
     <meta property="og:site_name" content="FTM">
     <meta name="robots" content="noindex">
 
-    <meta name="google-site-verification" content="Nk0Zfp6b7sl_oollD1LENmV4BCf14GNnWeJ03n5QP9I" />
-
+    <meta name="google-site-verification" content="frd60SSriaELs4qIMHsqWlH3yAXBTMsGzABa2rq9yAY" />
 {{--    Google Translator--}}
     <style>
         .translated-ltr{margin-top:-30px;}

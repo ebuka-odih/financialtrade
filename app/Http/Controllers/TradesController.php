@@ -11,7 +11,8 @@ class TradesController extends Controller
 
     public function index()
     {
-        return view('dashboard.trades');
+        $trades = Trades::whereUserId(auth()->id())->get();
+        return view('dashboard.trades', compact('trades'));
     }
 
 

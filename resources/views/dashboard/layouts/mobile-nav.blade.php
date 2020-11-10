@@ -30,7 +30,7 @@
             <a href="{{ route('user.deposit_history') }}" class="btn-chat"><div class="ic ic-hist"></div>Transaction History</a>
         </li>
         <li>
-            <a href="{{ route('user.trades.index') }}" class="btn-chat">
+            <a href="{{ route('user.trades.index') }}">
                 <div class="ic ic-stock"></div>Trades</a>
         </li>
         <li>
@@ -40,6 +40,4 @@
         </li>
     </ul>
 </div>
-
-<div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 

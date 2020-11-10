@@ -57,4 +57,9 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Withdrawal::class, 'users_id');
     }
+
+    public function trades()
+    {
+        return $this->hasMany(Trades::class, 'user_id');
+    }
 }

@@ -1,0 +1,253 @@
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+}
+
+th, td{
+    /* padding: 4px; */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* h5 {
+    margin: 0px;
+    font-size: 8px;
+} */
+
+tr:hover {
+    background-color:#7c8a7d;
+}
+/* One */
+#span1 {
+    color: red;
+    font-size: 11px;
+}
+
+#h1 {
+    font-size: 12px;
+}
+
+#h1down {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan {
+    font-size: 11px;
+}
+
+/* Two */
+#span2 {
+    color:  #1E90FF;;
+    font-size: 11px;
+}
+
+#h2 {
+    font-size: 12px;
+}
+
+#h1down2 {
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
+
+#downspan2 {
+    font-size: 11px;
+}
+
+/* Three */
+#span3 {
+    color:  #1E90FF;
+    font-size: 11px;
+}
+
+#h3 {
+    font-size: 12px;
+}
+
+#h1down3 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan3 {
+    font-size: 11px;
+}
+
+/* Four */
+#span4 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h4 {
+    font-size: 12px;
+}
+
+#h1down4 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan4 {
+    font-size: 11px;
+}
+
+/* Five */
+#span5 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h5 {
+    font-size: 12px;
+}
+
+#h1down5 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan5 {
+    font-size: 11px;
+}
+
+/* Six */
+#span6 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h6 {
+    font-size: 12px;
+}
+
+#h1down6 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan6 {
+    font-size: 11px;
+}
+
+/* Seven */
+#span7 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h7 {
+    font-size: 12px;
+}
+
+#h1down7 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan7 {
+    font-size: 11px;
+}
+
+/* Eight */
+#span8 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h8 {
+    font-size: 12px;
+}
+
+#h1down8 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan8 {
+    font-size: 11px;
+}
+
+/* Nine */
+#span9 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h9 {
+    font-size: 12px;
+}
+
+#h1down9 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan9 {
+    font-size: 11px;
+}
+
+/* Ten */
+#span10 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h10 {
+    font-size: 12px;
+}
+
+#h1down10 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan10 {
+    font-size: 11px;
+}
+
+/* Eleven */
+#span11 {
+    color:  red;
+    font-size: 11px;
+}
+
+#h11 {
+    font-size: 12px;
+}
+
+#h1down11 {
+    font-size: 13px;
+    color: #1E90FF;
+    font-weight: bold;
+}
+
+#downspan11 {
+    font-size: 11px;
+}
+
+.img {
+    width: 100%;
+    height: 550px;
+    margin: 5px;
+    background-image: url('img/chart.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

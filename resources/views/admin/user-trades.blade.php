@@ -66,62 +66,43 @@
                     <div class="work-experience layout-spacing ">
 
                         <div class="widget-content widget-content-area">
-
-                            <h3 class="">{{ $user_details->name }} Details</h3>
-
-                            <table class="table table-striped" style="width:100%">
-                                <tr>
-                                    <th>Title:</th>
-                                    <td class="text text-capitalize">{{ $user_details->title }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Gender:</th>
-                                    <td class="text text-capitalize">{{ $user_details->gender }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Email:</th>
-                                    <td>{{ $user_details->email }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Phone:</th>
-                                    <td>{{ $user_details->phone }}</td>
-                                </tr>
-                                <tr>
-                                    <th>Country:</th>
-                                    <td>{{ $user_details->country }}</td>
-                                </tr>
-                                <tr>
-                                    <th>State:</th>
-                                    <td>{{ $user_details->state }}</td>
-                                </tr>
-                                <tr>
-                                    <th>City & Postal Code:</th>
-                                    <td>{{ $user_details->city }}, {{$user_details->postal_code}}</td>
-                                </tr>
-                                <tr>
-                                    <th>BTC Wallet:</th>
-                                    <td><input class="form-control" id="foo" value="{{ $user_details->btc_wallet }}">
-                                        <button class="btn" data-clipboard-target="#foo">
-                                            <img src="assets/clippy.svg" alt="Copy to clipboard">
-                                        </button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-
-                    </div>
-
-                    <div class="bio layout-spacing ">
-                        <div style="margin-bottom: 20px" class="widget-content widget-content-area">
-                            <h3 class="">Bio</h3>
-                            <p class="text text-center text-black">{{  $user_details->bio }}</p>
-                            <br>
-                            <hr>
-                            <h4 class="text text-center">User ID Verification</h4>
-                            <p style="color: black">ID Type: <span class="text text-primary">{{ $user_details->id_type ? : 'N/A' }}</span></p>
-                            <img height="300" width="340" class="mb-5" style="color: black" src="/storage/id_images/{{ $user_details->id_image_1 ? : 'N/A'}}" alt="User ID">
-
-                        </div>
+                            <div class="table-responsive">
+                                <a href="{{ route('admin.create_order', $user_details->id) }}" class="btn btn-primary mb-4">Create Order</a>
+                                <table class="table mb-4 contextual-table">
+                                    <thead>
+                                    <tr class="">
+                                        <th>Order Type</th>
+                                        <th>Pair</th>
+                                        <th>Price</th>
+                                        <th>Buy At</th>
+                                        <th>Opening Price</th>
+                                        <th>Closing Price</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($trades as $trade)
+                                        @if($trade->order == 'buy')
+                                    <tr class="table-primary">
+                                        <td>{{ $trade->order }}</td>
+                                        <td>{{ $trade->pair }}</td>
+                                        <td>{{ $trade->price }}</td>
+                                        <td>{{ $trade->buy_at }}</td>
+                                        <td>{{ $trade->opening_price }}</td>
+                                        <td>{{ $trade->closing_price }}</td>
+                                    </tr>
+                                        @else
+                                            <tr class="table-danger">
+                                                <td>{{ $trade->order }}</td>
+                                                <td>{{ $trade->pair }}</td>
+                                                <td>{{ $trade->price }}</td>
+                                                <td>{{ $trade->buy_at }}</td>
+                                                <td>{{ $trade->opening_price }}</td>
+                                                <td>{{ $trade->closing_price }}</td>
+                                            </tr>
+                                            @endif
+                                    @endforeach
+                                    </tbody>
+                                </table>
 
                     </div>
 

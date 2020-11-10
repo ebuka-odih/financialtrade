@@ -56,17 +56,21 @@
                                     <table class="table table-condensed table-striped">
                                         <tbody>
                                         <tr>
-                                            <td>Last Withdraw</td>
-                                            <td>$0.00</td>
+                                            <td>Last Withdrawal</td>
+                                            <td>$@convert($last_withdraw)</td>
                                         </tr>
                                         <tr>
-                                            <td>Active Withdraw</td>
-                                            <td>$0.00</td>
+                                            <td>Approved Withdrawal</td>
+                                            <td>$@convert($withdraw_approved_cash)</td>
                                         </tr>
                                         <tr>
-                                            <td>Total Withdraw</td>
-                                            <td>$0.00</td>
+                                            <td>Pending Withdrawal</td>
+                                            <td>$@convert($withdraw_pending_cash)</td>
                                         </tr>
+{{--                                        <tr>--}}
+{{--                                            <td>Total Withdrawal</td>--}}
+{{--                                            <td>$@convert($total_withdraw)</td>--}}
+{{--                                        </tr>--}}
                                         </tbody>
                                     </table>
                                 </div>

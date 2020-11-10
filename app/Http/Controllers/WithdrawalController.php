@@ -16,8 +16,13 @@ class WithdrawalController extends Controller
    public function withdrawal_history()
    {
 //       return Carbon::now()->toDateString();
-        $withdrawals = Withdrawal::whereUserId(auth()->id())->get();
-        return view('dashboard.transactions.withdraw-history', compact('withdrawals'));
+       $withdrawals = Withdrawal::whereUserId(auth()->id())->get();
+       $withdraw_pending_cash = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'pending')->sum('amount');
+       $total_withdraw = Withdrawal::whereUserId(auth()->id())->select('amount')->sum('amount');
+       $last_withdraw = optional(Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->latest()->first())->amount;
+       $withdraw_approved_cash = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->sum('amount');
+       $canceled_withdrawal = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'canceled')->sum('amount');
+       return view('dashboard.transactions.withdraw-history', compact('withdrawals', 'withdraw_approved_cash', 'withdraw_pending_cash', 'total_withdraw', 'last_withdraw', 'canceled_withdrawal'));
    }
 
    public function make_withdrawal()

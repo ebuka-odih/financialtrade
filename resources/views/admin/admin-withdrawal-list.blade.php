@@ -40,12 +40,16 @@
                                             <td>
                                                 <div class="btn-group">
                                                     <a href="#" class="btn btn-secondary btn-sm">View</a>
+                                                    @if($users_withdrawal->status != 'pending')
+                                                    @else
                                                     <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                                     </a>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                                        <a class="dropdown-item" href="{{ route('admin.accept_withdrawal', $users_withdrawal->id) }}">Approve</a>
-                                                    </div>
+
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                            <a class="dropdown-item" href="{{ route('admin.accept_withdrawal', $users_withdrawal->id) }}">Approve</a>
+                                                        </div>
+                                                    @endif
                                                 </div>
                                             </td>
                                         </tr>

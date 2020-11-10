@@ -31,7 +31,7 @@ class AdminWithdrawal extends Controller
             Mail::to($dep->user->email)->send( new WithdrawMail($data));
             $user->save();
             $dep->status = 'approved';
-            $dep->approved_date = Carbon::now();
+            $dep->approved_date = Carbon::now()->toDateString();
             $dep->save();
             return redirect()->back();
         }

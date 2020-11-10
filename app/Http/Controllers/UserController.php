@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\InvestPlans;
 use App\Rules\MatchOldPassword;
 use App\User;
+use App\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -13,7 +14,11 @@ class UserController extends Controller
 {
     public function dashboard()
     {
-        return view('dashboard.dashboard');
+        $withdraw_pending_cash = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'pending')->sum('amount');
+//        $total_withdraw = Withdrawal::whereUserId(auth()->id())->select('amount')->sum('amount');
+        $last_withdraw = optional(Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->latest()->first())->amount;
+        $withdraw_approved_cash = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->sum('amount');
+        return view('dashboard.dashboard', compact('last_withdraw', 'withdraw_approved_cash', 'withdraw_pending_cash'));
     }
 
     public function personal_info()

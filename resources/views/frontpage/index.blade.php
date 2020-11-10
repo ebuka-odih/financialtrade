@@ -109,10 +109,11 @@
                         <p>Friendly customer support 24/5</p>
                     </li>
                 </ul>
+
             </div>
         </div>
     </section>
-    <section style="margin-top: -150px" class="section social-trading" id="five">
+    <section class="section social-trading" id="five">
         <div class="container-fluid">
             <div class="social-info">
                 <img class="lazy" alt="Social Trading" data-src="{{ asset('images/new-site/social-logo.svg') }}">

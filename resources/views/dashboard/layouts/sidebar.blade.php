@@ -30,6 +30,7 @@
 {{--                            <li><a href="https://social.tifia.com/en/terminal/index" ><i class="fa fa-download"></i> Trading terminal</a></li>--}}
 {{--                        </ul>--}}
 {{--                    </li>--}}
+                    <li class=""><a href="{{ route('user.trades.index') }}" ><i class="fa fa-chart-line"></i> Trades</a></li>
                     <li class=""><a href="{{ route('user.pick_plan') }}" ><i class="fa fa-long-arrow-right"></i> Deposit</a></li>
                     <li class=""><a href="{{ route('user.make_withdrawal') }}" ><i class="fa fa-long-arrow-left"></i> Withdrawal</a></li>
                     <li class=""><a href="{{ route('user.deposit_history') }}" ><i class="fa fa-history"></i> Transaction history</a></li>
@@ -47,8 +48,7 @@
                         <a href="#" ><i class="fa fa-info"></i> Help</a>
                         <ul class='nav nav-children'>
                             <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr" target="_blank"><i class="fa fa-comments"></i> LiveChat</a></li>
-                            <li><a href="/en/help/faq" ><i class="fa fa-question"></i> FAQ</a></li>
-                            <li><a href="https://social.tifia.com/en/help/contacts" ><i class="fa fa-phone"></i> Contacts</a></li>
+                            <li><a href="#" ><i class="fa fa-phone"></i> Contacts</a></li>
                         </ul>
                     </li>
                     <li class="">

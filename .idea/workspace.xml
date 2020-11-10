@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/forex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/create-order.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user-trades.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/trades.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminWithdrawal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminWithdrawal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WithdrawalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WithdrawalController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/withdraw-history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/withdraw-history.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/user-settings/profile_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/user-settings/profile_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,13 +161,21 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin" />
+      <recent name="$PROJECT_DIR$/resources/views/dashboard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
       <recent name="$PROJECT_DIR$/resources/views/dashboard/user-settings" />
     </key>
   </component>
@@ -195,7 +219,10 @@
       <workItem from="1604643449803" duration="103000" />
       <workItem from="1604678182517" duration="4136000" />
       <workItem from="1604685263778" duration="9022000" />
-      <workItem from="1604732209416" duration="15517000" />
+      <workItem from="1604732209416" duration="18156000" />
+      <workItem from="1604777772553" duration="7618000" />
+      <workItem from="1604834597022" duration="414000" />
+      <workItem from="1605010254243" duration="14003000" />
     </task>
     <servers />
   </component>
@@ -203,6 +230,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605018241661">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1605018241661" />
     <state x="336" y="190" width="685" height="414" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604707313062">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -219,10 +250,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="466" y="327" width="426" height="140" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.28.1366.740@0.28.1366.740" timestamp="1604255567207" />
-    <state x="346" y="176" key="run.anything.popup" timestamp="1604230201929">
+    <state x="346" y="176" key="run.anything.popup" timestamp="1605014428510">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="346" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1604230201929" />
+    <state x="346" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1605014428510" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1604274278867">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
@@ -233,7 +264,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontpage/index.blade.php</url>
-          <line>188</line>
+          <line>189</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

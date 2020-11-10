@@ -18,6 +18,47 @@
                     <div class="ajax-pagination">
                         <div class="panel">
                             <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <h3>Statistics</h3>
+                                                <table class="table table-condensed table-striped">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Last Withdrawal</td>
+                                                        <td>$@convert($last_withdraw)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Approved Withdrawal</td>
+                                                        <td>$@convert($withdraw_approved_cash)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pending Withdrawal</td>
+                                                        <td>$@convert($withdraw_pending_cash)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Canceled Withdrawal</td>
+                                                        <td>$@convert($canceled_withdrawal)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Withdrawal</td>
+                                                        <td>$@convert($total_withdraw)</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ferrari-center-mobile-banners" class="col-md-6">
+                                        <!-- Ferrary contest sidebar right banner -->
+                                        <!--        -->
+                                        <!-- // Ferrary contest sidebar right banner -->
+                                    </div>
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table table-condensed table-bordered">
                                         <thead>
@@ -41,7 +82,7 @@
                                             @if($withdrawal->status == 'pending' || $withdrawal->status == 'canceled')
                                                 <td>"--/--/--"</td>
                                             @else
-                                            <td>{{ date('d/m/y h:i A', strtotime($withdrawal->approved_date)) }}</td>
+                                            <td>{{ date('d/m/y', strtotime($withdrawal->approved_date)) }}</td>
                                             @endif
                                             <td>{{ $withdrawal->user->btc_wallet }}</td>
                                             <td>$@convert($withdrawal->amount)</td>

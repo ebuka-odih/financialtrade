@@ -3483,6 +3483,7 @@ table.table-symbols a:hover {
     .fixed-footer-menu a.btn-chat, .fixed-footer-menu a.btn-notifications {
         cursor: pointer;
     }
+
     .fixed-footer-menu ul li a.btn-notifications:hover {
         color: #f1f0f0;
     }
@@ -3524,6 +3525,14 @@ table.table-symbols a:hover {
     .fixed-footer-menu ul li a:hover .ic-with {
         background: url("../images/general/withdraw.svg") no-repeat scroll 100% 0;
     }
+    .fixed-footer-menu ul li .ic-stock{
+        background: url("../images/general/stock.svg") no-repeat scroll 0 0;
+        width: 29px;
+    }
+    .fixed-footer-menu ul li a:hover .ic-stock{
+        background: url("../images/general/stock.svg") no-repeat scroll 100% 0;
+    }
+
     /*.header .header-buttons {
         display:block;
         position: absolute;

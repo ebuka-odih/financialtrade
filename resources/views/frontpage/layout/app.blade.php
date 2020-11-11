@@ -202,25 +202,25 @@
         <div class="container-content">
            <div class="container">
                <ul class="footer-menu">
-                   <li class="col-md-4">
+                   <li class="col-md-6">
                        <ul>
                            <li>About us</li>
                            <li><a href="{{ route('why_ftm') }}">Why us?</a></li>
                        </ul>
                    </li>
-                   <li class="col-md-4">
+                   <li class="col-md-6">
                        <ul>
                            <li>Contact us</li>
                            <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr">Chat Us</a></li>
                            <li><a href="{{ route('contact_us') }}">Contacts</a></li>
                        </ul>
                    </li>
-                   <li>
-                       <ul>
-                           <li>Partnership</li>
-                           <li><a href="#">Partners&#039; commissions</a></li>
-                       </ul>
-                   </li>
+{{--                   <li>--}}
+{{--                       <ul>--}}
+{{--                           <li>Partnership</li>--}}
+{{--                           <li><a href="#">Partners&#039; commissions</a></li>--}}
+{{--                       </ul>--}}
+{{--                   </li>--}}
                </ul>
            </div>
             <ul class="copyright-text">

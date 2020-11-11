@@ -5,7 +5,7 @@
 
     <section class="section contacts-info-page">
         <div class="container-fluid">
-            <h1>Tifia is conquering the world</h1>
+            <h1>FTM is conquering the world</h1>
         </div>
         <div class="map-img">
             <div class="point-block point-2">
@@ -35,53 +35,23 @@
                     <div class="row">
                         <div class="col-12 col-lg-3">
                             <h3>Customer Support</h3>
-                            <p>Email: <a href="mailto:support@tifia.com">support@tifia.com</a></p>
+                            <p>Email: <a href="mailto:support@financialtrademarkets.com">support@financialtrademarkets.com</a></p>
                         </div>
                         <div class="col-12 col-lg-3">
                             <h3>Financial Department</h3>
-                            <p>Email: <a href="mailto:finance@tifia.com">finance@tifia.com</a><br>
+                            <p>Email: <a href="mailto:support@financialtrademarkets.com">support@financialtrademarkets.com</a><br>
                                 <span>9 a.m. - 6 p.m.<br>(Monday to Friday) GMT+3</span></p>
                         </div>
                         <div class="col-12 col-lg-3">
                             <h3>Human Resources Department</h3>
-                            <p>Email: <a href="mailto:hr@tifia.com">hr@tifia.com</a></p>
+                            <p>Email: <a href="mailto:support@financialtrademarkets.com">support@financialtrademarkets.com</a></p>
                         </div>
                         <div class="col-12 col-lg-3">
                             <h3>Partnership Department</h3>
-                            <p>Skype: partner.tifia<br>
-                                Email: <a href="mailto:partners@tifia.com">partners@tifia.com</a>
+                            <p><br>
+                                Email: <a href="mailto:support@financialtrademarkets.com">support@financialtrademarkets.com</a>
                             </p>
                         </div>
-                    </div>
-                </div>
-                <h2 id="representatives">Official representatives</h2>
-                <div class="tifia-represent">
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <div id="thai" class="block-country thai">
-                                <h3>Thailand</h3>
-                                <p>
-                                    <!--Skype: tifia.thailand<br>-->
-                                    Phone: 0961590924<br>
-                                    Email: <a href="mailto:thailand@tifia.com">thailand@tifia.com</a>
-                                </p>
-                                <a class="fb" href="https://www.facebook.com/tifiathailand" target="_blank"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-4">
-                            <div id="spain" class="block-country spain">
-                                <h3>Hispanic Countries Support</h3>
-                                <p>
-                                    WhatsApp: +57 319 5314742<br>
-                                    Skype: gontranfx<br>
-                                    Email: <a href="mailto:rene.b@tifia.com">rene.b@tifia.com</a>,<br>
-                                    <a href="mailto:soporte@tifia.com">soporte@tifia.com</a>
-                                </p>
-                                <a class="fb" href="https://www.facebook.com/TifiaSpanish" target="_blank"></a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>

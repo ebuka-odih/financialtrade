@@ -121,7 +121,7 @@
                                 <!-- TradingView Widget BEGIN -->
                                 <div class="tradingview-widget-container">
                                     <div id="tradingview_d1eb1"></div>
-                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a></div>
                                     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                                     <script type="text/javascript">
                                         new TradingView.widget(

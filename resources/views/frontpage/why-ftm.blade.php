@@ -168,7 +168,7 @@
                             <p>It is time to earn!</p>
                             <img class="mob-only" src="{{ asset('images/new-site/chess-tifia.jpg') }}">
                             <div class="btn-block">
-                                <a class="btn btn-red btn-scroll" href="{{ route('register') }}" rel="nofollow" target="blank">Open live account</a>                            <span class="or mob-only">or</span>
+                                <a class="btn btn-red btn-scroll" href="{{ route('register') }}" rel="nofollow" target="blank">Open live account</a>
                             </div>
                         </div>
                         <div class="trade-with-tifia-img">

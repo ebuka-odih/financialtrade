@@ -12,9 +12,9 @@
                     <div id="content-alert-message">
                     </div>
 
-                    <div style="margin-top: 20px;" class="container-fluid">
+                    <div style="margin-top: 20px;" class="container">
                         <div class="row">
-                            <div class="col-sm-6" style="background-color: #3e3e3e; color: white;">
+                            <div class="col-sm-4" style="background-color: #3e3e3e; color: white;">
                                 <div style="margin-top: 5px; margin-left: 100px;">
                                     <div class="container align-self-center">
                                         <div class="btn-group">
@@ -116,6 +116,33 @@
 
 
                                 </table>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_d1eb1"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener" target="_blank"><span class="blue-text">EURUSD Chart</span></a> by TradingView</div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                        new TradingView.widget(
+                                            {
+                                                "width": 980,
+                                                "height": 610,
+                                                "symbol": "AAPL+FX:EURUSD",
+                                                "interval": "D",
+                                                "timezone": "Etc/UTC",
+                                                "theme": "dark",
+                                                "style": "1",
+                                                "locale": "en",
+                                                "toolbar_bg": "#f1f3f6",
+                                                "enable_publishing": false,
+                                                "allow_symbol_change": true,
+                                                "container_id": "tradingview_d1eb1"
+                                            }
+                                        );
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
                             </div>
 
                         </div>

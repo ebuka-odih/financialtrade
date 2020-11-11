@@ -17,7 +17,7 @@
             <div id="carousel-main" class="carousel slide conditions-block">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p>100$</p>
+                        <p>300$</p>
                         <p>Min. depo</p>
                     </div>
                     <div class="carousel-item">

@@ -32,6 +32,8 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('deposits/history/', 'DepositsController@deposit_history')->name('deposit_history');
     Route::get('trades', 'TradesController@index')->name('trades.index');
 
+    Route::get('validate', 'DepositsController@validateIpn');
+
 });
 
 include('admin.php');

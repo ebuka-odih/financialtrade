@@ -50,35 +50,30 @@ class DepositsController extends Controller
             'itemSubtotalAmount' => (FLOAT) $request->amount// USD
         ];
 
-        $link =CoinPayment::generatelink($transaction);
+        $link = CoinPayment::generatelink($transaction);
 
         return redirect($link);
     }
 
     public function validateIpn (Request $request)
     {
-        try {
+        $transactions = CoinPayment::gettransactions()->where('status', 0)->get();
+//        $transactions = CoinPayment::gettransactions();
+//        if ($transactions->status == 0){
+//            $invest_plan = InvestPlans::findOrFail($request->plan_id);
+//            return $invest_plan;
+//        }
+        return $transactions;
 
-            $ipn = \Coinpayments::validateIPNRequest($request);
+        /**
+         * this is triger function for running Job proccess
+         */
+        return CoinPayment::getstatusbytxnid("CPEK6VD0SJP3VFEEKZAKHFH5PL");
+        /**
+        output example: "celled / Timed Out"
+         */
 
-            // if the ipn came from the API side of coinpayments merchant
-            if ($ipn->isApi()) {
 
-                /*
-                 * If it makes it into here then the payment is complete.
-                 * So do whatever you want once the completed
-                 */
-
-                // do something here
-                // Payment::find($ipn->txn_id);
-            }
-        }
-        catch (IpnIncompleteException $e) {
-            $ipn = $e->getIpn();
-            /*
-             * Can do something here with the IPN model if desired.
-             */
-        }
     }
 
 

@@ -36,15 +36,20 @@ class InvestPlansController extends Controller
     }
 
 
-    public function edit(InvestPlans $investPlans)
+    public function edit($id)
     {
-        //
+        $investplan = InvestPlans::findOrFail($id);
+        return view('admin.edit-investplan', compact('investplan'));
     }
 
 
-    public function update(Request $request, InvestPlans $investPlans)
+    public function update(Request $request, $id)
     {
-        //
+        $investplan = InvestPlans::findOrfail($id);
+        $data = $this->getData($request);
+        $investplan->update($data);
+        return redirect()->route('admin.investment-plans.index');
+
     }
 
 

@@ -3525,13 +3525,13 @@ table.table-symbols a:hover {
     .fixed-footer-menu ul li a:hover .ic-with {
         background: url("../images/general/withdraw.svg") no-repeat scroll 100% 0;
     }
-    .fixed-footer-menu ul li .ic-stock{
-        background: url("../images/general/business-graphic.svg") no-repeat scroll 0 0;
-        width: 29px;
-    }
-    .fixed-footer-menu ul li a:hover .ic-stock{
-        background: url("../images/general/chart11.svg") no-repeat scroll 100% 0;
-    }
+    /*.fixed-footer-menu ul li .ic-stock{*/
+    /*    background: url("../images/general/eye2.svg") no-repeat scroll 0 0;*/
+    /*    width: 29px;*/
+    /*}*/
+    /*.fixed-footer-menu ul li a:hover .ic-stock{*/
+    /*    background: url("../images/general/eye2.svg") no-repeat scroll 100% 0;*/
+    /*}*/
 
     /*.header .header-buttons {
         display:block;

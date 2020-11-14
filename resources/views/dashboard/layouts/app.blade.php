@@ -28,6 +28,7 @@
     <script src="{{ asset('admin_assets/5883f585/jquery73a6.js?v=1574168826') }}"></script>
     <script src="{{ asset('admin_assets/c4fd7b45/js/bootstrap73a6.js?v=1574168826') }}"></script>
     <link rel="icon" type="image/png" href="{{ asset('images/new-site/logo3.png') }}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" />
 
 
     <link rel="shortcut icon" href="{{ asset('images/new-site/logo3.png') }}" type="image/x-icon" />

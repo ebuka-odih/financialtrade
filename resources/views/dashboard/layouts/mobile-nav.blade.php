@@ -31,7 +31,7 @@
         </li>
         <li>
             <a href="{{ route('user.trades.index') }}">
-                <div class="ic ic-stock"></div>Trades</a>
+                <div style="font-weight: 200;" class="fa fa-chart-line fa-3x"></div><br>Trades</a>
         </li>
         <li>
             <a href="{{ route('user.dashboard') }}" class="btn-notifications">

@@ -72,4 +72,12 @@ class AdminController extends Controller
         ];
         return $request->validate($rules);
     }
+
+    public function show_user_withdraw($id)
+    {
+        $user_details = User::findOrFail($id);
+        $user_withdrawals = User::with('withdrawal')->findOrFail($id);
+        return view('admin.user-withdrawals', compact('user_withdrawals', 'user_details'));
+    }
+
 }

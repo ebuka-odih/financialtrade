@@ -15,9 +15,14 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
 
     Route::get('accept/withdrawal/{withdraw}', 'Admin\AdminWithdrawal@accept_withdrawal')->name('accept_withdrawal');
     Route::get('all-withdrawal', 'Admin\AdminWithdrawal@all_withdrawal')->name('all_withdrawal');
+    Route::get('withdrawal/{id}/details', 'Admin\AdminWithdrawal@withdrawal_details')->name('withdrawal_details');
+
     Route::get('users/trades/{id}', 'Admin\AdminController@list_orders')->name('list_orders');
     Route::get('create/order/{id}', 'Admin\AdminController@create_order')->name('create_order');
     Route::post('create/order/store', 'Admin\AdminController@create_order_store')->name('create_order_store');
+
+    Route::get('all-user-withdraw/{id}', 'Admin\AdminController@show_user_withdraw')->name('user_withdraw.show')->where('id', '[0-9]+');
+
 
 
 });

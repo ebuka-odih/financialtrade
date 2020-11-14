@@ -38,4 +38,10 @@ class AdminWithdrawal extends Controller
 
     }
 
+    public function withdrawal_details($id)
+    {
+        $withdrawal = Withdrawal::findOrFail($id);
+        return view('admin.user-withdrawal-details', compact('withdrawal'));
+    }
+
 }

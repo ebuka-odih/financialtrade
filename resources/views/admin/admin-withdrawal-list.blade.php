@@ -39,7 +39,7 @@
                                             <td><strong>{!! $users_withdrawal->admin_status() !!}</strong></td>
                                             <td>
                                                 <div class="btn-group">
-                                                    <a href="#" class="btn btn-secondary btn-sm">View</a>
+                                                    <a href="{{ route('admin.withdrawal_details', $users_withdrawal->id) }}" class="btn btn-secondary btn-sm">View</a>
                                                     @if($users_withdrawal->status != 'pending')
                                                     @else
                                                     <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">

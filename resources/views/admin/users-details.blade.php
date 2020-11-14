@@ -11,6 +11,8 @@
         <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('admin2_assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('admin2_assets/css/users/user-profile.css') }}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 
     @endsection
 
@@ -44,11 +46,14 @@
                             <div class="row">
                                 <div class="col-md-12 mb-3">
                                     @if( $user_details->user_status == 0)
-                                    <a class="btn btn-primary" href="{{ route('admin.verify_user', $user_details->id) }}" role="button">Verify</a>
+                                        <a class="btn btn-success mb-2" href="{{ route('admin.verify_user', $user_details->id) }}" role="button" title="Verify this user"><i class="fa fa-check"></i></a>
                                     @else
-                                        @endif
+                                    @endif
+
+
                                     <a class="btn btn-primary" href="#" role="button">Deposits</a>
-                                    <a class="btn btn-primary" href="#" role="button">Withdrawals</a>
+                                    <a class="btn btn-primary " href="{{ route('admin.user_withdraw.show', $user_details->id) }}" role="button">Withdraws</a>
+
                                 </div>
                             </div>
                             <div class="col-md-12">

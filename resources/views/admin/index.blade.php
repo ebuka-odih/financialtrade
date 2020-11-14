@@ -113,7 +113,7 @@
                                                     @else
                                                     @endif
                                                     <a class="dropdown-item" href="#">Deposits</a>
-                                                    <a class="dropdown-item" href="#">Withdrawal</a>
+                                                    <a class="dropdown-item" href="{{ route('admin.user_withdraw.show', $user->id) }}">Withdrawal</a>
                                                 </div>
                                             </div>
                                         </td>

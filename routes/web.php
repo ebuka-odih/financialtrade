@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomepageController@homeInvestPlan')->name('homepage');
-Route::get('/why-ftm', 'HomepageController@why_ftm')->name('why_ftm');
-Route::get('/contact-us', 'HomepageController@contact_us')->name('contact_us');
+Route::get('why-ftm', 'HomepageController@why_ftm')->name('why_ftm');
+Route::get('contact-us', 'HomepageController@contact_us')->name('contact_us');
+Route::get('policies-regulation/risk-disclosure', 'HomepageController@risk')->name('risk');
+Route::get('policies-regulation/policy-statement', 'HomepageController@policy')->name('policy');
 
 Auth::routes(['verify' => true]);
 

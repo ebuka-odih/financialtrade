@@ -94,16 +94,33 @@
                                     </div>
                                 </div>
 
+                                @if(auth()->user()->user_status == 0)
                                 <div class="form-group form-target-currency field-withdrawallocalform-amount required">
                                     <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-amount">Amount</label></div>
                                     <div class="col-xs-8 col-md-6">
                                         <div class="input-group select2-bootstrap-prepend select2-bootstrap-append">
                                             <span class="input-group-addon">USD</span>
-                                            <input type="number" id="withdrawallocalform-amount" class="form-control" name="amount"  placeholder="0.00" aria-required="true" required>
+                                            <input readonly type="number" id="withdrawallocalform-amount" class="form-control" name="amount"  placeholder="0.00" aria-required="true" required>
                                         </div>
                                         <p class="help-block help-block-error "></p>
+                                        <small class="text text-danger">You can't make withdrawal, your account is yet to be verified</small>
+
                                     </div>
+
                                 </div>
+                                @else
+                                    <div class="form-group form-target-currency field-withdrawallocalform-amount required">
+                                        <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-amount">Amount</label></div>
+                                        <div class="col-xs-8 col-md-6">
+                                            <div class="input-group select2-bootstrap-prepend select2-bootstrap-append">
+                                                <span class="input-group-addon">USD</span>
+                                                <input  type="number" id="withdrawallocalform-amount" class="form-control" name="amount"  placeholder="0.00" aria-required="true" required>
+                                            </div>
+                                            <p class="help-block help-block-error "></p>
+                                        </div>
+                                    </div>
+                                    @endif
+
                                 <h3>Personal information</h3>
                                 <div class="form-group field-withdrawallocalform-name required">
                                     <div><label class="control-label col-xs-4 col-md-3" for="withdrawallocalform-name">Name</label></div>
@@ -127,11 +144,14 @@
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>
+                                @if(auth()->user()->user_status != 0)
                                 <div class="form-group">
                                     <div class="col-xs-12 col-md-9 text-right mb-10">
                                         <button type="submit" class="btn btn-success demo-notice">Continue</button>
                                     </div>
                                 </div>
+                                @else
+                                @endif
                             </form>
                             <script type="text/javascript">
                                 //<![CDATA[

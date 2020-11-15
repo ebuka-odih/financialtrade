@@ -22,4 +22,13 @@ class HomepageController extends Controller
     {
         return view('frontpage.contact-us');
     }
+
+    public function risk(){
+        return view('frontpage.policies-regulation');
+    }
+
+    public function policy()
+    {
+        return view('frontpage.policy-statement');
+    }
 }

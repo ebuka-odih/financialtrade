@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-param" content="_csrf">
-    <title>FTM/Trade</title>
+    <title>{{ env('APP_NAME') }}</title>
     <link href="{{ asset('admin_assets/d4d1979f/build/css/intlTelInputf907.css?v=1598456919') }}" rel="stylesheet">
     <link href="{{ asset('admin_assets/c4fd7b45/css/bootstrap73a6.css?v=1574168826') }}" rel="stylesheet">
     <link href="{{ asset('admin_assets/ac24bae0/css/jquery.fileupload73a6.css?v=1574168826') }}" rel="stylesheet">

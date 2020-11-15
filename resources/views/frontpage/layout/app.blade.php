@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FTM broker. Online Forex trading</title>
+    <title>{{ env('APP_NAME') }} broker. Online Forex trading</title>
     <meta name="description" content="Official website of Financialtrademarket broker. Earn online by trading on Forex and financial markets. With Financialtrade broker, you can trade in сurrency, oil, precious metals and stock indices. Reliable ECN Forex broker with high-quality service.">
     <meta name="keywords">
     <meta property="og:type" content="website">
@@ -240,8 +240,8 @@
                 <li class="docs-main">
                     <ul>
                         <li><a href="#">Terms of use</a></li>
-                        <li><a href="#">Privacy policy</a></li>>
-                        <li><a href="#">Risk Disclosure</a></li>
+                        <li><a href="{{ route('policy') }}">Privacy policy</a></li>
+                        <li><a href="{{ route('risk') }}">Risk Disclosure</a></li>
                     </ul>
                 </li>
             </ul>

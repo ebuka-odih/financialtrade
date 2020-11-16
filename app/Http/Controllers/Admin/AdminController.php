@@ -8,6 +8,7 @@ use App\User;
 use App\Withdrawal;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 
 class AdminController extends Controller
 {
@@ -56,8 +57,30 @@ class AdminController extends Controller
         $data = $this->getData($request);
         $data['user_id'] = $request->user_id;
         Trades::create($data);
-        return redirect()->route('admin.list_orders', $data['user_id'])->with('success', 'Order Created Successfully');
+        return redirect()->route('admin.list_orders', $data['user_id'])->with('success', 'Trade Created Successfully');
 
+    }
+    public function edit_trade($id)
+    {
+        $user_details = User::findOrFail($id);
+        $trade = Trades::findOrFail($id);
+        return view('admin.edit-trades', compact('trade', 'user_details'));
+    }
+
+    public function update_trade(Request $request, $id)
+    {
+        $trade = Trades::findOrFail($id);
+        $data = $this->getData($request);
+        $data['user_id'] = $request->user_id;
+        $trade->update($data);
+        return redirect()->route('admin.list_orders', $data['user_id'])->with('success', 'Trade Updated');
+    }
+
+    public function delete_trade($id)
+    {
+        $trade = Trades::findOrFail($id);
+        $trade->delete();
+        return redirect()->back()->with('deleted', 'Trade Deleted Successfully');
     }
 
     protected function getData(Request $request)

@@ -80,6 +80,7 @@
                                         <th>Buy At</th>
                                         <th>Opening Price</th>
                                         <th>Closing Price</th>
+                                        <td>Action</td>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -92,6 +93,22 @@
                                         <td>{{ $trade->buy_at }}</td>
                                         <td>{{ $trade->opening_price }}</td>
                                         <td>{{ $trade->closing_price }}</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                    <a class="dropdown-item" href="{{ route('admin.edit_trade', $trade->id) }}">Edit</a>
+                                                    <form method="POST" action="{!! route('admin.investment-plans.destroy', $trade->id) !!}" accept-charset="UTF-8">
+                                                        @csrf
+                                                        <input type="hidden" name="_method" value="DELETE">
+                                                        <button type="submit" class="btn btn-default">Delete</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </td>
+
                                     </tr>
                                         @else
                                             <tr class="table-danger">
@@ -101,6 +118,21 @@
                                                 <td>{{ $trade->buy_at }}</td>
                                                 <td>{{ $trade->opening_price }}</td>
                                                 <td>{{ $trade->closing_price }}</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                            <a class="dropdown-item" href="{{ route('admin.edit_trade', $trade->id) }}">Edit</a>
+                                                            <form method="POST" action="{!! route('admin.delete_trade', $trade->id) !!}" accept-charset="UTF-8">
+                                                                @csrf
+                                                                <input type="hidden" name="_method" value="DELETE">
+                                                                <button type="submit" class="btn btn-default">Delete</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             @endif
                                     @endforeach

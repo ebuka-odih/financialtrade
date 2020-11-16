@@ -8,13 +8,13 @@
             <div id="profile-index" class="contents clearfix">
                 @include('dashboard.layouts.notice')
                 <div class="content-center">
-                    <h1 class="no-print">Dashboard</h1>
+                    <h1 class="no-print">Trades</h1>
                     <div id="content-alert-message">
                     </div>
 
                     <div style="margin-top: 20px;" class="container">
                         <div class="row">
-                            <div class="col-sm-4" style="background-color: #3e3e3e; color: white;">
+                            <div class="col-sm-12" style="background-color: #000; color: white;">
                                 <div style="margin-top: 5px; margin-left: 100px;">
                                     <div class="container align-self-center">
                                         <div class="btn-group">
@@ -24,7 +24,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <table>
+                                <table style="width: 100%">
                                     <tr>
                                         <th> </th>
                                         <th></th>
@@ -47,7 +47,7 @@
                                         @endif
                                     @empty
                                         <div class="row">
-                                            <div class="col-sm-6" style="background-color: #3e3e3e; color: white;">
+                                            <div class="col-sm-12" style="background-color: #000; color: white;">
                                                 <table>
                                                     <tr>
                                                         <th> </th>
@@ -117,7 +117,7 @@
 
                                 </table>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-6">
                                 <!-- TradingView Widget BEGIN -->
                                 <div class="tradingview-widget-container">
                                     <div id="tradingview_d1eb1"></div>

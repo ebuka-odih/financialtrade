@@ -21,7 +21,7 @@
 <div class="fixed-footer-menu">
     <ul>
         <li>
-            <a href="#"><div class="ic ic-depo"></div>Deposit</a>
+            <a href="{{ route('user.pick_plan') }}"><div class="ic ic-depo"></div>Deposit</a>
         </li>
         <li>
             <a href="{{ route('user.make_withdrawal') }}"><div class="ic ic-with"></div>Withdrawal</a>

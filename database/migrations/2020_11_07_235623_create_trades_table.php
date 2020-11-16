@@ -23,6 +23,7 @@ class CreateTradesTable extends Migration
             $table->decimal('closing_price', 11, 2)->nullable();
             $table->decimal('price', 11, 2);
             $table->bigInteger('user_id')->nullable();
+            $table->decimal('profit', 11, 2)->nullable();
 
         });
     }

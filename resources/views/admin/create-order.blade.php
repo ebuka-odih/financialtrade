@@ -113,6 +113,12 @@
                                     <input type="number" step="any" name="buy_at" class="form-control" id="inputPassword4" placeholder="Buy At">
                                 </div>
                             </div>
+                            <div class="form-row mb-4">
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Profit</label>
+                                    <input type="number" step="any" name="profit" class="form-control" placeholder="Profit">
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-primary mt-3">Create</button>
                         </form>
 

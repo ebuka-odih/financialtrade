@@ -41,9 +41,10 @@ class AdminController extends Controller
 
     public function list_orders($id)
     {
+        $total_profit = Trades::select('profit')->sum('profit');
         $trades = Trades::all();
         $user_details = User::findOrFail($id);
-        return view('admin.user-trades', compact('trades', 'user_details'));
+        return view('admin.user-trades', compact('trades', 'user_details', 'total_profit'));
     }
 
     public function create_order($id)
@@ -92,6 +93,7 @@ class AdminController extends Controller
             'price' => 'nullable',
             'opening_price' => 'nullable',
             'closing_price' => 'nullable',
+            'profit' => 'nullable',
         ];
         return $request->validate($rules);
     }

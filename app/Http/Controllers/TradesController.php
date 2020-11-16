@@ -11,8 +11,9 @@ class TradesController extends Controller
 
     public function index()
     {
+        $total_trade = Trades::whereUserId(auth()->id())->select('profit')->sum('profit');
         $trades = Trades::whereUserId(auth()->id())->get();
-        return view('dashboard.trades', compact('trades'));
+        return view('dashboard.trades', compact('trades', 'total_trade'));
     }
 
 

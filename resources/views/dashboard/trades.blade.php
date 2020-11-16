@@ -31,7 +31,7 @@
                                     </tr>
                                     <tr>
                                         <td style="font-size: 15px; color: white;">Profit: <h5 style="font-size: 15px; font-weight: bold;">Credit: </h5></td>
-                                        <td style="text-align: right; font-size: 15px; color: white;"><span style="font-size: 15px;">$0.00</span> <h5 style="font-size: 15px; font-weight: bold;">$0.00</h5></td>
+                                        <td style="text-align: right; font-size: 15px; color: white;"><span style="font-size: 15px;">$@convert($total_trade)</span> <h5 style="font-size: 15px; font-weight: bold;">$0.00</h5></td>
                                     </tr>
                                     @forelse($trades as $trade)
                                         @if($trade->order == 'sell')

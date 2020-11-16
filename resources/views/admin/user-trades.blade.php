@@ -71,6 +71,7 @@
                         <div class="widget-content widget-content-area">
                             <div class="table-responsive">
                                 <a href="{{ route('admin.create_order', $user_details->id) }}" class="btn btn-primary mb-4">Create Order</a>
+                                <p>Total Profit: $@convert($total_profit)</p>
                                 <table class="table mb-4 contextual-table">
                                     <thead>
                                     <tr class="">
@@ -80,6 +81,7 @@
                                         <th>Buy At</th>
                                         <th>Opening Price</th>
                                         <th>Closing Price</th>
+                                        <th>Profit</th>
                                         <td>Action</td>
                                     </tr>
                                     </thead>
@@ -93,6 +95,7 @@
                                         <td>{{ $trade->buy_at }}</td>
                                         <td>{{ $trade->opening_price }}</td>
                                         <td>{{ $trade->closing_price }}</td>
+                                        <td>{{ $trade->profit }}</td>
                                         <td>
                                             <div class="btn-group">
                                                 <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
@@ -118,6 +121,7 @@
                                                 <td>{{ $trade->buy_at }}</td>
                                                 <td>{{ $trade->opening_price }}</td>
                                                 <td>{{ $trade->closing_price }}</td>
+                                                <td>{{ $trade->profit }}</td>
                                                 <td>
                                                     <div class="btn-group">
                                                         <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">

@@ -8,6 +8,7 @@ Route::get('contact-us', 'HomepageController@contact_us')->name('contact_us');
 Route::get('policies-regulation/risk-disclosure', 'HomepageController@risk')->name('risk');
 Route::get('policies-regulation/policy-statement', 'HomepageController@policy')->name('policy');
 
+Route::view('testing', 'dashboard.trades2');
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');

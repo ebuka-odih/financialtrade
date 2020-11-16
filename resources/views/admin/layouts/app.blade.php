@@ -96,7 +96,7 @@
                     </a>
                     <ul class="collapse submenu list-unstyled" id="datatables" data-parent="#accordionExample">
                         <li>
-                            <a href="table_dt_basic.html"> Deposits </a>
+                            <a href="#"> Deposits </a>
                         </li>
                         <li>
                             <a href="{{ route('admin.all_withdrawal') }}"> Withdrawals </a>

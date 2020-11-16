@@ -20,7 +20,7 @@
                             <div class="col-sm-4" style="background-color: black; color: white;">
                                 <div style="margin-top: 5px; margin-left: 100px;">
                                     <div class="container align-self-center">
-                                        <div class="btn-group">
+                                        <div class="btn-group row col-md-12">
                                             <button type="button" class="btn btn-primary">Day</button>
                                             <button type="button" class="btn btn-primary">Week</button>
                                             <button type="button" class="btn btn-primary">Month</button>

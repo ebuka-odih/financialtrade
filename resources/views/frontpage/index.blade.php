@@ -229,14 +229,15 @@
                         <span>28 <i>Forex</i>, 2 <i>Metals</i></span>
                     </div>
                     <div class="btn-acc">
-                        <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey " href="https://social.tifia.com/en/new-trading-account?type=start" rel="nofollow">Open trading account</a>
+                        <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                        <a class="btn btn-grey " href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>
                     </div>
                 </div>
                 @empty
                     <div class="start-micro tab-pane fadeIn animated" id="start">
                         <div class="account-type">
                             <h3>Start<br><span>Micro</span></h3>
-                            <p>Choose your way<br>to trade with Tifia</p>
+                            <p>Choose your way<br>to trade with FTM</p>
                         </div>
                         <ul class="account-info">
                             <li>
@@ -267,7 +268,8 @@
                             <span>-</span>
                         </div>
                         <div class="btn-acc">
-                            <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey " href="https://social.tifia.com/en/new-trading-account?type=start" rel="nofollow">Open trading account</a>                </div>
+                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                            <a class="btn btn-grey " href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
                     </div>
                     <div class="tab-pane fadeIn animated active" id="classic">
                         <div class="account-type">
@@ -303,7 +305,8 @@
                             <span>-</span>
                         </div>
                         <div class="btn-acc">
-                            <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.tifia.com/en/new-trading-account?type=ecn-classic" rel="nofollow">Open trading account</a>                </div>
+                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
                     </div>
                     <div class="best tab-pane fadeIn animated" id="pro">
                         <div class="account-type">
@@ -341,7 +344,8 @@
                             <span>$8</span>
                         </div>
                         <div class="btn-acc">
-                            <a class="btn btn-grey" href="trading-accounts.html">View details</a>                    <a class="btn btn-grey" href="https://social.tifia.com/en/new-trading-account?type=ecn-pro" rel="nofollow">Open trading account</a>                </div>
+                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
                     </div>
 
                 @endforelse

@@ -202,17 +202,22 @@
         <div class="container-content">
            <div class="container">
                <ul class="footer-menu">
-                   <li class="col-md-6">
+                   <li class="col-md-4">
                        <ul>
                            <li>About us</li>
                            <li><a href="{{ route('why_ftm') }}">Why us?</a></li>
                        </ul>
                    </li>
-                   <li class="col-md-6">
+                   <li class="col-md-4">
                        <ul>
                            <li>Contact us</li>
-                           <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr">Chat Us</a></li>
                            <li><a href="{{ route('contact_us') }}">Contacts</a></li>
+                       </ul>
+                   </li>
+                   <li class="col-md-4">
+                       <ul>
+                           <li>Chat Us</li>
+                           <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr">Chat Us</a></li>
                        </ul>
                    </li>
 {{--                   <li>--}}
@@ -241,7 +246,9 @@
                     <ul>
                         <li><a href="#">Terms of use</a></li>
                         <li><a href="{{ route('policy') }}">Privacy policy</a></li>
+                        <li><a href="{{ route('why_ftm') }}">Why Choose Us</a></li>
                         <li><a href="{{ route('risk') }}">Risk Disclosure</a></li>
+{{--                        <li><a href="{{ route('risk') }}">Contact Us</a></li>--}}
                     </ul>
                 </li>
             </ul>

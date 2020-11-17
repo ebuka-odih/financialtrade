@@ -38,7 +38,7 @@
                     <div class="form-group field-registerform-full_name required">
                         <div><label class="control-label" for="registerform-full_name">Full name</label></div>
                         <div>
-                            <input  placeholder="Enter Fullname" type="text" id="registerform-full_name" class="form-control input-lg" name="name" value="" aria-required="true">
+                            <input  placeholder="Enter Full " type="text" id="registerform-full_name" class="form-control input-lg" name="name" value="" aria-required="true">
                             <p class="help-block help-block-error"></p>
                         </div>
                     </div>
@@ -360,12 +360,11 @@
                                         I have read and agree to the following agreements:
                                         <div id="agreement-mi" style="">
                                             <a class="text-more-link" href="javascript:;" style="display: none">(Show)</a>
-                                            <div> &ndash; <a href="" target="_blank">Client agreement</a><br/>  &ndash;
-                                                <a href="" target="_blank">Terms of Business</a><br/>  &ndash;
+                                            <div> &ndash; <a href="{{ route('policy') }}" target="_blank">Client agreement</a><br/>  &ndash; <a href="{{ route('policy') }}" target="_blank">Terms of Business</a><br/>  &ndash; <br/>  &ndash;</div>
                                         </div>
                                         <div id="agreement-eu" style="display:none">
                                             <a class="text-more-link" href="javascript:;" style="display: none">(Show)</a>
-                                            <div> &ndash; <a href="" target="_blank">Risk disclosure</a></div>
+                                            <div> &ndash; <a href="{{ route('risk') }}" target="_blank">Risk disclosure</a></div>
                                         </div>
                                     </label>
                                 </div>

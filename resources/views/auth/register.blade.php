@@ -85,6 +85,7 @@
                                 <option value="KH">Cambodia</option>
                                 <option value="CM">Cameroon</option>
                                 <option value="IC">Canary Islands</option>
+                                <option value="CA">Canada</option>
                                 <option value="CV">Cape Verde</option>
                                 <option value="BQ">Caribbean Netherlands</option>
                                 <option value="KY">Cayman Islands</option>

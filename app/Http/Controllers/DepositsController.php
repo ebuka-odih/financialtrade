@@ -21,7 +21,7 @@ class DepositsController extends Controller
         $total_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
         $last_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
         $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
-        $canceled_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', -0)->sum('amount');
+        $canceled_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '<', 0)->sum('amount');
         return view('dashboard.transactions.deposit-history', compact('deposits', 'deposit_approved_cash', 'deposit_pending_cash', 'total_deposit', 'last_deposit', 'canceled_deposit'));
     }
     //
@@ -76,7 +76,7 @@ class DepositsController extends Controller
         $t_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
         $l_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
         $a_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
-        $c_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', -0)->sum('amount');
+        $c_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '<', 0)->sum('amount');
 
 
         $deposit_detail = Deposits::whereUserId(auth()->id())->findOrFail($id);

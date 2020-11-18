@@ -16,7 +16,6 @@
     <li><a href="{{ route('user.personal_info') }}">Personal information</a></li>
     <li><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
     <li><a href="{{ route('user.change_password') }}">Security</a></li>
-    <li><a href="/en/login-history/index">Login history</a></li>
 </ul>
 <div class="row">
     <div class="col-md-5">

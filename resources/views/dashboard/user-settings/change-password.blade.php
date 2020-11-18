@@ -28,7 +28,7 @@
                         <li><a href="{{ route('user.personal_info') }}">Personal information</a></li>
                         <li><a href="{{ route('user.kyc_verification') }}">Verification</a></li>
                         <li class="active"><a href="{{ route('user.change_password') }}">Security</a></li>
-                        <li><a href="/en/login-history/index">Login history</a></li>
+{{--                        <li><a href="/en/login-history/index">Login history</a></li>--}}
                     </ul>
                     <div class="panel-body">
                         <h3>FTM Client's profile password changing</h3>

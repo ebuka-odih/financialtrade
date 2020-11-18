@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Deposits;
 use App\InvestPlans;
 use App\Rules\MatchOldPassword;
 use App\User;
@@ -18,7 +19,13 @@ class UserController extends Controller
 //        $total_withdraw = Withdrawal::whereUserId(auth()->id())->select('amount')->sum('amount');
         $last_withdraw = optional(Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->latest()->first())->amount;
         $withdraw_approved_cash = Withdrawal::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->sum('amount');
-        return view('dashboard.dashboard', compact('last_withdraw', 'withdraw_approved_cash', 'withdraw_pending_cash'));
+
+        $deposit_pending_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 0)->sum('amount');
+        $total_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
+        $last_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
+        $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
+
+        return view('dashboard.dashboard', compact('deposit_pending_cash', 'total_deposit', 'last_withdraw', 'last_deposit', 'deposit_approved_cash', 'withdraw_approved_cash', 'withdraw_pending_cash'));
     }
 
     public function personal_info()

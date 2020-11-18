@@ -88,15 +88,15 @@
                                     <table class="table table-condensed table-striped">
                                         <tr>
                                             <td>Total Deposit</td>
-                                            <td>$0.00</td>
+                                            <td>$@convert($total_deposit)</td>
                                         </tr>
                                         <tr>
                                             <td>Last Deposit</td>
-                                            <td>N/A</td>
+                                            <td>$@convert($last_deposit)</td>
                                         </tr>
                                         <tr>
                                             <td>Active Deposit</td>
-                                            <td>$0.00</td>
+                                            <td>$@convert($deposit_approved_cash)</td>
                                         </tr>
                                     </table>
                                 </div>

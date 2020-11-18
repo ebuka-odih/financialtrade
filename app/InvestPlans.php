@@ -14,4 +14,9 @@ class InvestPlans extends Model
     {
         return $this->daily_return * $this->term_days;
     }
+
+    public function deposits()
+    {
+        return $this->hasMany(Deposits::class);
+    }
 }

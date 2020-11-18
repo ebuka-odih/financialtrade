@@ -12,7 +12,7 @@
                     <div id="content-alert-message">
                     </div>
                     <ul class="top-menu-content second no-print">
-                        <li class="active"><a href="{{ route('user.deposit_history') }}">Deposits history</a></li>
+                        <li><a href="{{ route('user.deposit_history') }}">Deposits history</a></li>
                         <li><a href="{{ route('user.withdrawal_history') }}">Withdrawals history</a></li>
                     </ul>
                     <div class="ajax-pagination">
@@ -27,26 +27,26 @@
                                                     <tbody>
                                                     <tr>
                                                         <td>Last Deposit</td>
-                                                        <td>$@convert($last_deposit)</td>
+                                                        <td>$@convert($l_deposit)</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Approved Deposit</td>
-                                                        <td>$@convert($deposit_approved_cash)</td>
+                                                        <td>$@convert($a_deposit)</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Pending Deposit</td>
-                                                        <td>$@convert($deposit_pending_cash)</td>
+                                                        <td>$@convert($p_deposit)</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Canceled Deposit</td>
-                                                        <td>$@convert($canceled_deposit)</td>
+                                                        <td>$@convert($c_deposit)</td>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="2"></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Total Deposit</td>
-                                                        <td>$@convert($total_deposit)</td>
+                                                        <td>$@convert($t_deposit)</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -59,35 +59,121 @@
                                         <!-- // Ferrary contest sidebar right banner -->
                                     </div>
                                 </div>
+
                                 <div class="table-responsive">
+                                    @if( $deposit_detail->status >= 100)
                                     <table class="table table-condensed table-bordered">
-                                        <thead>
                                         <tr>
-                                            <th>Date</th>
-                                            <th>Transaction ID</th>
-                                            <th>Deposit amount</th>
-                                            <th>Paid amount</th>
-                                            <th>Status</th>
-                                            <th>Payment URL</th>
-                                            <th>Details</th>
+                                            <td colspan="2"> <h4>Transaction Details</h4></td>
                                         </tr>
-                                        </thead>
-                                        <tbody class="ajax-pagination-target">
-                                        @forelse($deposits as $deposit)
                                         <tr>
-                                            <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}</td>
-                                            <td>{{ $deposit->txn_id }}</td>
-                                            <td>{{ $deposit->amount }}</td>
-                                            <td>{{ $deposit->amount }}</td>
-                                            <td>{!! $deposit->status() !!}</td>
-                                            <td><a target="_blank" href="{{ $deposit->payment_url }}">Payment</a></td>
-                                            <td><a href="{{ route('user.deposit_details', $deposit->id) }}">View</a></td>
-                                            @empty
-                                            <td colspan="6" class="text text-center">No Transaction Found</td>
+                                            <th>TRANSACTION STATUS:</th>
+                                            <td>{!! $deposit_detail->status() !!}</td>
                                         </tr>
-                                        @endforelse
-                                        </tbody>
+                                        <tr>
+                                            <th>INVESTMENT PLAN:</th>
+                                            <td>{{ optional($deposit_detail->invest_plan)->name }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>INVESTED AMOUNT:</th>
+                                            <td>${{ $deposit_detail->amount }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ROI:</th>
+                                            <td>$@convert($deposit_detail->expected_profit())</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TOTAL RETURN (WITH CAPITAL):</th>
+                                            <td>$@convert($deposit_detail->expected_profit() + $deposit_detail->amount)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>START DATE:</th>
+                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit_detail->approved_date)) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>ENDING DATE:</th>
+                                            <td>{{ date('d-M-y', strtotime($deposit_detail->ending_date())) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>INTERVAL:</th>
+                                            <td>{{ optional($deposit_detail->invest_plan)->term_days }} Days</td>
+                                        </tr>
+                                        <tr>
+                                            <th>DAILY PROFIT:</th>
+                                            <td>{{ optional($deposit_detail->invest_plan)->daily_return }}(%)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TOTAL PROFIT (%):</th>
+                                            <td>{{ optional($deposit_detail->invest_plan)->total_return }}(%)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>PROFIT EARNED:</th>
+                                            <td colspan="2">$ @convert($deposit_detail->earning) <span style="margin-left: 20px">(without capital)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>TOTAL EARNED:</th>
+                                            <td colspan="2">$ @convert($deposit_detail->total_earned()) <span style="margin-left: 20px">(plus capital)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th> PROGRESS :</th>
+                                            @if($deposit_detail->invest_plan->term_days == $i)
+                                                <td colspan="2">Plan Ended</td>
+                                            @else
+                                                <td colspan="2">Plan In Progress...</td
+                                            @endif
+                                        </tr>
+                                        <tr>
+                                            <td colspan=3>&nbsp;</td>
+                                        </tr>
                                     </table>
+                                    @else
+                                        <p class="text text-danger">Note: Your investment will start counting immediately you payment is confirmed.</p>
+                                        <table class="table table-condensed table-bordered">
+                                            <tr>
+                                                <td colspan="2"> <h4>Transaction Details</h4></td>
+                                            </tr>
+                                            <tr>
+                                                <th>TRANSACTION STATUS:</th>
+                                                <td>{!! $deposit_detail->status() !!}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>INVESTMENT PLAN:</th>
+                                                <td>{{ optional($deposit_detail->invest_plan)->name }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>INVESTED AMOUNT:</th>
+                                                <td>${{ $deposit_detail->amount }}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ROI:</th>
+                                                <td>$@convert($deposit_detail->expected_profit())</td>
+                                            </tr>
+                                            <tr>
+                                                <th>TOTAL RETURN (WITH CAPITAL):</th>
+                                                <td>$@convert($deposit_detail->expected_profit() + $deposit_detail->amount)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>INTERVAL:</th>
+                                                <td>{{ optional($deposit_detail->invest_plan)->term_days }} Days</td>
+                                            </tr>
+                                            <tr>
+                                                <th>DAILY PROFIT:</th>
+                                                <td>{{ optional($deposit_detail->invest_plan)->daily_return }}(%)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>TOTAL PROFIT (%):</th>
+                                                <td>{{ optional($deposit_detail->invest_plan)->total_return }}(%)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>MAKE PAYMENT:</th>
+                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan=3>&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    @endif
                                 </div>
                             </div>
                         </div>

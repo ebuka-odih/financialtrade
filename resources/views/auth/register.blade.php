@@ -344,13 +344,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group field-registerform-ref_uid">
-                        <div><label class="control-label" for="registerform-ref_uid">Referral UID <i class="fa fa-question-circle" title="Enter the UID of your partner here (optional)"></i></label></div>
-                        <div>
-                            <input type="text" id="registerform-ref_uid" class="form-control input-lg" name="RegisterForm[ref_uid]" value="">
-                            <p class="help-block help-block-error"></p>
-                        </div>
-                    </div>
+{{--                    <div class="form-group field-registerform-ref_uid">--}}
+{{--                        <div><label class="control-label" for="registerform-ref_uid">Referral UID <i class="fa fa-question-circle" title="Enter the UID of your partner here (optional)"></i></label></div>--}}
+{{--                        <div>--}}
+{{--                            <input type="text" id="registerform-ref_uid" class="form-control input-lg" name="RegisterForm[ref_uid]" value="">--}}
+{{--                            <p class="help-block help-block-error"></p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                     <div class="row">
                         <div class="col-sm-8">
                             <div class="form-group field-registerform-agreement required">

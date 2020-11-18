@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\InvestPlans;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Hexters\CoinPayment\Helpers\CoinPaymentFacade as CoinPayment;
 use Kevupton\LaravelCoinpayments\Exceptions\IpnIncompleteException;
@@ -66,6 +68,46 @@ class DepositsController extends Controller
 
         return redirect($link);
     }
+
+
+    public function deposit_details($id){
+
+        $p_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 0)->sum('amount');
+        $t_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
+        $l_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
+        $a_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
+        $c_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', -0)->sum('amount');
+
+
+        $deposit_detail = Deposits::whereUserId(auth()->id())->findOrFail($id);
+
+        $investment_plan = InvestPlans::findOrFail($deposit_detail->invest_plans_id);
+        $user = User::findOrFail($deposit_detail->user_id);
+
+        $expected_percent = $investment_plan->daily_interest  * $deposit_detail->amount;
+        $profit_percent =  number_format((float)$expected_percent / 100, 2, '.', '');
+
+        $days = 1;
+
+        $current_date = Carbon::now();
+        $d_approved = Carbon::parse($deposit_detail->approved_date);
+        $d_ended = Carbon::parse($deposit_detail->end_date);
+
+        if($d_approved->diffInDays($current_date) < $investment_plan->term_days){
+            $days = $d_approved->diffInDays($current_date);
+        }else {
+            $days =  $invest_plan->term_days;
+        }
+
+        $i = 1;
+        while ($i < $days){
+            $i++;
+        }
+
+        return view('dashboard.transactions.deposit-details', compact('deposit_detail', 'investment_plan', 'days', 'i',
+        'p_deposit', 't_deposit', 'a_deposit', 'l_deposit', 'c_deposit'));
+    }
+
 
 
 

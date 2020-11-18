@@ -33,6 +33,8 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('process_deposit/', 'DepositsController@process_deposit')->name('process_deposit');
     Route::get('deposit/{id}', 'DepositsController@make_deposit')->name('make_deposit');
     Route::get('deposits/history/', 'DepositsController@deposit_history')->name('deposit_history');
+    Route::get('deposit/transaction/ftm{id}xx001', 'DepositsController@deposit_details')->name('deposit_details');
+
     Route::get('trades', 'TradesController@index')->name('trades.index');
 
     Route::get('validate', 'DepositsController@validateIpn');

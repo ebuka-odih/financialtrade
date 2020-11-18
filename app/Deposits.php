@@ -17,7 +17,7 @@ class Deposits extends Model
     }
 
     public function status(){
-        if ($this->status >= 1){
+        if ($this->status >= 100 || $this->status == 2){
             return "<a class='label label-success'>Paid</a>";
         }elseif($this->status == 0){
             return "<a class='label label-warning'>Pending</a>";

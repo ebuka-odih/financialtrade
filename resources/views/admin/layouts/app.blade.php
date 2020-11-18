@@ -124,52 +124,6 @@
                     </ul>
                 </li>
 
-                <li class="menu menu-heading">
-                    <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg><span>USER AND PAGES</span></div>
-                </li>
-
-
-                <li class="menu">
-                    <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                            <span>Pages</span>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </div>
-                    </a>
-                    <ul class="collapse submenu list-unstyled" id="pages" data-parent="#accordionExample">
-                        <li>
-                            <a href="pages_helpdesk.html"> Helpdesk </a>
-                        </li>
-                        <li>
-                            <a href="pages_contact_us.html"> Contact Form </a>
-                        </li>
-                        <li>
-                            <a href="pages_privacy.html"> Privacy Policy </a>
-                        </li>
-                        <li>
-                            <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
-                            <ul class="collapse list-unstyled sub-submenu" id="pages-error" data-parent="#pages">
-                                <li>
-                                    <a href="pages_error404.html"> 404 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_error500.html"> 500 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_error503.html"> 503 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_maintenence.html"> Maintanence </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-
             </ul>
 
         </nav>

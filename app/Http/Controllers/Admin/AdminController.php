@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Deposits;
 use App\Http\Controllers\Controller;
 use App\Trades;
 use App\User;
@@ -15,9 +16,10 @@ class AdminController extends Controller
     public function dashboard()
     {
         $total_withdraw = Withdrawal::select('amount')->sum('amount');
+        $total_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
         $users_count = User::where('user_role', '=', 'client')->count();
         $users = User::where('user_role', '=', 'client')->get();
-        return view('admin.index', compact('users', 'users_count', 'total_withdraw'));
+        return view('admin.index', compact('users', 'users_count', 'total_withdraw', 'total_deposit'));
     }
 
     public function users()

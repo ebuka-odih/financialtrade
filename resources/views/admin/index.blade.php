@@ -14,7 +14,7 @@
                             <div class="w-chart-section">
                                 <div class="w-detail">
                                     <p class="w-title">Total Deposited</p>
-                                    <p class="w-stats">$ 0.00</p>
+                                    <p class="w-stats">$@convert($total_deposit)</p>
                                 </div>
                                 <div class="w-chart-render-one">
                                     <div id="total-users"></div>

@@ -66,7 +66,6 @@
 {{--                                            <th>#</th>--}}
                                             <th>Created Date</th>
                                             <th>Approved Date</th>
-                                            <th>Wallet</th>
                                             <th>Withdrawal amount</th>
                                             <th>Payment method</th>
                                             <th>Payment amount</th>
@@ -84,7 +83,6 @@
                                             @else
                                             <td>{{ date('d/m/y', strtotime($withdrawal->approved_date)) }}</td>
                                             @endif
-                                            <td>{{ $withdrawal->user->btc_wallet }}</td>
                                             <td>$@convert($withdrawal->amount)</td>
                                             <td>{{ $withdrawal->payment_method }}</td>
                                             <td>$@convert($withdrawal->payment_amt())</td>

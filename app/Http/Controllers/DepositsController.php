@@ -14,7 +14,13 @@ class DepositsController extends Controller
     public function deposit_history()
     {
         $deposits = Deposits::whereUserId(auth()->id())->get();
-        return view('dashboard.transactions.deposit-history', compact('deposits'));
+
+        $deposit_pending_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 0)->sum('amount');
+        $total_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
+        $last_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
+        $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 1)->sum('amount');
+        $canceled_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', -0)->sum('amount');
+        return view('dashboard.transactions.deposit-history', compact('deposits', 'deposit_approved_cash', 'deposit_pending_cash', 'total_deposit', 'last_deposit', 'canceled_deposit'));
     }
     //
     public function pick_plan()

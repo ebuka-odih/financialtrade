@@ -18,6 +18,47 @@
                     <div class="ajax-pagination">
                         <div class="panel">
                             <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <h3>Statistics</h3>
+                                                <table class="table table-condensed table-striped">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Last Deposit</td>
+                                                        <td>$@convert($last_deposit)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Approved Deposit</td>
+                                                        <td>$@convert($deposit_approved_cash)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pending Deposit</td>
+                                                        <td>$@convert($deposit_pending_cash)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Canceled Deposit</td>
+                                                        <td>$@convert($canceled_deposit)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Withdrawal</td>
+                                                        <td>$@convert($total_deposit)</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ferrari-center-mobile-banners" class="col-md-6">
+                                        <!-- Ferrary contest sidebar right banner -->
+                                        <!--        -->
+                                        <!-- // Ferrary contest sidebar right banner -->
+                                    </div>
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table table-condensed table-bordered">
                                         <thead>

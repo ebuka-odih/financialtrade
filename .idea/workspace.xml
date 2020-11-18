@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Deposits.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deposits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_231432_create_deposits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_03_231432_create_deposits_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +214,7 @@
       <workItem from="1605504612076" duration="9001000" />
       <workItem from="1605527558622" duration="4591000" />
       <workItem from="1605545971234" duration="10510000" />
-      <workItem from="1605655094110" duration="7222000" />
+      <workItem from="1605655094110" duration="8760000" />
     </task>
     <servers />
   </component>

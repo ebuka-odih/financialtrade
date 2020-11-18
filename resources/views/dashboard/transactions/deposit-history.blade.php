@@ -27,6 +27,7 @@
                                             <th>Deposit amount</th>
                                             <th>Paid amount</th>
                                             <th>Status</th>
+                                            <th>Payment URL</th>
                                         </tr>
                                         </thead>
                                         <tbody class="ajax-pagination-target">
@@ -37,8 +38,9 @@
                                             <td>{{ $deposit->amount }}</td>
                                             <td>{{ $deposit->amount }}</td>
                                             <td>{!! $deposit->status() !!}</td>
+                                            <td><a target="_blank" href="{{ $deposit->payment_url }}">Payment</a></td>
                                             @empty
-                                            <td colspan="4"></td>
+                                            <td colspan="6" class="text text-center">No Transaction Found</td>
                                         </tr>
                                         @endforelse
                                         </tbody>

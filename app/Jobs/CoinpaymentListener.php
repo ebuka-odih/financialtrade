@@ -37,6 +37,7 @@ class CoinpaymentListener implements ShouldQueue
         if($deposit == null){
             $data = Session::get('d_data');
             $data['txn_id'] = $this->transaction['txn_id'];
+            $data['payment_url'] = $this->transaction['status_url'];
             $deposit = Deposits::create($data);
         }
 

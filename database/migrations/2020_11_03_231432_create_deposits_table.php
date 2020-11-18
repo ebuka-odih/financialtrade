@@ -18,6 +18,7 @@ class CreateDepositsTable extends Migration
             $table->timestamps();
             $table->decimal('amount', 11, 2);
             $table->string('status')->default('pending');
+            $table->string('payment_url')->nullable();
             $table->string('txn_id')->nullable();
             $table->bigInteger('invest_plans_id');
             $table->bigInteger('user_id');

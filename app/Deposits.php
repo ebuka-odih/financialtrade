@@ -10,6 +10,11 @@ class Deposits extends Model
     protected $appends = ['approved_date', 'earning'];
     protected $guarded = [];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public function getApprovedDateAttribute()
     {
         if ($this->status >= 100){
@@ -17,6 +22,15 @@ class Deposits extends Model
         }
     }
 
+    public function admin_status(){
+        if ($this->status >= 100 || $this->status == 2){
+            return "<a class='badge badge-success''>Paid</a>";
+        }elseif($this->status == 0){
+            return "<a class='badge badge-warning'>Pending</a>";
+        }else{
+            return "<a class='badge badge-danger'>Canceled</a>";
+        }
+    }
     public function status(){
         if ($this->status >= 100 || $this->status == 2){
             return "<a class='label label-success'>Paid</a>";

@@ -107,9 +107,24 @@
                                     <th>BTC Wallet:</th>
                                     <td><input class="form-control" id="foo" value="{{ $user_details->btc_wallet }}">
                                         <button class="btn" data-clipboard-target="#foo">
-                                            <img src="assets/clippy.svg" alt="Copy to clipboard">
+                                            <img height="20px" src="{{ asset('assets/clippy.svg') }}" alt="Copy to clipboard">
                                         </button>
-                                    </td>
+                                    </td><br>
+                                </tr>
+                                <tr >
+                                    <th style="margin-top: 20px">Fund Account:</th>
+                                    <td>
+                                        @if(session()->has('success_message'))
+                                            <div class="alert alert-success">
+                                                {{ session()->get('success_message') }}
+                                            </div>
+                                        @endif
+                                        <form action="{{ route('admin.fund_acct.store', $user_details->id) }}" method="POST">
+                                            @csrf
+                                            <label>Enter Amount</label>
+                                            <input type="number" class="form-control"  name="bonus">
+                                            <button type="submit" class="btn btn-sm btn-primary mt-2">Send</button>
+                                        </form></td>
                                 </tr>
                             </table>
                         </div>

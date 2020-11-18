@@ -26,6 +26,11 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
 
     Route::get('all-user-withdraw/{id}', 'Admin\AdminController@show_user_withdraw')->name('user_withdraw.show')->where('id', '[0-9]+');
 
+    Route::get('all-deposit', 'Admin\AdminDeposit@all_deposits')->name('all_deposits');
+    Route::get('deposit/{id}/details', 'Admin\AdminDeposit@deposit_details')->name('deposit_details');
+    Route::post('deposit/send-bonus/{id}', 'Admin\AdminController@fund_acct')->name('fund_acct.store');
+
+
 
 
 });

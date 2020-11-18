@@ -105,4 +105,14 @@ class AdminController extends Controller
         return view('admin.user-withdrawals', compact('user_withdrawals', 'user_details'));
     }
 
+    public function fund_acct(Request $request, $id)
+    {
+        $add_bonus = $request->input('bonus');
+        $user = User::findOrFail($id);
+        $user->acct_wallet += $add_bonus;
+        $user->save();
+//        $user->update(['acct_wallet' => $request->input('acct_wallet')]);
+        return redirect()->back()->with('success_message', 'Fund Added successfully');
+    }
+
 }

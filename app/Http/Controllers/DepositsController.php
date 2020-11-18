@@ -96,7 +96,7 @@ class DepositsController extends Controller
         if($d_approved->diffInDays($current_date) < $investment_plan->term_days){
             $days = $d_approved->diffInDays($current_date);
         }else {
-            $days =  $invest_plan->term_days;
+            $days =  $investment_plan->term_days;
         }
 
         $i = 1;

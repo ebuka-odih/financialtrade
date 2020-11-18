@@ -2,11 +2,14 @@
 
 namespace App\Jobs;
 
+use App\Deposits;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Support\Facades\Session;
+
 
 class CoinpaymentListener implements ShouldQueue
 {
@@ -29,11 +32,21 @@ class CoinpaymentListener implements ShouldQueue
      * @return void
      */
     public function handle() {
-        
+
+        $deposit = Deposits::whereTxnId($this->transaction['txn_id'])->first();
+        if($deposit == null){
+            $data = Session::get('d_data');
+            $data['txn_id'] = $this->transaction['txn_id'];
+            $deposit = Deposits::create($data);
+        }
+
+        $deposit->status = $this->transaction['status'];
+        $deposit->save();
+
         /**
          * Handle your transaction here
          * the parameter is :
-         * 
+         *
             'address',
             'amount',
             'amountf',
@@ -61,7 +74,7 @@ class CoinpaymentListener implements ShouldQueue
          * ----------------------------------------------------
          *  You can use transaction_type to distinguish new transactions or old transactions
          * ----------------------------------------------------
-         * 
+         *
          * Example
             $this->transaction['transaction_type']
          */

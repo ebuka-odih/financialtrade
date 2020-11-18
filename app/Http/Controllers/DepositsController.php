@@ -6,13 +6,15 @@ use App\InvestPlans;
 use Illuminate\Http\Request;
 use Hexters\CoinPayment\Helpers\CoinPaymentFacade as CoinPayment;
 use Kevupton\LaravelCoinpayments\Exceptions\IpnIncompleteException;
+use App\Deposits;
 
 class DepositsController extends Controller
 {
 
     public function deposit_history()
     {
-        return view('dashboard.transactions.deposit-history');
+        $deposits = Deposits::whereUserId(auth()->id())->get();
+        return view('dashboard.transactions.deposit-history', compact('deposits'));
     }
     //
     public function pick_plan()
@@ -50,31 +52,15 @@ class DepositsController extends Controller
             'itemSubtotalAmount' => (FLOAT) $request->amount// USD
         ];
 
+        $d_data = ['amount' => $request['amount'],'status'=>'pending','invest_plans_id'=>$request['plan_id'],'user_id'=>auth()->id()];
+
+        $request->session()->put('d_data',$d_data);
+
         $link = CoinPayment::generatelink($transaction);
 
         return redirect($link);
     }
 
-    public function validateIpn (Request $request)
-    {
-        $transactions = CoinPayment::gettransactions()->where('status', 0)->get();
-//        $transactions = CoinPayment::gettransactions();
-//        if ($transactions->status == 0){
-//            $invest_plan = InvestPlans::findOrFail($request->plan_id);
-//            return $invest_plan;
-//        }
-        return $transactions;
-
-        /**
-         * this is triger function for running Job proccess
-         */
-        return CoinPayment::getstatusbytxnid("CPEK6VD0SJP3VFEEKZAKHFH5PL");
-        /**
-        output example: "celled / Timed Out"
-         */
-
-
-    }
 
 
 }

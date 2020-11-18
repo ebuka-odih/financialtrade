@@ -22,18 +22,25 @@
                                     <table class="table table-condensed table-bordered">
                                         <thead>
                                         <tr>
-                                            <th>#</th>
                                             <th>Date</th>
-                                            <th>Account</th>
+                                            <th>Transaction ID</th>
                                             <th>Deposit amount</th>
-                                            <th>System</th>
                                             <th>Paid amount</th>
-                                            <th>Fee reimbursement</th>
-                                            <th>Bonus</th>
                                             <th>Status</th>
                                         </tr>
                                         </thead>
                                         <tbody class="ajax-pagination-target">
+                                        @forelse($deposits as $deposit)
+                                        <tr>
+                                            <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}</td>
+                                            <td>{{ $deposit->txn_id }}</td>
+                                            <td>{{ $deposit->amount }}</td>
+                                            <td>{{ $deposit->amount }}</td>
+                                            <td>{!! $deposit->status() !!}</td>
+                                            @empty
+                                            <td colspan="4"></td>
+                                        </tr>
+                                        @endforelse
                                         </tbody>
                                     </table>
                                 </div>

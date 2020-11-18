@@ -11,7 +11,7 @@ class Deposits extends Model
 
     public function getApprovedDateAttribute()
     {
-        if ($this->status == 1){
+        if ($this->status >= 100){
             return $this->updated_at;
         }
     }

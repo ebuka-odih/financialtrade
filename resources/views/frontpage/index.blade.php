@@ -206,18 +206,18 @@
                     </div>
                     <ul class="account-info">
                         <li>
-                            <p>Minimum deposit</p>
+                            <p>Min Deposit</p>
                             <span>${{ $invest_plan->min_amount }}</span>
                         </li>
                         <li>
-                            <p>Spread from</p>
-                            <span>{{ $invest_plan->spread }}</span>
+                            <p>Max Deposit</p>
+                            <span>{{ $invest_plan->max_amount }}</span>
                         </li>
                     </ul>
                     <ul class="account-info-more">
                         <li>
-                            <p>Leverage</p>
-                            <span>{{ $invest_plan->leverage }}</span>
+                            <p>Interval</p>
+                            <span>{{ $invest_plan->term_days }} Day(s)</span>
                         </li>
                         <li>
                             <p>Account base currency</p>

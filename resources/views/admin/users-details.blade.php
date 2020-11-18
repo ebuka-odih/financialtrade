@@ -126,6 +126,7 @@
                                             <button type="submit" class="btn btn-sm btn-primary mt-2">Send</button>
                                         </form></td>
                                 </tr>
+
                             </table>
                         </div>
 
@@ -140,8 +141,29 @@
                             <h4 class="text text-center">User ID Verification</h4>
                             <p style="color: black">ID Type: <span class="text text-primary">{{ $user_details->id_type ? : 'N/A' }}</span></p>
                             <img height="300" width="340" class="mb-5" style="color: black" src="/storage/id_images/{{ $user_details->id_image_1 ? : 'N/A'}}" alt="User ID">
-
+                            <hr>
+                            <table>
+                                <tr>
+                                    <th style="margin-top: 20px">Defund Account:</th>
+                                    <td>
+                                        @if(session()->has('defund'))
+                                            <div class="alert alert-success">
+                                                {{ session()->get('defund') }}
+                                            </div>
+                                        @endif
+                                        <form action="{{ route('admin.defund_acct', $user_details->id) }}" method="POST">
+                                            @csrf
+                                            <label>Enter Amount</label>
+                                            <input type="number" class="form-control col-md-12"  name="defund">
+                                            <button type="submit" class="btn btn-sm btn-primary mt-2">Defund</button>
+                                        </form>
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
+
+
 
                     </div>
 

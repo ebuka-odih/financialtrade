@@ -115,4 +115,13 @@ class AdminController extends Controller
         return redirect()->back()->with('success_message', 'Fund Added successfully');
     }
 
+    public function defund_acct(Request $request, $id)
+    {
+        $add_bonus = $request->input('defund');
+        $user = User::findOrFail($id);
+        $user->acct_wallet -= $add_bonus;
+        $user->save();
+//        $user->update(['acct_wallet' => $request->input('acct_wallet')]);
+        return redirect()->back()->with('defund', 'Defund successfully');
+    }
 }

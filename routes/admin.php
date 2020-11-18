@@ -29,6 +29,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('all-deposit', 'Admin\AdminDeposit@all_deposits')->name('all_deposits');
     Route::get('deposit/{id}/details', 'Admin\AdminDeposit@deposit_details')->name('deposit_details');
     Route::post('deposit/send-bonus/{id}', 'Admin\AdminController@fund_acct')->name('fund_acct.store');
+    Route::post('deposit/defund/{id}', 'Admin\AdminController@defund_acct')->name('defund_acct');
 
 
 

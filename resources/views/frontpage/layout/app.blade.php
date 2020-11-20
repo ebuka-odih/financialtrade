@@ -289,17 +289,26 @@
 <script src="{{ asset('js/jquery.mousewheelde6a.js?v=1576248880') }}"></script>
 <script src="{{ asset('js/bodyScrollLock.minde6a.js?v=1576248880') }}"></script></body>
 
-<!-- Mirrored from tifia.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Oct 2020 14:02:31 GMT -->
-<script src="//code.tidio.co/bdqn75mlu16hdlh7abpgxyck65rgwrpr.js" async></script>
-{{--Google Translator--}}
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
     }
 </script>
-
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5fb83d81a1d54c18d8ebcf4e/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 
 </html>

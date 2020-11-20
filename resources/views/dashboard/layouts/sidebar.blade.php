@@ -47,7 +47,7 @@
                     <li class="nav-parent">
                         <a href="#" ><i class="fa fa-info"></i> Help</a>
                         <ul class='nav nav-children'>
-                            <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr" target="_blank"><i class="fa fa-comments"></i> LiveChat</a></li>
+                            <li><a href="https://tawk.to/chat/5fb83d81a1d54c18d8ebcf4e/default" target="_blank"><i class="fa fa-comments"></i> LiveChat</a></li>
                             <li><a target="_blank" href="mailto:support@financialtrademarkets.com" ><i class="fa fa-envelope-open"></i> Mail Us</a></li>
                         </ul>
                     </li>

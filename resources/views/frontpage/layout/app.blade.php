@@ -217,7 +217,7 @@
                    <li class="col-md-4">
                        <ul>
                            <li>Chat Us</li>
-                           <li><a href="https://www.tidio.com/talk/bdqn75mlu16hdlh7abpgxyck65rgwrpr">Chat Us</a></li>
+                           <li><a href="https://tawk.to/chat/5fb83d81a1d54c18d8ebcf4e/default">Chat Us</a></li>
                        </ul>
                    </li>
 {{--                   <li>--}}

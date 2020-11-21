@@ -11746,9 +11746,11 @@ footer .social-links ul li.telegram a{
 .official-represent-block .thai{
     background:url(../images/new-site/contacts/th.svg) no-repeat scroll 10px 13px
 }
-.official-represent-block .indo{
-    background:url(../images/new-site/contacts/id.svg) no-repeat scroll 10px 13px
-}
+/*.official-represent-block .usa{*/
+/*    background:url(../images/new-site/contacts/usa.svg) no-repeat;*/
+/*    height: 150px;*/
+/*    width: 30px;*/
+/*}*/
 .official-represent-block .spain{
     background:url(../images/new-site/contacts/es.svg) no-repeat scroll 10px 13px
 }

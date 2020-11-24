@@ -32,7 +32,12 @@
                                         <div class="form-row mb-4">
                                         <div class="form-group col-md-6">
                                             <label for="inputName">Name</label>
-                                            <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
+                                            <select name="name" id="" class="form-control">
+                                                <option>Choose Plan</option>
+                                                <option value="bronze">Bronze</option>
+                                                <option value="silver">Silver</option>
+                                                <option value="gold">Gold</option>
+                                            </select>
                                         </div>
                                             <div class="form-group col-md-6">
                                                 <label for="inputDescription">Description</label>
@@ -41,10 +46,13 @@
                                         </div>
 
                                         <div class="form-row mb-4">
+
                                             <div class="form-group col-md-6">
-                                                <label for="inputLeverage">Leverage</label>
-                                                <input type="text" name="leverage" class="form-control" id="inputLeverage" placeholder="Leverage">
+                                                <label for="inputInterest"> Daily Interest</label>
+                                                <input type="number" name="daily_return" class="form-control" id="inputInterest" placeholder=" Daily Interest">
+
                                             </div>
+
                                             <div class="form-group col-md-6">
                                                 <label for="inputState">Account Base Currency</label>
                                                 <select name="acct_base_currency" id="inputState" class="form-control">
@@ -69,21 +77,9 @@
                                                 <label for="inputTerm">Term Days</label>
                                                 <input type="number" name="term_days" class="form-control" id="inputTerm" placeholder="Term Days">
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="inputInterest"> Daily Interest</label>
-                                                <input type="number" name="daily_return" class="form-control" id="inputInterest" placeholder=" Daily Interest">
 
-                                            </div>
                                         </div>
 
-                                        <div class="form-row mb-4">
-
-                                            <div class="form-group col-md-6">
-                                                <label for="inputSpread"> Spread</label>
-                                                <input type="number" step="any" name="spread" class="form-control" id="inputSpread" placeholder=" Spread">
-
-                                            </div>
-                                        </div>
                                         <div class="form-group col-md-6">
                                             <button type="submit" class="btn btn-primary ">Submit</button>
                                         </div>

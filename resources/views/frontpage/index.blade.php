@@ -193,25 +193,26 @@
             <p>Open a trading account with ECN broker and earn with the lowest spreads and highest execution speed!</p>
             <h3 class="only-mob">Open a trading account</h3>
             <ul class="nav variant-menu trading-account-menu" role="tablist">
-                <li><a href="#start" aria-controls="start" role="tab" data-toggle="tab">Start (Micro)</a></li>
-                <li><a href="#classic" aria-controls="classic" role="tab" data-toggle="tab" class="active">ECN Classic</a></li>
-                <li><a href="#pro" aria-controls="pro" role="tab" data-toggle="tab">ECN Pro</a></li>
+                <li><a href="#start" aria-controls="start" role="tab" data-toggle="tab">Bronze</a></li>
+                <li><a href="#classic" aria-controls="classic" role="tab" data-toggle="tab" class="active">Silver</a></li>
+                <li><a href="#pro" aria-controls="pro" role="tab" data-toggle="tab">Gold</a></li>
             </ul>
             <div class="trading-account-choose tab-content">
-                @forelse($invest_plans as $invest_plan)
-                <div class="tab-pane fadeIn animated active" id="classic">
+                @foreach($invest_plans as $invest_plan)
+                    @if($invest_plan->name == 'bronze')
+                <div class="start-micro tab-pane fadeIn animated" id="start">
                     <div class="account-type">
-                        <h3 class="feather"><span>{{ $invest_plan->name }}</span></h3>
+                        <h3>{{ $invest_plan->name }}</h3>
                         <p>{{ $invest_plan->desc }}</p>
                     </div>
                     <ul class="account-info">
                         <li>
-                            <p>Min Deposit</p>
+                            <p>Minimum Deposit</p>
                             <span>${{ $invest_plan->min_amount }}</span>
                         </li>
                         <li>
                             <p>Max Deposit</p>
-                            <span>{{ $invest_plan->max_amount }}</span>
+                            <span>${{ $invest_plan->max_amount }}</span>
                         </li>
                     </ul>
                     <ul class="account-info-more">
@@ -230,127 +231,90 @@
                     </div>
                     <div class="btn-acc">
                         <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
-                        <a class="btn btn-grey " href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>
+                        <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">View details</a>
                     </div>
                 </div>
-                @empty
-                    <div class="start-micro tab-pane fadeIn animated" id="start">
-                        <div class="account-type">
-                            <h3>Start<br><span>Micro</span></h3>
-                            <p>Choose your way<br>to trade with FTM</p>
-                        </div>
-                        <ul class="account-info">
-                            <li>
-                                <p>Minimum deposit</p>
-                                <span>$10</span>
-                            </li>
-                            <li>
-                                <p>Spread from</p>
-                                <span>2.2</span>
-                            </li>
-                        </ul>
-                        <ul class="account-info-more">
-                            <li>
-                                <p>Leverage</p>
-                                <span>1:1000</span>
-                            </li>
-                            <li>
-                                <p>Account base currency</p>
-                                <span>USD, EUR, NGN</span>
-                            </li>
-                        </ul>
-                        <div class="account-info-line">
-                            <p>Trading instruments</p>
-                            <span>28 <i>Forex</i>, 2 <i>Metals</i></span>
-                        </div>
-                        <div class="account-info-line">
-                            <p>Commission (per round turn lot)</p>
-                            <span>-</span>
-                        </div>
-                        <div class="btn-acc">
-                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
-                            <a class="btn btn-grey " href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
+                    @elseif($invest_plan->name == 'silver')
+                <div class="tab-pane fadeIn animated active" id="classic">
+                    <div class="account-type">
+                        <h3 class="feather"><span>{{ $invest_plan->name }}</span></h3>
+                        <p>{{ $invest_plan->desc }}</p>
                     </div>
-                    <div class="tab-pane fadeIn animated active" id="classic">
-                        <div class="account-type">
-                            <h3 class="feather"><span>ECN Classic</span></h3>
-                            <p>Lowest spreads drive<br>you to success</p>
-                        </div>
-                        <ul class="account-info">
-                            <li>
-                                <p>Minimum deposit</p>
-                                <span>$100</span>
-                            </li>
-                            <li>
-                                <p>Spread from</p>
-                                <span>1.1</span>
-                            </li>
-                        </ul>
-                        <ul class="account-info-more">
-                            <li>
-                                <p>Leverage</p>
-                                <span>1:1000</span>
-                            </li>
-                            <li>
-                                <p>Account base currency</p>
-                                <span>USD, EUR, NGN, PLN, GBP</span>
-                            </li>
-                        </ul>
-                        <div class="account-info-line">
-                            <p>Trading instruments</p>
-                            <span>36 <i>Forex</i>, 2 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
-                        </div>
-                        <div class="account-info-line">
-                            <p>Commission (per round turn lot)</p>
-                            <span>-</span>
-                        </div>
-                        <div class="btn-acc">
-                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
-                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
+                    <ul class="account-info">
+                        <li>
+                            <p>Minimum deposit</p>
+                            <span>${{ $invest_plan->min_amount }}</span>
+                        </li>
+                        <li>
+                            <p>Spread from</p>
+                            <span>${{ $invest_plan->max_amount }}</span>
+                        </li>
+                    </ul>
+                    <ul class="account-info-more">
+                        <li>
+                            <p>Interval</p>
+                            <span>{{ $invest_plan->term_days }} Day(s)</span>
+                        </li>
+                        <li>
+                            <p>Account base currency</p>
+                            <span>{{ $invest_plan->acct_base_currency }}</span>
+                        </li>
+                    </ul>
+                    <div class="account-info-line">
+                        <p>Trading instruments</p>
+                        <span>36 <i>Forex</i>, 2 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
                     </div>
-                    <div class="best tab-pane fadeIn animated" id="pro">
-                        <div class="account-type">
-                            <h3 class="feather"><span>ECN PRO</span>
-                                <i><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"><img src="images/new-site/star.svg"></i>
-                            </h3>
-                            <p>Unique terms for<br>unique clients</p>
-                        </div>
-                        <ul class="account-info">
-                            <li>
-                                <p>Minimum deposit</p>
-                                <span>$500</span>
-                            </li>
-                            <li>
-                                <p>Spread from</p>
-                                <span>0.0</span>
-                            </li>
-                        </ul>
-                        <ul class="account-info-more">
-                            <li>
-                                <p>Leverage</p>
-                                <span>1:500</span>
-                            </li>
-                            <li>
-                                <p>Account base currency</p>
-                                <span>USD, EUR, NGN, PLN, GBP</span>
-                            </li>
-                        </ul>
-                        <div class="account-info-line">
-                            <p>Trading instruments</p>
-                            <span>52 <i>Forex</i>, 6 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
-                        </div>
-                        <div class="account-info-line">
-                            <p>Commission (per round turn lot)</p>
-                            <span>$8</span>
-                        </div>
-                        <div class="btn-acc">
-                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
-                            <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">Open trading account</a>                </div>
+                    <div class="btn-acc">
+                    <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                        <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">View details</a>
                     </div>
+                </div>
 
-                @endforelse
+                    @else($invest_plan->name == 'gold')
+                <div class="best tab-pane fadeIn animated" id="pro">
+                    <div class="account-type">
+                        <h3 class="feather"><span>{{ $invest_plan->name }}</span>
+                            <i><img src="{{ asset('images/new-site/star.svg') }}"><img src="{{ asset('images/new-site/star.svg') }}"><img src="{{ asset('images/new-site/star.svg') }}"><img src="{{ asset('images/new-site/star.svg') }}"><img src="images/new-site/star.svg"></i>
+                        </h3>
+                        <p>{{ $invest_plan->desc }}</p>
+                    </div>
+                    <ul class="account-info">
+                        <li>
+                            <p>Minimum deposit</p>
+                            <span>${{ $invest_plan->min_amount }}</span>
+                        </li>
+                        <li>
+                            <p>Maximum Deposit</p>
+                            <span>${{ $invest_plan->max_amount }}</span>
+                        </li>
+                    </ul>
+                    <ul class="account-info-more">
+                        <li>
+                            <p>Interval</p>
+                            <span>{{ $invest_plan->term_days }} Day(s)</span>
+                        </li>
+                        <li>
+                            <p>Account base currency</p>
+                            <span>{{ $invest_plan->acct_base_currency }}</span>
+                        </li>
+                    </ul>
+                    <div class="account-info-line">
+                        <p>Trading instruments</p>
+                        <span>52 <i>Forex</i>, 6 <i>Metals</i>, 2 <i>Commodities</i>, 11 <i>Indices</i></span>
+                    </div>
+                    <div class="btn-acc">
+                        <a class="btn btn-grey" href="{{ route('user.pick_plan') }}">View details</a>
+                        <a class="btn btn-grey" href="{{ route('user.pick_plan') }}" rel="nofollow">View details</a>
+                    </div>
+                </div>
+
+                    @endif
+
+                @endforeach
             </div>
-        </div>
+
+            </div>
+
     </section>
         <section class="promotions-block-main">
                 <div class="container-fluid">

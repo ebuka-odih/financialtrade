@@ -160,6 +160,30 @@
                     </div>
                 </div>
             </section>
+
+            <section class="tifia-more-info">
+                <div class="container-fluid">
+                    <h2>Article Of Incorpration</h2>
+                    <div class="container-block">
+                        <div class="row">
+                            <div class="col-12 col-xl-6">
+                                <div class="grey-block">
+                                    <img src="{{ asset('images/art_inorp.png') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="grey-block">
+                                    <img src="{{ asset('images/art_incorp.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-info">
+                            <p>The future of the Forex market belongs to FTM as we keep up with the times and offer the latest technologies for transparent trading, to satisfy the needs of modern traders that become more and more sophisticated and demanding.</p>
+                            <p>The clients are our best motivation for further development. Everything we do, we do it in your interests!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section trade-with-tifia">
                 <div class="container-fluid">
                     <div class="trade-with-tifia-block">

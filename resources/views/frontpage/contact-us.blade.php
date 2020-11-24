@@ -1,17 +1,27 @@
 @extends('frontpage.layout.app')
 @section('content')
-
+{{--<style>--}}
+{{--    @media (max-width: 400px) {--}}
+{{--        element.style {--}}
+{{--            width: 300px;--}}
+{{--            height: 350px;--}}
+{{--            margin-right: 40px;--}}
+{{--        }--}}
+{{--    }--}}
+{{--</style>--}}
     <div class="menu-overlay"></div>
+    <br><br><br>
 
     <section class="official-represent-block">
         <div class="container-fluid">
             <h2>FTM headquarters</h2>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.1580390156646!2d-86.78026188520892!3d36.16270868008489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466590b69e33f%3A0x834e16cee8bafda1!2sNashville%20Downtown%20Partnership!5e0!3m2!1sen!2sng!4v1605943880686!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <div class="col-12 col-lg-4">
+                <div class="tifia-contacts">
+                <div class="row ">
+                        <div style="margin-bottom: 90px" class="col-md-12 col-lg-8 map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.1580390156646!2d-86.78026188520892!3d36.16270868008489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886466590b69e33f%3A0x834e16cee8bafda1!2sNashville%20Downtown%20Partnership!5e0!3m2!1sen!2sng!4v1605943880686!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    <div class="col-md-12 col-lg-4">
                         <div id="indo" class="block-country usa">
                             <h3 style="color: white">USA</h3>
                             <p style="color: white">
@@ -21,11 +31,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="official-represent-block">
+    <section style="margin-top: -50px" class="official-represent-block">
         <div class="container-fluid">
             <h2>Official representatives</h2>
             <div class="container">

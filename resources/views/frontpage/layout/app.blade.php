@@ -44,6 +44,10 @@
             .goog-te-gadget select{
                 height: inherit;
             }
+            .map {
+                width: 400px;
+                height: 350px;
+            }
         }
     </style>
     <!-- Chatra {literal} -->

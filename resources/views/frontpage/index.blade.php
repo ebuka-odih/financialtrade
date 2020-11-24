@@ -193,9 +193,9 @@
             <p>Open a trading account with ECN broker and earn with the lowest spreads and highest execution speed!</p>
             <h3 class="only-mob">Open a trading account</h3>
             <ul class="nav variant-menu trading-account-menu" role="tablist">
-                <li><a href="#start" aria-controls="start" role="tab" data-toggle="tab">Bronze</a></li>
-                <li><a href="#classic" aria-controls="classic" role="tab" data-toggle="tab" class="active">Silver</a></li>
-                <li><a href="#pro" aria-controls="pro" role="tab" data-toggle="tab">Gold</a></li>
+                <li><a style="font-size: 18px" href="#start" aria-controls="start" role="tab" data-toggle="tab">Bronze</a></li>
+                <li><a style="font-size: 18px" href="#classic" aria-controls="classic" role="tab" data-toggle="tab" class="active">Silver</a></li>
+                <li><a style="font-size: 18px" href="#pro" aria-controls="pro" role="tab" data-toggle="tab">Gold</a></li>
             </ul>
             <div class="trading-account-choose tab-content">
                 @foreach($invest_plans as $invest_plan)

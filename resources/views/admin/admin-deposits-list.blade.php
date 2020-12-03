@@ -31,7 +31,7 @@
                                     @foreach($users_deposits as $users_deposit)
                                         <tr>
                                             <td><strong>{{ date('d/m/y', strtotime($users_deposit->created_at)) }}</strong></td>
-                                            <td><strong>{{ date('d/m/y', strtotime($users_deposit->approved_date)) }}</strong></td>
+                                            <td><strong>{{ date('d/m/y', strtotime($users_deposit->approved_date() )) }}</strong></td>
                                             <td><strong>{{ $users_deposit->user->name }}</strong></td>
                                             <td><strong>{{ $users_deposit->amount }}</strong></td>
                                             <td><strong>{!! $users_deposit->admin_status() !!}</strong></td>
@@ -43,6 +43,10 @@
                                                     <a href="#" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                                     </a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
+                                                            <a class="dropdown-item" href="{{ route('admin.approve_deposit', $users_deposit->id) }}">Approve</a>
+                                                        </div>
+
                                                     @endif
                                                 </div>
                                             </td>

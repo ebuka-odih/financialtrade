@@ -37,6 +37,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('deposit/transaction/ftm{id}xx001', 'DepositsController@deposit_details')->name('deposit_details');
 
     Route::get('trades', 'TradesController@index')->name('trades.index');
+    Route::delete('delete/{id}/deposit', 'DepositsController@delete_deposit')->name('delete_deposit');
 
 
 });

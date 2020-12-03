@@ -5,7 +5,7 @@
 Your deposit for the investment plan ({{ $name }}, ${{ $amount }}) has been approved, visit your dashboard for more details
 </p>
 
-@component('mail::button', ['url' => route('user_plans')])
+@component('mail::button', ['url' => route('user.deposit_history')])
 View Details
 @endcomponent
 

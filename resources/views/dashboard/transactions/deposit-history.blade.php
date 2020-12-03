@@ -60,30 +60,49 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive">
+                                    @if(session()->has('deleted'))
+                                        <div class="alert alert-success col-md-10">
+                                            {{ session()->get('deleted') }}
+                                        </div>
+                                    @endif
                                     <table class="table table-condensed table-bordered">
                                         <thead>
                                         <tr>
                                             <th>Date</th>
-                                            <th>Transaction ID</th>
+                                            <th>Approved Date</th>
                                             <th>Deposit amount</th>
                                             <th>Paid amount</th>
                                             <th>Status</th>
-                                            <th>Payment URL</th>
                                             <th>Details</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody class="ajax-pagination-target">
                                         @forelse($deposits as $deposit)
                                         <tr>
                                             <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}</td>
-                                            <td>{{ $deposit->txn_id }}</td>
-                                            <td>{{ $deposit->amount }}</td>
-                                            <td>{{ $deposit->amount }}</td>
+                                            <td>{{ $deposit->approved_date() }}</td>
+                                            <td>${{ $deposit->amount }}</td>
+                                            <td>${{ $deposit->paid_amt() }}</td>
                                             <td>{!! $deposit->status() !!}</td>
-                                            <td><a target="_blank" href="{{ $deposit->payment_url }}">Payment</a></td>
                                             <td><a href="{{ route('user.deposit_details', $deposit->id) }}">View</a></td>
+                                            <td>
+                                                <form method="POST" action="{!! route('user.delete_deposit', $deposit->id) !!}" accept-charset="UTF-8">
+                                                    <input name="_method" value="DELETE" type="hidden">
+                                                    {{ csrf_field() }}
+
+                                                    <div class="btn-group btn-group-xs pull-right" role="group">
+                                                        <button data-toggle="tooltip" data-placement="top" type="submit" class="btn  btn-sm btn-danger" onclick="return confirm(&quot;Delete Deposit?&quot;)">
+                                                            Delete
+                                                        </button>
+
+                                                    </div>
+
+                                                </form>
+                                            </td>
+
                                             @empty
-                                            <td colspan="6" class="text text-center">No Transaction Found</td>
+                                            <td colspan="7" class="text text-center">No Transaction Found</td>
                                         </tr>
                                         @endforelse
                                         </tbody>

@@ -63,7 +63,7 @@
                                 </div>
 
                                 <div class="table-responsive">
-                                    @if( $deposit_detail->status >= 100)
+                                    @if( $deposit_detail->status == 'approved')
                                     <table class="table table-condensed table-bordered">
                                         <tr>
                                             <td colspan="2"> <h4>Transaction Details</h4></td>
@@ -91,7 +91,7 @@
 
                                         <tr>
                                             <th>START DATE:</th>
-                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit_detail->approved_date)) }}</td>
+                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit_detail->approved_date() )) }}</td>
                                         </tr>
                                         <tr>
                                             <th>ENDING DATE:</th>
@@ -168,17 +168,18 @@
                                                 <td>{{ optional($deposit_detail->invest_plan)->total_return }}(%)</td>
                                             </tr>
                                             <tr>
-                                                <th colspan="2"> <h3 class="text text-center">Make Payment To The Address Below</h3></th>
+                                                <th colspan="2"> <h3 class="text text-center">Make Payment To The BTC Wallet Address Below</h3></th>
 
                                             </tr>
 
                                             <tr>
                                                 <th>MAKE PAYMENT:</th>
                                                 <td><input type="text" class="form-control form-control-lg" id="btc" value="{{ setting('wallet_id') }}">
-                                                    <button class="btn" data-clipboard-target="#btc">
-                                                        <span>Copy To Clipboard</span>
-{{--                                                        <img height="20" width="20" src="{{ asset('images/clippy.svg') }}" alt="Copy to clipboard">--}}
+                                                    <button class="btn btn-outline-info" data-clipboard-target="#btc">
+{{--                                                        <span>Copy To Clipboard</span>--}}
+                                                        <img height="20" width="20" src="{{ asset('images/clippy.svg') }}" alt="Copy to clipboard">
                                                     </button>
+                                                    <small>Click on the copy icon to copy the address</small>
                                                 </td>
 {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
                                             </tr>

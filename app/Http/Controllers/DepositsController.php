@@ -150,6 +150,13 @@ class DepositsController extends Controller
 
     }
 
+    public function delete_deposit($id)
+    {
+        $deposit = Deposits::findOrFail($id);
+        $deposit->delete();
+        return redirect()->back()->with('deleted', "Deposit Deleted Successfully");
+    }
+
 
 
 

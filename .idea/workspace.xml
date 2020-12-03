@@ -20,22 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/add-settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Deposits.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deposits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -260,7 +252,7 @@
       <workItem from="1606131622231" duration="587000" />
       <workItem from="1606163919823" duration="7405000" />
       <workItem from="1606200991176" duration="6038000" />
-      <workItem from="1607028301251" duration="5957000" />
+      <workItem from="1607028301251" duration="11204000" />
     </task>
     <servers />
   </component>
@@ -291,9 +283,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="416" y="147" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1366.740@0.28.1366.740" timestamp="1604513302801" />
-    <state x="416" y="156" width="526" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605716577782">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="585" y="179" width="526" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607038479727">
+      <screen x="0" y="0" width="1920" height="1035" />
     </state>
+    <state x="585" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1035@0.0.1920.1035" timestamp="1607038479727" />
     <state x="416" y="156" width="526" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1366.740@0.28.1366.740" timestamp="1605716577782" />
     <state x="466" y="327" width="426" height="140" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1604255567207">
       <screen x="0" y="28" width="1366" height="740" />

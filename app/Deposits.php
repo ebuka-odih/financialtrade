@@ -23,7 +23,7 @@ class Deposits extends Model
     }
 
     public function admin_status(){
-        if ($this->status >= 100 || $this->status == 2){
+        if ($this->status == 'approved'){
             return "<a class='badge badge-success''>Paid</a>";
         }elseif($this->status == 0){
             return "<a class='badge badge-warning'>Pending</a>";
@@ -32,9 +32,9 @@ class Deposits extends Model
         }
     }
     public function status(){
-        if ($this->status >= 100 || $this->status == 2){
-            return "<a class='label label-success'>Paid</a>";
-        }elseif($this->status == 0){
+        if ($this->status == 'approved'){
+            return "<a class='label label-success'>Approved</a>";
+        }elseif($this->status == 'pending'){
             return "<a class='label label-warning'>Pending</a>";
         }else{
             return "<a class='label label-danger'>Canceled</a>";
@@ -91,6 +91,27 @@ public function getEarningAttribute()
     public function total_earned(){
         return  $this->earning + $this->amount;
 
+    }
+
+    public function approved_date()
+    {
+        if ($this->status == 'pending')
+        {
+            return "dd/mm/yy";
+        }else{
+            return $this->updated_at;
+        }
+
+
+    }
+
+    public function paid_amt()
+    {
+        if ($this->status == 'pending')
+        {
+            return "0.00";
+        }
+        return $this->amount;
     }
 
 }

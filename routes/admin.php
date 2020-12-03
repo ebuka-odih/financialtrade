@@ -30,6 +30,8 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('deposit/{id}/details', 'Admin\AdminDeposit@deposit_details')->name('deposit_details');
     Route::post('deposit/send-bonus/{id}', 'Admin\AdminController@fund_acct')->name('fund_acct.store');
     Route::post('deposit/defund/{id}', 'Admin\AdminController@defund_acct')->name('defund_acct');
+    Route::delete('user/{id}/delete', 'Admin\AdminController@delete_user')->name('delete_user')->where('id', '[0-9]+');
+
 
 
 

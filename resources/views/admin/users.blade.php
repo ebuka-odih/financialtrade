@@ -52,6 +52,19 @@
                                                         @endif
                                                         <a class="dropdown-item" href="#">Deposits</a>
                                                         <a class="dropdown-item" href="{{ route('admin.user_withdraw.show', $user->id) }}">Withdrawal</a>
+                                                                <form method="POST" action="{!! route('admin.delete_user', $user->id) !!}" accept-charset="UTF-8">
+                                                                    <input name="_method" value="DELETE" type="hidden">
+                                                                    {{ csrf_field() }}
+
+                                                                    <div class="btn-group btn-group-xs pull-right" role="group">
+                                                                        <button data-toggle="tooltip" data-placement="top" type="submit" class="btn  btn-sm btn-danger" onclick="return confirm(&quot;Delete User?&quot;)">
+                                                                            <p class="fa flaticon-delete" aria-hidden="true"></p>Delete
+                                                                        </button>
+
+                                                                    </div>
+
+                                                                </form>
+
                                                     </div>
                                                 </div>
                                             </td>

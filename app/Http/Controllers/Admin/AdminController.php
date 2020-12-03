@@ -126,4 +126,11 @@ class AdminController extends Controller
 //        $user->update(['acct_wallet' => $request->input('acct_wallet')]);
         return redirect()->back()->with('defund', 'Defund successfully');
     }
+
+    public function delete_user($id)
+    {
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->back()->with('deleted', "User Deleted Successfully");
+    }
 }

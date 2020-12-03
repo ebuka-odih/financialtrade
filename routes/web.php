@@ -30,14 +30,14 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('withdrawal/cancel/{id}', 'WithdrawalController@cancel_withdraw')->name('cancel_withdraw');
 
     Route::get('deposit/', 'DepositsController@pick_plan')->name('pick_plan');
-    Route::post('process_deposit/', 'DepositsController@process_deposit')->name('process_deposit');
+    Route::post('process_deposit/', 'DepositsController@process_deposit2')->name('process_deposit');
+    Route::post('deposit/proof', 'DepositsController@payment_proof')->name('payment_proof');
     Route::get('deposit/{id}', 'DepositsController@make_deposit')->name('make_deposit');
     Route::get('deposits/history/', 'DepositsController@deposit_history')->name('deposit_history');
     Route::get('deposit/transaction/ftm{id}xx001', 'DepositsController@deposit_details')->name('deposit_details');
 
     Route::get('trades', 'TradesController@index')->name('trades.index');
 
-    Route::get('validate', 'DepositsController@validateIpn');
 
 });
 

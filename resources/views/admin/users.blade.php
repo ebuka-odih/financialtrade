@@ -14,7 +14,7 @@
                         <h4 class="mb-3">All Users</h4>
                         <div class="widget-content widget-content-area br-6">
                             <div class="table-responsive mb-4 mt-4">
-                                <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                                <table id="table_id" class="table table-hover non-hover" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>Name</th>
@@ -58,7 +58,7 @@
 
                                                                     <div class="btn-group btn-group-xs pull-right" role="group">
                                                                         <button data-toggle="tooltip" data-placement="top" type="submit" class="btn  btn-sm btn-danger" onclick="return confirm(&quot;Delete User?&quot;)">
-                                                                            <p class="fa flaticon-delete" aria-hidden="true"></p>Delete
+                                                                          Delete
                                                                         </button>
 
                                                                     </div>

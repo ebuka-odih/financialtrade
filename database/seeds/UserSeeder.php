@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
                 'email' => 'user@financialtrademarkets.com',
                 'created_at' => \Carbon\Carbon::now(),
                 'email_verified_at' => \Carbon\Carbon::now(),
-                'password' => Hash::make('i ma'),
+                'password' => Hash::make('Jc#NBrdy289YCq22'),
 
             ]);
         }

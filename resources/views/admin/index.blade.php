@@ -1,6 +1,8 @@
 @extends('admin.layouts.app')
 
 @section('content')
+
+
     <div id="content" class="main-content">
         <div class="layout-px-spacing">
             <div class="row layout-top-spacing">
@@ -59,7 +61,7 @@
                     <h4 class="mb-3">All Users</h4>
                     <div class="widget-content widget-content-area br-6">
                         <div class="table-responsive mb-4 mt-4">
-                            <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                            <table id="table_id" class="table table-hover non-hover display" style="width:100%">
                                 <thead>
                                 <tr>
                                     <th>Name</th>
@@ -95,6 +97,18 @@
                                                     @endif
                                                     <a class="dropdown-item" href="#">Deposits</a>
                                                     <a class="dropdown-item" href="{{ route('admin.user_withdraw.show', $user->id) }}">Withdrawal</a>
+                                                        <form method="POST" action="{!! route('admin.delete_user', $user->id) !!}" accept-charset="UTF-8">
+                                                            <input name="_method" value="DELETE" type="hidden">
+                                                            {{ csrf_field() }}
+
+                                                            <div class="btn-group btn-group-xs pull-right" role="group">
+                                                                <button data-toggle="tooltip" data-placement="top" type="submit" class="btn  btn-sm btn-danger" onclick="return confirm(&quot;Delete User?&quot;)">
+                                                                    Delete
+                                                                </button>
+
+                                                            </div>
+
+                                                        </form>
                                                 </div>
                                             </div>
                                         </td>
@@ -110,6 +124,7 @@
 
             </div>
         </div>
+
 
 
 

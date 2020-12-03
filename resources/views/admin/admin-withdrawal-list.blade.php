@@ -1,8 +1,8 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/datatables-dark.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/dt-global_style-dark.css') }}">
+{{--    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/datatables-dark.css') }}">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{ asset('plugins/table/datatable/dt-global_style-dark.css') }}">--}}
         <!--  BEGIN CONTENT AREA  -->
         <div id="content" class="main-content">
             <div class="layout-px-spacing">
@@ -18,7 +18,7 @@
                         @endif
                         <div class="widget-content widget-content-area br-6">
                             <div class="table-responsive mb-4 mt-4">
-                                <table id="html5-extension" class="table table-hover non-hover" style="width:100%">
+                                <table id="table_id" class="table table-hover non-hover display" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>Date</th>

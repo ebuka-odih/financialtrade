@@ -1,0 +1,955 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:8000          0.0.0.0:*               LISTEN      3171/php            
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -                   
+tcp        0      0 127.0.0.1:8000          127.0.0.1:41906         TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:59122     75.2.53.94:443          ESTABLISHED 1623/chrome --type= 
+tcp        0      0 127.0.0.1:8000          127.0.0.1:41904         TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:37652     104.16.19.94:443        TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:34766     18.179.110.5:443        ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:48522     23.111.9.35:443         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8000          127.0.0.1:41910         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8000          127.0.0.1:41908         TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:41892         127.0.0.1:8000          TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:47638     54.178.205.117:443      ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:41490     140.82.114.26:443       ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:36722     173.194.76.188:5228     ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:60798     54.76.102.190:443       ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:47298     157.240.29.35:443       TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:37876         127.0.0.1:3306          TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:59370     35.174.127.31:443       ESTABLISHED 1623/chrome --type= 
+tcp        0      0 192.168.8.102:51712     216.58.223.238:443      TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:56856     157.240.29.53:443       ESTABLISHED 1623/chrome --type= 
+tcp        1      0 192.168.8.102:56588     93.184.220.29:80        CLOSE_WAIT  4158/electron --typ 
+tcp        0      0 127.0.0.1:37880         127.0.0.1:3306          TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:38926     216.58.223.195:443      TIME_WAIT   -                   
+tcp        0      0 192.168.8.102:37318     52.68.69.253:9443       ESTABLISHED 1623/chrome --type= 
+tcp        0      0 127.0.0.1:41890         127.0.0.1:8000          TIME_WAIT   -                   
+tcp        0      0 127.0.0.1:8000          127.0.0.1:41918         TIME_WAIT   -                   
+tcp6       0      0 127.0.0.1:6942          :::*                    LISTEN      2183/java           
+tcp6       0      0 :::3306                 :::*                    LISTEN      -                   
+tcp6       0      0 127.0.0.1:63342         :::*                    LISTEN      2183/java           
+tcp6       0      0 127.0.0.1:9614          :::*                    LISTEN      1485/java           
+tcp6       0      0 :::80                   :::*                    LISTEN      -                   
+tcp6       0      0 :::1716                 :::*                    LISTEN      1270/kdeconnectd    
+tcp6       0      0 :::21                   :::*                    LISTEN      -                   
+tcp6       0      0 :::22                   :::*                    LISTEN      -                   
+udp        0      0 192.168.8.102:59987     216.58.223.195:443      ESTABLISHED 1623/chrome --type= 
+udp        0      0 192.168.8.102:44626     108.177.127.189:443     ESTABLISHED 1623/chrome --type= 
+udp        0      0 192.168.8.102:68        192.168.8.1:67          ESTABLISHED -                   
+udp        0      0 192.168.8.102:37344     216.58.223.206:443      ESTABLISHED 1623/chrome --type= 
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           1623/chrome --type= 
+udp        0      0 224.0.0.251:5353        0.0.0.0:*                           1581/chrome         
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           -                   
+udp        0      0 192.168.8.102:50642     74.125.193.189:443      ESTABLISHED 1623/chrome --type= 
+udp        0      0 0.0.0.0:42884           0.0.0.0:*                           -                   
+udp6       0      0 :::42106                :::*                                -                   
+udp6       0      0 :::5353                 :::*                                -                   
+udp6       0      0 :::1716                 :::*                                1270/kdeconnectd    
+raw6       0      0 :::58                   :::*                    7           -                   
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name     Path
+unix  2      [ ACC ]     STREAM     LISTENING     27922    1182/klauncher       /run/user/1000/klaunchervRkrks.1.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     27194    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  2      [ ACC ]     STREAM     LISTENING     542      -                    /run/systemd/journal/io.systemd.journal
+unix  2      [ ACC ]     STREAM     LISTENING     27782    -                    @/tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     110892   4212/electron        /run/user/1000/vscode-git-c2ae1fa1e3.sock
+unix  2      [ ACC ]     STREAM     LISTENING     109371   4122/tecomtradeinve  /run/user/1000/vscode-2ed34e77-1.51.1-main.sock
+unix  2      [ ACC ]     STREAM     LISTENING     27195    1226/ksmserver       /tmp/.ICE-unix/1226
+unix  2      [ ]         DGRAM                    23877    -                    /run/wpa_supplicant/p2p-dev-wlp2s0
+unix  2      [ ACC ]     STREAM     LISTENING     22085    -                    /run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     22089    -                    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     22093    -                    /run/snapd.socket
+unix  2      [ ACC ]     STREAM     LISTENING     22096    -                    /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     41544    -                    /opt/lampp/var/mysql/mysql.sock
+unix  2      [ ACC ]     STREAM     LISTENING     29827    -                    /tmp/.Gahxln/s
+unix  2      [ ACC ]     STREAM     LISTENING     27783    -                    /tmp/.X11-unix/X0
+unix  4      [ ]         DGRAM                    397      -                    /run/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     401      -                    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     405      -                    /run/systemd/userdb/io.systemd.DynamicUser
+unix  2      [ ACC ]     STREAM     LISTENING     421      -                    /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     31143    1276/pulseaudio      /run/user/1000/pulse/dbus-socket
+unix  2      [ ACC ]     STREAM     LISTENING     113833   4258/electron --typ  /run/user/1000/vscode-2ed34e77-1.51.1-shared.sock
+unix  2      [ ACC ]     STREAM     LISTENING     425      -                    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     SEQPACKET  LISTENING     428      -                    /run/systemd/coredump
+unix  2      [ ACC ]     STREAM     LISTENING     24754    -                    /tmp/sddm-authf7c6a541-fd1b-49fc-be2e-574e2de40b9a
+unix  15     [ ]         DGRAM                    433      -                    /run/systemd/journal/dev-log
+unix  2      [ ]         DGRAM                    22453    -                    /run/wpa_supplicant/wlp2s0
+unix  2      [ ACC ]     STREAM     LISTENING     438      -                    /run/systemd/journal/stdout
+unix  7      [ ]         DGRAM                    441      -                    /run/systemd/journal/socket
+unix  2      [ ACC ]     SEQPACKET  LISTENING     444      -                    /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     40099    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  2      [ ACC ]     STREAM     LISTENING     30412    1177/kdeinit5: Runn  /run/user/1000/kdeinit5__0
+unix  2      [ ]         DGRAM                    26578    1115/systemd         /run/user/1000/systemd/notify
+unix  2      [ ACC ]     STREAM     LISTENING     26582    1115/systemd         /run/user/1000/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     26588    1115/systemd         /run/user/1000/bus
+unix  2      [ ACC ]     STREAM     LISTENING     26591    1115/systemd         /run/user/1000/gnupg/S.dirmngr
+unix  2      [ ACC ]     STREAM     LISTENING     26594    1115/systemd         /run/user/1000/gnupg/S.gpg-agent.browser
+unix  2      [ ACC ]     STREAM     LISTENING     26596    1115/systemd         /run/user/1000/gnupg/S.gpg-agent.extra
+unix  2      [ ACC ]     STREAM     LISTENING     26598    1115/systemd         /run/user/1000/gnupg/S.gpg-agent.ssh
+unix  2      [ ACC ]     STREAM     LISTENING     26600    1115/systemd         /run/user/1000/gnupg/S.gpg-agent
+unix  2      [ ACC ]     STREAM     LISTENING     26602    1115/systemd         /run/user/1000/p11-kit/pkcs11
+unix  2      [ ACC ]     STREAM     LISTENING     26605    1115/systemd         /run/user/1000/pipewire-0
+unix  2      [ ACC ]     STREAM     LISTENING     34286    1581/chrome          /tmp/.com.google.Chrome.g32exL/SingletonSocket
+unix  3      [ ]         SEQPACKET  CONNECTED     33051    1581/chrome          @00004
+unix  2      [ ACC ]     STREAM     LISTENING     150512   5346/electron        /run/user/1000/vscode-git-3187224e6f.sock
+unix  2      [ ACC ]     STREAM     LISTENING     26607    1115/systemd         /run/user/1000/pulse/native
+unix  3      [ ]         SEQPACKET  CONNECTED     108289   4122/tecomtradeinve  @00006
+unix  3      [ ]         SEQPACKET  CONNECTED     108291   4122/tecomtradeinve  @00007
+unix  3      [ ]         SEQPACKET  CONNECTED     33049    1581/chrome          @00003
+unix  3      [ ]         STREAM     CONNECTED     37966    1772/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     146243   1963/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     114973   4304/electron        
+unix  3      [ ]         STREAM     CONNECTED     114723   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     35659    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39010    1829/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25179    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     21427    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     44138    2444/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29435    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     25620    -                    
+unix  3      [ ]         STREAM     CONNECTED     34621    2360/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39958    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     33124    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29568    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    26581    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     37965    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29779    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     158659   5302/electron --typ  /run/user/1000/vscode-ipc-b3fa0380-41b1-40bf-8d09-ace970e6a525.sock
+unix  3      [ ]         STREAM     CONNECTED     114974   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     114729   4187/electron --typ  
+unix  2      [ ]         DGRAM                    30540    1332/konsole         
+unix  3      [ ]         STREAM     CONNECTED     28915    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     106316   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     40120    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     27241    1308/obexd           
+unix  3      [ ]         STREAM     CONNECTED     31057    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     150332   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40635    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36809    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     34885    1581/chrome          
+unix  2      [ ]         DGRAM                    32561    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     43022    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39145    2062/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34465    2056/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35457    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     21428    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     61590    1581/chrome          
+unix  2      [ ]         DGRAM                    29155    -                    
+unix  3      [ ]         STREAM     CONNECTED     29086    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     112087   4158/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40345    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     39973    1829/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34902    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27238    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         DGRAM                    400      -                    
+unix  3      [ ]         STREAM     CONNECTED     114970   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     39710    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35782    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34464    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31058    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     25094    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     27186    1217/kactivitymanag  
+unix  3      [ ]         STREAM     CONNECTED     112825   -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     111696   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     33307    1742/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31780    1200/kwin_x11        
+unix  3      [ ]         STREAM     CONNECTED     22437    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     37943    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     25949    -                    
+unix  3      [ ]         STREAM     CONNECTED     162333   5346/electron        
+unix  3      [ ]         STREAM     CONNECTED     60890    1815/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39332    2220/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34512    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24604    -                    
+unix  3      [ ]         STREAM     CONNECTED     38391    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29153    -                    
+unix  3      [ ]         STREAM     CONNECTED     29085    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     139235   4939/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32339    1346/dolphin         
+unix  3      [ ]         STREAM     CONNECTED     27786    -                    
+unix  3      [ ]         STREAM     CONNECTED     37968    1773/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30310    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     91431    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     35745    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34466    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     39028    1822/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30840    -                    
+unix  3      [ ]         STREAM     CONNECTED     36815    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     38390    2062/chrome --type=  
+unix  2      [ ]         DGRAM                    27250    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     29152    1245/kaccess         
+unix  3      [ ]         STREAM     CONNECTED     40104    1217/kactivitymanag  
+unix  3      [ ]         STREAM     CONNECTED     33540    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     35130    1714/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32128    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     32079    1247/xembedsniproxy  
+unix  3      [ ]         STREAM     CONNECTED     144333   1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35787    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34531    2220/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39191    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24332    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     30459    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     109899   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     44039    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32116    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     30460    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     111697   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     29113    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     38008    1581/chrome          
+unix  2      [ ]         DGRAM                    28836    -                    
+unix  3      [ ]         STREAM     CONNECTED     162336   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     114874   4258/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     34589    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     40103    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     25079    1130/startplasma-x1  
+unix  3      [ ]         STREAM     CONNECTED     44040    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35944    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29438    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     19290    -                    
+unix  3      [ ]         STREAM     CONNECTED     164158   4158/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     31637    1742/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34882    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30438    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    26580    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     37958    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     162332   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     80720    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34513    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35658    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34290    1581/chrome          
+unix  2      [ ]         DGRAM                    25153    1245/kaccess         
+unix  3      [ ]         STREAM     CONNECTED     19374    -                    
+unix  3      [ ]         STREAM     CONNECTED     596      -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     38439    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     36131    1822/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24220    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     150333   4154/electron --typ  
+unix  3      [ ]         SEQPACKET  CONNECTED     111727   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     108312   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40181    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     37967    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     176907   1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     114971   4304/electron        
+unix  3      [ ]         STREAM     CONNECTED     39144    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34446    1976/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25170    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     38440    2334/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39325    1245/kaccess         
+unix  3      [ ]         STREAM     CONNECTED     154568   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40182    2304/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29092    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     38009    1822/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     182545   5931/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     114722   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     34590    2318/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35779    2270/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     38986    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     25173    1273/gmenudbusmenup  
+unix  3      [ ]         STREAM     CONNECTED     30493    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     95268    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     35935    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32102    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     28001    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     164157   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     106304   -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     40072    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     33398    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34881    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29205    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     31784    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     37984    1808/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31110    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     110032   4158/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     114727   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     39029    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34408    1828/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     21429    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     106318   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     40121    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     29255    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     27200    -                    
+unix  3      [ ]         STREAM     CONNECTED     139236   1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36805    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     35727    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     35143    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32127    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     37987    1808/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35788    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34509    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     38988    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     34903    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     58359    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     35945    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29165    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     27208    1247/xembedsniproxy  
+unix  3      [ ]         STREAM     CONNECTED     40156    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35129    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     33122    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32166    1316/xdg-desktop-po  
+unix  3      [ ]         STREAM     CONNECTED     37949    1581/chrome          
+unix  3      [ ]         DGRAM                    21369    -                    
+unix  3      [ ]         STREAM     CONNECTED     176908   5931/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     43713    1808/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34510    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     38989    1914/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27909    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     106322   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     35943    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31052    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     186864   5931/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     139130   1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     108308   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     34901    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29566    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     31777    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     37952    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     35746    2270/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34404    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34294    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     44069    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27236    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     27192    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     45579    2444/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40248    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31638    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32332    1332/konsole         
+unix  3      [ ]         STREAM     CONNECTED     22380    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     37953    1772/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     162330   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     114968   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     34403    1773/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39011    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30513    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     39327    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     111902   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     108535   4258/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40101    2263/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     33125    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29346    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     29095    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     144334   4939/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     162335   5346/electron        
+unix  3      [ ]         STREAM     CONNECTED     60891    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34467    2062/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     22114    -                    
+unix  3      [ ]         STREAM     CONNECTED     87662    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     61589    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29161    -                    
+unix  3      [ ]         STREAM     CONNECTED     27227    1273/gmenudbusmenup  
+unix  3      [ ]         STREAM     CONNECTED     40102    2263/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     33266    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34911    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29206    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     27950    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24694    -                    
+unix  3      [ ]         STREAM     CONNECTED     38012    1828/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     114730   4213/electron        
+unix  3      [ ]         STREAM     CONNECTED     33838    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     87661    3531/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27193    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     113835   4258/electron --typ  /run/user/1000/vscode-2ed34e77-1.51.1-shared.sock
+unix  3      [ ]         STREAM     CONNECTED     83937    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36810    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     33267    1760/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34910    1620/chrome --type=  
+unix  2      [ ]         DGRAM                    32103    1129/kwalletd5       
+unix  3      [ ]         STREAM     CONNECTED     38005    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     109545   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     34406    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35367    1822/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     38987    1914/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27166    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     89621    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     36816    1129/kwalletd5       
+unix  3      [ ]         STREAM     CONNECTED     27251    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     29097    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     21430    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     40249    2318/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40118    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     33399    1976/chrome --type=  
+unix  2      [ ]         DGRAM                    32344    1346/dolphin         
+unix  2      [ ]         DGRAM                    26554    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     27775    -                    
+unix  3      [ ]         STREAM     CONNECTED     38006    1815/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     26541    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     114873   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     34570    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39333    1623/chrome --type=  
+unix  2      [ ]         STREAM     CONNECTED     35720    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     29278    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     31054    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     44066    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24391    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     28036    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     40636    2056/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40074    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     32381    1346/dolphin         
+unix  3      [ ]         STREAM     CONNECTED     31786    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     31749    1137/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     37986    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     162334   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     146242   1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     80721    3531/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34530    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30623    1276/pulseaudio      
+unix  3      [ ]         STREAM     CONNECTED     30495    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     44050    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35783    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29106    1238/baloo_file      
+unix  2      [ ]         DGRAM                    23767    -                    
+unix  3      [ ]         STREAM     CONNECTED     94742    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40155    2056/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34886    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29567    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     27074    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     38015    1829/chrome --type=  
+unix  3      [ ]         DGRAM                    21366    -                    
+unix  3      [ ]         STREAM     CONNECTED     114975   4304/electron        
+unix  3      [ ]         STREAM     CONNECTED     43023    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39324    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     34447    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34291    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27170    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     24599    -                    
+unix  3      [ ]         STREAM     CONNECTED     109900   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     44049    1976/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     21425    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     83938    3531/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     43803    2899/file.so [kdein  
+unix  3      [ ]         STREAM     CONNECTED     39972    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     182544   1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     114726   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     39709    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35780    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25088    1182/klauncher       
+unix  3      [ ]         STREAM     CONNECTED     44139    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40125    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     39326    1182/klauncher       
+unix  3      [ ]         STREAM     CONNECTED     36130    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     40111    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     33306    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32121    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     37961    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     26880    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     110031   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     114725   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     25155    1245/kaccess         
+unix  3      [ ]         STREAM     CONNECTED     106317   4158/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40124    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     24212    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         SEQPACKET  CONNECTED     111728   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     40346    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40106    1346/dolphin         
+unix  3      [ ]         STREAM     CONNECTED     33436    2056/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35142    1736/chrome --type=  
+unix  2      [ ]         DGRAM                    26544    -                    
+unix  3      [ ]         STREAM     CONNECTED     37944    1755/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     114720   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     30594    1276/pulseaudio      
+unix  3      [ ]         STREAM     CONNECTED     93262    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     39328    1240/plasmashell     
+unix  3      [ ]         STREAM     CONNECTED     35942    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     139224   1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     41592    1196/kded5           /run/user/1000/kded5uGSWZt.1.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     40162    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     35937    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     31107    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     37983    1581/chrome          
+unix  2      [ ]         DGRAM                    22227    -                    
+unix  3      [ ]         STREAM     CONNECTED     43714    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35366    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27302    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     61588    1976/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     33859    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     186863   1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40129    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     34887    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     33123    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31748    1137/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     37950    1760/chrome --type=  
+unix  3      [ ]         DGRAM                    21367    -                    
+unix  3      [ ]         STREAM     CONNECTED     164875   4258/electron --typ  /run/user/1000/vscode-2ed34e77-1.51.1-shared.sock
+unix  3      [ ]         STREAM     CONNECTED     114969   4304/electron        
+unix  3      [ ]         STREAM     CONNECTED     39190    2062/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35456    1742/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34293    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27235    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     108534   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     112827   -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     106307   -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     29375    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     38014    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     94317    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     34407    1808/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32380    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  2      [ ]         DGRAM                    22204    -                    
+unix  2      [ ]         DGRAM                    20333    -                    
+unix  3      [ ]         STREAM     CONNECTED     1511     -                    
+unix  3      [ ]         STREAM     CONNECTED     44068    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30491    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     27181    1217/kactivitymanag  
+unix  2      [ ]         DGRAM                    24978    -                    
+unix  3      [ ]         STREAM     CONNECTED     108310   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     45578    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     33435    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     37962    1760/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32270    -                    
+unix  3      [ ]         STREAM     CONNECTED     162331   5346/electron        
+unix  3      [ ]         STREAM     CONNECTED     152565   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     109546   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     34571    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     35517    1963/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34292    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     106319   4158/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40127    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     36814    1247/xembedsniproxy  
+unix  3      [ ]         STREAM     CONNECTED     27182    1217/kactivitymanag  
+unix  3      [ ]         STREAM     CONNECTED     139225   4939/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34622    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39957    1963/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37959    1773/chrome --type=  
+unix  2      [ ]         DGRAM                    21364    -                    
+unix  3      [ ]         DGRAM                    399      -                    
+unix  3      [ ]         STREAM     CONNECTED     162327   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     152564   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     114972   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     35518    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34409    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32113    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24600    -                    
+unix  3      [ ]         STREAM     CONNECTED     44067    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40123    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     35934    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29151    1129/kwalletd5       
+unix  3      [ ]         STREAM     CONNECTED     154569   5364/electron        
+unix  3      [ ]         STREAM     CONNECTED     40077    2257/at-spi-bus-lau  
+unix  2      [ ]         DGRAM                    31754    1137/dbus-daemon     
+unix  3      [ ]         STREAM     CONNECTED     24759    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     38011    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     28832    1129/kwalletd5       
+unix  3      [ ]         DGRAM                    21368    -                    
+unix  3      [ ]         STREAM     CONNECTED     114724   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40071    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     30551    1346/dolphin         
+unix  3      [ ]         STREAM     CONNECTED     30419    1137/dbus-daemon     /run/user/1000/bus
+unix  2      [ ]         DGRAM                    545      -                    
+unix  3      [ ]         STREAM     CONNECTED     95266    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     35939    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30456    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     139129   2304/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     108311   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     94743    1714/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     28059    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     157357   5346/electron        
+unix  3      [ ]         STREAM     CONNECTED     162337   5346/electron        
+unix  3      [ ]         STREAM     CONNECTED     114721   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     34555    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     29429    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     25100    1200/kwin_x11        
+unix  3      [ ]         STREAM     CONNECTED     106323   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40115    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     35940    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29130    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     112086   4258/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40107    1332/konsole         
+unix  3      [ ]         STREAM     CONNECTED     34883    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     26584    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     39875    2444/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25199    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     33557    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31133    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     25189    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     36838    2304/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30462    1240/plasmashell     
+unix  2      [ ]         DGRAM                    980      -                    
+unix  3      [ ]         STREAM     CONNECTED     37696    2220/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37004    1829/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     31385    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     24649    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     113815   4154/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     40116    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     33881    1485/java            
+unix  3      [ ]         STREAM     CONNECTED     27296    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     29270    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     25144    1223/kglobalaccel5   
+unix  3      [ ]         STREAM     CONNECTED     36822    2265/at-spi2-regist  
+unix  3      [ ]         STREAM     CONNECTED     32953    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     30497    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     24751    -                    
+unix  2      [ ]         STREAM     CONNECTED     37701    2183/java            
+unix  3      [ ]         STREAM     CONNECTED     37002    1828/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39778    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     36980    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     22186    -                    /run/systemd/journal/stdout
+unix  3      [ ]         SEQPACKET  CONNECTED     24567    1581/chrome          
+unix  3      [ ]         SEQPACKET  CONNECTED     33047    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     27295    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     46334    1620/chrome --type=  
+unix  3      [ ]         DGRAM                    24303    -                    
+unix  3      [ ]         STREAM     CONNECTED     30415    1182/klauncher       
+unix  3      [ ]         STREAM     CONNECTED     19089    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     181240   5931/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     110988   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     37764    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     37090    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31005    1137/dbus-daemon     
+unix  2      [ ]         DGRAM                    28718    -                    
+unix  3      [ ]         STREAM     CONNECTED     39779    2360/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40114    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         SEQPACKET  CONNECTED     113693   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     31135    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     30385    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     46333    2382/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27569    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24257    1129/kwalletd5       
+unix  3      [ ]         STREAM     CONNECTED     30843    -                    
+unix  3      [ ]         STREAM     CONNECTED     19438    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     20420    -                    
+unix  3      [ ]         STREAM     CONNECTED     181238   1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37752    2257/at-spi-bus-lau  
+unix  3      [ ]         STREAM     CONNECTED     37171    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31512    1742/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39781    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     36941    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     33599    2304/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29247    1308/obexd           
+unix  3      [ ]         STREAM     CONNECTED     30446    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     40128    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     29437    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24748    -                    
+unix  3      [ ]         STREAM     CONNECTED     37761    1223/kglobalaccel5   
+unix  2      [ ]         DGRAM                    31108    1316/xdg-desktop-po  
+unix  3      [ ]         STREAM     CONNECTED     95262    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     36987    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32975    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     33598    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29283    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     30473    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     25151    1232/dconf-service   
+unix  3      [ ]         STREAM     CONNECTED     27109    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     41986    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25178    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24249    1129/kwalletd5       
+unix  3      [ ]         STREAM     CONNECTED     37190    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30377    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     88808    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     28233    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     95274    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     37926    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29578    1620/chrome --type=  
+unix  2      [ ]         DGRAM                    31069    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     40126    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     38410    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     21326    -                    
+unix  3      [ ]         STREAM     CONNECTED     74188    1815/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31142    1276/pulseaudio      
+unix  3      [ ]         STREAM     CONNECTED     22438    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     108297   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     37762    1273/gmenudbusmenup  
+unix  3      [ ]         STREAM     CONNECTED     90445    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     37938    1742/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29576    1620/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     33050    1591/chrome --type=  
+unix  2      [ ]         DGRAM                    51859    -                    
+unix  3      [ ]         STREAM     CONNECTED     24390    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     30492    -                    
+unix  3      [ ]         STREAM     CONNECTED     110800   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     37759    1316/xdg-desktop-po  
+unix  2      [ ]         DGRAM                    31315    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     27005    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     39715    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37936    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     28006    1240/plasmashell     
+unix  3      [ ]         STREAM     CONNECTED     33786    1620/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     33052    1592/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24414    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     32122    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     36839    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30420    1177/kdeinit5: Runn  
+unix  2      [ ]         DGRAM                    22256    -                    
+unix  3      [ ]         STREAM     CONNECTED     82677    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     41256    2334/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31141    1343/baloorunner     
+unix  3      [ ]         STREAM     CONNECTED     88810    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     36937    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     33785    2444/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25200    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     29203    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     36209    1828/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30457    1238/baloo_file      
+unix  3      [ ]         STREAM     CONNECTED     24203    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     110884   4212/electron        
+unix  3      [ ]         STREAM     CONNECTED     40075    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     31384    1581/chrome          
+unix  2      [ ]         DGRAM                    28720    -                    
+unix  3      [ ]         DGRAM                    17337    -                    
+unix  3      [ ]         STREAM     CONNECTED     39714    2284/chrome --type=  
+unix  2      [ ]         DGRAM                    28024    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     16352    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     33775    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     29579    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24335    1362/gsettings-help  
+unix  3      [ ]         STREAM     CONNECTED     29089    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     33848    1487/agent           
+unix  3      [ ]         STREAM     CONNECTED     23725    -                    
+unix  3      [ ]         STREAM     CONNECTED     158434   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     37767    2265/at-spi2-regist  
+unix  3      [ ]         STREAM     CONNECTED     37172    1963/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     31392    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     91429    1276/pulseaudio      /run/user/1000/pulse/native
+unix  3      [ ]         STREAM     CONNECTED     144305   1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40105    1200/kwin_x11        
+unix  3      [ ]         STREAM     CONNECTED     32947    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     30510    -                    /run/systemd/journal/stdout
+unix  3      [ ]         SEQPACKET  CONNECTED     108301   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     33861    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     20435    -                    
+unix  3      [ ]         STREAM     CONNECTED     158435   5302/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     37003    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31511    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     88813    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     30651    1276/pulseaudio      /run/user/1000/pulse/native
+unix  3      [ ]         STREAM     CONNECTED     28013    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     23339    -                    
+unix  2      [ ]         STREAM     CONNECTED     31357    1485/java            
+unix  3      [ ]         STREAM     CONNECTED     27248    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     27187    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     42787    2220/chrome --type=  
+unix  2      [ ]         STREAM     CONNECTED     30968    1129/kwalletd5       /run/user/1000/kwallet5.socket
+unix  3      [ ]         STREAM     CONNECTED     110812   4187/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     37174    1963/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31105    1316/xdg-desktop-po  
+unix  3      [ ]         STREAM     CONNECTED     90444    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     25202    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     20320    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     33558    2220/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34889    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     31755    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     27987    -                    @/tmp/.X11-unix/X0
+unix  2      [ ]         DGRAM                    20429    -                    
+unix  3      [ ]         STREAM     CONNECTED     40110    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     37091    1828/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25214    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     36924    1581/chrome          
+unix  2      [ ]         DGRAM                    28007    1240/plasmashell     
+unix  3      [ ]         STREAM     CONNECTED     23279    -                    
+unix  3      [ ]         STREAM     CONNECTED     144297   1581/chrome          
+unix  3      [ ]         SEQPACKET  CONNECTED     24566    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32134    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     27189    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     62941    1976/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     27177    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     110811   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     41240    2318/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31375    1623/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     108292   4125/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     28243    1485/java            
+unix  3      [ ]         STREAM     CONNECTED     27892    1115/systemd         
+unix  3      [ ]         STREAM     CONNECTED     26694    -                    
+unix  3      [ ]         STREAM     CONNECTED     52934    1822/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37927    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     32133    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     31017    1130/startplasma-x1  
+unix  3      [ ]         STREAM     CONNECTED     25070    1139/gvfsd           
+unix  3      [ ]         STREAM     CONNECTED     26069    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     40117    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     30414    1177/kdeinit5: Runn  
+unix  3      [ ]         STREAM     CONNECTED     24753    -                    
+unix  3      [ ]         STREAM     CONNECTED     31374    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     39799    2334/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36942    1736/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     26328    -                    
+unix  3      [ ]         STREAM     CONNECTED     144298   4939/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29614    1620/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     24560    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     25188    1307/kscreen_backen  
+unix  2      [ ]         DGRAM                    31043    1200/kwin_x11        
+unix  3      [ ]         STREAM     CONNECTED     41985    2334/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     26888    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     40109    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  2      [ ]         DGRAM                    31094    1308/obexd           
+unix  3      [ ]         STREAM     CONNECTED     24843    -                    
+unix  2      [ ]         DGRAM                    17334    -                    
+unix  3      [ ]         STREAM     CONNECTED     39782    2360/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36923    1581/chrome          
+unix  2      [ ]         DGRAM                    27918    1182/klauncher       
+unix  3      [ ]         STREAM     CONNECTED     15493    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24320    1343/baloorunner     
+unix  3      [ ]         STREAM     CONNECTED     25218    1316/xdg-desktop-po  
+unix  3      [ ]         STREAM     CONNECTED     31055    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     32101    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     24746    -                    
+unix  3      [ ]         STREAM     CONNECTED     37760    1277/msm_kde_notifi  
+unix  3      [ ]         STREAM     CONNECTED     30512    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         SEQPACKET  CONNECTED     108290   4124/electron --typ  
+unix  2      [ ]         DGRAM                    28068    1343/baloorunner     
+unix  3      [ ]         STREAM     CONNECTED     31760    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     13214    -                    
+unix  3      [ ]         STREAM     CONNECTED     33584    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34891    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24296    1276/pulseaudio      
+unix  3      [ ]         STREAM     CONNECTED     25104    1217/kactivitymanag  
+unix  3      [ ]         STREAM     CONNECTED     36818    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     40112    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         DGRAM                    24304    -                    
+unix  3      [ ]         STREAM     CONNECTED     29171    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     29901    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     37634    2141/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     108300   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     37758    -                    
+unix  3      [ ]         STREAM     CONNECTED     28914    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     144304   4939/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     25150    1232/dconf-service   
+unix  3      [ ]         STREAM     CONNECTED     31037    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     29040    1144/gvfsd-fuse      
+unix  3      [ ]         STREAM     CONNECTED     36262    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     25001    -                    
+unix  3      [ ]         STREAM     CONNECTED     41241    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37633    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31365    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     39716    2270/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40119    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     28042    1332/konsole         
+unix  3      [ ]         STREAM     CONNECTED     85962    1623/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     29348    1346/dolphin         
+unix  3      [ ]         STREAM     CONNECTED     25142    1223/kglobalaccel5   
+unix  3      [ ]         STREAM     CONNECTED     24210    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     36820    2265/at-spi2-regist  
+unix  3      [ ]         STREAM     CONNECTED     31321    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     30437    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     40113    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     37001    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30541    1137/dbus-daemon     /run/user/1000/bus
+unix  2      [ ]         DGRAM                    88814    3638/vlc             
+unix  3      [ ]         STREAM     CONNECTED     27290    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     85961    3531/chrome --type=  
+unix  2      [ ]         DGRAM                    33896    1238/baloo_file      
+unix  3      [ ]         STREAM     CONNECTED     24325    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     29090    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     26897    -                    
+unix  3      [ ]         STREAM     CONNECTED     29075    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     113772   4187/electron --typ  /run/user/1000/vscode-ipc-589ea961-5b48-4bd7-b212-bff0e2f8d114.sock
+unix  3      [ ]         STREAM     CONNECTED     33146    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     36926    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     28189    1240/plasmashell     
+unix  3      [ ]         STREAM     CONNECTED     21423    -                    
+unix  3      [ ]         STREAM     CONNECTED     33580    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24219    1232/dconf-service   
+unix  3      [ ]         STREAM     CONNECTED     29096    1223/kglobalaccel5   
+unix  3      [ ]         STREAM     CONNECTED     36210    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     30498    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     22190    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     111904   4258/electron --typ  /run/user/1000/vscode-2ed34e77-1.51.1-shared.sock
+unix  3      [ ]         STREAM     CONNECTED     40122    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     31371    1581/chrome          
+unix  2      [ ]         DGRAM                    15488    -                    
+unix  3      [ ]         SEQPACKET  CONNECTED     108287   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     28032    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     31056    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     26857    -                    
+unix  3      [ ]         STREAM     CONNECTED     113814   4258/electron --typ  
+unix  3      [ ]         STREAM     CONNECTED     28227    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24322    1343/baloorunner     
+unix  3      [ ]         STREAM     CONNECTED     29333    1332/konsole         
+unix  3      [ ]         STREAM     CONNECTED     40145    1137/dbus-daemon     /run/user/1000/bus
+unix  2      [ ]         DGRAM                    30444    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     24747    -                    
+unix  3      [ ]         STREAM     CONNECTED     181239   1815/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37191    1976/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     31386    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     24977    -                    
+unix  3      [ ]         STREAM     CONNECTED     39874    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     27916    1182/klauncher       
+unix  3      [ ]         STREAM     CONNECTED     31751    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     21446    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     29279    1302/pamac-tray-pla  
+unix  2      [ ]         DGRAM                    25146    1223/kglobalaccel5   
+unix  2      [ ]         DGRAM                    26896    -                    
+unix  3      [ ]         STREAM     CONNECTED     36813    1343/baloorunner     
+unix  3      [ ]         STREAM     CONNECTED     30496    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     74189    2141/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     31372    1620/chrome --type=  
+unix  3      [ ]         SEQPACKET  CONNECTED     108286   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     36988    1815/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     33579    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32135    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     30447    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     36263    1976/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     32117    1137/dbus-daemon     /run/user/1000/bus
+unix  2      [ ]         DGRAM                    25006    -                    
+unix  3      [ ]         STREAM     CONNECTED     28075    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     112824   1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     40108    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     52935    1620/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37928    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     32160    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     27164    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     36817    1302/pamac-tray-pla  
+unix  3      [ ]         STREAM     CONNECTED     32081    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24752    -                    
+unix  3      [ ]         STREAM     CONNECTED     181237   5931/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     109895   -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     41234    2318/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37173    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31095    1308/obexd           
+unix  3      [ ]         STREAM     CONNECTED     39798    1637/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37763    1270/kdeconnectd     
+unix  3      [ ]         STREAM     CONNECTED     32546    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     23551    -                    
+unix  3      [ ]         SEQPACKET  CONNECTED     24561    1581/chrome          
+unix  2      [ ]         DGRAM                    25201    1307/kscreen_backen  
+unix  3      [ ]         STREAM     CONNECTED     31040    1200/kwin_x11        
+unix  3      [ ]         STREAM     CONNECTED     62940    2284/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     24392    1483/org_kde_powerd  
+unix  3      [ ]         STREAM     CONNECTED     31762    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     24750    -                    
+unix  3      [ ]         STREAM     CONNECTED     41211    1276/pulseaudio      /run/user/1000/pulse/native
+unix  3      [ ]         STREAM     CONNECTED     28033    1240/plasmashell     
+unix  3      [ ]         STREAM     CONNECTED     28014    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     23399    -                    
+unix  3      [ ]         STREAM     CONNECTED     33583    2056/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     34892    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         SEQPACKET  CONNECTED     33046    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     30450    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     41255    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31366    1581/chrome          
+unix  3      [ ]         DGRAM                    17338    -                    
+unix  3      [ ]         STREAM     CONNECTED     106260   1346/dolphin         /run/user/1000/dolphinNSxgBw.14.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     36938    1736/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     23463    -                    
+unix  3      [ ]         STREAM     CONNECTED     33776    2444/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     37929    1714/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36879    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     32945    1461/gwenview        
+unix  3      [ ]         STREAM     CONNECTED     31044    1226/ksmserver       
+unix  3      [ ]         STREAM     CONNECTED     37766    2263/dbus-daemon     @/tmp/dbus-9ioNBAjtwQ
+unix  3      [ ]         STREAM     CONNECTED     30458    -                    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24749    -                    
+unix  3      [ ]         STREAM     CONNECTED     41233    1581/chrome          
+unix  3      [ ]         SEQPACKET  CONNECTED     31391    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     110764   4079/file.so [kdein  
+unix  3      [ ]         STREAM     CONNECTED     36981    1755/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     16349    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     37937    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     31309    1226/ksmserver       @/tmp/.ICE-unix/1226
+unix  3      [ ]         STREAM     CONNECTED     29331    1276/pulseaudio      
+unix  3      [ ]         STREAM     CONNECTED     30445    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     42788    1620/chrome --type=  
+unix  2      [ ]         DGRAM                    25004    -                    
+unix  3      [ ]         STREAM     CONNECTED     1020     -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     37695    1581/chrome          
+unix  3      [ ]         STREAM     CONNECTED     37611    2062/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     21439    -                    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     21424    -                    
+unix  3      [ ]         SEQPACKET  CONNECTED     113692   4122/tecomtradeinve  
+unix  3      [ ]         STREAM     CONNECTED     27300    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     30389    1137/dbus-daemon     /run/user/1000/bus
+unix  3      [ ]         STREAM     CONNECTED     25071    1139/gvfsd           
+unix  2      [ ]         DGRAM                    24205    1196/kded5           
+unix  3      [ ]         STREAM     CONNECTED     27865    -                    /tmp/sddm-authf7c6a541-fd1b-49fc-be2e-574e2de40b9a
+unix  3      [ ]         STREAM     CONNECTED     26872    -                    
+unix  3      [ ]         STREAM     CONNECTED     82678    3531/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     40163    2270/chrome --type=  
+unix  3      [ ]         STREAM     CONNECTED     36821    -                    @/tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     37610    1637/chrome --type=  

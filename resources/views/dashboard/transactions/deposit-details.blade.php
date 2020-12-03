@@ -1,6 +1,8 @@
 @extends('dashboard.layouts.app')
 
 @section('content')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
     <div class="inner-wrapper">
         @include('dashboard.layouts.sidebar')
         <section class="content-body" role="main">
@@ -166,13 +168,47 @@
                                                 <td>{{ optional($deposit_detail->invest_plan)->total_return }}(%)</td>
                                             </tr>
                                             <tr>
+                                                <th colspan="2"> <h3 class="text text-center">Make Payment To The Address Below</h3></th>
+
+                                            </tr>
+
+                                            <tr>
                                                 <th>MAKE PAYMENT:</th>
-                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>
+                                                <td><input type="text" class="form-control form-control-lg" id="btc" value="{{ setting('wallet_id') }}">
+                                                    <button class="btn" data-clipboard-target="#btc">
+                                                        <span>Copy To Clipboard</span>
+{{--                                                        <img height="20" width="20" src="{{ asset('images/clippy.svg') }}" alt="Copy to clipboard">--}}
+                                                    </button>
+                                                </td>
+{{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
+                                            </tr>
+                                            <tr>
+                                                <th>UPLOAD PAYMENT PROOF:</th>
+
+                                                <td>
+                                                    @if(session()->has('success_message'))
+                                                        <div class="alert alert-success col-md-10">
+                                                            {{ session()->get('success_message') }}
+                                                        </div>
+                                                    @endif
+                                                    <form action="{{ route('user.payment_proof') }}" method="POST" enctype="multipart/form-data">
+                                                        @csrf
+                                                        <input required type="hidden" name="payment_proof_id" value="{{ $deposit_detail->id }}">
+                                                        <input required type="file" class="form-control form-control-lg" name="payment_proof">
+                                                        <button type="submit" class="btn btn-success mt-5">Submit</button>
+                                                    </form>
+                                                </td>
+                                                {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
                                             </tr>
                                             <tr>
                                                 <td colspan=3>&nbsp;</td>
                                             </tr>
+                                            <tr>
+                                                <td colspan="2"> <span class="text text-capitalize text-danger">Note: Your Payment will be approved once we confirm your payment</span></td>
+                                            </tr>
+
                                         </table>
+                                        <a href="{{ route('user.deposit_history') }}" class="btn btn-success">Finish</a>
                                     @endif
                                 </div>
                             </div>
@@ -342,4 +378,9 @@
         </section>
     </div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.btn');
+    </script>
 @endsection

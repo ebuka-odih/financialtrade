@@ -32,6 +32,11 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::post('deposit/defund/{id}', 'Admin\AdminController@defund_acct')->name('defund_acct');
     Route::delete('user/{id}/delete', 'Admin\AdminController@delete_user')->name('delete_user')->where('id', '[0-9]+');
 
+    Route::get('setting', 'Admin\SettingController@create')->name('setting.create');
+    Route::post('setting/store', 'Admin\SettingController@store')->name('setting.store');
+    Route::post('setting/qrcode/store', 'Admin\SettingController@qr_code')->name('qrcode');
+
+
 
 
 

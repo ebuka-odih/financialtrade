@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/add-settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/financialtrademarkets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontpage/why-ftm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontpage/why-ftm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/CoinpaymentListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +163,7 @@
       <path value="$PROJECT_DIR$/vendor/kevupton/laravel-package-service-provider" />
       <path value="$PROJECT_DIR$/vendor/kevupton/laravel-coinpayments" />
       <path value="$PROJECT_DIR$/vendor/hexters/coinpayment" />
+      <path value="$PROJECT_DIR$/vendor/akaunting/setting" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j01W18DagW81tjC1k0nBy6gwbf" />
@@ -150,17 +185,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
-      <recent name="$PROJECT_DIR$/resources/views/dashboard/user-settings" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/dashboard/transactions" />
       <recent name="$PROJECT_DIR$/resources/views/dashboard" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources/views/frontpage" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/resources/views/dashboard/user-settings" />
     </key>
   </component>
   <component name="RunManager">
@@ -225,11 +260,23 @@
       <workItem from="1606131622231" duration="587000" />
       <workItem from="1606163919823" duration="7405000" />
       <workItem from="1606200991176" duration="6038000" />
+      <workItem from="1607028301251" duration="5957000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605018241661">
@@ -256,9 +303,10 @@
       <screen x="0" y="28" width="1366" height="740" />
     </state>
     <state x="346" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1605014428510" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605711967710">
-      <screen x="0" y="28" width="1366" height="740" />
+    <state x="486" y="84" width="945" height="949" key="search.everywhere.popup" timestamp="1607030558176">
+      <screen x="0" y="0" width="1920" height="1035" />
     </state>
+    <state x="486" y="84" width="945" height="949" key="search.everywhere.popup/0.0.1920.1035@0.0.1920.1035" timestamp="1607030558176" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1605711967710" />
   </component>
   <component name="XDebuggerManager">

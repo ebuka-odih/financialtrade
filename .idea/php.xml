@@ -112,6 +112,7 @@
       <path value="$PROJECT_DIR$/vendor/kevupton/laravel-package-service-provider" />
       <path value="$PROJECT_DIR$/vendor/kevupton/laravel-coinpayments" />
       <path value="$PROJECT_DIR$/vendor/hexters/coinpayment" />
+      <path value="$PROJECT_DIR$/vendor/akaunting/setting" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

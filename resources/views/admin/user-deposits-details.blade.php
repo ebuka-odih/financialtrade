@@ -34,18 +34,18 @@
                                     <div class="widget-content widget-content-area">
 
                                         <div class="card component-card_1">
-                                            <div class="card-body">
-
-                                                <div class="table-responsive">
-                                                    <table class="table table-bordered mb-4">
+                                            <div class="table-responsive">
+                                                @if($deposit->status == 'pending')
+                                                <table class="table table-bordered mb-4" style="width: 100%">
                                                     <tr>
                                                         <th>Created Date:</th>
                                                         <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}
                                                         </td>
                                                     </tr>
-                                                        <tr>
+
+                                                    <tr>
                                                         <th>Approved Date:</th>
-                                                            <td>{{ date('d/m/y', strtotime($deposit->approved_date())) }}</td
+                                                        <td>{{ date('d/m/y', strtotime($deposit->approved_date())) }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Name:</th>
@@ -63,18 +63,105 @@
                                                         <th>Investment Plan:</th>
                                                         <td>{{ $deposit->invest_plan->name }}</td>
                                                     </tr>
-                                                       
+                                                    <tr>
+                                                        <th>Investment Interval:</th>
+                                                        <td>{{ $deposit->invest_plan->term_days }} Day(s)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Daily Interest:</th>
+                                                        <td>{{ $deposit->invest_plan->daily_return }}%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Total Interest:</th>
+                                                        <td>{{ $deposit->total_return() }}%</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th>Status:</th>
+                                                        <td>{!! $deposit->admin_status() !!}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Payment Proof:</th>
+                                                        <td><img height="400" width="400" src="/storage/payment-proof/{{ $deposit->payment_proof }}" alt="Payment Proof"></td>
+                                                    </tr>
+                                                </table>
+                                                @else
+                                                    <table class="table table-bordered mb-4" style="width: 100%">
+                                                        <tr>
+                                                            <th>Created Date:</th>
+                                                            <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th>Approved Date:</th>
+                                                            <td>{{ date('d/m/y', strtotime($deposit->approved_date())) }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Name:</th>
+                                                            <td>{{ $deposit->user->name }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Email:</th>
+                                                            <td>{{ $deposit->user->email }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Deposited Amount:</th>
+                                                            <td>$@convert($deposit->amount)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Investment Plan:</th>
+                                                            <td>{{ $deposit->invest_plan->name }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Investment Interval:</th>
+                                                            <td>{{ $deposit->invest_plan->term_days }} Day(s)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Daily Interest:</th>
+                                                            <td>{{ $deposit->invest_plan->daily_return }}%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total Interest:</th>
+                                                            <td>{{ $deposit->total_return() }}%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Start Date:</th>
+                                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit->approved_date() )) }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Ending Date:</th>
+                                                            <td>{{ date('d-M-y', strtotime($deposit->ending_date())) }}</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th>PROFIT EARNED:</th>
+                                                            <td colspan="2">$ @convert($deposit->earning) <span style="margin-left: 20px">(without capital)</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>TOTAL EARNED:</th>
+                                                            <td colspan="2">$ @convert($deposit->total_earned()) <span style="margin-left: 20px">(plus capital)</span></td>
+                                                        </tr>
+
+{{--                                                        <tr>--}}
+{{--                                                            <th> PROGRESS :</th>--}}
+{{--                                                            @if($deposit->invest_plan->term_days == $i)--}}
+{{--                                                                <td colspan="2">Plan Ended</td>--}}
+{{--                                                            @else--}}
+{{--                                                                <td colspan="2">Plan In Progress...</td--}}
+{{--                                                            @endif--}}
+{{--                                                        </tr>--}}
+
                                                         <tr>
                                                             <th>Status:</th>
                                                             <td>{!! $deposit->admin_status() !!}</td>
                                                         </tr>
                                                         <tr>
                                                             <th>Payment Proof:</th>
-                                                            <td><img src="/storage/payment-proof/{{ $deposit->payment_proof }}" alt=""></td>
+                                                            <td><img height="400" width="400" src="/storage/payment-proof/{{ $deposit->payment_proof }}" alt="Payment Proof"></td>
                                                         </tr>
-                                                </table>
-                                                </div>
-
+                                                    </table>
+                                                @endif
                                             </div>
                                         </div>
 

@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/DepositMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/DepositMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/user-deposits-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user-deposits-details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +246,7 @@
       <workItem from="1606163919823" duration="7405000" />
       <workItem from="1606200991176" duration="6038000" />
       <workItem from="1607028301251" duration="12206000" />
-      <workItem from="1607070664920" duration="979000" />
+      <workItem from="1607070664920" duration="2540000" />
     </task>
     <servers />
   </component>

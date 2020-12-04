@@ -95,7 +95,7 @@ public function getEarningAttribute()
 
     public function approved_date()
     {
-        if ($this->status == 'pending')
+        if ($this->status == "pending")
         {
             return "dd/mm/yy";
         }else{

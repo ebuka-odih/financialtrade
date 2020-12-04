@@ -91,7 +91,7 @@
 
                                         <tr>
                                             <th>START DATE:</th>
-                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit_detail->approved_date() )) }}</td>
+                                            <td colspan="2">{{ date('d-M-y', strtotime($deposit_detail->approved_date )) }}</td>
                                         </tr>
                                         <tr>
                                             <th>ENDING DATE:</th>

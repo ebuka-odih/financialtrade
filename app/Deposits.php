@@ -17,18 +17,17 @@ class Deposits extends Model
 
     public function getApprovedDateAttribute()
     {
-        if ($this->status >= 100){
+        if ($this->status == 'approved'){
             return $this->updated_at;
         }
+        return $this->updated_at;
     }
 
     public function admin_status(){
         if ($this->status == 'approved'){
-            return "<a class='badge badge-success''>Paid</a>";
-        }elseif($this->status == 0){
-            return "<a class='badge badge-warning'>Pending</a>";
+            return "<a class='badge badge-success'>Paid</a>";
         }else{
-            return "<a class='badge badge-danger'>Canceled</a>";
+            return "<a class='badge badge-warning'>Pending</a>";
         }
     }
     public function status(){

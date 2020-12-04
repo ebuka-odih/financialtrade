@@ -31,12 +31,12 @@ class DepositMail extends Mailable
     public function build()
     {
         $data = $this->data['user'];
-        $last_name  =  $this->data['user']->last_name;;
+        $last_name  =  $this->data['user']->name;;
         $name       =  $this->data['investment']->name;
         $amount     =  $this->data['deposit']->amount;
 
-        return $this->from('admin@airlinetrades.com')
-            ->subject('Airlinetrades')
+        return $this->from('noreply@financialtrademarkets.com')
+            ->subject('FTM')
             ->markdown('emails.approve_deposit')
           ->with(['data' => $data, 'last_name' => $last_name, 'name' => $name, 'amount' => $amount]);
     }

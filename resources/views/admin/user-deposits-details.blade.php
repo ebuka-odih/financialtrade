@@ -15,7 +15,7 @@
                 <div class="row layout-top-spacing" id="cancel-row">
 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
-                        <h4 class="mb-3">Withdrawal Details</h4>
+                        <h4 class="mb-3">Deposit Details</h4>
                         @if(session()->has('reject'))
                             <div class="alert alert-danger">
                                 {{ session()->get('reject') }}
@@ -45,12 +45,7 @@
                                                     </tr>
                                                         <tr>
                                                         <th>Approved Date:</th>
-                                                        @if($deposit->status >= 100)
-                                                            <td>{{ date('d/m/y', strtotime($deposit->approved_date)) }}</td>
-
-                                                        @else
-                                                            <td>"dd/mm/yy"</td>
-                                                        @endif
+                                                            <td>{{ date('d/m/y', strtotime($deposit->approved_date())) }}</td
                                                     </tr>
                                                     <tr>
                                                         <th>Name:</th>
@@ -61,20 +56,21 @@
                                                         <td>{{ $deposit->user->email }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Requested Amount:</th>
+                                                        <th>Deposited Amount:</th>
                                                         <td>$@convert($deposit->amount)</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Transaction ID:</th>
-                                                        <td>{{ $deposit->txn_id }}</td>
+                                                        <th>Investment Plan:</th>
+                                                        <td>{{ $deposit->invest_plan->name }}</td>
                                                     </tr>
-                                                        <tr>
-                                                            <th>Transaction Hash:</th>
-                                                            <td>{{ $deposit->trans_hash }}</td>
-                                                        </tr>
+                                                       
                                                         <tr>
                                                             <th>Status:</th>
                                                             <td>{!! $deposit->admin_status() !!}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Payment Proof:</th>
+                                                            <td><img src="/storage/payment-proof/{{ $deposit->payment_proof }}" alt=""></td>
                                                         </tr>
                                                 </table>
                                                 </div>

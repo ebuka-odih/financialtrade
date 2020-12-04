@@ -21,15 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Deposits.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Deposits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepositsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/DepositMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/DepositMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user-deposits-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user-deposits-details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/transactions/deposit-history.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/approve_deposit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +247,8 @@
       <workItem from="1606131622231" duration="587000" />
       <workItem from="1606163919823" duration="7405000" />
       <workItem from="1606200991176" duration="6038000" />
-      <workItem from="1607028301251" duration="11204000" />
+      <workItem from="1607028301251" duration="12206000" />
+      <workItem from="1607070664920" duration="979000" />
     </task>
     <servers />
   </component>
@@ -269,6 +265,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605018241661">

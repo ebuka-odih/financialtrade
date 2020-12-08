@@ -9,6 +9,7 @@ use App\User;
 use App\Withdrawal;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 
 class AdminController extends Controller
@@ -44,9 +45,9 @@ class AdminController extends Controller
 
     public function list_orders($id)
     {
-        $total_profit = Trades::whereUserId(auth()->id())->select('profit')->sum('profit');
         $user_details = User::findOrFail($id);
         $trades = User::with('trades')->findOrFail($id);
+        $total_profit = $trades->trades->sum('profit');
         return view('admin.user-trades2', compact('trades', 'user_details', 'total_profit'));
     }
 

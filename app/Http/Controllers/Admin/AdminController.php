@@ -44,7 +44,7 @@ class AdminController extends Controller
 
     public function list_orders($id)
     {
-        $total_profit = Trades::select('profit')->sum('profit');
+        $total_profit = Trades::whereUserId(auth()->id())->select('profit')->sum('profit');
         $user_details = User::findOrFail($id);
         $trades = User::with('trades')->findOrFail($id);
         return view('admin.user-trades2', compact('trades', 'user_details', 'total_profit'));

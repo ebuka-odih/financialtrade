@@ -15,7 +15,7 @@ class AdminWithdrawal extends Controller
     public function all_withdrawal()
     {
         $users_withdrawals = Withdrawal::all();
-        return view('admin.admin-withdrawal-list', compact('users_withdrawals'));
+        return view('admin.withdrawals', compact('users_withdrawals'));
     }
 
     public function accept_withdrawal($withdraw)
@@ -38,10 +38,17 @@ class AdminWithdrawal extends Controller
 
     }
 
+    public function show_user_withdraw($id)
+    {
+        $user_details = User::findOrFail($id);
+        $user_withdrawals = User::with('withdrawal')->findOrFail($id);
+        return view('admin.user-withdrawal', compact('user_withdrawals', 'user_details'));
+    }
+
     public function withdrawal_details($id)
     {
-        $withdrawal = Withdrawal::findOrFail($id);
-        return view('admin.user-withdrawal-details', compact('withdrawal'));
+        $show_withdraw = Withdrawal::findOrFail($id);
+        return view('admin.withdrawal-details', compact('show_withdraw'));
     }
 
 }

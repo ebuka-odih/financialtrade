@@ -17,6 +17,10 @@ class SettingController extends Controller
         setting($request->except('_token'))->save();
         return redirect()->back()->with('success', 'Settings updated successfully');
     }
+    public function start_amount(Request $request){
+        setting($request->except('_token'))->save();
+        return redirect()->back()->with('success', 'Settings updated successfully');
+    }
 
     public function qr_code(Request $request)
     {

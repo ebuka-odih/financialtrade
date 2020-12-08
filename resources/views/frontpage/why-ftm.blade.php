@@ -46,7 +46,7 @@
                         <div id="carousel-main" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <p>300$</p>
+                                    <p>{{ setting('start_amount') }}$</p>
                                     <p>Min. depo</p>
                                 </div>
                                 <div class="carousel-item">

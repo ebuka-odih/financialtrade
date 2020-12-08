@@ -39,6 +39,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('trades', 'TradesController@index')->name('trades.index');
     Route::delete('delete/{id}/deposit', 'DepositsController@delete_deposit')->name('delete_deposit');
 
+//    messages route
+    Route::get('messages', 'UserController@notifications')->name('notifications');
+    Route::get('messages/{id}/details', 'UserController@show_notify')->name('show_notify');
 
 });
 

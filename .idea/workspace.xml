@@ -19,7 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="" />
+    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/user-deposits2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminDeposit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminWithdrawal.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminWithdrawal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-deposits-list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-withdrawal-list.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,6 +173,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -244,6 +255,9 @@
       <workItem from="1607028301251" duration="12206000" />
       <workItem from="1607070664920" duration="5910000" />
       <workItem from="1607080482544" duration="2370000" />
+      <workItem from="1607115609386" duration="1901000" />
+      <workItem from="1607340351181" duration="6914000" />
+      <workItem from="1607367030146" duration="754000" />
     </task>
     <servers />
   </component>
@@ -261,42 +275,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605018241661">
-      <screen x="0" y="28" width="1366" height="740" />
-    </state>
-    <state x="278" y="59" width="802" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1605018241661" />
-    <state x="336" y="190" width="685" height="414" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604707313062">
-      <screen x="0" y="28" width="1366" height="740" />
-    </state>
-    <state x="336" y="190" width="685" height="414" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1366.740@0.28.1366.740" timestamp="1604707313062" />
-    <state x="416" y="147" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604513302801">
-      <screen x="0" y="28" width="1366" height="740" />
-    </state>
-    <state x="416" y="147" width="526" height="500" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1366.740@0.28.1366.740" timestamp="1604513302801" />
-    <state x="585" y="179" width="526" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607038479727">
-      <screen x="0" y="0" width="1920" height="1035" />
-    </state>
-    <state x="585" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1035@0.0.1920.1035" timestamp="1607038479727" />
-    <state x="416" y="156" width="526" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1366.740@0.28.1366.740" timestamp="1605716577782" />
-    <state x="466" y="327" width="426" height="140" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1604255567207">
-      <screen x="0" y="28" width="1366" height="740" />
-    </state>
-    <state x="466" y="327" width="426" height="140" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.28.1366.740@0.28.1366.740" timestamp="1604255567207" />
-    <state x="690" y="221" width="538" height="600" key="FileChooserDialogImpl" timestamp="1607092670478">
-      <screen x="0" y="0" width="1920" height="1035" />
-    </state>
-    <state x="690" y="221" width="538" height="600" key="FileChooserDialogImpl/0.0.1920.1035@0.0.1920.1035" timestamp="1607092670478" />
-    <state x="346" y="176" key="run.anything.popup" timestamp="1605014428510">
-      <screen x="0" y="28" width="1366" height="740" />
-    </state>
-    <state x="346" y="176" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1605014428510" />
-    <state x="486" y="84" width="945" height="949" key="search.everywhere.popup" timestamp="1607030558176">
-      <screen x="0" y="0" width="1920" height="1035" />
-    </state>
-    <state x="486" y="84" width="945" height="949" key="search.everywhere.popup/0.0.1920.1035@0.0.1920.1035" timestamp="1607030558176" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1605711967710" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

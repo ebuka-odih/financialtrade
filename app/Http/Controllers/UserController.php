@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Deposits;
 use App\InvestPlans;
+use App\Notify;
 use App\Rules\MatchOldPassword;
 use App\User;
 use App\Withdrawal;
@@ -25,7 +26,7 @@ class UserController extends Controller
         $last_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
         $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
 
-        return view('dashboard.dashboard', compact('deposit_pending_cash', 'total_deposit', 'last_withdraw', 'last_deposit', 'deposit_approved_cash', 'withdraw_approved_cash', 'withdraw_pending_cash'));
+        return view('dashboard.dashboard', compact('deposit_pending_cash',  'total_deposit', 'last_withdraw', 'last_deposit', 'deposit_approved_cash', 'withdraw_approved_cash', 'withdraw_pending_cash'));
     }
 
     public function personal_info()
@@ -113,6 +114,27 @@ class UserController extends Controller
         User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
 
        return redirect()->back()->with('success', 'Password Changed Successfully');
+    }
+
+    public function notifications()
+    {
+        $notify = Notify::whereUserId(auth()->id())->latest()->get();
+        return view('dashboard.messages', compact('notify'));
+    }
+
+    public function show_notify($id)
+    {
+        $msg_details = Notify::findOrFail($id);
+        if(!$msg_details->read){
+            $msg_details->read = 1;
+            $msg_details->save();
+        }
+        return view('dashboard.msg-details', compact('msg_details'));
+    }
+
+    public function unread_msg(){
+        $unread_msg = Notify::whereUserId(auth()->id())->where('read', 1)->get();
+        return view('dashboard.layout.sidebar', compact('unread_msg'));
     }
 
 

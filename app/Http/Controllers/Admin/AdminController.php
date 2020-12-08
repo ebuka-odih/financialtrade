@@ -19,7 +19,7 @@ class AdminController extends Controller
         $total_deposit = Deposits::select('amount')->sum('amount');
         $users_count = User::where('user_role', '=', 'client')->count();
         $users = User::where('user_role', '=', 'client')->get();
-        return view('admin.index', compact('users', 'users_count', 'total_withdraw', 'total_deposit'));
+        return view('admin.dashboard', compact('users', 'users_count', 'total_withdraw', 'total_deposit'));
     }
 
     public function users()
@@ -28,10 +28,11 @@ class AdminController extends Controller
         return view('admin.users', compact('users'));
     }
 
-    public function users_details($id)
+    public function user_details($id)
     {
         $user_details = User::findOrFail($id);
-        return view('admin.users-details', compact('user_details'));
+        $deposits= User::with('deposits')->findOrFail($id);
+        return view('admin.user-details', compact('user_details', 'deposits'));
     }
 
     public function verify_user($id)
@@ -44,15 +45,15 @@ class AdminController extends Controller
     public function list_orders($id)
     {
         $total_profit = Trades::select('profit')->sum('profit');
-        $trades = Trades::all();
         $user_details = User::findOrFail($id);
-        return view('admin.user-trades', compact('trades', 'user_details', 'total_profit'));
+        $trades = User::with('trades')->findOrFail($id);
+        return view('admin.user-trades2', compact('trades', 'user_details', 'total_profit'));
     }
 
     public function create_order($id)
     {
         $user_details = User::findOrFail($id);
-        return view('admin.create-order', compact('user_details'));
+        return view('admin.create-trade', compact('user_details'));
     }
 
     public function create_order_store(Request $request)
@@ -65,9 +66,9 @@ class AdminController extends Controller
     }
     public function edit_trade($id)
     {
-        $user_details = User::findOrFail($id);
         $trade = Trades::findOrFail($id);
-        return view('admin.edit-trades', compact('trade', 'user_details'));
+        $user_details = User::findOrFail($trade->user_id);
+        return view('admin.edit-trade2', compact('trade', 'user_details'));
     }
 
     public function update_trade(Request $request, $id)
@@ -100,12 +101,7 @@ class AdminController extends Controller
         return $request->validate($rules);
     }
 
-    public function show_user_withdraw($id)
-    {
-        $user_details = User::findOrFail($id);
-        $user_withdrawals = User::with('withdrawal')->findOrFail($id);
-        return view('admin.user-withdrawals', compact('user_withdrawals', 'user_details'));
-    }
+
 
     public function fund_acct(Request $request, $id)
     {
@@ -133,4 +129,11 @@ class AdminController extends Controller
         $user->delete();
         return redirect()->back()->with('deleted', "User Deleted Successfully");
     }
+
+
+
+
+
+
+
 }

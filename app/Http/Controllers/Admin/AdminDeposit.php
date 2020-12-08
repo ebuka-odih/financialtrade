@@ -17,13 +17,13 @@ class AdminDeposit extends Controller
     public function all_deposits()
     {
         $users_deposits = Deposits::all();
-        return view('admin.admin-deposits-list', compact('users_deposits'));
+        return view('admin.deposits', compact('users_deposits'));
     }
 
     public function deposit_details($id)
     {
         $deposit = Deposits::findOrFail($id);
-        return view('admin.user-deposits-details', compact('deposit'));
+        return view('admin.deposit-details', compact('deposit'));
     }
 
 
@@ -42,6 +42,13 @@ class AdminDeposit extends Controller
         $user->save();
         $dep->save();
         return redirect()->back();
+    }
+
+    public function user_deposits($id)
+    {
+        $user_details = User::findOrFail($id);
+        $deposits= User::with('deposits')->findOrFail($id);
+        return view('admin.user-deposits2', compact('user_details', 'deposits'));
     }
 
 }

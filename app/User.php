@@ -37,10 +37,18 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function user_status()
     {
-        if ($this->user_status){
+        if ($this->user_status == 1){
             return "<a class='label label-success'>Verified</a>";
         }else{
             return "<a class='label label-danger'>Unverified</a>";
+        }
+    }
+    public function admin_status()
+    {
+        if ($this->user_status == 1){
+            return "<a style='color: white' class='badge badge-success'>Verified</a>";
+        }else{
+            return "<a style='color: white' class='badge badge-danger'>Unverified</a>";
         }
     }
 
@@ -65,6 +73,10 @@ class User extends Authenticatable implements MustVerifyEmail
     public function deposits()
     {
         return $this->hasMany(Deposits::class, 'user_id');
+    }
+    public function notify()
+    {
+        return $this->hasMany(Notify::class, 'user_id');
     }
 
 

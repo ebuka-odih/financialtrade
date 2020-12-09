@@ -108,6 +108,14 @@
                                                                             <td>{{ $user_details->city }}, {{$user_details->postal_code}}</td>
                                                                         </tr>
                                                                         <tr>
+                                                                            <th>User Role:</th>
+                                                                            <td>{{ $user_details->user_role }}</td>
+                                                                        </tr> <tr>
+
+                                                                            <th>Email Verified At:</th>
+                                                                            <td>{{ date('d/m/Y h:m a', strtotime($user_details->email_verified_at)) }}</td>
+                                                                        </tr>
+                                                                        <tr>
                                                                             <th>BTC Wallet:</th>
                                                                             <td><input class="form-control" id="foo" value="{{ $user_details->btc_wallet }}">
                                                                                 <button class="btn" data-clipboard-target="#foo">

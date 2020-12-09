@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Notifications\NewUser;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -73,7 +74,10 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        $user->sendEmailVerificationNotification();
+        $admin = User::where('user_role', '=', 'admin')->first();
+        if ($admin) {
+            $admin->notify(new NewUser($user));
+        }
 
         return $user;
     }

@@ -79,7 +79,7 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($trades->trades as $trade)
+                                        @foreach($user_trades->trades as $trade)
                                             @if($trade->order == "buy")
                                                 <tr class="table-primary">
                                                     <td>{{ $trade->order }}</td>

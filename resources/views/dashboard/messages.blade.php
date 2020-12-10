@@ -34,7 +34,7 @@
                                         <thead>
                                         <tr>
                                             {{--                                            <th>#</th>--}}
-                                            <th>Created Date</th>
+                                            <th>Date</th>
                                             <th>Title</th>
                                             <th>Message</th>
                                             <th>Action</th>
@@ -48,10 +48,11 @@
                                                 @if($msg->read == 1)
                                                 <td >{{ $msg->title }}</td>
                                                 <td class="short-text">{{ $msg->message }}</td>
-                                                @else
+                                                @elseif($msg->read == 0)
                                                     <td><strong>{{ $msg->title }}</strong></td>
                                                     <td><strong class="short-text" >{{ $msg->message }}</strong></td>
-                                                    @endif
+                                                    @else
+                                                @endif
                                                 <td><a href="{{ route('user.show_notify', $msg->id) }}">View</a></td>
                                             </tr>
                                         @empty

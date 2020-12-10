@@ -31,8 +31,8 @@
 {{--                        </ul>--}}
 {{--                    </li>--}}
                     <li class=""><a href="{{ route('user.trades.index') }}" ><i class="fa fa-chart-line"></i> Trades</a></li>
-                    <li class=""><a href="{{ route('user.notifications') }}" ><i class="fa fa-envelope"></i> Messages</a></li>
-{{--                    <span style="background-color: red"  class="badge badge-success"> 2</span>--}}
+                    <li class=""><a href="{{ route('user.notifications') }}" ><i class="fa fa-envelope"></i> Messages <span style="background-color: red"  class="badge badge-success"> {{ auth()->user()->unread_msg() }}</span></a></li>
+
                     <li class=""><a href="{{ route('user.pick_plan') }}" ><i class="fa fa-long-arrow-right"></i> Deposit</a></li>
                     <li class=""><a href="{{ route('user.make_withdrawal') }}" ><i class="fa fa-long-arrow-left"></i> Withdrawal</a></li>
                     <li class=""><a href="{{ route('user.deposit_history') }}" ><i class="fa fa-history"></i> Transaction history</a></li>

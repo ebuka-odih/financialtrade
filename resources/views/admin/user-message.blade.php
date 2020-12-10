@@ -66,6 +66,7 @@
                                             <th>Date</th>
                                             <th>Title</th>
                                             <th>Message</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                         </thead>

@@ -79,5 +79,10 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Notify::class, 'user_id');
     }
 
+    public function unread_msg(){
+        $unread_msg = Notify::whereUserId($this->id)->where('read', 0)->count();
+        return $unread_msg;
+    }
+
 
 }

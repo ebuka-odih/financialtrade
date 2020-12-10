@@ -132,10 +132,7 @@ class UserController extends Controller
         return view('dashboard.msg-details', compact('msg_details'));
     }
 
-    public function unread_msg(){
-        $unread_msg = Notify::whereUserId(auth()->id())->where('read', 1)->get();
-        return view('dashboard.layout.sidebar', compact('unread_msg'));
-    }
+
 
 
 }

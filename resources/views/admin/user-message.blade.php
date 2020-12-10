@@ -76,6 +76,7 @@
                                                 <td><strong>{{ date('d/m/y', strtotime($message->created_at)) }}</strong></td>
                                                 <td><strong class=" text d-inline-block text-truncate" style="max-width: 150px;">{{ $message->title}}</strong></td>
                                                 <td class="text d-inline-block text-truncate" style="max-width: 150px;">{{ $message->message }}</td>
+                                                <td>{!! $message->status() !!}</td>
                                                 <td>
                                                     <div class="btn-group">
                                                         <a href="{{ route('admin.msg_show', $message->id) }}" class="btn btn-secondary btn-sm">View</a>

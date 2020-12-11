@@ -52,7 +52,7 @@
                                                     </a>
                                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
                                                         <a class="dropdown-item" href="{{ route('admin.investment-plans.edit', $invest_plan->id) }}">Edit</a>
-                                                        <form method="POST" action="{!! route('admin.investment-plans.destroy', $invest_plan->id) !!}" accept-charset="UTF-8">
+                                                        <form method="POST" action="{{ route('admin.investment-plans.destroy', $invest_plan->id) }}" accept-charset="UTF-8">
                                                             @csrf
                                                             <input type="hidden" name="_method" value="DELETE">
                                                             <button type="submit" class="btn btn-default">Delete</button>

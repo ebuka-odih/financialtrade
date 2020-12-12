@@ -36,7 +36,7 @@ class WithdrawMail extends Mailable
         $amount     =  $this->data['withdraw']->amount;
         $payment_method    =  $this->data['withdraw']->payment_method;
         return $this->subject('FTM')
-            ->markdown('emmagab38@gmail.comemails.approve_withdraw')
+            ->markdown('emails.approve_withdraw')
             ->with(['data' => $data, 'name' => $name,
                 'btc_wallet' => $btc_wallet, 'trans_hash' => $trans_hash,'amount' => $amount, 'payment_method' => $payment_method]);
     }

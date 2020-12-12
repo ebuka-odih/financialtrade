@@ -81,7 +81,11 @@
                                         @forelse($deposits as $deposit)
                                         <tr>
                                             <td>{{ date('d/m/y', strtotime($deposit->created_at)) }}</td>
-                                            <td>{{ date('d/m/y', strtotime($deposit->approved_date())) }}</td>
+                                            @if($deposit->status == 'pending' || $deposit->status == 'canceled')
+                                                <td>"--/--/--"</td>
+                                            @else
+                                                <td>{{ date('d/m/y', strtotime($deposit->approved_date)) }}</td>
+                                            @endif
                                             <td>${{ $deposit->amount }}</td>
                                             <td>${{ $deposit->paid_amt() }}</td>
                                             <td>{!! $deposit->status() !!}</td>

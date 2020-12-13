@@ -4,12 +4,14 @@ namespace App\Http\Controllers\Admin;
 
 use App\Deposits;
 use App\Http\Controllers\Controller;
+use App\Mail\WelcomeMail;
 use App\Trades;
 use App\User;
 use App\Withdrawal;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 
 class AdminController extends Controller
@@ -38,8 +40,10 @@ class AdminController extends Controller
 
     public function verify_user($id)
     {
-        $verify_user = User::findOrFail($id);
-        $verify_user->update(['user_status' => true]);
+        $user = User::findOrFail($id);
+        $user->update(['user_status' => true]);
+        $data = ['user' => $user];
+        Mail::to($user->email)->send(new WelcomeMail($data));
         return redirect()->back();
     }
 

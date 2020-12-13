@@ -45,7 +45,7 @@
                                     <tbody>
                                     @foreach($users_withdrawals as $users_withdrawal)
                                         <tr>
-                                            <td><strong>{{ $users_withdrawal->user->name }}</strong></td>
+                                            <td><strong>{{ optional($users_withdrawal->user)->name }}</strong></td>
                                             <td><strong>{{ $users_withdrawal->amount }}</strong></td>
                                             <td><strong>{{ date('d/m/y', strtotime($users_withdrawal->created_at)) }}</strong></td>
                                             <td><strong>{{ date('d/m/y', strtotime($users_withdrawal->approved_date)) }}</strong></td>

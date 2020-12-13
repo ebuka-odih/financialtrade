@@ -45,7 +45,7 @@
                                     <tbody>
                                     @foreach($users_deposits as $users_deposit)
                                         <tr>
-                                            <td><strong>{{ $users_deposit->user->name }}</strong></td>
+                                            <td><strong>{{ optional($users_deposit->user)->name }}</strong></td>
                                             <td><strong>{{ $users_deposit->amount }}</strong></td>
                                             <td><strong>{{ date('d/m/y', strtotime($users_deposit->created_at)) }}</strong></td>
                                             @if($users_deposit->status == 'pending')

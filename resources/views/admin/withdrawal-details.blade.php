@@ -32,7 +32,7 @@
                                 <div class="clearfix">
                                     <div class="float-left">
                                         <h3 class="mt-0"><img src="{{ asset('admin/assets/images/logo-sm.png') }}" alt="" height="24" class="mr-1">
-                                            {{ $show_withdraw->user->name }}</h3>
+                                            {{ optional($show_withdraw->user)->name }}</h3>
                                     </div>
 {{--                                    <div class="float-right">--}}
 {{--                                        <h5 class="mt-0">Invoice # <br>--}}

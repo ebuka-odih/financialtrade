@@ -49,7 +49,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Name:</th>
-                                                        <td>{{ $deposit->user->name }}</td>
+                                                        <td>{{ optional($deposit->user)->name }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Email:</th>

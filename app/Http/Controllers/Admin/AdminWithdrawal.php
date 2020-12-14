@@ -51,4 +51,11 @@ class AdminWithdrawal extends Controller
         return view('admin.withdrawal-details', compact('show_withdraw'));
     }
 
+    public function delete_withdrawal($id)
+    {
+        $withdrawal = Withdrawal::findOrFail($id);
+        $withdrawal->delete();
+        return redirect()->back();
+    }
+
 }

@@ -61,6 +61,18 @@
 
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
                                                             <a class="dropdown-item" href="{{ route('admin.accept_withdrawal', $users_withdrawal->id) }}">Approve</a>
+                                                            <form method="POST" action="{!! route('admin.delete_withdrawal', $users_withdrawal->id) !!}" accept-charset="UTF-8">
+                                                                <input name="_method" value="DELETE" type="hidden">
+                                                                {{ csrf_field() }}
+
+                                                                <div class="btn-group btn-group-xs pull-right" role="group">
+                                                                    <button data-toggle="tooltip" data-placement="top" type="submit" class="btn  btn-sm btn-danger" onclick="return confirm(&quot;Delete Withdrawal?&quot;)">
+                                                                        Delete
+                                                                    </button>
+
+                                                                </div>
+
+                                                            </form>
                                                         </div>
                                                     @endif
                                                 </div>

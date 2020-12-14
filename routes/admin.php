@@ -16,7 +16,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('accept/withdrawal/{withdraw}', 'Admin\AdminWithdrawal@accept_withdrawal')->name('accept_withdrawal');
     Route::get('all-withdrawal', 'Admin\AdminWithdrawal@all_withdrawal')->name('all_withdrawal');
     Route::get('withdrawal/{id}/details', 'Admin\AdminWithdrawal@withdrawal_details')->name('withdrawal_details');
-    Route::delete('withdrawa/{id}/delete', 'Admin\AdminWithdrawal@delete_withdrawal')->name('delete_withdrawal')->where('id', '[0-9]+');
+    Route::delete('withdrawal/{id}/delete', 'Admin\AdminWithdrawal@delete_withdrawal')->name('delete_withdrawal')->where('id', '[0-9]+');
 
 
     Route::get('users/trades/{id}/', 'Admin\AdminController@list_orders')->name('list_orders');
@@ -35,6 +35,8 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::post('deposit/defund/{id}', 'Admin\AdminController@defund_acct')->name('defund_acct');
     Route::delete('user/{id}/delete', 'Admin\AdminController@delete_user')->name('delete_user')->where('id', '[0-9]+');
     Route::get('user/deposits/{id}', 'Admin\AdminDeposit@user_deposits')->name('user_deposits')->where('id', '[0-9]+');
+    Route::delete('deposit/{id}/delete', 'Admin\AdminDeposit@delete_deposit')->name('delete_deposit')->where('id', '[0-9]+');
+
 
     Route::get('setting', 'Admin\SettingController@create')->name('setting.create');
     Route::post('setting/start_amount', 'Admin\SettingController@start_amount')->name('start_amount');

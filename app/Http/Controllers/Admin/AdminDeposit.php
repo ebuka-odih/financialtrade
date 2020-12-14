@@ -10,6 +10,7 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+//use Kevupton\LaravelCoinpayments\Models\Deposit;
 
 class AdminDeposit extends Controller
 {
@@ -49,6 +50,13 @@ class AdminDeposit extends Controller
         $user_details = User::findOrFail($id);
         $deposits= User::with('deposits')->findOrFail($id);
         return view('admin.user-deposits2', compact('user_details', 'deposits'));
+    }
+
+    public function delete_deposit($id)
+    {
+        $deposit = Deposits::findOrFail($id);
+        $deposit->delete();
+        return redirect()->back();
     }
 
 }

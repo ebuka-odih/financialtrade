@@ -82,6 +82,53 @@
 
                                 </tbody>
                             </table>
+
+                            <h5 class="text text-center mt-5">Change Admin Password</h5>
+                            <form id="form-settings-password" class="form-horizontal col-md-10" method="POST" action="{{ route('admin.change.password') }}" autocomplete="false">
+                                @csrf
+
+                                @if(session()->has('success'))
+                                    <div class="alert alert-success">
+                                        {{ session()->get('success') }}
+                                    </div>
+                                @endif
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+
+                                <div class="form-group field-passwordchangeform-password required">
+                                    <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password">New password</label>
+                                    <div class='col-xs-8 col-md-6'>
+                                        <input type="password" id="passwordchangeform-password" class="form-control" name="new_password" autocomplete="current-password"  aria-required="true"><span class='eye-password'></span>
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <div class="form-group field-passwordchangeform-password_repeat required">
+                                    <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password_repeat">Confirm new password</label>
+                                    <div class='col-xs-8 col-md-6'>
+                                        <input type="password" id="passwordchangeform-password_repeat" class="form-control" name="new_confirm_password" autocomplete="current-password" aria-required="true"><span class='eye-password'></span>
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <div class="form-group field-passwordchangeform-password_old required">
+                                    <label class="control-label col-xs-4 col-md-3" for="passwordchangeform-password_old">Enter your current password</label>
+                                    <div class='col-xs-8 col-md-6'>
+                                        <input type="password" id="passwordchangeform-password_old" class="form-control" name="current_password" autocomplete="current-password" aria-required="true"><span class='eye-password'></span>
+                                        <p class="help-block help-block-error "></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-md-12 mb-10 text-center">
+                                        <button type="submit" class="btn btn-wide btn-success demo-notice">Set a new password</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

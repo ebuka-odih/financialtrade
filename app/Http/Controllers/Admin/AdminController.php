@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Deposits;
 use App\Http\Controllers\Controller;
 use App\Mail\WelcomeMail;
+use App\Rules\MatchOldPassword;
 use App\Trades;
 use App\User;
 use App\Withdrawal;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use phpDocumentor\Reflection\DocBlock\Tags\Formatter\AlignFormatter;
 
@@ -133,6 +135,19 @@ class AdminController extends Controller
         $user = User::findOrFail($id);
         $user->delete();
         return redirect()->back()->with('deleted', "User Deleted Successfully");
+    }
+
+    public function change_password_store(Request $request)
+    {
+        $request->validate([
+            'current_password' => ['required', new MatchOldPassword],
+            'new_password' => ['required'],
+            'new_confirm_password' => ['same:new_password'],
+        ]);
+
+        User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
+
+        return redirect()->back()->with('success', 'Password Changed Successfully');
     }
 
 

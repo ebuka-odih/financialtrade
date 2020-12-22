@@ -373,9 +373,9 @@
 
                                 <hr>
                                 <div class="form-group field-profilemainform-wallet required">
-                                    <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-phone">Bitcoin Address</label></div>
+                                    <div><label class="control-label col-xs-4 col-md-3" for="profilemainform-wallet">Bitcoin Wallet</label></div>
                                     <div class="col-xs-8 col-md-6">
-                                        <input type="text" id="profilemainform-wallet" placeholder="Enter Your Bitcoin Address" class="form-control" name="btc_wallet" value="{{ $user->btc_wallet  }}" autocomplete="off" aria-required="true" required>
+                                        <input type="text" id="profilemainform-wallet" placeholder="Enter Your Bitcoin Address" class="form-control"   name="btc_wallet" value="{{ $user->btc_wallet  }}" autocomplete="false"  aria-required="true" required>
                                         <p class="help-block help-block-error "></p>
                                     </div>
                                 </div>

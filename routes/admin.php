@@ -50,6 +50,8 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::post('user/message/store', 'Admin\NotifyController@store')->name('mesg_store');
     Route::get('user/message/details/{id}', 'Admin\NotifyController@show')->name('msg_show');
 
+    Route::post('change-password', 'Admin\AdminController@change_password_store')->name('change.password');
+
 
 
 

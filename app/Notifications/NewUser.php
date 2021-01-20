@@ -40,7 +40,7 @@ class NewUser extends Notification
     {
         return (new MailMessage)->subject('New User Alert From FTM')
             ->line('A New user has registered with email ' . $this->new_user->email . ' and with the name ' . $this->new_user->name)
-            ->action('See User Details', route('admin.users_details', $this->new_user->id));
+            ->action('See User Details', route('admin.user_details', $this->new_user->id));
     }
 
     /**

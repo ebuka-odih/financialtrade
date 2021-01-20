@@ -72,7 +72,7 @@
                                         </thead>
 
                                         <tbody>
-                                        @foreach($user_msg->notify as $message)
+                                        @foreach($user_msg->notifyUser as $message)
                                             <tr>
                                                 <td><strong>{{ date('d/m/y', strtotime($message->created_at)) }}</strong></td>
                                                 <td><strong class=" text d-inline-block text-truncate" style="max-width: 150px;">{{ $message->title}}</strong></td>

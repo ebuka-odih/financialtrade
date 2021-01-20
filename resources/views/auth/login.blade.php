@@ -61,7 +61,9 @@
                         <div class="row">
                             <div class="col-sm-8">
                                 <div class="form-group field-loginemailform-rememberme">
-                                    <div class="checkbox-custom checkbox-default"><input type="hidden" name="LoginEmailForm[rememberMe]" value="0"><input type="checkbox" id="loginemailform-rememberme" name="LoginEmailForm[rememberMe]" value="1" checked tabindex="3"> <label for="loginemailform-rememberme">Remember me</label></div>
+                                    <div class="checkbox-custom checkbox-default"><input type="hidden" name="LoginEmailForm[rememberMe]" value="0">
+                                        <input type="checkbox" id="loginemailform-rememberme" name="LoginEmailForm[rememberMe]" value="1" checked tabindex="3">
+                                        <label for="loginemailform-rememberme">Remember me</label></div>
                                     <p class="help-block help-block-error"></p>
                                 </div>
                             </div>

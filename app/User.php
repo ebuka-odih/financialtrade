@@ -74,9 +74,12 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Deposits::class, 'user_id');
     }
-    public function notify()
-    {
-        return $this->hasMany(Notify::class, 'user_id');
+//    public function notify()
+//    {
+//        return $this->hasMany(Notify::class, 'user_id');
+//    }
+    public function notifyUser(){
+        return $this->hasMany('App\Notify', 'user_id');
     }
 
     public function unread_msg(){

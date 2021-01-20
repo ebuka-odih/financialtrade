@@ -185,7 +185,7 @@
                                             </tr>
                                             <tr>
                                                 <th>SCAN TO MAKE PAYMENT:</th>
-                                                <td><img height="300" width="300" src="{{ asset('img/barcode.jpeg') }}" alt="Payment Barcode">
+                                                <td><img height="300" width="300" src="{{ asset('img/barcode2.jpeg') }}" alt="Payment Barcode">
                                                 </td>
 {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
                                             </tr>

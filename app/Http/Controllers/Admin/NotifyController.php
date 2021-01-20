@@ -12,7 +12,7 @@ class NotifyController extends Controller
     public function index($id)
     {
         $user_details = User::findOrFail($id);
-        $user_msg = User::with('notify')->findOrFail($id);
+        $user_msg = User::with('notifyUser')->findOrFail($id);
         return view('admin.user-message', compact('user_details', 'user_msg'));
     }
 

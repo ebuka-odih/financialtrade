@@ -18,10 +18,10 @@ class DepositsController extends Controller
     {
         $deposits = Deposits::whereUserId(auth()->id())->get();
 
-        $deposit_pending_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 0)->sum('amount');
+        $deposit_pending_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 'pending')->sum('amount');
         $total_deposit = Deposits::whereUserId(auth()->id())->select('amount')->sum('amount');
         $last_deposit = optional(Deposits::whereUserId(auth()->id())->select('amount')->latest()->first())->amount;
-        $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '>=', 100)->sum('amount');
+        $deposit_approved_cash = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '=', 'approved')->sum('amount');
         $canceled_deposit = Deposits::whereUserId(auth()->id())->select('amount')->where('status', '<', 0)->sum('amount');
         return view('dashboard.transactions.deposit-history', compact('deposits', 'deposit_approved_cash', 'deposit_pending_cash', 'total_deposit', 'last_deposit', 'canceled_deposit'));
     }
@@ -147,7 +147,6 @@ class DepositsController extends Controller
             $payment_image->update(['payment_proof' => $fileNameToStore]);
         }
         return redirect()->back()->with('success_message', 'Submitted, Proof of Payment awaiting confirmation');
-
     }
 
     public function delete_deposit($id)

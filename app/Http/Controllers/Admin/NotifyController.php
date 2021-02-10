@@ -39,8 +39,6 @@ class NotifyController extends Controller
     }
 
 
-
-
     protected function getDate(Request $request)
     {
         $rule = [

@@ -111,6 +111,14 @@
             }
         }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
     <!-- /Chatra {/literal} -->
 </head>
 
@@ -121,6 +129,21 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="main-wrapper">
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 20px">NOTE THAT ALL PAYMENTS SHOULD BE MADE DIRECTLY TO THE COMPANY’S ACCOUNT/BITCOIN WALLET ADDRESS AVAILABLE ON THE DEPOSIT PAGE OF YOUR TRADING ACCOUNT. AS SOON AS PAYMENT IS DONE PLEASE UPLOAD PROOF OF PAYMENT.
+                        THE COMPANY WOULDN’T BE HELD RESPONSIBLE FOR ANY LOSS THAT COMES WITH MAKING PAYMENTS TO ANY ACCOUNT MANAGER. THANK YOU FOR YOUR UNDERSTANDING AND COOPERATION.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="" style="height: 95px;">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg">

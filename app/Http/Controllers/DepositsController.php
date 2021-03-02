@@ -139,7 +139,7 @@ class DepositsController extends Controller
             //store the image
             $path = $request->file('payment_proof')->storeAs('public/payment-proof/', $fileNameToStore);
         }else {
-            $fileNameToStore = ' Noimage';
+            $fileNameToStore = 'Noimage';
         }
 
         $payment_image = Deposits::findOrfail($id);

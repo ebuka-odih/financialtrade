@@ -118,7 +118,7 @@ class UserController extends Controller
 
     public function notifications()
     {
-        $notify = Notify::whereUserId(auth()->id())->latest()->get();
+        $notify = Notify::whereUserId(auth()->id())->latest()->take(10)->get();
         return view('dashboard.messages', compact('notify'));
     }
 

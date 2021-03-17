@@ -24,6 +24,10 @@
                     (b) poor Internet connection either on the side of the Client or the Company or both, or interruptions or transmission blackouts or public electricity network failures or hacker attacks, overload of connection;<br>
                     (c) The Client acknowledges that under Abnormal Market Conditions the period during which the Instructions and Requests are executed may be extended.<br>
                 </p>
+                <h3>Security & Withdrawal</h3>
+                <p>
+                    FTM is committed to safeguarding your Personal Data by adhering to strict security standards and using the most up to date security technologies. Therefore, FTM cannot access clients funds due to the security technologies used.
+                    Clients are the only ones with the access to their funds(Deduction of funds from clients accounts by FTM aren’t possible)</p>
             </div>
         </div>
     </section>

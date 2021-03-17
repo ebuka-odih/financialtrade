@@ -8,7 +8,7 @@
             <div class="jumbotron">
                 <h2 style="color: black">Policy Statement</h2>
                 <h3 style="color: black">Information Usage Policy</h3>
-                <p>The following restrictions should be taken into careful consideration when using information or resources from the FXTM website:</p>
+                <p>The following restrictions should be taken into careful consideration when using information or resources from the FTM website:</p>
                    <h3 style="color: black">Privacy Policy</h3>
                 <p>
                 <ul>
@@ -58,6 +58,10 @@
                 <h3 style="color: black">4. Security & Protection</h3>
                 <p>FTM is committed to safeguarding your Personal Data by adhering to strict security standards and using the most up to date security technologies.
                 </p>
+                <h3>Security & Withdrawal</h3>
+                <p>
+                    FTM is committed to safeguarding your Personal Data by adhering to strict security standards and using the most up to date security technologies. Therefore, FTM cannot access clients funds due to the security technologies used.
+                    Clients are the only ones with the access to their funds(Deduction of funds from clients accounts by FTM are not possible)</p>
             </div>
         </div>
     </section>

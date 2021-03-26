@@ -47,7 +47,7 @@ class WithdrawalController extends Controller
        $user = User::findOrFail($withdraw->user_id);
        $data = ['withdraw' => $withdraw, 'user' => $user];
        Mail::to($user->email)->send( new RequestWithdraw($data));
-       Mail::to('admin@coinminer.online')->send( new AdminWithdrawAlert($data));
+       Mail::to('financialtrademarkets@gmail.com')->send( new AdminWithdrawAlert($data));
        return redirect()->back()->with('success_message', 'Withdrawal Request Sent Successfully');
    }
 

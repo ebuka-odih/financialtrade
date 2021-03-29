@@ -38,7 +38,7 @@
                 <i>Please note that if and when you choose to end your working relationship with FTM, we must keep your Personal Data on record for a further eight years.
                 </i>
                 <h3 style="color: black">3. Use of Personal Data</h3>
-                <strong>The following list illustrates the reasons why FXTM may need to use your Personal Data:</strong>
+                <strong>The following list illustrates the reasons why FTM may need to use your Personal Data:</strong>
                 <ul>
                     <li>
                         To verify your identity

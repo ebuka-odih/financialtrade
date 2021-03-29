@@ -271,7 +271,7 @@
                 </li>
                 <li class="docs-main">
                     <ul>
-                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="{{ route('terms') }}">Terms and Condition</li>
                         <li><a href="{{ route('policy') }}">Privacy policy</a></li>
                         <li><a href="{{ route('why_ftm') }}">Why Choose Us</a></li>
                         <li><a href="{{ route('risk') }}">Risk Disclosure</a></li>

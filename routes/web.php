@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomepageController@homeInvestPlan')->name('homepage');
+Route::get('/terms', 'HomepageController@terms')->name('terms');
 Route::get('why-ftm', 'HomepageController@why_ftm')->name('why_ftm');
 Route::get('contact-us', 'HomepageController@contact_us')->name('contact_us');
 Route::get('policies-regulation/risk-disclosure', 'HomepageController@risk')->name('risk');

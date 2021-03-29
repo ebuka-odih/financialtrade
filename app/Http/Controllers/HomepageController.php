@@ -31,4 +31,9 @@ class HomepageController extends Controller
     {
         return view('frontpage.policy-statement');
     }
+
+    public function terms()
+    {
+        return view('frontpage.terms');
+    }
 }

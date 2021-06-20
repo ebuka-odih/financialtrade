@@ -94,6 +94,7 @@ class AdminController extends Controller
         return redirect()->back()->with('deleted', 'Trade Deleted Successfully');
     }
 
+    
     protected function getData(Request $request)
     {
         $rules = [

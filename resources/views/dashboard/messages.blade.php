@@ -42,7 +42,7 @@
                                         </thead>
                                         <tbody class="ajax-pagination-target">
                                         @forelse($notify as $msg)
-                                            {{--                                            <div style="visibility: hidden">@for($i = 1; $i < 100; $i++)@endfor</div>--}}
+                                            {{--       <div style="visibility: hidden">@for($i = 1; $i < 100; $i++)@endfor</div>--}}
                                             <tr>
                                                 <td>{{ date('d/m/y h:i A', strtotime($msg->created_at)) }}</td>
                                                 @if($msg->read == 1)

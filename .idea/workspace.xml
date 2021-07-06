@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/deposit-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/deposit-details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/messages.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="df9dee31-0852-4de7-a9bd-4e581e9ffdd4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -314,6 +309,7 @@
       <workItem from="1619098791121" duration="493000" />
       <workItem from="1619217046112" duration="5000" />
       <workItem from="1623702175828" duration="703000" />
+      <workItem from="1624150854610" duration="715000" />
     </task>
     <servers />
   </component>

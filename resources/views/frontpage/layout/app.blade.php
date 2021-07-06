@@ -330,18 +330,6 @@
 {{--    })(window,document,'https://cdn.bitrix24.com/b17035423/crm/site_button/loader_4_ykuzos.js');--}}
 {{--</script>--}}
 
-<!--Start of Tawk.to Script-->
-<script>
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/60e4dcc6d6e7610a49a9f55a/1f9uvsq7f';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="675e76c4-afbc-4e61-9e12-29c021bf7dee";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 </html>

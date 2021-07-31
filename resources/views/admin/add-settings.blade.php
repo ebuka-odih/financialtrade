@@ -56,7 +56,7 @@
                                     <td>{{ setting('start_amount') }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-capitalize">Wallet ID</td>
+                                    <td class="text-capitalize">Bitcoin Wallet ID</td>
                                     <td>
                                         <form action="{{ route('admin.setting.store') }}" method="POST">
                                             @csrf
@@ -64,20 +64,44 @@
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </form>
                                     </td>
-                                    <td>${{ setting('wallet_id') }}</td>
+                                    <td>{{ setting('wallet_id') }}</td>
                                 </tr>
 
-                                <tr>
-                                    <td class="text-capitalize">Wallet Qrcode</td>
-                                    <td>
-                                        <form action="{{ route('admin.qrcode') }}" method="POST" enctype="multipart/form-data">
-                                            @csrf
+{{--                                <tr>--}}
+{{--                                    <td class="text-capitalize">Wallet Qrcode</td>--}}
+{{--                                    <td>--}}
+{{--                                        <form action="{{ route('admin.qrcode') }}" method="POST" enctype="multipart/form-data">--}}
+{{--                                            @csrf--}}
 
-                                            <input type="file" class="form-control" value="{{ setting('qrcode') }}" name="qrcode">
+{{--                                            <input type="file" class="form-control" value="{{ setting('qrcode') }}" name="qrcode">--}}
+{{--                                            <button type="submit" class="btn btn-primary">Submit</button>--}}
+{{--                                        </form>--}}
+{{--                                    </td>--}}
+{{--                                    <td><img src="/storage/qrcode/{{ setting('qrcode') }}" alt=""></td>--}}
+{{--                                </tr>--}}
+
+                                <tr>
+                                    <td class="text-capitalize">Ethereum Wallet ID</td>
+                                    <td>
+                                        <form action="{{ route('admin.setting.store') }}" method="POST">
+                                            @csrf
+                                            <input class="form-control col-md-7" name="eth_wallet" value="{{ setting('eth_wallet') }}" /><br>
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </form>
                                     </td>
-                                    <td><img src="/storage/qrcode/{{ setting('qrcode') }}" alt=""></td>
+                                    <td>{{ setting('eth_wallet') }}</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-capitalize">Dogecoin Wallet ID</td>
+                                    <td>
+                                        <form action="{{ route('admin.setting.store') }}" method="POST">
+                                            @csrf
+                                            <input class="form-control col-md-7" name="doge_wallet" value="{{ setting('doge_wallet') }}" /><br>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </td>
+                                    <td>{{ setting('doge_wallet') }}</td>
                                 </tr>
 
                                 </tbody>

@@ -189,6 +189,30 @@
                                                 </td>
 {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
                                             </tr>
+                                            <th colspan="2"> <h3 class="text text-center">Or Make Payment To Any Other Wallet Address Below</h3></th>
+                                            <tr>
+                                                <th>ETHEREUM WALLET:</th>
+                                                <td><input type="text" class="form-control form-control-lg" id="eth" value="{{ setting('eth_wallet') }}">
+                                                    <button class="btn btn-outline-info" data-clipboard-target="#eth">
+                                                        {{--                                                        <span>Copy To Clipboard</span>--}}
+                                                        <img height="20" width="20" src="{{ asset('images/clippy.svg') }}" alt="Copy to clipboard">
+                                                    </button>
+                                                    <small>Click on the copy icon to copy the address</small>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>DOGE WALLET:</th>
+                                                <td><input type="text" class="form-control form-control-lg" id="doge" value="{{ setting('doge_wallet') }}">
+                                                    <button class="btn btn-outline-info" data-clipboard-target="#doge">
+                                                        {{--                                                        <span>Copy To Clipboard</span>--}}
+                                                        <img height="20" width="20" src="{{ asset('images/clippy.svg') }}" alt="Copy to clipboard">
+                                                    </button>
+                                                    <small>Click on the copy icon to copy the address</small>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                            </tr>
                                             <tr>
                                                 <th>UPLOAD PAYMENT PROOF:</th>
 

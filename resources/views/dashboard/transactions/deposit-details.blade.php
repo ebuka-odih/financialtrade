@@ -201,6 +201,12 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <th>SCAN TO MAKE PAYMENT (ETHEREUM):</th>
+                                                <td><img height="300" width="300" src="{{ asset('img/eth.jpeg') }}" alt="Payment Barcode">
+                                                </td>
+                                                {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
+                                            </tr>
+                                            <tr>
                                                 <th>DOGE WALLET:</th>
                                                 <td><input type="text" class="form-control form-control-lg" id="doge" value="{{ setting('doge_wallet') }}">
                                                     <button class="btn btn-outline-info" data-clipboard-target="#doge">
@@ -209,6 +215,12 @@
                                                     </button>
                                                     <small>Click on the copy icon to copy the address</small>
                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <th>SCAN TO MAKE PAYMENT (DOGE):</th>
+                                                <td><img height="300" width="300" src="{{ asset('img/doge.jpeg') }}" alt="Payment Barcode">
+                                                </td>
+                                                {{--                                                <td><a target="_blank" href="{{ $deposit_detail->payment_url }}">Make Payment</a></td>--}}
                                             </tr>
                                             <tr>
                                                 <td colspan="2"></td>
